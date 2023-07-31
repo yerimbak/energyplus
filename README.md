@@ -24,11 +24,6 @@
     "src폴더"는 작업용홀더 이고 'dist'는 배포 홀더입니다.
 </blockquote>
 
-## gs재플린 정보
-- 아이디 : `hjk05a02@gsitm.com`
-- 비밀번호 : `gsitm2021`
-
-
 ## 경로
 * http://localhost/coding_list/
 
