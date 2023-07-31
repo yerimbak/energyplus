@@ -31,9 +31,6 @@
 - /03.External/GSITM/04_Energyplus
 * http://222.110.171.118:4010/coding_list/index.html
 
-## ftp경로
-* https://abbeyroad.asia/project/eneryplus/dist/coding_list/index.html
-
 ## deploy
 - `npm run deploy`
 - https://madive15.github.io/energyplus/coding_list
