@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+  <meta name="viewport"
+    content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=yes" />
+  <title>Energy Plus App</title>
+
+  <!-- Library CSS -->
+  <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+  <!-- 20201211 accordion 추가-->
+  <link rel="stylesheet" href="lib/accordion-js/accordion.min.css" />
+  <link rel="stylesheet" href="css/ep-style.css" />
+  <!-- // Library CSS -->
+
+  <!-- Library JS -->
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <!-- vue CDN -->
+  <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+  <!-- buefy CDN -->
+  <script src="lib/swiper/swiper-bundle.min.js"></script>
+  <!-- 20201211 lottie-player 추가-->
+  <script src="lib/lottie/lottie-player.js"></script>
+  <!-- 20201211 accordion 추가-->
+  <script src="lib/accordion-js/accordion.min.js"></script>
+  <!-- // Library JS -->
+
+  <script src="js/ui.js"></script>
+</head>
+
+<body>
+  <div class="skipNavi">
+    <a href="#">본문 바로가기</a>
+  </div>
+  <div id="wrap" role="main">
+    <!-- header -->
+    <header id="header">
+      <div class="inner">
+        <h1>
+          <a href="/" class="bi" title="Energyplus">
+            <span class="blind">Energyplus</span>
+          </a>
+        </h1>
+      </div>
+    </header>
+    <!-- // header -->
+
+    <div id="container">
+      <!-- Contents -->
+      <div id="contents">
+        <div class="main-wrap">
+          <div class="rows">
+            <div class="row">
+              <!-- 바로주유 (슬라이드 배너) -->
+              <div class="main-card-slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- card -->
+                      <!-- 휘발유 : gasoline 클래스 추가 / disabled : is-disabled 클래스 추가 시 바로주유, 예약 버튼 미노출 되면서 > 결제카드 변경 버튼 노출 -->
+                      <div class="card gasoline is-disabled">
+                        <dl class="card-info-area">
+                          <dt class="nick">내차 씽씽</dt>
+                          <dd>
+                            <div class="price-area">
+                              <div class="price">50,000</div>
+                            </div>
+                            <span class="oil">휘발유</span>
+                            <span class="credit-card">롯데카드 1234</span>
+                            <small class="credit-card-expired">
+                              롯데카드 1234 사용기간이<br>
+                              만료되었습니다.
+                            </small>
+                          </dd>
+                        </dl>
+                        <!-- 2023-03-29 수정 [s] -->
+                        <div class="button-area">
+                          <button type="button" class="button is-gray baro-img-btn">
+                          <span class="blind">바로주유</span></button>
+                          <button type="button" class="button is-rez reserve-btn">예약</button>
+                          <button type="button" class="button is-navy card-change">결제카드 변경</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- card -->
+                      <!-- 고급휘발유 : premium 클래스 추가 / disabled : is-disabled 클래스 추가 시 바로주유, 예약 버튼 미노출 되면서 > 결제카드 변경 버튼 노출 -->
+                      <div class="card premium">
+                        <dl class="card-info-area">
+                          <dt class="nick">여보차</dt>
+                          <dd>
+                            <div class="price-area">
+                              <div class="price">50,000</div>
+                            </div>
+                            <span class="oil">고급휘발유</span>
+                            <span class="credit-card">신한카드 2232</span>
+                            <small class="credit-card-expired">
+                              신한카드 2232 사용기간이<br>
+                              만료되었습니다.
+                            </small>
+                          </dd>
+                        </dl>
+                        <div class="button-area">
+
+                          <button type="button" class="button is-gray baro-img-btn">
+                            <span class="blind">바로주유</span></button>
+                          <button type="button" class="button is-rez reserve-btn">예약</button>
+                          <button type="button" class="button card-change">결제카드 변경</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- card -->
+                      <!-- 경유 : diesel 클래스 추가 / disabled : is-disabled 클래스 추가 시 바로주유, 예약 버튼 미노출 되면서 > 결제카드 변경 버튼 노출 -->
+                      <div class="card diesel">
+                        <dl class="card-info-area">
+                          <dt class="nick">회사차량</dt>
+                          <dd>
+                            <div class="price-area">
+                              <div class="price">50,000</div>
+                            </div>
+                            <span class="oil">경유</span>
+                            <span class="credit-card color-green">국민카드 2232</span>
+                            <small class="credit-card-expired">
+                              롯데카드 1234 사용기간이<br>
+                              만료되었습니다.
+                            </small>
+                          </dd>
+                        </dl>
+                        <div class="button-area">
+                          <button type="button" class="button is-gray baro-img-btn">
+                            <span class="blind">바로주유</span></button>
+                          <button type="button" class="button is-rez reserve-btn">예약</button>
+                          <button type="button" class="button card-change">결제카드 변경</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- card -->
+                      <!-- LPG : diesel 클래스 추가 / disabled : is-disabled 클래스 추가 시 바로주유, 예약 버튼 미노출 되면서 > 결제카드 변경 버튼 노출 -->
+                      <div class="card butan">
+                        <dl class="card-info-area">
+                          <dt class="nick">회사차량</dt>
+                          <dd>
+                            <div class="price-area">
+                              <div class="price">50,000</div>
+                            </div>
+                            <span class="oil">LPG</span>
+                            <span class="credit-card color-purple">국민카드 2232</span>
+                            <small class="credit-card-expired">
+                              롯데카드 1234 사용기간이<br>
+                              만료되었습니다.
+                            </small>
+                          </dd>
+                        </dl>
+                        <div class="button-area">
+                          <button type="button" class="button is-gray baro-img-btn">
+                            <span class="blind">바로주유</span></button>
+                          <button type="button" class="button is-rez reserv-btn">예약</button>
+                          <button type="button" class="button card-change">결제카드 변경</button>
+                        </div>
+                        <!-- <button type="button" class="button is-medium is-gray is-bottom">바로주유</button> -->
+                        <!-- <button type="button" class="button is-medium is-gray is-bottom">결제카드 변경</button> -->
+                      </div>
+                    </div>
+
+                    <!-- 바로주유 예약 (현재가 예약가보다 높을 때) -->
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!--  예약 카드 : 휘발유 -->
+                      <div class="card gasoline">
+                        <div class="rez-info-area">
+                          <small class="tit-station">개나리주유소</small>
+                          <div class="price-compare">
+                            <div class="price-item">
+                              <dl>
+                                <dt>예약가</dt>
+                                <dd>2,023</dd>
+                              </dl>
+                            </div>
+                            <div class="price-item">
+                              <dl>
+                                <dt>현재가</dt>
+                                <!-- D: 가격상승 [price-up] | 가격하락 [price-down] -->
+                                <dd class="price-down">1,980</dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <p class="oil">휘발유</p>
+                          <p class="liter-info"><em class="is-family-secondary">50,575</em>원(<em
+                              class="is-family-secondary">25L</em>)</p>
+                        </div>
+                        <!-- is-disabled 추가 시 예약사용 버튼 배경색 변경되고, 툴팁 말풍성 미노출 -->
+                        <div class="button-area is-disabled">
+                          <button type="button" class="button is-gray reserve-use">예약사용</button>
+                          <button type="button" class="button btn-delete">삭제</button>
+                          <p class="tooltip-rez">
+                            <span class="txt-desc">~ 2021-03-19까지</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- 예약 카드 : 고급휘발유 -->
+                      <div class="card premium">
+                        <div class="rez-info-area">
+                          <small class="tit-station">개나리주유소</small>
+                          <div class="price-compare">
+                            <div class="price-item">
+                              <dl>
+                                <dt>예약가</dt>
+                                <dd>2,023</dd>
+                              </dl>
+                            </div>
+                            <div class="price-item">
+                              <dl>
+                                <dt>현재가</dt>
+                                <!-- D: 가격상승 [price-up] | 가격하락 [price-down] -->
+                                <dd class="price-up">2,150</dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <p class="oil">고급휘발유</p>
+                          <p class="liter-info"><em class="is-family-secondary">50,575</em>원(<em
+                              class="is-family-secondary">25L</em>)</p>
+                        </div>
+                        <!-- is-disabled 추가 시 예약사용 버튼 배경색 변경되고, 툴팁 말풍성 미노출 -->
+                        <div class="button-area">
+                          <button type="button" class="button is-gray reserve-use">예약사용</button>
+                          <button type="button" class="button btn-delete">삭제</button>
+                          <p class="tooltip-rez">
+                            <span class="txt-desc">~ 2021-03-19까지</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!-- 예약 카드 : 경유 -->
+                      <div class="card diesel">
+                        <div class="rez-info-area">
+                          <small class="tit-station">개나리주유소</small>
+                          <div class="price-compare">
+                            <div class="price-item">
+                              <dl>
+                                <dt>예약가</dt>
+                                <dd>2,023</dd>
+                              </dl>
+                            </div>
+                            <div class="price-item">
+                              <dl>
+                                <dt>현재가</dt>
+                                <!-- D: 가격상승 [price-up] | 가격하락 [price-down] -->
+                                <dd class="price-up">2,150</dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <p class="oil">경유</p>
+                          <p class="liter-info"><em class="is-family-secondary">50,575</em>원(<em
+                              class="is-family-secondary">25L</em>)</p>
+                        </div>
+                        <!-- is-disabled 추가 시 예약사용 버튼 배경색 변경되고, 툴팁 말풍성 미노출 -->
+                        <div class="button-area">
+                          <button type="button" class="button is-gray reserve-use">예약사용</button>
+                          <button type="button" class="button btn-delete">삭제</button>
+                          <p class="tooltip-rez">
+                            <span class="txt-desc">~ 2021-03-19까지</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide -->
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                      <!--  예약 카드 : LPG -->
+                      <div class="card butan">
+                        <div class="rez-info-area">
+                          <small class="tit-station">개나리주유소</small>
+                          <div class="price-compare">
+                            <div class="price-item">
+                              <dl>
+                                <dt>예약가</dt>
+                                <dd>2,023</dd>
+                              </dl>
+                            </div>
+                            <div class="price-item">
+                              <dl>
+                                <dt>현재가</dt>
+                                <!-- D: 가격상승 [price-up] | 가격하락 [price-down] -->
+                                <dd class="price-up">2,150</dd>
+                              </dl>
+                            </div>
+                          </div>
+                          <p class="oil">LPG</p>
+                          <p class="liter-info"><em class="is-family-secondary">50,575</em>원(<em
+                              class="is-family-secondary">25L</em>)</p>
+                        </div>
+                        <!-- is-disabled 추가 시 예약사용 버튼 배경색 변경되고, 툴팁 말풍성 미노출 -->
+                        <div class="button-area">
+                          <button type="button" class="button is-gray reserve-use">예약사용</button>
+                          <button type="button" class="button btn-delete">삭제</button>
+                          <p class="tooltip-rez">
+                            <span class="txt-desc">~ 2021-03-19까지</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slide -->
+
+                    <!-- 카드 추가 -->
+                    <div class="swiper-slide card-add">
+                      <!-- card -->
+                      <!-- 카드 등록 is-add 클래스 추가 -->
+                      <div class="card is-add">
+                        <div class="card-info-area">
+                          <div class="txt-add-card">
+                            <span class="baro-add-txt">등록</span>
+                            <p>더 빠르고 간편하게<br />주유하세요</p>
+                          </div>
+                        </div>
+                        <div class="button-area">
+                          <button type="button" class="button is-regist is-bottom">
+                            <span class="blind">카드등록+</span>
+                          </button>
+                        </div>
+                        <!-- <button type="button" class="button is-regist is-bottom">바로주유등록</button> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- swiper pagination -->
+                  <div class="swiper-pagination-wrap">
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- 주유가격 dropdown -->
+              <!-- 
+                      * 드롭다운 메뉴를 한개만 만들었습니다.
+                      * 금액 클릭시 현재 위치에서 드롭다운 메뉴가 열립니다.
+                      * 2번째 카드 금액 클릭시에도 카드가 첫번째 카드 위치로 슬라이드 되면서 현재 위치에서 드롭다운 메뉴가 열리는 형식입니다.
+                      * 스와이프시 열려있던 드롭다운메뉴는 닫힙니다.
+                  -->
+              <div class="layer-dropdown-area">
+                <div class="layer-price-dropdown">
+                  <div class="layer-price-inner">
+                    <ul class="layer-price-list">
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong>가득</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo" checked="checked">
+                            <i></i> <strong><em class="is-family-secondary">100,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">90,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">80,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">70,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">60,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">50,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">40,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">30,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">20,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="control">
+                          <label class="radio">
+                            <input type="radio" name="foo">
+                            <i></i> <strong><em class="is-family-secondary">10,000</em>원</strong>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="layer-bottom-area">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <i></i>
+                        <span>선택한 금액 유지</span>
+                      </label>
+                      <button class="button is-small is-fullwidth is-dark">금액설정</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // 주유가격 dropdown-->
+            </div>
+            <div class="row">
+              <!-- 2021-02-03 메인 배너 수정 -->
+              <!-- 슬라이드 배너 -->
+              <div class="main-banner-slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                      <!-- S: 주유실적 이벤트 -->
+                      <a href="#" title="주유실적 이벤트">
+                        <div class="box-banner-area main-banner-perform">
+                          <div class="box item-banner">
+                            <dl class="item-banner-info">
+                              <!-- 2021-03-18 이벤트 배너 타이틀 변경 -->
+                              <dt>주유혜택 PLUS</dt>
+                              <dd>
+                                5만원 이상 바로주유 할 때마다<br>
+                                주유할인 쿠폰을 드립니다.
+                                <small class="date">2020-07-01 ~ 2020-10-31</small>
+                              </dd>
+                            </dl>
+                            <!-- 로그인 전 -->
+                            <!-- <div class="item-banner-bt">
+                                                  <i class="icon-nozzle is-large"></i>
+                                                  <strong class="txt-desc">주유 <em class="is-family-secondary">50,000</em>원</strong>
+                                                  <span class="long-arrow"></span>
+                                                  <span class="icon-coupon-small type-1"><span class="blind">1,000</span></span>
+                                              </div> -->
+
+                            <!-- 2021-02-10 로그인 후 - 주유실적 현황 출력 -->
+                            <div class="item-progress-area">
+                              <div class="progress-ruler-wrap">
+                                <!-- 
+                                                          [D] 주유실적 progress class 추가
+                                                          20% : type-1
+                                                          40% : type-2
+                                                          60% : type-3
+                                                          80% : type-4
+                                                          100% : type-5
+                                                      -->
+                                <table class="progress-ruler type-2">
+                                  <caption>주유실적 이벤트 실적달성</caption>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>2</td>
+                                      <td>3</td>
+                                      <td>4</td>
+                                      <td>5</td>
+                                      <td>6</td>
+                                      <td>7</td>
+                                      <td>8</td>
+                                      <td>9</td>
+                                      <td>10</td>
+                                      <td>11</td>
+                                      <td>12</td>
+                                      <td>13</td>
+                                      <td>14</td>
+                                      <td>15</td>
+                                      <td>16</td>
+                                      <td>17</td>
+                                      <td>18</td>
+                                      <td>19</td>
+                                      <td>20</td>
+                                      <td>21</td>
+                                      <td>22</td>
+                                      <td>23</td>
+                                      <td>24</td>
+                                      <td>25</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="item-progress">
+                                <!-- 
+                                                          [D] 주유실적 progress class 추가
+                                                          20% : type-1
+                                                          40% : type-2
+                                                          60% : type-3
+                                                          80% : type-4
+                                                          100% : type-5
+                                                      -->
+                                <p class="progress-rate type-2"><span class="blind">40%</span></p>
+                              </div>
+                            </div>
+
+                            <!-- 2021-02-18 수정 -->
+                            <div class="tooltip-area">
+                              <p class="tooltip">
+                                <strong class="is-primary-text">실적달성! </strong> 쿠폰을 받으세요.
+                                <i class="icon-emoji smiley"></i>
+                              </p>
+                            </div>
+
+                          </div>
+                          <!-- 이벤트 배너 이미지 -->
+                          <div class="item-image-area">
+                            <div class="floating-bg">
+                              <div class="main-visual-img">
+                                <span class="blind">차 이미지</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                      <!-- S: 미션 스탬프 벤트-->
+                      <a href="#" title="미션 스탬프">
+                        <div class="box-banner-area main-banner-stamp">
+                          <div class="box item-banner">
+                            <dl class="item-banner-info">
+                              <dt>미션 스탬프</dt>
+                              <dd>
+                                스탬프를 전부 모으면<br>
+                                5,000P를 적립해드립니다.
+                                <span class="date">2020-07-01 ~ 2020-10-31</span>
+                              </dd>
+                            </dl>
+                            <div class="item-banner-bt">
+                              <i class="icon-stamp is-large"></i>
+                              <span class="icon-multiply"></span>
+                              <strong class="is-family-secondary">5</strong>
+                              <span class="long-arrow"></span>
+                              <span class="gs-point blind">GS&POINT</span>
+                              <strong class="is-family-secondary">5,000P</strong>
+                            </div>
+
+                            <!-- 2021-02-18 말풍선 추가 -->
+                            <div class="tooltip-area">
+                              <p class="tooltip">
+                                <span class="is-primary-text">스탬프 항목 명</span> 스탬프 획득!
+                                <i class="icon-emoji party"></i>
+                              </p>
+                            </div>
+
+                          </div>
+                          <!-- 이벤트 배너 이미지 -->
+                          <div class="item-image-area">
+                            <div class="floating-bg">
+                              <div class="main-visual-img">
+                                <span class="blind">스탬프</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                      <!-- S: 친구 초대  -->
+                      <a href="#" title="친구 초대">
+                        <div class="box-banner-area main-banner-invite">
+                          <div class="box item-banner">
+                            <dl class="item-banner-info">
+                              <dt>친구 초대</dt>
+                              <dd>
+                                Energy plus 초대할 때마다 <br>
+                                친구도 나도 함께 할인
+                                <small class="date">2020-07-01 ~ 2020-10-31</small>
+                              </dd>
+                            </dl>
+                            <div class="item-banner-bt">
+                              <i class="icon-me is-large"></i>
+                              <i class="icon-friend is-large"></i>
+                              <span class="long-arrow"></span>
+                              <span class="icon-coupon-small type-2"><span class="blind">쿠폰</span></span>
+                              <span class="icon-coupon-small type-3"><span class="blind">쿠폰</span></span>
+                            </div>
+
+                            <!-- 2021-02-18 말풍선 추가 -->
+                            <div class="tooltip-area">
+                              <p class="tooltip">
+                                <span class="is-primary-text">친구초대</span> 쿠폰도착!
+                                <i class="icon-emoji present"></i>
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- 이벤트 배너 이미지 -->
+                          <div class="item-image-area">
+                            <div class="floating-bg">
+                              <div class="main-visual-img"><span class="blind">초대하기</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- swiper pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <!-- // 슬라이드 배너 -->
+
+              <!-- 쿠폰 -->
+              <div class="coupon-area">
+                <div class="inner">
+                  <ul class="coupon-list">
+                    <li>
+                      <a href="#" class="coupon-item">
+                        <span class="title is-5">세차할인쿠폰</span>
+                        <strong class="count">8</strong>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="coupon-item">
+                        <span class="title is-5">주유할인쿠폰</span>
+                        <strong class="count">10</strong>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- // 쿠폰 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <nav class="bottom-navbar">
+      <ul>
+        <li>
+          <a href="main.html" class="menu-home">
+            <i class="icon-home"></i>
+            <span class="menu-text">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-gas">
+            <i class="icon-gas"></i>
+            <span class="menu-text">주유소</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu-ev">
+            <i class="icon-ev"></i>
+            <span class="menu-text">EV찾기</span>
+          </a>
+        </li>
+        <li>
+          <!-- D: 클릭시 #gnb [is-active] 토글 / body [is-fixed] 토글 -->
+          <a href="#" class="menu-all">
+            <i class="icon-menu"></i>
+            <span class="menu-text">전체</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <!-- // Footer -->
+
+  <div id="gnb" class="gnb">
+    <div class="gnb-wrap">
+      <!-- gnb header -->
+      <div class="gnb-header">
+        <div class="inner">
+          <div class="level">
+            <div class="level-left">
+              <div class="info-user">
+                <!-- 로그인 전 / show, hide 클래스로 구분 -->
+                <div class="hide">
+                  <h3 class="title is-2">
+                    <strong>로그인</strong>
+                    <i class="icon-arrow-right"></i>
+                  </h3>
+                </div>
+                <!-- // 로그인 전 -->
+
+                <!-- 로그인 후 -->
+                <div class="show">
+                  <h3 class="title is-2"><strong>김태형</strong>님</h3>
+                  <!-- 2021-03-16 수정 -->
+                  <!-- GS 포인트 -->
+                  <a href="#" class="link-arrow-right">
+                    <span class="gs-point">13,123</span>
+                  </a>
+                </div>
+                <!-- // 로그인 후 -->
+              </div>
+            </div>
+
+            <!-- 로그인 후 show 클래스 추가  -->
+            <div class="level-right show">
+              <!-- 2021-03-16 추가 알림 -->
+              <div class="notification-area">
+                <a href="#" class="icon-notification blind">알림</a>
+                <!-- D: 새로운 알림 발생 시 표기 -->
+                <span class="badge blind">new</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- quick menu -->
+          <div class="gnb-quick-area">
+            <ul class="columns">
+              <li class="column">
+                <a href="#" class="gnb-quick-item">
+                  <div class="gnb-quick-icon">
+                    <i class="icon-card is-large"></i>
+                  </div>
+                  <div class="gnb-quick-txt">
+                    <span>바로주유</span>
+                    <!-- 2020/12/28 수정 - 바로주유 건수 표현 삭제 -->
+                    <!-- <strong class="count">3</strong> -->
+                  </div>
+                </a>
+              </li>
+              <li class="column">
+                <a href="#" class="gnb-quick-item">
+                  <div class="gnb-quick-icon">
+                    <i class="icon-gas-receipt is-large"></i>
+                  </div>
+                  <div class="gnb-quick-txt">
+                    <span>주유내역</span>
+                  </div>
+                </a>
+              </li>
+              <li class="column">
+                <a href="#" class="gnb-quick-item">
+                  <div class="gnb-quick-icon">
+                    <i class="icon-coupon is-large"></i>
+                  </div>
+                  <div class="gnb-quick-txt">
+                    <span>쿠폰</span>
+                    <strong class="count">3</strong>
+                  </div>
+                </a>
+              </li>
+              <li class="column">
+                <a href="#" class="gnb-quick-item">
+                  <div class="gnb-quick-icon">
+                    <i class="icon-like is-large"></i>
+                  </div>
+                  <div class="gnb-quick-txt">
+                    <span>단골주유소</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="notice-area">
+          <div class="inner">
+            <span class="is-vertical-bar">알림</span>
+            <a href="#" class="notice-cont">
+              GS칼텍스에서 알립니다. 최근 코로나 격상이 최근 코로나 격상이
+              <i class="icon-new-dot"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- gnb body -->
+      <div class="gnb-body">
+        <div class="inner">
+          <nav class="gnb-menu">
+            <ul>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span class="gs-point"><span class="blind">GS&POINT</span> 카드</span>
+                  <strong class="count">3</strong>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span class="gs-point"><span class="blind">GS&POINT</span> 적립/사용</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>결제카드</span>
+                  <strong class="count">3</strong>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <!--2020/12/29 수정 -->
+                  <span>결제 비밀번호 설정</span>
+                </a>
+              </li>
+              <!-- 구분선 divider -->
+              <li class="break">
+                <hr class="divider" />
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>주유소찾기</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>세차장찾기</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>EV충전소 찾기</span>
+                </a>
+              </li>
+
+              <!--2021-03-16 추가 -->
+              <!-- 구분선 divider -->
+              <li class="break">
+                <hr class="divider" />
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>상품목록</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>상품 구매 내역</span>
+                </a>
+              </li>
+
+              <!-- 구분선 divider -->
+              <li class="break">
+                <hr class="divider" />
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>이벤트</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>1:1문의</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>공지사항</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <!-- is-family-secondary클래스 추가 -->
+                  <span class="is-family-secondary">FAQ</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>개인정보처리방침</span>
+                </a>
+              </li>
+              <!-- 2020/12/28 수정 - 설정 추가 -->
+              <li>
+                <a href="#" class="gnb-item">
+                  <span>설정</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <button class="button is-outline is-small">로그아웃</button>
+            <button class="button is-outline is-small">회원탈퇴</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2020-04-06 새로 고침 추가 -->
+  <!-- D: bottom에 위치할 경우 [is-bottom] 클래스 추가 -->
+  <div class="reload-overlay">
+    <div class="reloader">
+      <i class="icon-loading-dot">
+        <span class="blind">새로고침</span>
+      </i>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    // 바로주유 카드 Swiper
+    var swiper = new Swiper(".main-card-slider > .swiper-container", {
+      slidesPerView: "auto",
+      centeredSlides: false,
+      spaceBetween: 16,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    // 슬라이드 배너 Swiper
+    var swiper = new Swiper(".main-banner-slider > .swiper-container", {
+      spaceBetween: 24,
+      // loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    });
+
+    /*
+     * 바로주유 가격 설정 드롭다운 메뉴
+     * 클릭시 price에 is-active 클래스 토글 / layer-dropdown-area에 is-active 클래스 토글
+     */
+    const priceItem = document.querySelectorAll(".price");
+    const dropdown = document.querySelector(".layer-dropdown-area");
+    priceItem.forEach((priceItem) => {
+      priceItem.addEventListener("click", (event) => {
+        const currentlyPriceItem = document.querySelector(".price.is-active");
+        if (currentlyPriceItem && currentlyPriceItem != priceItem) {
+          currentlyPriceItem.classList.remove("is-active");
+        }
+        priceItem.classList.toggle("is-active");
+        dropdown.classList.toggle("is-active");
+      });
+    });
+  </script>
+</body>
+
+</html>

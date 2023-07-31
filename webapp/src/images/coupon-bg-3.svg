@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="388" height="140" viewBox="0 0 388 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#빼기_99);
+      }
+    </style>
+    <filter id="빼기_99" x="0" y="0" width="388" height="140" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#5d5d5d" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="빼기_99-2" data-name="빼기 99" class="cls-1" d="M320,83H267.167A10.006,10.006,0,0,0,259,77.05V68.874a4,4,0,0,0,0-7.748V53.874a4,4,0,0,0,0-7.747V37.874a4,4,0,0,0,0-7.748V22.874a4,4,0,0,0,0-7.748V7.951A10.02,10.02,0,0,0,266.663,3H320a8.009,8.009,0,0,1,8,8V75A8.009,8.009,0,0,1,320,83Zm-71.169,0H8a8.009,8.009,0,0,1-8-8V11A8.009,8.009,0,0,1,8,3H249.338A10.02,10.02,0,0,0,257,7.951v7.176a4,4,0,0,0,0,7.748v7.251a4,4,0,0,0,0,7.748v8.253a4,4,0,0,0,0,7.747v7.252a4,4,0,0,0,0,7.748V77.05A10.006,10.006,0,0,0,248.832,83Z" transform="translate(30 27)"/>
+  </g>
+</svg>

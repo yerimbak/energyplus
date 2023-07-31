@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+  <div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3">1:1문의</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+      <!-- Contents -->
+      <div id="contents" class="container">
+        <div class="inner">
+          <!-- CS area -->
+          <div class="cs-area">
+            <div class="title-area">
+              <h3 class="title is-3">
+                1:1문의를 남겨주시면<br>
+                <strong>2일 내 답변</strong>드립니다.
+              </h3>
+              <p class="sub-desc">
+                공휴일 제외/ 문의내용에 따라
+                답변이 지연될 수 있습니다.
+              </p>
+            </div>
+
+            <!-- CS center -->
+            <div class="cs-center level">
+              <div class="level-left">
+                <i class="icon-phone"></i>
+              </div>
+              <div class="level-right">
+                <div>
+                  <span class="title is-4">고객센터</span>
+                  <span class="sub-desc">(유료)</span>
+                  <a href="tel:1544-5151" class="tel">1544-5151</a>
+                </div>
+                <div class="sub-desc">
+                  평일 <time class="is-family-secondary">09:00 - 18:00</time> 주말,공휴일 휴무
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2021-02-23 구조 수정 -->
+          <!-- tab area -->
+          <div class="tab-area b-tabs">
+            <!-- tabs -->
+            <!-- 2021-02-23 수정 (inner 클래스 삭제 )-->
+            <nav class="tabs">
+              <ul>
+                <!-- 탭 활성화 : is-active 클래스 추가 -->
+                <li class="is-active">
+                  <a href="#">
+                    <span>문의 접수</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>문의 내역</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- tab-content -->
+          <section class="tab-content">
+
+            <!-- 문의 접수 -->
+            <div class="tab-item show">
+              <!-- 2022.05.23 개인정보수집 동의박스 추가 -->
+              <div class="inquery-agreement">
+                <div class="agreement-box">
+                  <h2 class="title is-3">개인정보 수집 및 이용 동의</h2>
+                  <ul>
+                    <li>
+                      <p>개인정보의 수집, 이용목적</p>
+                      <span>이메일 문의 답변 서비스의 이행</span>
+                    </li>
+                    <li>
+                      <p>수집하는 개인정보의 항목</p>
+                      <span>이름, 전화번호, 이메일</span>
+                    </li>
+                    <li>
+                      <p>개인정보의 보유 및 이용기간</p>
+                      <span>소비자 불만 또는 분쟁처리에 관한 기록 보존을 위해</br>3년간 문의 정보를 보유함</span>
+                    </li>
+                  </ul>
+                  <div class="level-left">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <i></i>
+                      <span>개인정보 수집 및 이용에 동의합니다.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!--2021-02-23 수정 -->
+              <!-- form -->
+              <div class="form-grid">
+
+                <!-- 문의유형 -->
+                <div class="field">
+                  <label class="label">문의유형<span class="necessary">(필수)</span></label>
+                  <div class="control">
+                    <div class="select is-fullwidth ">
+                      <select>
+                        <option>결제</option>
+                        <option>결제</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 이메일 -->
+                <div class="field">
+                  <!-- 2020/12/14 수정 -->
+                  <label class="label">이메일<span class="necessary">(필수)</span></label>
+                  <div class="control">
+                    <div class="control is-clearfix">
+                      <input type="text" autocomplete="off" placeholder="텍스트 입력" class="input input-email">
+                    </div>
+                    <div class="dropdown-menu is-opened-bottom">
+                      <div class="dropdown-content">
+                        <a class="dropdown-item"><span> tes<span class="is-blue-text">@naver.com</span></span></a>
+                        <a class="dropdown-item"><span> tes<span class="is-blue-text">@gmail.com</span> </span></a>
+                        <a class="dropdown-item"><span> tes<span class="is-blue-text">@hanmail.net</span></span></a>
+                        <a class="dropdown-item"><span> tes<span class="is-blue-text">@nate.com</span></span></a>
+                        <a class="dropdown-item"><span> tes<span class="is-blue-text">@daum.net</span></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2021-04-05 추가 -->
+                <!-- 휴대폰번호 -->
+                <div class="field">
+                  <label class="label">휴대폰번호</label>
+                  <div class="control is-clearfix">
+                    <input type="tel" class="input" placeholder="000-000-0000">
+                    <!-- 오류시 출력 -->
+                    <p class="help">휴대폰번호 형식에 맞게 입력하여 주십시오.</p>
+                  </div>
+                </div>
+
+                <!-- 제목 -->
+                <div class="field">
+                  <!-- 2020/12/14 수정 -->
+                  <label class="label">제목<span class="necessary">(필수)</span></label>
+                  <div class="control is-clearfix">
+                    <input type="text" class="input" placeholder="제목 입력">
+                    <!-- 오류시 출력 -->
+                    <p class="help">제목을 입력해 주십시오</p>
+                  </div>
+                </div>
+
+                <!-- 내용 -->
+                <div class="field">
+                  <div class="level">
+                    <div class="level-left">
+                      <!-- 2020/12/14 수정 -->
+                      <label class="label">내용<span class="necessary">(필수)</span></label>
+                    </div>
+                    <div class="level-right">
+                      <!--2021-04-05 입력 가능 문자 byte -> 글자수로 수정 -->
+                      <small class="counter">(<em class="is-primary-color">0</em>/4,000자)</small>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <textarea maxlength="200" class="textarea" placeholder="내용을 입력하여 주십시오."></textarea>
+                    <!-- 오류시 출력 -->
+                    <p class="help">내용을 입력해 주십시오</p>
+                  </div>
+                </div>
+
+                <!-- 파일첨부 -->
+                <!-- 2021-03-31 [id="file-upload"] 추가 -->
+                <div class="field" id="file-upload">
+                  <label class="label">파일첨부</label>
+                  <!-- 2021-03-31 [control] 추가 -->
+                  <div class="file control">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="file">
+                      <!-- 2021-03-31 D: 파일등록시 [has-name] add -->
+                      <span class="file-name">3MB미만 이미지(gif,jpg,bmp,png)</span>
+                    </label>
+                    <!-- 2021-03-31 D: 파일선택시 삭제 버튼 출력 ( removeclass:hide / addclass:show ) -->
+                    <button class="btn-del hide">
+                      <span class="blind">삭제</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- buttons -->
+                <div class="buttons">
+                  <button class="button is-fullwidth is-dark">문의접수</button>
+                </div>
+              </div>
+            </div>
+            <!-- // 문의 접수 -->
+
+            <!-- 문의 내역 -->
+            <div class="tab-item hide">
+              <!--2021-02-23 수정 -->
+              <h3 class="title is-3">나의 상담 현황</h3>
+              <div class="border-box">
+                <dl class="inline-list">
+                  <dt>답변완료</dt>
+                  <dd><strong class="is-primary-text is-family-secondary">1</strong>건</dd>
+                  <dt>답변대기</dt>
+                  <dd><strong class="is-blue-text is-family-secondary">2</strong>건</dd>
+                </dl>
+              </div>
+              <div class="board-grid">
+                <div class="board-body">
+                  <ul class="board-list board-consulting">
+                    @@for (var i = 0; i < 5; i++) { <li class="board-item">
+                      <dl>
+                        <!-- 읽었을 경우 read 클래스 추가-->
+                        <dt class="board-item-title">
+                          <a href="#">
+                            <div class="title-info">
+                              <time class="is-family-secondary">2020.10.30 15:20</time>
+                              <span class="before-vertical-bar is-primary-text">답변완료</span>
+                            </div>
+                            <div class="title">
+                              자동취소건으로 문의드립니다.
+                              <i class="icon-new">n</i>
+                            </div>
+                            <i class="icon-arrow-down"><span class="blind">펼쳐보기</span></i>
+                          </a>
+                        </dt>
+                        <dd>
+                          <div class="board-item-content">
+                            <article>
+                              간편하게 결제되서 편하네요! 간편하게 결제되서 편하네요! 간편하게 결제되서 편하네요! <br>
+                              그런데 사정 상 오늘 주유를 못하게 될 것 같은데 어떻게 되나요? 자동으로 취소되는 건가요?<br>
+                            </article>
+                          </div>
+                        </dd>
+                      </dl>
+                      </li>
+                      }
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- // 문의 내역 -->
+          </section>
+        </div>
+      </div>
+      <!-- // Contents -->
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </div>
+  <script>
+    /* 
+     * 2021-03-31 추가 
+     * 등록 후 파일명 및 파일 삭제 버튼 출력
+     * file-name : [has-name] add
+     * btn-del : [hide] remove, [show] add
+     */
+    const fileUpload = document.querySelector('#file-upload');
+    const fileInput = fileUpload.querySelector('input[type=file]');
+    const btnDel = fileUpload.querySelector('.btn-del');
+    fileInput.onchange = () => {
+      if (fileInput.files.length > 0) {
+        const fileName = document.querySelector('#file-upload .file-name');
+        fileName.textContent = fileInput.files[0].name;
+        fileName.classList.add('has-name');
+        btnDel.classList.remove('hide');
+        btnDel.classList.add('show');
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#0f1f2e;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Ic_Search_24" transform="translate(-119 -756)">
+        <g id="search_icon" transform="translate(121.5 758.476)">
+            <path id="Path_1" d="M15.706 9.415a6.29 6.29 0 1 1-6.29-6.29 6.29 6.29 0 0 1 6.29 6.29z" class="cls-2" transform="translate(-3.125 -3.125)"/>
+            <path id="Path_2" d="M20.764 20.764l-3.42-3.42" class="cls-2" transform="translate(-6.611 -6.611)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container mk-roulette-event-wrap">
+      <!-- intro -->
+      <section class="mk-roulette-section">
+        <div class="inner mk-roulette-inner">
+          <div class="mk-roulette-imgbox">
+            <img class="mk-roulette-intro" src="./images/mk-roulette-intro.png" alt="이벤트 intro" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mk-roulette-section">
+        <div class="inner mk-roulette-inner">
+          <div class="mk-roulette-imgbox">
+            <img class="mk-roulette-event" src="./images/mk-roulette-event1.png" alt="이벤트1" />
+            <a href="javascript:vold(0);" class="mk-roulette-coupon-btn"><img src="./images/mk-roulette-coupon-btn.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mk-roulette-section">
+        <div class="inner mk-roulette-inner">
+          <div class="mk-roulette-imgbox">
+            <img class="mk-roulette-body" src="./images/mk-roulette-body.png" alt="roulette-body">
+            <img class="mk-roulette-event" src="./images/mk-roulette-event2.png" alt="이벤트2" />
+            <img class="mk-roulette-bg" src="./images/mk-roulette-bg.png" alt="이벤트2-bg" />
+            <img class="mk-roulette-plate" src="./images/mk-roulette-plate.png" alt="roulette-plate">
+            <div class="mk-roulette-btn">
+              <span class="blind">룰렛 스타트 버튼</span>
+            </div>
+            <img class="mk-roulette-pin" src="./images/mk-roulette-pin.png" alt="roulette-pin">
+          </div>
+        </div>
+      </section>
+
+      <section class="mk-roulette-section">
+        <div class="inner mk-roulette-inner">
+          <div class="mk-roulette-imgbox">
+            <img class="mk-roulette-info" src="./images/mk-roulette-info.png" alt="이벤트 info" />
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- // Contents -->
+  </div>
+
+    <!-- bottom 팝업 -->
+    @@include('./include/bottom-sheet-event-mk-roulette-popup3.html')
+
+</body>
+
+  <!--확인 버튼 클릭 시 팝업 닫힘 -->
+  <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script>
+    $(function () {
+        $('.popup-close').on('click', function () {
+            $('.modal').removeClass('is-active');
+        });
+    });
+  </script>
+</html>

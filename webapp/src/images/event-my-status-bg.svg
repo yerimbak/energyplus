@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216" height="46" viewBox="0 0 216 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0f1f2e;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="state" transform="translate(1 1)">
+    <rect id="사각형_5856" data-name="사각형 5856" class="cls-1" width="214" height="44" rx="8"/>
+    <path id="합치기_157" data-name="합치기 157" class="cls-2" d="M200.185,32.2a1.25,1.25,0,1,1,1.25,1.25A1.25,1.25,0,0,1,200.185,32.2Zm-199,0a1.25,1.25,0,1,1,1.25,1.25A1.25,1.25,0,0,1,1.185,32.2Zm199-30a1.25,1.25,0,1,1,1.25,1.25A1.25,1.25,0,0,1,200.185,2.2Zm-199,0a1.25,1.25,0,1,1,1.25,1.25A1.25,1.25,0,0,1,1.185,2.2Z" transform="translate(4.815 5.047)"/>
+  </g>
+</svg>

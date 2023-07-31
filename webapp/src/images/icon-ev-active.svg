@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon-ev" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_4669" fill="#222" stroke="#0f1f2e" d="M0 0H24V24H0z" transform="translate(221 753)"/>
+        </clipPath>
+        <style>
+            .cls-5{fill:#222}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="icon-ev-2" clip-path="url(#clip-path)" transform="translate(-221 -753)">
+        <g id="ev2" transform="rotate(45 176.924 872.082)">
+            <g id="합치기_59" fill="none">
+                <path d="M2.189 8.93V6.566H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h15.7a2 2 0 0 1 2 2v2.566a2 2 0 0 1-2 2h-.188V8.93a7.659 7.659 0 0 1-15.319 0z" class="cls-6" transform="translate(131 750.784)"/>
+                <path fill="#0f1f2e" d="M9.848 14.589c3.12 0 5.66-2.539 5.66-5.66V4.567h2.188V2H2v2.565h2.189V8.93c0 3.12 2.538 5.659 5.659 5.659m0 2c-4.23 0-7.66-3.43-7.66-7.66V6.567H2c-1.104 0-2-.895-2-2V2C0 .896.896 0 2 0h15.696c1.104 0 2 .895 2 2v2.565c0 1.105-.896 2-2 2h-.188V8.93c0 4.23-3.43 7.659-7.66 7.659z" transform="translate(131 750.784)"/>
+            </g>
+            <g id="사각형_4602" fill="#222" stroke="#0f1f2e" stroke-width="2px" transform="rotate(90 -311.909 453.851)">
+                <rect width="5.471" height="2.188" class="cls-6" rx="1"/>
+                <path fill="none" d="M1 1H4.471V1.188H1z"/>
+            </g>
+            <rect id="사각형_4629" width="2.188" height="6.565" class="cls-5" rx="1.094" transform="translate(136.471 745)"/>
+            <rect id="사각형_4630" width="2.188" height="6.565" class="cls-5" rx="1.094" transform="translate(143.036 745)"/>
+        </g>
+    </g>
+</svg>

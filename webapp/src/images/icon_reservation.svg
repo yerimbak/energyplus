@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #3ddb87;
+      }
+
+      .cls-3 {
+        fill: #3ddb87;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="icon_reservation" transform="translate(-286 -66)">
+    <rect id="Box" class="cls-1" width="20" height="20" transform="translate(286 66)"/>
+    <g id="Shape" transform="translate(107.5 6.928)">
+      <circle id="타원_2086" data-name="타원 2086" class="cls-2" cx="8" cy="8" r="8" transform="translate(180.5 61.072)"/>
+      <circle id="타원_1402" data-name="타원 1402" class="cls-3" cx="6" cy="6" r="6" transform="translate(182.5 63.072)"/>
+      <path id="패스_8973" data-name="패스 8973" class="cls-4" d="M8,0A8,8,0,1,1,0,8" transform="translate(196.5 77) rotate(180)"/>
+      <path id="패스_8974" data-name="패스 8974" class="cls-5" d="M.626-1.878a.5.5,0,0,1,.5.5v3.5a.5.5,0,1,1-1,0v-3.5A.5.5,0,0,1,.626-1.878Z" transform="translate(187.873 67.77)"/>
+      <path id="패스_12811" data-name="패스 12811" class="cls-5" d="M.5-2a.469.469,0,0,1,.5.43V1.439a.469.469,0,0,1-.5.43.469.469,0,0,1-.5-.43V-1.57A.469.469,0,0,1,.5-2Z" transform="translate(187 69.392) rotate(90)"/>
+    </g>
+  </g>
+</svg>

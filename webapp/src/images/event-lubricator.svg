@@ -1,0 +1,59 @@
+<svg id="주유기" xmlns="http://www.w3.org/2000/svg" width="45.348" height="66.564" viewBox="0 0 45.348 66.564">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #64a281;
+      }
+
+      .cls-2 {
+        fill: #29fe94;
+      }
+
+      .cls-3 {
+        fill: #219d5b;
+      }
+
+      .cls-4 {
+        fill: #eefaff;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #1a3c5c;
+      }
+
+      .cls-7 {
+        fill: #3ddb87;
+      }
+    </style>
+  </defs>
+  <g id="그룹_15541" data-name="그룹 15541" transform="translate(6.264)">
+    <rect id="사각형_5272" data-name="사각형 5272" class="cls-1" width="1.875" height="11.544" transform="translate(24.898 8.781)"/>
+    <rect id="사각형_5273" data-name="사각형 5273" class="cls-1" width="1.875" height="11.544" transform="translate(20.876 8.781)"/>
+    <rect id="사각형_5274" data-name="사각형 5274" class="cls-1" width="1.875" height="11.544" transform="translate(16.854 8.781)"/>
+    <rect id="사각형_5308" data-name="사각형 5308" class="cls-2" width="28.612" height="9.198" transform="translate(10.472)"/>
+    <rect id="사각형_5309" data-name="사각형 5309" class="cls-2" width="28.612" height="48.42" transform="translate(10.472 15.626)"/>
+    <rect id="사각형_5310" data-name="사각형 5310" class="cls-3" width="10.472" height="9.198" transform="translate(0)"/>
+    <rect id="사각형_5311" data-name="사각형 5311" class="cls-3" width="10.472" height="48.42" transform="translate(0 15.626)"/>
+    <rect id="사각형_5312" data-name="사각형 5312" class="cls-4" width="20.235" height="15.64" transform="translate(14.661 24.522)"/>
+    <rect id="사각형_5313" data-name="사각형 5313" class="cls-1" width="2.11" height="6.429" transform="translate(34.896 9.198)"/>
+    <rect id="사각형_5314" data-name="사각형 5314" class="cls-1" width="2.11" height="6.429" transform="translate(2.368 9.198)"/>
+  </g>
+  <g id="그룹_15544" data-name="그룹 15544" transform="translate(0 16.221)">
+    <g id="그룹_15543" data-name="그룹 15543" transform="translate(0 0)">
+      <g id="그룹_15542" data-name="그룹 15542" transform="translate(3.38)">
+        <path id="패스_9219" data-name="패스 9219" class="cls-5" d="M656.311,381.368h-1.663c0-5.952,3.8-10.794,8.463-10.794v1.662C659.361,372.236,656.311,376.332,656.311,381.368Z" transform="translate(-654.648 -370.574)"/>
+      </g>
+      <rect id="사각형_5339" data-name="사각형 5339" class="cls-5" width="8.518" height="2.863" transform="translate(0 9.686)"/>
+      <path id="패스_9220" data-name="패스 9220" class="cls-5" d="M655.156,387.205l1.6.452Z" transform="translate(-651.526 -379.017)"/>
+      <path id="패스_9221" data-name="패스 9221" class="cls-5" d="M657.8,379.859l1.429.825Z" transform="translate(-652.869 -375.287)"/>
+      <path id="패스_9222" data-name="패스 9222" class="cls-5" d="M663.242,373.517l.907,1.381Z" transform="translate(-655.631 -372.068)"/>
+    </g>
+    <path id="패스_9223" data-name="패스 9223" class="cls-6" d="M662.251,404.271a1.142,1.142,0,0,0-1.142,1.142c0,.014,0,.026,0,.04h0v17.883a2.486,2.486,0,1,1-4.972,0l.02-19.64V396.06H653.85V403.7c-.006.2.005,19.64.005,19.64a4.767,4.767,0,1,0,9.534,0V405.373A1.141,1.141,0,0,0,662.251,404.271Z" transform="translate(-650.862 -383.512)"/>
+  </g>
+  <path id="다각형_61" data-name="다각형 61" class="cls-7" d="M7,0l7,11H0Z" transform="translate(30.894 55.564)"/>
+  <path id="다각형_62" data-name="다각형 62" class="cls-7" d="M5.5,0,11,11H0Z" transform="translate(23.894 55.564)"/>
+</svg>

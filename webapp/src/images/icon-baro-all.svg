@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134.105" height="19" viewBox="0 0 134.105 19">
+  <defs>
+    <style>
+      .cls-1, .cls-13 {
+        fill: none;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #c9cdd0;
+      }
+
+      .cls-10, .cls-3, .cls-4, .cls-7, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: #c9cdd0;
+      }
+
+      .cls-6, .cls-8 {
+        fill: #a6acb2;
+      }
+
+      .cls-7 {
+        font-size: 9px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-10, .cls-9 {
+        stroke: #fff;
+      }
+
+      .cls-10 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-11, .cls-12 {
+        stroke: none;
+      }
+
+      .cls-12 {
+        fill: #fff;
+      }
+
+      .cls-13 {
+        clip-path: url(#clip);
+      }
+    </style>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+  </defs>
+  <g id="plus" transform="translate(-86.493 -602.052)">
+    <g id="_2_2" data-name="2_2" transform="translate(63.548 195.459)">
+      <rect id="사각형_4155" data-name="사각형 4155" class="cls-2" width="23.142" height="16" rx="2" transform="translate(78 408.5)"/>
+      <rect id="사각형_4156" data-name="사각형 4156" class="cls-3" width="23.142" height="1.919" transform="translate(78 412.202)"/>
+      <g id="타원_1321" data-name="타원 1321" class="cls-4" transform="translate(83.926 417.241)">
+        <ellipse class="cls-11" cx="2.822" cy="2.822" rx="2.822" ry="2.822"/>
+        <ellipse class="cls-1" cx="2.822" cy="2.822" rx="2.322" ry="2.322"/>
+      </g>
+      <g id="타원_1320" data-name="타원 1320" class="cls-4" transform="translate(79.647 417.328)">
+        <ellipse class="cls-11" cx="2.735" cy="2.735" rx="2.735" ry="2.735"/>
+        <ellipse class="cls-1" cx="2.735" cy="2.735" rx="2.235" ry="2.235"/>
+      </g>
+    </g>
+    <g id="_2_3" data-name="2_3" transform="translate(-156.239 194.763)">
+      <g id="합치기_170" data-name="합치기 170" class="cls-5" transform="translate(357.837 407.289)">
+        <path class="cls-11" d="M 9.5 18.5 C 4.537380218505859 18.5 0.5 14.46261978149414 0.5 9.5 C 0.5 4.537380218505859 4.537380218505859 0.5 9.5 0.5 C 14.46261978149414 0.5 18.5 4.537380218505859 18.5 9.5 C 18.5 14.46261978149414 14.46261978149414 18.5 9.5 18.5 Z"/>
+        <path class="cls-12" d="M 9.5 1 C 4.813079833984375 1 1 4.813079833984375 1 9.5 C 1 14.18692016601562 4.813079833984375 18 9.5 18 C 14.18692016601562 18 18 14.18692016601562 18 9.5 C 18 4.813079833984375 14.18692016601562 1 9.5 1 M 9.5 0 C 14.7467098236084 0 19 4.253299713134766 19 9.5 C 19 14.74670028686523 14.7467098236084 19 9.5 19 C 4.253299713134766 19 0 14.74670028686523 0 9.5 C 0 4.253299713134766 4.253299713134766 0 9.5 0 Z"/>
+      </g>
+      <g id="패스_12924" data-name="패스 12924" class="cls-6" transform="translate(347.94 407.289)">
+        <path class="cls-11" d="M 9.5 18.25 C 4.675230026245117 18.25 0.75 14.32476997375488 0.75 9.5 C 0.75 4.675230026245117 4.675230026245117 0.75 9.5 0.75 C 14.32476997375488 0.75 18.25 4.675230026245117 18.25 9.5 C 18.25 14.32476997375488 14.32476997375488 18.25 9.5 18.25 Z"/>
+        <path class="cls-12" d="M 9.5 1.5 C 5.088789939880371 1.5 1.5 5.088789939880371 1.5 9.5 C 1.5 13.91121006011963 5.088789939880371 17.5 9.5 17.5 C 13.91121006011963 17.5 17.5 13.91121006011963 17.5 9.5 C 17.5 5.088789939880371 13.91121006011963 1.5 9.5 1.5 M 9.5 0 C 14.74670028686523 0 19 4.253290176391602 19 9.5 C 19 14.74670028686523 14.74670028686523 19 9.5 19 C 4.253290176391602 19 0 14.74670028686523 0 9.5 C 0 4.253290176391602 4.253290176391602 0 9.5 0 Z"/>
+      </g>
+      <text id="P" class="cls-7" transform="translate(357.837 419.942)"><tspan x="-3.294" y="0">P</tspan></text>
+    </g>
+    <g id="plus-2" data-name="plus" transform="translate(-137.984 5)">
+      <rect id="사각형_5979" data-name="사각형 5979" class="cls-8" width="10" height="2" rx="1" transform="translate(261 605)"/>
+      <rect id="사각형_5980" data-name="사각형 5980" class="cls-8" width="10" height="2" rx="1" transform="translate(267 601) rotate(90)"/>
+    </g>
+    <g id="plus-3" data-name="plus" transform="translate(-86.171 5)">
+      <rect id="사각형_5979-2" data-name="사각형 5979" class="cls-8" width="10" height="2" rx="1" transform="translate(261 605)"/>
+      <rect id="사각형_5980-2" data-name="사각형 5980" class="cls-8" width="10" height="2" rx="1" transform="translate(267 601) rotate(90)"/>
+    </g>
+    <g id="_2_1" data-name="2_1" transform="translate(-143.506 7.623)">
+      <path id="빼기_163" data-name="빼기 163" class="cls-8" d="M17.123,16.753H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H17.123a2.8,2.8,0,0,0,2.419,1.4A2.8,2.8,0,0,0,21.961,0h3.028a2,2,0,0,1,2,2V14.753a2,2,0,0,1-2,2H21.961a2.793,2.793,0,0,0-4.837,0Zm2.49-5.428a1,1,0,1,0,1,1A1,1,0,0,0,19.614,11.325Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,19.614,7.325Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,19.614,3.325Z" transform="translate(230 595)"/>
+      <g id="타원_2150" data-name="타원 2150" class="cls-9" transform="translate(235.274 598.622) rotate(45)">
+        <circle class="cls-11" cx="1.396" cy="1.396" r="1.396"/>
+        <circle class="cls-1" cx="1.396" cy="1.396" r="0.896"/>
+      </g>
+      <g id="사각형_6378" data-name="사각형 6378" class="cls-10" transform="translate(240.523 599.921) rotate(45)">
+        <rect id="fill" class="cls-11" width="1.396" height="8.376" rx="0.698"/>
+        <path class="cls-13" d="M0,0.75h1.3960367441177368M0.75,0v8.376220703125M1.3960367441177368,7.626220703125h-1.3960367441177368M0.6460367441177368,8.376220703125v-8.376220703125"/>
+      </g>
+      <g id="타원_2151" data-name="타원 2151" class="cls-9" transform="translate(240.835 604.182) rotate(45)">
+        <circle class="cls-11" cx="1.396" cy="1.396" r="1.396"/>
+        <circle class="cls-1" cx="1.396" cy="1.396" r="0.896"/>
+      </g>
+    </g>
+  </g>
+</svg>

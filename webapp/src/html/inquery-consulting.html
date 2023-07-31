@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">1:1문의</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner">
+                    <!-- CS area -->
+                    <div class="cs-area">
+                        <div class="title-area">
+                            <h3 class="title is-3">
+                                1:1문의를 남겨주시면<br>
+                                <strong>2일 내 답변</strong>드립니다.
+                            </h3>
+                            <p class="sub-desc">
+                                공휴일 제외/ 문의내용에 따라 
+                                답변이 지연될 수 있습니다.
+                            </p>
+                        </div>
+
+                        <!-- CS center -->
+                        <div class="cs-center level">
+                            <div class="level-left">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="level-right">
+                                <div>
+                                    <span class="title is-4">고객센터</span>
+                                    <span class="sub-desc">(유료)</span>
+                                    <a href="tel:1544-5151" class="tel">1544-5151</a>
+                                </div>
+                                <div class="sub-desc">
+                                    평일 <time class="is-family-secondary">09:00 - 18:00</time> 주말,공휴일 휴무
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2021-02-23 구조 수정 -->
+                    <!-- tab area -->
+                    <div class="tab-area b-tabs">
+                        <!-- tabs -->
+                        <!-- 2021-02-23 수정 - inner 클래스 제거 -->
+                        <nav class="tabs">
+                            <ul>
+                                <li> 
+                                    <a>
+                                        <span>문의 접수</span>
+                                    </a>
+                                </li>
+                                <!-- 활성화 탭에 is-active 클래스 추가 -->
+                                <li class="is-active"> 
+                                    <a>
+                                        <span>문의 내역</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <!-- tab-content -->
+                    <div class="tab-content">
+    
+                        <!-- 문의 접수 -->
+                        <div class="tab-item" style="display: none;">
+                            <!-- 2021-02-23 수정 - inner 클래스 제거 -->
+                            <!-- <div class="inner"> -->
+                            <!-- form -->
+                            <div class="form-grid">
+
+                                <!-- 문의유형 -->
+                                <div class="field">
+                                    <label class="label necessary">문의유형</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth ">
+                                            <select>
+                                                <option>결제</option>
+                                                <option>결제</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 이메일 -->
+                                <div class="field">
+                                    <label class="label necessary">이메일</label>
+                                    <div class="control">
+                                        <div class="control is-clearfix">
+                                            <input type="text" autocomplete="off" placeholder="텍스트 입력" class="input input-email">
+                                        </div>
+                                        <div class="dropdown-menu is-opened-bottom">
+                                            <div class="dropdown-content">
+                                                <a class="dropdown-item"><span> tes<span class="is-blue-text">@naver.com</span></span></a>
+                                                <a class="dropdown-item"><span> tes<span class="is-blue-text">@gmail.com</span> </span></a>
+                                                <a class="dropdown-item"><span> tes<span class="is-blue-text">@hanmail.net</span></span></a>
+                                                <a class="dropdown-item"><span> tes<span class="is-blue-text">@nate.com</span></span></a>
+                                                <a class="dropdown-item"><span> tes<span class="is-blue-text">@daum.net</span></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 제목 -->
+                                <div class="field">
+                                    <label class="label necessary">제목</label>
+                                    <div class="control is-clearfix">
+                                        <input type="text" class="input" placeholder="제목 입력">
+                                        <button class="btn-del"><span class="blind">지우기</span></button>
+                                        <!-- 오류시 출력됨 -->
+                                        <p class="help">제목을 입력해 주십시오</p>
+                                    </div>
+                                </div>
+
+                                <!-- 내용 -->
+                                <div class="field">
+                                    <div class="level-item">
+                                        <div class="level-left">
+                                            <label class="label necessary">내용</label>
+                                        </div>
+                                        <div class="level-right">
+                                            <small class="counter">(<em class="is-primary-color">0</em>/2000 Byte) </small>
+                                        </div>
+                                    </div>
+                                    <div class="control">
+                                        <textarea maxlength="200" class="textarea" placeholder="내용을 입력하여 주십시오."></textarea>
+                                        <!-- 오류시 출력됨 -->
+                                        <p class="help">내용을 입력해 주십시오</p>
+                                    </div>
+                                </div>
+
+                                <!-- 파일첨부 -->
+                                <div class="field">
+                                    <label class="label">파일첨부</label>
+                                    <div class="file">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file" name="file">
+                                            <span class="file-name">3MB미만 이미지(gif,jpg,bmp,png)</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- buttons -->
+                                <div class="buttons">
+                                    <button class="button is-fullwidth is-dark">문의접수</button>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- // 문의 접수 -->
+    
+                        <!-- 문의 내역 -->
+                        <div class="tab-item">
+                            <!-- 2021-02-23 수정 - inner 클래스 제거 -->
+                            <!-- <div class="inner"> -->
+                                <h3 class="title is-3">나의 상담 현황</h3>
+                                <div class="border-box">
+                                    <dl class="inline-list">
+                                        <dt>답변완료</dt>
+                                        <dd><strong class="is-primary-text is-family-secondary">1</strong>건</dd>
+                                        <dt>답변대기</dt>
+                                        <dd><strong class="is-blue-text is-family-secondary">2</strong>건</dd>
+                                    </dl>
+                                </div>
+                            <!-- </div> -->
+    
+                            <!-- 문의 리스트 -->
+                            <!-- 2021-02-23 수정 - type-2 클래스 추가 -->
+                            <div class="board-grid type-2">
+                                <!-- 2020/12/14 클래스 수정 - accordion-container 추가-->
+                                <div class="board-body accordion-container">
+                                    <ul class="board-list">
+                                        @@for (var i = 0; i < 2; i++) {
+                                        <!-- 2020/12/14 클래스 수정 - ac 추가-->
+                                        <li class="ac board-item">
+                                            <!-- 2020/12/14 클래스 수정 - ac-header 추가-->
+                                            <div class="ac-header">
+                                                <!-- 2020/12/14 클래스 수정 - ac-trigger 추가-->
+                                                <div class="ac-trigger board-title-area">
+                                                        <!-- info -->
+                                                        <div class="board-title-info">
+                                                        <time class="is-family-secondary">2020.10.30 15:20</time>
+                                                        <!-- 답변완료 : is-primary-text 클래스 추가-->
+                                                        <span class="before-vertical-bar is-primary-text">답변완료</span>
+                                                    </div>
+                                                    <!-- 제목 -->
+                                                    <div class="board-title">
+                                                        <p class="title is-5">
+                                                            자동취소건으로 문의드립니다.
+                                                        </p>
+                                                        <!-- new -->
+                                                        <i class="icon-new">n</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <!-- 내용 -->
+                                            <!-- 2020/12/14 클래스 수정 - ac-panel 추가-->
+                                            <div class="ac-panel board-content-area">
+                                                <!-- 문의-->
+                                                <div class="board-content-inner">
+                                                    <div class="board-content">
+                                                        간편하게 결제되서 편하네요!<br>
+                                                        그런데 사정 상 오늘 주유를 못하게 될 것 같은데 어떻게 되나요? 자동으로 취소되는 건가요?<br>
+                                                    </div>
+                                                     <!-- 2021-01-21 수정 버튼 추가-->
+                                                     <div class="modify-area">
+                                                        <button type="button" class="button is-dark is-small">수정</button>
+                                                    </div>
+                                                </div>
+                                                <!-- // 문의 -->
+                                                
+                                                <!-- 2020/12/14 수정 -->
+                                                <!-- 답변 1 : answer 클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 1 -->
+    
+                                                <!-- 2020/12/14 수정 -->
+                                                <!-- 답변 2 : answer 클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 2 -->
+                                            </div>
+                                        </li>
+    
+                                        <li class="ac board-item">
+                                            <div class="ac-header">
+                                                <div class="ac-trigger board-title-area">
+                                                    <!-- info -->
+                                                    <div class="board-title-info">
+                                                        <time class="is-family-secondary">2020.10.30 15:20</time>
+                                                        <!-- 미처리 : is-black-text 클래스 추가-->
+                                                        <span class="before-vertical-bar is-black-text">미처리</span>
+                                                    </div>
+                                                    <!-- 제목 -->
+                                                    <div class="board-title">
+                                                        <p class="title is-5">
+                                                            자동취소건으로 문의드립니다.
+                                                        </p>
+                                                        <!-- new -->
+                                                        <i class="icon-new">n</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <!-- 내용 -->
+                                            <div class="ac-panel board-content-area">
+                                                <!-- 문의-->
+                                                <div class="board-content-inner">
+                                                    <div class="board-content">
+                                                        간편하게 결제되서 편하네요!<br>
+                                                        그런데 사정 상 오늘 주유를 못하게 될 것 같은데 어떻게 되나요? 자동으로 취소되는 건가요?<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 문의 -->
+                                                
+                                                <!-- 답변 1 : answer클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 1 -->
+    
+                                                <!-- 답변 2 : answer클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 2 -->
+                                            </div>
+                                        </li>
+    
+                                        <li class="ac board-item">
+                                            <div class="ac-header">
+                                                <div class="ac-trigger board-title-area">
+                                                    <!-- info -->
+                                                    <div class="board-title-info">
+                                                        <time class="is-family-secondary">2020.10.30 15:20</time>
+                                                        <!-- 답변대기 : is-blue-text 클래스 추가-->
+                                                        <span class="before-vertical-bar is-blue-text">답변대기</span>                                                    </div>
+                                                    <!-- 제목 -->
+                                                    <div class="board-title">
+                                                        <p class="title is-5">
+                                                            자동취소건으로 문의드립니다.
+                                                        </p>
+                                                        <!-- new -->
+                                                        <i class="icon-new">n</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <!-- 내용 -->
+                                            <div class="ac-panel board-content-area">
+                                                <!-- 문의-->
+                                                <div class="board-content-inner">
+                                                    <div class="board-content">
+                                                        간편하게 결제되서 편하네요!<br>
+                                                        그런데 사정 상 오늘 주유를 못하게 될 것 같은데 어떻게 되나요? 자동으로 취소되는 건가요?<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 문의 -->
+                                                
+                                                <!-- 답변 1 : answer클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 1 -->
+    
+                                                <!-- 답변 2 : answer클래스 추가 -->
+                                                <div class="board-content-inner answer">
+                                                    <div class="board-content">
+                                                        안녕하세요. 고객님.<br>
+                                                        바로주유 금액은 홈 화면에서 바로 변경하거나 메뉴>바로주유에서 변경하실 수 있습니다.<br>
+                                                        그럼 오늘도 에너지 가득한 하루 보내세요.<br>
+                                                    </div>
+                                                </div>
+                                                <!-- // 답변 2 -->
+                                            </div>
+                                        </li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // 문의 내역 -->
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+		</div>
+
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+
+    <!-- Bottom sheet : 2021-01-21 수정 팝업 추가 -->
+    @@include('./include/bottom-sheet-inquery-modify.html')
+
+    <script>
+        // accordion
+        new Accordion('.accordion-container');
+
+        // 수정 버튼 클릭시 팝업 오픈
+        const btnModify = document.querySelector('.modify-area > .button');
+        const modal = document.querySelector('.modal');
+        btnModify.addEventListener('click', () => {
+            modal.classList.add('is-active');
+        })
+    </script>
+</body>
+</html>

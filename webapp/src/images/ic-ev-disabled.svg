@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="다각형_17" fill="#fff" stroke="#707070" d="M6 0l6 10H0z" transform="translate(296 563)"/>
+        </clipPath>
+        <style>
+            .cls-2{fill:none}.cls-5{fill:#aeaeae}
+        </style>
+    </defs>
+    <g id="Ic_Ev__Disabled" transform="translate(-279 -553)">
+        <g id="Box" transform="translate(279 553)">
+            <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-2"/>
+        </g>
+        <path id="패스_8776" fill="none" stroke="#aeaeae" d="M21.855 25.948a1.042 1.042 0 0 1-.354-.064 1 1 0 0 1-.632-1.1l.949-8.79H17a1 1 0 0 1-.812-1.582l9-12a1 1 0 0 1 1.794.778L26.217 10H31a1 1 0 0 1 .848 1.53L22.7 25.478a1 1 0 0 1-.848.47z" transform="translate(269 553.999)"/>
+        <g id="사각형_4477" fill="#3ddb87" stroke="#aeaeae" transform="translate(299.5 573)">
+            <rect width="6" height="6" stroke="none" rx="1"/>
+            <rect width="5" height="5" x=".5" y=".5" class="cls-2" rx=".5"/>
+        </g>
+        <rect id="사각형_4478" width="1" height="3" class="cls-5" rx=".5" transform="translate(301 578)"/>
+        <rect id="사각형_4479" width="1" height="3" class="cls-5" rx=".5" transform="translate(303 578)"/>
+        <g id="마스크_그룹_104" clip-path="url(#clip-path)" transform="translate(0 1)">
+            <path id="패스_8780" fill="none" stroke="#aeaeae" stroke-miterlimit="10" d="M24.609 27.959v-4.5c0-2.737-2.583-4.5-5-4.5-2.524 0-5 1.764-5 4.5V25.8" transform="translate(277.892 549.093)"/>
+        </g>
+    </g>
+</svg>

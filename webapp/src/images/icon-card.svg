@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="icon-card" transform="translate(-107 -172)">
+        <g id="Box" transform="translate(112.994 178)">
+            <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-1" transform="translate(-5.994 -6)"/>
+        </g>
+        <g id="사각형_5214" fill="#fff" stroke="#0f1f2e" transform="translate(109 178)">
+            <rect width="28" height="20" class="cls-5" rx="2"/>
+            <rect width="27" height="19" x=".5" y=".5" class="cls-1" rx="1.5"/>
+        </g>
+        <g id="사각형_5215" fill="#0f1f2e" stroke="#0f1f2e" transform="translate(109 184)">
+            <path d="M0 0H28V1H0z" class="cls-5"/>
+            <rect width="27" x=".5" y=".5" class="cls-1"/>
+        </g>
+        <g id="패스_8375" fill="#3ddb87">
+            <path d="M3 5.18C1.622 5.18.5 4.11.5 2.796c0-.915 1.406-2.97 2.5-4.33 1.094 1.36 2.5 3.415 2.5 4.33C5.5 4.11 4.378 5.18 3 5.18z" class="cls-5" transform="translate(120 189.32)"/>
+            <path fill="#0f1f2e" d="M3-.718c-.213.279-.451.6-.687.942C1.063 2.024 1 2.682 1 2.796c0 1.039.897 1.884 2 1.884s2-.845 2-1.884c0-.114-.063-.771-1.313-2.572C3.451-.117 3.213-.44 3-.718M3-2.32s3 3.522 3 5.116C6 4.389 4.657 5.68 3 5.68S0 4.39 0 2.796C0 1.202 3-2.32 3-2.32z" transform="translate(120 189.32)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/main-header.html')
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents">
+                @@include('./include/main-content.html')
+			</div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+        @@include('./include/footer.html')
+        <!-- // Footer -->
+	</div>
+
+    <script>
+        // 바로주유 카드 Swiper   
+        var swiper = new Swiper('.main-card-slider > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: false,
+            spaceBetween: 16,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        // 슬라이드 배너 Swiper
+        var swiper = new Swiper('.main-banner-slider > .swiper-container', {
+            spaceBetween: 24,
+            // loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+        });
+
+        /* 
+        * 바로주유 가격 설정 드롭다운 메뉴 
+        * 클릭시 price에 is-active 클래스 토글 / layer-dropdown-area에 is-active 클래스 토글
+        */
+        const priceItem = document.querySelectorAll('.price')
+        const dropdown = document.querySelector('.layer-dropdown-area')
+        priceItem.forEach(priceItem => {
+            priceItem.addEventListener('click', event => {
+                const currentlyPriceItem = document.querySelector('.price.is-active');
+                if(currentlyPriceItem && currentlyPriceItem != priceItem) {
+                    currentlyPriceItem.classList.remove('is-active');
+                }
+                priceItem.classList.toggle('is-active');
+                dropdown.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

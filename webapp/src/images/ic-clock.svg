@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #0f1f2e;
+      }
+
+      .cls-3 {
+        fill: #0f1f2e;
+      }
+
+      .cls-4 {
+        fill: #3ddb87;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="_2" data-name="2" transform="translate(-127 -1030)">
+    <g id="Box" transform="translate(127 1030)">
+      <rect id="사각형_4080" data-name="사각형 4080" class="cls-1" width="32" height="32"/>
+    </g>
+    <circle id="타원_2086" data-name="타원 2086" class="cls-2" cx="9.534" cy="9.534" r="9.534" transform="translate(133.5 1036.5)"/>
+    <rect id="사각형_6470" data-name="사각형 6470" class="cls-3" width="1" height="6.323" rx="0.5" transform="translate(142.5 1039.711)"/>
+    <rect id="사각형_6471" data-name="사각형 6471" class="cls-3" width="1" height="6" rx="0.5" transform="translate(138.257 1051.984) rotate(-135)"/>
+    <g id="타원_2178" data-name="타원 2178" class="cls-4" transform="translate(141 1044)">
+      <circle class="cls-5" cx="2" cy="2" r="2"/>
+      <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+    </g>
+  </g>
+</svg>

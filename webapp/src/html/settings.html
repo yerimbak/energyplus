@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+  <div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3">설정</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+      <!-- Contents -->
+      <div id="contents" class="container">
+        <div class="inner">
+          <div class="setting-area">
+            <ul class="setting-list">
+              <li>
+                <a href="#" class="setting-item arrow-right">
+                  <span>선택약관 동의 수정</span>
+
+                </a>
+              </li>
+              <li>
+                <a href="#" class="setting-item  arrow-right">
+                  <span>앱 설정 바로가기</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="setting-item arrow-right">
+                  <span>소셜간편로그인</span>
+                </a>
+              </li>
+              <!-- 2022.02.21 커넥티드카 메뉴추가 -->
+              <li>
+                <a href="#" class="setting-item arrow-right">
+                  <span>커넥티드카 계정연동</span>
+                </a>
+              </li>
+              <li>
+                <div class="setting-item">
+                  <span>자동로그인</span>
+                  <div class="field">
+                    <label class="switch is-rounded">
+                      <input type="checkbox">
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <!-- 2021-03-22 자동결제 추가 -->
+              <li>
+                <div class="setting-item">
+                  <div>
+                    <!-- 2021-04-14 수정 -->
+                    <span>바로주유 비밀번호 생략</span>
+                    <span><i class="icon-help"></i><span class="blind">도움말</span></span>
+                  </div>
+                  <div class="field">
+                    <label class="switch is-rounded">
+                      <input type="checkbox" true-value="Yes" false-value="No" checked>
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="setting-item">
+                  <div>
+                    <span>생체인증</span>
+                    <!--2020/12/21 생체인증도움말 추가 -->
+                    <span><i class="icon-help"></i><span class="blind">도움말</span></span>
+                  </div>
+                  <div class="field">
+                    <label class="switch is-rounded">
+                      <input type="checkbox" true-value="Yes" false-value="No" checked>
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!-- PUSH 알림 -->
+                <div class="push-item">
+                  <div>
+                    <strong><span class="is-family-secondary">PUSH</span> 알림</strong>
+                  </div>
+                  <ul class="bullet-list">
+                    <li>
+                      <div class="inline-area">
+                        <div class="left-area">
+                          <div><strong>기본 알림</strong></div>
+                          <small>
+                            만료 예정 쿠폰, 스마트 주유 쿠폰, 공지사항 등
+                            의 알림을 제공합니다.
+                          </small>
+                        </div>
+                        <div class="right-area">
+                          <div class="field">
+                            <label class="switch is-rounded">
+                              <input type="checkbox" true-value="Yes" false-value="No" value="true" checked>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inline-area">
+                        <div class="left-area">
+                          <div><strong>마케팅 알림</strong></div>
+                          <small>
+                            이벤트, 프로모션 쿠폰, 혜택 등의 알림을 제공
+                            합니다.
+                          </small>
+                        </div>
+                        <div class="right-area">
+                          <div class="field">
+                            <label class="switch is-rounded">
+                              <input type="checkbox" true-value="Yes" false-value="No" value="true" checked>
+                              <span class="check"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!-- button -->
+            <div>
+              <!--2020/12/21 클래스 수정 (is-medium => is-small) -->
+              <button class="button is-outline is-small">PUSH 알림 설정 확인</button>
+            </div>
+            <!-- 2021-01-07 앱버전 추가 -->
+            <div class="ver-area">
+              <span class="ver">ver <strong>1.0.0</strong></span>
+              <a class="license"><span>오픈소스 라이선스</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // Contents -->
+    </div>
+
+    <!-- Footer -->
+    @@include('./include/footer.html')
+    <!-- // Footer -->
+
+    <!-- bottom sheet -->
+    <!--2020/12/21 생체인증도움말 추가 -->
+    @@include('./include/bottom-sheet-bioauth-help.html')
+  </div>
+  <script>
+    // modal dim 클릭시 close
+    const $body = document.querySelector('body'),
+      $modal = document.querySelector('.modal'),
+      $modalClose = document.querySelector('.modal-background'),
+      $help = document.querySelector('.icon-help');
+
+    // 로그인 생체 인증 도움말 아이콘 클릭시 팝업 오픈
+    $help.addEventListener('click', () => {
+      $body.classList.add('is-fixed');
+      $modal.classList.add('is-active');
+    })
+
+    $modalClose.addEventListener('click', () => {
+      $body.classList.remove('is-fixed');
+      $modal.classList.remove('is-active');
+    })
+  </script>
+</body>
+
+</html>

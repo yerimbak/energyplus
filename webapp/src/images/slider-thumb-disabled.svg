@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+    <defs>
+        <filter id="타원_1330" width="42" height="42" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-3{fill:#fff}
+        </style>
+    </defs>
+    <g id="bar-button" transform="translate(24.39 2)">
+        <g filter="url(#타원_1330)" transform="translate(-24.39 -2)">
+            <g id="타원_1330-2" fill="#f0f0f0" stroke="#fff" stroke-width="2px" transform="translate(9 6)">
+                <circle cx="12" cy="12" r="12" stroke="none"/>
+                <circle cx="12" cy="12" r="11" fill="none"/>
+            </g>
+        </g>
+        <g id="그룹_13173" transform="translate(-8.891 12)">
+            <rect id="사각형_4168" width="1" height="8" class="cls-3" rx=".5" transform="translate(1)"/>
+            <rect id="사각형_4169" width="1" height="8" class="cls-3" rx=".5" transform="translate(5)"/>
+            <rect id="사각형_4170" width="1" height="8" class="cls-3" rx=".5" transform="translate(9)"/>
+        </g>
+    </g>
+</svg>

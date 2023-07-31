@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3"><span class="is-family-whitney"><strong>GS</strong>&amp;POINT</span>적립/사용</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <!-- 2021-02-25 포인트 0일경우 [type-2] add -->
+                <div class="point-contents-hd type-2">
+                    <p class="tit-point is-family-whitney"><strong>GS</strong>&amp;POINT</p>
+                    <p class="txt-point">0P</p>
+                </div>
+                <div class="gap-top">
+                    <div class="inner">
+                        <p>최근 3개월 포인트 사용 내역</p>
+                        <!-- S: 전체 data가 없을 경우 -->
+                        <div class="no-data-section">
+                            <!-- No Data -->
+                            <div class="no-data type-2">
+                                <p>최근 3개월간<br>적립/사용 내역이 없습니다.</p>
+                            </div>
+                            <!-- // No Data -->
+                        </div>
+                        <!-- E: 전체 data가 없을 경우 -->
+                    </div>
+                </div>
+			</div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+    <script>
+        const app = new Vue()
+        app.$mount('#container')
+    </script>
+</body>
+</html>

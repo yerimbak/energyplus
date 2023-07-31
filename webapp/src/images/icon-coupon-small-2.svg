@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="18" viewBox="0 0 36 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #dbdbdb;
+      }
+
+      .cls-2 {
+        fill: #74777b;
+        font-size: 8px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="쿠폰1" transform="translate(-223 -595)">
+    <path id="빼기_163" data-name="빼기 163" class="cls-1" d="M-6214.742-11326h-3.4a3.02,3.02,0,0,0-2.6-1.5,3.011,3.011,0,0,0-2.6,1.5h-23.4a2,2,0,0,1-2-2v-14a2,2,0,0,1,2-2h23.4a3.014,3.014,0,0,0,2.6,1.5,3.022,3.022,0,0,0,2.6-1.5h3.4a2,2,0,0,1,2,2v14A2,2,0,0,1-6214.742-11326Zm-6-4.8a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0-6220.743-11330.8Zm0-5a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0-6220.743-11335.8Zm0-5a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0-6220.743-11340.8Z" transform="translate(6471.742 11939)"/>
+    <text id="쿠폰" class="cls-2" transform="translate(228 607)"><tspan x="0" y="0">쿠폰</tspan></text>
+  </g>
+</svg>

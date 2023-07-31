@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Button Guide</title>
+	<link rel="stylesheet" href="/css/ep-style.css">
+	<link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css">
+	<!-- <link rel="stylesheet" href="/resources/css/contents.css"> -->
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<!-- <link type="text/css" rel="stylesheet" href="/resource/css/common.css" /> -->
+	<!--//  가이드용 -->
+
+	<script src="/lib/jquery/jquery.min.js"></script>
+	<script scr="/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+        .button.is-small + .is-small {
+            margin-left : 0;
+        }
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Button Guide</h1>
+	<h2 class="h2_guide">01. Fullwidth Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="buttons">
+			<button type="button" class="button is-fullwidth">로그인</button>
+			<button type="button" class="button is-outline is-fullwidth">회원가입</button>
+			<button type="button" class="button is-fullwidth">문의접수</button>
+			<button type="button" class="button is-outline is-fullwidth">다음단계</button>
+			<button type="button" class="button is-fullwidth" disabled>로그인</button>
+			<!-- <button class="button is-white">White</button>
+			<button class="button is-light">Light</button>
+			<button class="button is-dark">Dark</button>
+			<button class="button is-black">Black</button>
+			<button class="button is-text">Text</button> -->
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="button"
+ * class="is-fullwidth" / Height : 48px / 문의접수, 다음단계, 로그인, 회원가입시 사용 
+ * 페이지 하단 reuslt 기능으로 사용
+ */
+ <div class="buttons">
+	<button type="button" class="button is-fullwidth">로그인</button>
+	<button type="button" class="button is-outline is-fullwidth">회원가입</button>
+	<button type="button" class="button is-fullwidth">문의접수</button>
+	<button type="button" class="button is-outline is-fullwidth">다음단계</button>
+	<button type="button" class="button is-fullwidth" disabled>로그인</button>
+	<a href="#" class="button is-fullwidth">로그인</a>
+	<a href="#" class="button is-outline is-fullwidth">회원가입</a>
+	<a href="#" class="button is-fullwidth">문의접수</a>
+	<a href="#" class="button is-outline is-fullwidth">다음단계</a>
+	<a href="#" class="button is-fullwidth" disabled>로그인</a>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02. Half Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="buttons">
+			<button type="button" class="button is-half is-dark">취소</button>
+			<button type="button" class="button is-half is-outline">사용안내</button>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기능에 따라 button태그 or a태그 사용
+ * 기본 class="button"
+ * Height : 48px / form요소 input에 대한 기능실행시 사용
+ */
+ <div class="buttons">
+	<button type="button" class="button is-half is-dark">취소</button>
+	<button type="button" class="button is-half is-outline">사용안내</button>
+	<a href="#" class="button is-half is-dark">취소</a>
+	<a href="#" class="button is-half is-outline">사용안내</a>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+    <h2 class="h2_guide">03. medium Button size</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <button type="button" class="button is-dark is-medium">설정등록</button>
+        <button type="button" class="button is-outline is-medium">설정해제</button>
+        <button type="button" class="button is-medium" disabled>설정등록</button>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            /*
+            * 기능에 따라 button태그 or a태그 사용 (class는 동일하게 적용)
+            * 기본 class="button"
+            * class="is-medium" / Height : 36px
+            */
+            <button type="button" class="button is-dark is-medium">설정등록</button>
+            <button type="button" class="button is-outline is-medium">설정해제</button>
+            <button type="button" class="button is-medium" disabled>설정등록</button>
+        </xmp>
+    </div>
+    <!-- // code -->
+    <h2 class="h2_guide">04. small Button size</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <button type="button" class="button is-dark is-small">쿠폰사용</button>
+        <button type="button" class="button is-outline is-small">PUSH 알림 설정 확인</button>
+        <button type="button" class="button is-small" disabled>쿠폰사용</button>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            /*
+            * 기능에 따라 button태그 or a태그 사용 (class는 동일하게 적용)
+            * 기본 class="button"
+            * class="is-small" / Height : 32px
+            */
+            <button type="button" class="button is-dark is-small">쿠폰사용</button>
+            <button type="button" class="button is-outline is-small">PUSH 알림 설정 확인</button>
+            <button type="button" class="button is-small" disabled>쿠폰사용</button>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+	<h2 class="h2_guide">04. Switch Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		 <!-- switch toggle -->
+		 <div class="switch-area">
+			<div class="field">
+				<label class="switch is-rounded">
+					<input type="checkbox" true-value="Yes" false-value="No" value="true" checked>
+					<span class="check"></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * 기본 class="switch is-rounded"
+ */
+<div class="field">
+	<label class="switch is-rounded">
+		<input type="checkbox" true-value="Yes" false-value="No" value="true" checked>
+		<span class="check"></span>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+    <h2 class="h2_guide">05. link Tel Text</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <a href="tel:02-3343-2323" class="link-tel">02-3343-2323</a>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <a href="tel:02-3343-2323" class="link-tel">02-3343-2323</a>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+    <h2 class="h2_guide">06. Hyperlink Text Button</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <a href="gspoint-accumulate-use.html" class="link-underline-txt">현장할인 내역</a><br>
+        <button type="button" class="link-underline-txt">현장할인 내역</button>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <a href="gspoint-accumulate-use.html" class="link-underline-txt">현장할인 내역</a><br>
+            <button type="button" class="link-underline-txt">현장할인 내역</button>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+    <h2 class="h2_guide">06-2. Hyperlink Text Button size-small</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <a href="gspoint-accumulate-use.html" class="link-underline-txt size-s">현장할인 내역</a><br>
+        <button type="button" class="link-underline-txt size-s">현장할인 내역</button>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <a href="gspoint-accumulate-use.html" class="link-underline-txt size-s">현장할인 내역</a><br>
+            <button type="button" class="link-underline-txt size-s">현장할인 내역</button>
+        </xmp>
+    </div>
+    <!-- // code -->
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">소멸 예정 포인트</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+
+            <!-- Contents -->
+            <!--2020/12/29 수정 type-2 클래스 추가 (footer 하단 없을 경우) -->
+			<div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+                    <div class="section-point-area">
+                        <p class="title is-5">최근 3개월 소멸 예정 포인트</p>
+                        <ul class="list-extinction-point">
+                            <li>
+                                <span><em class="is-family-secondary">2020</em>년 <em class="is-family-secondary">12</em>월</span>
+                                <span class="data-point">0P</span> <!-- D: 데이터가 없을 경우 0P로만 표기 -->
+                            </li>
+                            <li>
+                                <span><em class="is-family-secondary">2021</em>년 <em class="is-family-secondary">01</em>월</span>
+                                <span class="data-point">-1,000P</span>
+                            </li>
+                            <li>
+                                <span><em class="is-family-secondary">2021</em>년 <em class="is-family-secondary">02</em>월</span>
+                                <span class="data-point">-1,000P</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-bottom-noti box-bottom-type"> <!-- type2 container 타입에 하단 공통 클래스 적용으로 [box-bottom-type] class add (2020-12-31) -->
+                    <p class="title is-5 title-noti">소멸 예정 포인트 유의사항</p>
+                    <ul class="list-noti-area">
+                        <li class="item-txt-noti">- 유효기간은 적립일로 부터 5년입니다.</li>
+                        <li class="item-txt-noti">- 유효기간이 지나면 적립 월 기준으로 순차적으로 익월 1일 00시에 소멸됩니다.(단, 2005년 6월 1일 이전 적립한 포인트는 사용전까지 소멸되지 않습니다.)</li>
+                        <li class="item-txt-noti">- 선물받은 포인트는 포인트를 선물받은 날부터 1년이며, GS&amp;POINT 서비스 가입 전 제휴사에서 적립한 포인트는 각 제휴사의 유효기간 기준에 따릅니다.</li>
+                    </ul>
+                </div>
+			</div>
+			<!-- // Contents -->
+		</div>
+	</div>
+</body>
+</html>

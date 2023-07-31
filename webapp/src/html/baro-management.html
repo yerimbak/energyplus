@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">바로주유 관리</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+          <!-- 2021-03-16 구조 수정 -->
+          <!-- top fixed section -->
+          <!-- 2022-11-22 탭메뉴 주석처리 -->
+          <!-- <section class="top-fixed-section">
+            <div class="tab-area b-tabs"> -->
+          <!-- tabs -->
+          <!-- <nav class="tabs">
+                <ul> -->
+          <!-- 탭 활성화 : is-active 클래스 추가 -->
+          <!-- <li class="is-active">
+                    <a href="#">
+                      <span>바로주유</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>바로주유예약</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section> -->
+          <!-- 2021-04-27 [tab-section] add -->
+          <section class="contents-section tab-section">
+            <div class="inner">
+              <!-- 바로주유 등록 -->
+              <!-- 2020/12/21 수정 -->
+              <div class="box-point-list">
+                <button type="button" class="btn-enrollment-card">
+                  <i class="ico-plus"></i>바로주유 등록
+                </button>
+              </div>
+              <!-- 2020/12/21 - 클래스 추가-->
+              <div class="level txt-enrollment-desc">
+                <div class="level-left">
+                  <p>
+                    바로주유는 <strong>최대 5개</strong>까지 등록할 수 있습니다.
+                  </p>
+                </div>
+                <!--<div class="level-right">
+                   2021-01-14 클래스 수정 is-medium -> is-small
+                  <button class="button is-small is-dark" disabled="disabled">
+                    저장하기
+                  </button>
+                </div>-->
+              </div>
+
+              <!-- 순서변경 : 카드 드래그할때 card-area에 draggable-mode 클래스 추가 -->
+              <!-- 2021-02-23 구조 수정 -->
+              <div class="card-area">
+                <!-- Sortable List -->
+                <div class="list-group">
+                  <!-- 
+                                * 휘발유 [gasoline], 경유 [diesel], 고급휘발유 [premium] 클래스 추가
+                                * 활성화 : is-active 클래스 추가
+                                -->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="nick">내차 씽씽</div>
+                      <div class="info-area">
+                        <span class="oil">휘발유</span>
+                        <span class="price">50,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 휘발유 [gasoline], 경유 [diesel], 고급휘발유 [premium] 클래스 추가-->
+                  <div class="card premium">
+                    <div class="card-content">
+                      <div class="nick">내차 씽씽</div>
+                      <div class="info-area">
+                        <span class="oil">고급휘발유</span>
+                        <span class="price">50,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                    <div class="copy-area">
+                      <i class="icon-order"></i>
+                    </div>
+                  </div>
+
+                  <!-- 휘발유 [gasoline], 경유 [diesel], 고급휘발유 [premium] 클래스 추가-->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="nick">내차 씽씽</div>
+                      <div class="info-area">
+                        <span class="oil">휘발유</span>
+                        <span class="price">50,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 휘발유 [gasoline], 경유 [diesel], 고급휘발유 [premium] 클래스 추가-->
+                  <div class="card diesel">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">경유</span>
+                        <span class="price">100,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2022-11-18 LPG [lpg] 클래스 추가-->
+                  <!-- 2022-12-02 클래스명lpg -> butan으로 변경 -->
+                  <div class="card butan">
+                    <div class="card-content">
+                      <div class="nick">내차 씽씽</div>
+                      <div class="info-area">
+                        <span class="oil">LPG</span>
+                        <span class="price">30,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-01-11 추가 : 카드 유효기간 만료 시 -->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">휘발유</span>
+                        <span class="price">30,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <!-- 2021-01-11 : 카드 유효기간 만료 시 노출 -->
+                          <div class="card-expired">
+                            결제카드 유효기간이 만료되었습니다.<br />
+                            다시 등록해주세요.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-01-11 추가 : 카드 삭제 시 -->
+                  <div class="card premium">
+                    <div class="card-content">
+                      <div class="nick">내차 씽씽</div>
+                      <div class="info-area">
+                        <span class="oil">고급휘발유</span>
+                        <span class="price">30,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <!-- 2021-01-11 : 카드 삭제 시 노출 -->
+                          <div class="card-expired">
+                            해당 결제카드가 삭제되었습니다.<br />
+                            다시 등록해주세요.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-04-05 수정 : 현장할인카드 유효기간 만료 시 -->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">휘발유</span>
+                        <span class="price">30,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <div class="card-expired">
+                            바로할인카드 유효기간이 만료되었습니다.<br />
+                            다시 등록해주세요.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-04-05 수정 : 현장할인카드, 결제카드 유효기간 만료 시 -->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">휘발유</span>
+                        <span class="price">100,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <div class="card-expired">
+                            바로할인 유효기간이 만료되었습니다.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="card-expired">
+                            결제카드 유효기간이 만료되었습니다.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-04-05 수정 : 현장할인카드 유효기간 만료, 결제카드 삭제 시 -->
+                  <div class="card diesel">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">경유</span>
+                        <span class="price">100,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <div class="card-expired">
+                            바로할인 유효기간이 만료되었습니다.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="card-expired">
+                            해당 결제카드가 삭제되었습니다.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2022-11-18 추가 : 현장할인카드 유효기간 만료, 결제카드 삭제 시 -->
+                  <!-- 2022-12-02 클래스명lpg -> butan으로 변경 -->
+                  <div class="card butan">
+                    <div class="card-content">
+                      <div class="nick">회사차량</div>
+                      <div class="info-area">
+                        <span class="oil">LPG</span>
+                        <span class="price">30,000</span>
+                        <!-- button draggable -->
+                        <button class="btn-draggable">
+                          <span class="blind">이동하기</span>
+                        </button>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>
+                          <div class="card-expired">
+                            바로할인 유효기간이 만료되었습니다.
+                          </div>
+                        </li>
+                        <li>
+                          <div class="card-expired">
+                            결제카드 유효기간이 만료되었습니다.
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-half is-medium is-gray">
+                          삭제
+                        </button>
+                        <button class="button is-half is-medium is-gray">
+                          조건변경
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>

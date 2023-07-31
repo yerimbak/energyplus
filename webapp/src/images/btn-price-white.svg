@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn_price_" transform="translate(-382 -198)">
+        <path id="다각형_23" d="M6.247.86a1 1 0 0 1 1.505 0l4.8 5.481A1 1 0 0 1 11.8 8H2.2a1 1 0 0 1-.753-1.659z" class="cls-1" transform="translate(382 198)"/>
+        <path id="다각형_25" d="M6.247.86a1 1 0 0 1 1.505 0l4.8 5.481A1 1 0 0 1 11.8 8H2.2a1 1 0 0 1-.753-1.659z" class="cls-1" transform="rotate(180 198 109)"/>
+    </g>
+</svg>

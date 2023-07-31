@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+      }
+    </style>
+  </defs>
+  <path id="plus" class="cls-1" d="M-7237-892v-3h-3a1,1,0,0,1-1-1,1,1,0,0,1,1-1h3v-3a1,1,0,0,1,1-1,1,1,0,0,1,1,1v3h3a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-3v3a1,1,0,0,1-1,1A1,1,0,0,1-7237-892Z" transform="translate(7241 901)"/>
+</svg>

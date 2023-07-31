@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+  <div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3">쿠폰함</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+
+      <!-- Contents -->
+      <div id="contents" class="container">
+        <!-- top fixed section -->
+        <section class="top-fixed-section">
+          <div class="tab-area b-tabs">
+            <!-- tabs -->
+            <nav class="tabs">
+              <ul>
+                <!-- 탭 활성화 : is-active 클래스 추가 -->
+                <li class="is-active">
+                  <a href="#">
+                    <span>사용가능 0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>사용/기한만료 2</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="inner">
+            <div class="field">
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>기간임박순</option>
+                    <option>가격순</option>
+                    <option>최신순</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contents-section coupon-section type-2">
+          <div class="no-data-section">
+            <!-- No Data -->
+            <div class="no-data">
+              <p>현재 사용 가능한 쿠폰이 없습니다.</p>
+              <p class="txt-sub-desc">놓치는 쿠폰이 없도록 챙겨드릴께요!</p>
+              <button type="button" class="button is-fullwidth">쿠폰 알림 켜기</button>
+            </div>
+            <!-- // No Data -->
+          </div>
+        </section>
+      </div>
+      <!-- // Contents -->
+
+    </div>
+
+    <!-- Footer -->
+    @@include('./include/footer.html')
+    <!-- // Footer -->
+
+    <!-- bottom sheet -->
+    @@include('./include/bottom-sheet-my-coupon3.html')
+  </div>
+</body>
+<script>
+  // modal dim 클릭시 close
+  const $body = document.querySelector('body'),
+    $modal = document.querySelector('.modal'),
+    $modalClose = document.querySelector('.modal-background'),
+    $bottomSheet = document.querySelector('.bottom-sheet');
+
+  $modalClose.addEventListener('click', () => {
+    $body.classList.remove('is-fixed');
+    $modal.classList.remove('is-active');
+  })
+</script>
+
+</html>

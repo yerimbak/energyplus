@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">title</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+            <!-- D: iframe - footer 있을 경우 [has-footer] add -->
+            <div class="iframe-container has-footer">
+                <iframe></iframe>
+            </div>
+		</div>
+
+		<!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+</body>
+</html>

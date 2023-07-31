@@ -1,0 +1,296 @@
+@charset "utf-8"
+// Generic
+$max-width : 960px
+$min-width : 280px
+$body-min-width : $min-width
+
+// Typography
+$family-primary: 'NotoSansCJKkr', "Montserrat", sans-serif !default
+$family-secondary : 'Montserrat', sans-serif !default
+$family-third : 'BlackHanSans', sans-serif
+$gap : 16
+$column-gap : size(6, rem)
+// $body-overflow-y : hidden
+
+// Color
+$ep-green : #3cdc87
+$ep-green-2 : #34c678
+$ep-green-3 : #3ddb87
+$ep-navy : #0f1f2e
+$ep-nero : #222222
+$ep-black : #000000
+$ep-dark-navy : #050505
+$ep-red : #dd323b
+$ep-white : #ffffff
+$ep-white-smoke-0 : #f0f0f0
+$ep-white-smoke-3 : #f3f3f3
+$ep-white-smoke : #f5f5f5
+$ep-whisper : #e5e5e5
+$ep-gray : #888888
+$ep-light-grey : #d2d2d2
+$ep-light-grey-2 : #f2f2f2
+$ep-dark-gray : #aeaeae
+$ep-dark-gray-2 : #aaaaaa
+$ep-dark-gray-3 : #757575
+$ep-grey-chateau : #a6acb2
+$ep-suva-grey : #8e8e8e
+$ep-suva-grey-9 : #898989
+$ep-orange : #FF9E1E
+$ep-orange2 : #e57312
+$ep-blue : #3d9eff
+$ep-blue2 : #48a3fc
+$ep-secondary-1 : #3d9efc
+$ep-secondary-2 : #6464FF
+$ep-cornflowerblue : #48a3ff
+$ep-red : #da1e28
+$ep-red2 : #ff3842
+$ep-charcoal : #414141
+$ep-lynch : #687683
+$ep-primary : $ep-green
+$ep-primary2 : $ep-green-2
+$ep-primary3 : $ep-green-3
+$ep-text-color : $ep-nero
+$ep-sub-text-color : $ep-gray
+$ep-placeholder-color : $ep-dark-gray
+$ep-point-color : #FF9E1E
+$ep-text-gray : $ep-grey-chateau
+$ep-board-bg : $ep-white-smoke
+$ep-border-gray : $ep-whisper
+$ep-border-gray-2 : $ep-light-grey-2
+$ep-link-color : $ep-blue
+$ep-diabled-text : $ep-dark-gray
+$ep-diabled-bg : $ep-whisper
+$ep-diabled-border : $ep-white-smoke-0
+$ep-error-color : $ep-red
+$ep-border-color : $ep-border-gray
+$ep-card-gray : $ep-suva-grey
+$ep-card-dark-gray : $ep-suva-grey-9
+$strong-color : $ep-text-color
+$ep-event-color-1 : $ep-primary
+$ep-event-color-2 : #3d9efc
+$ep-event-color-3 : #6464ff
+$ep-event-color-4 : #74777b
+$ep-highlight : #96feba
+$skeleton-color : rgba(245, 245, 245, 1)
+$background : $ep-white
+$hr-background-color : $ep-border-gray
+$modal-card-body-padding : 10px 20px
+
+// fonts
+$gap : 16
+$body-size: 16px !default
+$size-extra-small : 0.625rem
+$size-small : 0.75rem
+$size-normal : 0.9375rem
+$size-medium : 0.9375rem
+$size-large : 1.25rem
+$size-x-large : 1.5rem
+$small-font-size : $size-small
+$letter-spacing-default : -.51px
+$weight-thin : 100
+$weight-light : 300
+$weight-normal : 400
+$weight-medium : 500
+$weight-bold : 700
+$weight-black : 900
+$strong-weight : 500
+$line-height-default : 1.47
+$line-height-small : 0.625rem
+$font-small : 0.625rem
+
+// global variables
+$family-sans-serif : 'NotoSansCJKkr', "Montserrat", sans-serif
+$family-secondary : 'Montserrat', sans-serif
+$primary : $ep-green
+$link : $ep-text-color
+$widescreen-enabled : false
+$fullhd-enabled : false
+$max-width : 960px
+$min-width : 280px
+$unit : 16
+	
+// Variables
+// Generic
+$text : $ep-green
+$error-color : $ep-error-color
+$success-color : $ep-primary
+$field-message-color : $ep-text-color
+$body-font-size : $size-normal
+$body-weight : $weight-normal
+$body-line-height : $line-height-default
+$title-strong-weight : $weight-bold
+$link-visited: $ep-text-color
+$weight-semibold : $weight-normal
+$speed-slow : .3s
+$easing : ease-out
+$dropdown-item-hover-background-color : $ep-white
+$dropdown-item-hover-color : $ep-text-color
+// $text-list-color : $ep-text-color
+$hr-height : 1px
+$hr-margin : 12px 0
+
+// Base
+$base-color               : $ep-text-color !default
+$point-color-1            : $ep-orange !default
+$point-color-2            : $ep-green !default
+$input-title-color        : $ep-text-color !default
+$title-color              : $ep-text-color !default
+$hint-color               : $ep-text-color !default
+$body-color               : $ep-text-color
+$base-font-size           : 16
+$default-background-color : $ep-white !default
+$desktop-wrap-size        : 840px
+
+// shared.sass
+$input-background-color : $ep-white
+$input-border-color : $ep-whisper
+$input-hover-border-color : $ep-primary
+$input-focus-border-color : $ep-primary
+$input-color : $ep-text-color
+$input-placeholder-color : $ep-dark-gray
+$input-disabled-background-color : $ep-white-smoke-0
+$input-disabled-border-color : $input-border-color
+$input-disabled-color : $ep-gray
+$input-disabled-placeholder-color : $input-placeholder-color
+$input-focus-box-shadow-size : 0 0
+$input-focus-box-shadow-color : rgba(0,0,0,0)
+$input-hover-color : $ep-text-color
+
+// button.sass
+$control-border-width : 1px
+$button-active-border-color : #f5f5f5
+$button-hover-border-color : #f5f5f5
+$link-hover-border : #f5f5f5
+$button-text-color : $ep-text-color
+$button-text-decoration : none
+$dark : $ep-navy
+$button-padding-horizontal : 1rem
+$button-active-color : $ep-text-color
+$button-hover-color : $ep-text-color
+$radius-small : 100px
+$button-disabled-background-color : $input-disabled-background-color
+$button-disabled-border-color : $input-disabled-background-color
+$button-disabled-opacity : 1
+
+// file.sass
+$file-name-border-color : $input-border-color
+$file-cta-background-color : $input-disabled-background-color
+
+// tabs
+$tabs-link-color : $ep-text-color
+
+// slider
+$track-height : 4px !important
+$slider-mark-size : $size-normal
+$slider-tick-width : 0
+$slider-track-background : $ep-white-smoke-0
+$slider-tick-background : $ep-white-smoke-0
+
+// modal
+$modal-z : 400
+$modal-background-background-color : rgba(0,0,0,.6)
+
+// Font Size Function
+@function size($size, $unit)
+	@if $unit == 'rem' or $unit == 'em'
+		@return $size / $base-font-size#{$unit}
+	@else
+		@return $size / $base-font-size
+
+// padding
+$control-padding-vertical : 0.8125rem
+$control-padding-horizontal : 1rem
+$section-padding : 24px
+$base-padding : 16px 24px
+
+// Typography
+$size-1 : size(30, rem)
+$size-2 : size(24, rem)
+$size-3 : size(20, rem)
+$size-4 : size(16, rem)
+$size-5 : size(15, rem)
+$size-6 : size(13, rem)
+$size-7 : size(12, rem)
+
+$sizes : $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7
+
+$title-weight      : $weight-medium
+$title-line-height : 1.47
+
+@mixin font-size($sizeValue: 16 )
+	font-size: $sizeValue + px //fallback for old browsers
+	font-size: (0.0625 * $sizeValue) + rem
+
+@mixin line-height($heightValue: 20 )
+	line-height: $heightValue + px //fallback for old browsers
+	line-height: (0.0625 * $heightValue) + rem
+
+@mixin rhythm($sizeValue: 12, $heightValue: 20)
+	@include font-size($sizeValue)
+	@include line-height($heightValue)
+
+// Button
+// $button-border-width : 0
+$button-text-color : $ep-white !default
+$control-radius: 20px
+
+// Radius
+$button-radius : 100px
+$input-radius : 4px
+$border-radius : 16px
+$box-radius : 16px
+$card-radius : 16px
+$card-box-shadow : 0 10px 30px rgba(0,0,0,.1)
+$box-shadow : 0 10px 30px 0 rgba(0, 0, 0, 0.12)
+
+// Form
+$textarea-max-height : 11.25rem
+$textarea-min-height : 11.25rem
+$textarea-max-height2 : 7.625rem
+$textarea-min-height2 : 7.625rem
+$textarea-padding : 20px 28px 20px 16px
+// $control-height : 48px
+
+// Mixins
+=font-set($font-size, $spacing, $line-height)
+	font : 
+		size : $font-size
+	letter-spacing : $spacing
+	line-height : $line-height
+
+// component variables
+$body-background-color : $ep-white
+$button-border-color : $ep-navy
+$button-hover-border-color : $ep-navy
+$control-border-width : 1px
+$control-height : auto
+$button-padding-vertical : 4px
+$button-padding-horizontal : 14px
+$button-focus-box-shadow-size : 0 0 0 0
+$button-focus-box-shadow-color : rgba(0,0,0,0)
+$button-active-border-color : $ep-navy
+$input-border-color : transparent
+$input-shadow : none
+
+// button variables
+$button-focus-border-color : $ep-navy
+
+// columns
+$column-gap : 16px
+
+// card
+$card-box-shadow : 0 10px 30px rgba(0,0,0,.1)
+$card-content-padding : 24px
+$card-color : $ep-text-color
+$card-shadow : 0 10px 30px 0 rgba(0, 0, 0, 0.12)
+
+// box
+$box-color:  $ep-navy
+
+// icon
+$icon-dimensions-small : 20px
+$icon-dimensions-medium : 24px
+$icon-dimensions-large : 32px
+
+// fold
+$g-fold-width : 281px

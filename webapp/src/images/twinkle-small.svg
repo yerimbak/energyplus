@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-4863.188 -12004.209)">
+    <rect id="사각형_5491" data-name="사각형 5491" class="cls-1" width="17" height="17" transform="translate(4863.188 12004.209)"/>
+    <line id="선_9" data-name="선 9" class="cls-2" x1="1.553" transform="translate(4865.325 12012.892)"/>
+    <line id="선_10" data-name="선 10" class="cls-2" x1="1.553" transform="translate(4877.087 12012.892)"/>
+    <line id="선_11" data-name="선 11" class="cls-2" y2="1.553" transform="translate(4871.982 12017.996)"/>
+    <line id="선_12" data-name="선 12" class="cls-2" y2="1.553" transform="translate(4871.982 12006.184)"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="329" height="179.202" viewBox="0 0 329 179.202">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3d9efc;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #6464ff;
+      }
+
+      .cls-3 {
+        fill: #3ddb87;
+      }
+
+      .cls-4 {
+        opacity: 0.7;
+      }
+    </style>
+  </defs>
+  <g id="pang" transform="translate(-16.595 -465.894)">
+    <ellipse id="_1" data-name="1" class="cls-1" cx="6.637" cy="8.169" rx="6.637" ry="8.169" transform="matrix(0.799, -0.602, 0.602, 0.799, 16.595, 473.991)"/>
+    <ellipse id="_2" data-name="2" class="cls-2" cx="2.553" cy="4.595" rx="2.553" ry="4.595" transform="translate(57.541 504.896) rotate(137)"/>
+    <ellipse id="_3" data-name="3" class="cls-3" cx="5.106" cy="6.637" rx="5.106" ry="6.637" transform="translate(77.929 486.72) rotate(45)"/>
+    <ellipse id="_4" data-name="4" class="cls-3" cx="2.553" cy="4.595" rx="2.553" ry="4.595" transform="translate(259.129 481.629) rotate(152)"/>
+    <ellipse id="_5" data-name="5" class="cls-1" cx="4.084" cy="7.148" rx="4.084" ry="7.148" transform="translate(282.842 465.894) rotate(47)"/>
+    <ellipse id="_6" data-name="6" class="cls-2" cx="4.084" cy="7.148" rx="4.084" ry="7.148" transform="translate(340.024 479.168) rotate(47)"/>
+    <ellipse id="_7" data-name="7" class="cls-4" cx="4.084" cy="6.637" rx="4.084" ry="6.637" transform="translate(41.591 618.865) rotate(45)"/>
+    <ellipse id="_8" data-name="8" class="cls-1" cx="3.574" cy="4.084" rx="3.574" ry="4.084" transform="translate(68.499 617.542) rotate(137)"/>
+    <ellipse id="_9" data-name="9" class="cls-3" cx="4.084" cy="6.637" rx="4.084" ry="6.637" transform="matrix(-0.682, 0.731, -0.731, -0.682, 312.784, 639.121)"/>
+    <ellipse id="_10" data-name="10" class="cls-1" cx="3.574" cy="4.084" rx="3.574" ry="4.084" transform="translate(317.648 619.584) rotate(137)"/>
+  </g>
+</svg>

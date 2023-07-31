@@ -1,0 +1,387 @@
+$input-radio-checked-color               : $ep-white !default
+$input-checkbox-checked-background-color : $ep-primary !default
+$input-checkbox-checked-border-color     : $ep-primary !default
+$input-checkbox-checekd-color            : $ep-white !default
+$input-label-color                       : $ep-text-color !default
+$input-border-color : $ep-border-gray
+	
+%form-reset
+	border : 
+		color : $ep-border-gray
+		width : 1px
+	font-size : 15px
+	color : $input-color
+	box-shadow : none
+	transition : border .3s
+	height : 48px
+	padding-right : 40px
+	// &:focus,
+	// &.is-focused,
+	// &:active,
+	// &.is-active
+	// 	font-size : inherit
+	// 	box : 
+	// 		shadow : none
+	&[readonly]
+		background : 
+			color : $ep-diabled-bg
+		color : $ep-diabled-text
+		border : 1px solid $ep-border-gray
+		&.is-readonly
+			background : 
+				color : $ep-diabled-bg
+			color : $ep-diabled-text
+
+%form-radio-checkbox
+	// position : relative
+	padding : 
+		left : 32px
+	min-height : 24px
+	display : inline-flex
+	// align-items : center
+	word-break : keep-all
+	// line-height : $line-height-default
+	input
+		position : absolute
+		visibility : hidden
+		cursor : pointer
+		&[disabled]
+			+ i
+				background : 
+					color : $input-disabled-background-color
+	i
+		width : 24px
+		height : 24px
+		position : absolute
+		top : 0
+		left : 0
+		border : 
+			width : 1px
+			color : $ep-border-gray
+			style : solid
+			radius : 50%	
+		// transform : translateY(-50%)
+		&::before
+			content : ''
+			position : absolute
+			border : 2px solid $ep-border-gray
+			border-right : 0
+			border-top : 0
+			top : 4px
+			left : 3px
+			width : 11px
+			height : 7px
+			transform : rotate(-45deg)
+			transition : .3s
+			// animation-name : checkbox
+			// animation-duration : .2s
+			// animation-fill-mode : both
+		+ span
+			line-height : 1.47
+	&.is-dark
+		padding-left : 30px
+		i
+			width : 24px
+			height : 24px
+			border : 
+				color : $ep-grey-chateau
+			background : 
+				color : $ep-grey-chateau
+			&::before
+				top : 5px
+				left : 5px
+				border :
+					color : $ep-white
+	strong
+		font : 
+			weight : $weight-medium
+		display : inline-block
+		// vertical-align : top
+		line-height : 1.47
+		color : $input-label-color
+		letter-spacing : -.32px
+		margin-right : 6px
+		+mobile-small-w
+			display : block
+		& + .is-gray-text
+			flex : 1
+			line-height : 1.47
+			+mobile-small-w
+				display : block
+	&.reverse
+		padding : 
+			left : 0
+			right : 35px
+		i
+			left : auto
+			right : 0
+%input-textarea
+	@extend %input
+	border-color : $ep-border-gray
+	// &:focus,
+	// &.is-focused,
+	// &:active,
+	// &.is-active
+	// 	box : 
+	// 		shadow : none
+	&[aria-invalid = "true"]
+		border-color : $ep-red
+
+.textarea
+	// height : 180px !important
+	border :
+		width : 1px
+	resize : none
+
+.input,
+.select select
+	@extend %form-reset
+	&:focus,
+	&.is-focused,
+	&:active,
+	&.is-active
+		box : 
+			shadow : none
+		font-size : 15px
+
+.select select
+	option
+		color : $ep-text-color
+		padding : 13px 12px
+
+.is-medium.input,
+.is-medium.select
+	border 
+		width : 1px
+	font : 
+		size : 1rem	
+
+.select
+	&:not(.is-multiple):not(.is-loading)
+		&::after
+			border : 
+				width : 1px
+				radius : 0
+				color : $ep-gray
+			width : 8px
+			height : 8px
+		&:hover
+			&::after
+				border-color : $ep-gray
+		
+	select
+		&:not([multiple])
+    		+ltr-property("padding", 48px)
+	// &:not(.is-multiple)
+	// 	height : size(50, em)
+
+.radio
+	@extend %form-radio-checkbox
+	
+	input
+		&:checked
+			+ i
+				&::before
+					width : 12px
+					height : 12px
+					border : 0
+	i		
+		border : 
+			radius : 100%
+		background : 
+			color : $ep-white
+		width : 24px
+		height : 24px
+		&::before
+			content : ''
+			top : 50%
+			left : 50%
+			width : 0px
+			height : 0px
+			border : 
+				width : 0
+				radius : 100%
+			background : 
+				color : $ep-primary
+			transform : translate(-50%, -50%)
+			z-index : 1
+			transition : all .2s
+	& + .radio
+		+ltr-property("margin", 40px, false)
+
+.checkbox
+	@extend %form-radio-checkbox
+	i 
+		&:before
+			top : 6px
+			left : 6px
+	&.is-small
+		min-height : 20px
+		padding-left : 28px
+		i
+			width : 20px
+			height : 20px
+			&::before
+				top : 4px
+				left : 4px
+	&:not(.agree-checkbox)
+		input	
+			&:checked
+				+ i
+					background : 
+						color : $ep-white
+					border :
+						color : $ep-primary
+					&::before
+						border :
+							color : $ep-primary
+						// border : 2px solid $ep-primary
+						// border-radius : 2px
+						// border-right : 0
+						// border-top : 0
+						// top : 4px
+						// left : 3px
+						// transform : rotate(-45deg)
+						// animation : 
+						// 	name : checkbox
+						// 	duration : .2s
+						// 	fill-mode : both
+		i
+			transition : all .2s
+		& + .checkbox
+			+ltr-property("margin", 40px, false)
+
+@keyframes checkbox
+	0%
+		width : 0
+		height : 0
+	50%
+		width : 0px
+		height : 7px
+	100%
+		width : 11px
+		height : 7px
+
+input
+	&::-ms-clear,
+	&::-ms-reveal,
+		display : none
+		width : 0
+		height : 0
+input
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration
+		display : none
+.input[disabled],
+.textarea[disabled]
+	opacity : 1 !important 
+	-webkit-text-fill-color : $input-disabled-color
+
+// tool.sass
+$column-gap : size(6, rem)
+
+// input title
+.label
+	min-height : 18px
+	font :
+		size : $size-small
+		weight : $weight-normal
+	letter-spacing : normal
+	line-height : 1.5
+	color : $ep-text-color
+	&:not(:last-child)
+		margin-bottom : 8px
+	span
+		color : $ep-navy
+		&.necessary
+			color : $ep-red
+	&.necessary
+		span
+			font : 
+				size : 0
+		&::after
+			content : '*'
+			color : $ep-red
+
+// validation
+.columns
+	&.is-error
+		.input,
+		.select select
+			border :
+				color : $error-color
+		+ .msg
+			position : relative
+			padding : 
+				left : 24px
+			color : $error-color
+			&::before
+				content : '!'
+				border : 1px solid $error-color
+				border :
+					radius : 100%
+				width : 16px
+				height : 16px
+				position : absolute
+				top : 3px
+				left : 0
+				text-align : center
+				line-height : 14px
+	&.is-success
+		+ .msg
+			color : $success-color
+.msg
+	margin :
+		top : calc(#{size(10, rem)} - #{$column-gap})
+	font : 
+		size : 13px
+	letter-spacing : -.26px
+	line-height : 21px
+	color : $field-message-color
+
+.file
+	.file-label, .file-name
+		width : 100%
+		margin :
+			bottom : 0
+	.file-label
+		font : 
+			size : $size-normal
+		display : flex 
+		align-items : center
+		color : $input-disabled-color
+		background :
+			color : $input-disabled-background-color
+		border : 1px solid $input-disabled-border-color
+		border-radius : 4px
+		&::after
+			content : ''
+			display : block
+			width : 16px
+			height : 16px
+			position : absolute
+			right : 16px
+			top : 50%
+			transform : translateY(-50%)
+			background : url(#{$image-path}icon-attachment.svg) no-repeat center / 100%
+	.file-name
+		position : relative
+		max-width : calc(100% - 40px)
+		font : 
+			size : $size-normal
+		color : $input-disabled-color
+		border : 0
+		&.has-name
+			color : $ep-text-color
+#file-upload
+	.btn-del
+		background-color : $ep-white-smoke-0
+		position : absolute
+		right : 10px
+		top : 5px
+.form-grid
+	.buttons
+		margin :
+			top : 40px

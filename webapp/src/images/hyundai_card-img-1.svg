@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="244" viewBox="0 0 208 244">
+    <defs>
+        <filter id="c7aryyp6ta" x="0" y="0" width="208" height="244" filterUnits="userSpaceOnUse">
+            <feOffset dy="10"/>
+            <feGaussianBlur stdDeviation="15" result="blur"/>
+            <feFlood flood-opacity=".122"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="1">
+        <g style="filter:url(#c7aryyp6ta)">
+            <rect data-name="사각형 3981" width="118" height="154" rx="16" transform="translate(45 35)" style="fill:#fff"/>
+        </g>
+        <text data-name="$44" transform="translate(58.663 90.841)" style="font-size:20px;font-family:Montserrat-Bold,Montserrat;font-weight:700;fill:#222"><tspan x="0" y="0">50,000</tspan></text>
+        <text transform="translate(58.663 64.84)" style="font-family:NotoSansCJKkr-Medium,Noto Sans CJK KR;font-weight:500;font-size:12px;fill:#222"><tspan x="0" y="0">내차 씽씽</tspan></text>
+        <text transform="translate(58.663 111.84)" style="font-size:9px;font-family:NotoSansCJKkr-Medium,Noto Sans CJK KR;font-weight:500;fill:#222"><tspan x="0" y="0">휘발유</tspan></text>
+        <text data-name="현대 1234 15% 할인중" transform="translate(58.663 125.841)" style="fill:#8e8e8e;font-size:8px;font-family:NotoSansCJKkr-Regular,Noto Sans CJK KR Regular"><tspan x="0" y="0">현대 1234 </tspan><tspan style="fill:#3ddb87"><tspan x="0" y="12" xml:space="preserve">15%  할인중</tspan></tspan></text>
+        <g>
+            <path data-name="Rectangle" d="M10.586 0h33.522c5.846 0 10.586 5.066 10.586 11.316a11.665 11.665 0 0 1-4.235 9.055 9.989 9.989 0 0 1-6.351 2.262H10.586C4.74 22.632 0 17.566 0 11.316S4.74 0 10.586 0z" transform="translate(58.663 147.894)" style="fill:#f5f5f5"/>
+            <text transform="translate(69.51 162.669)" style="font-size:9px;font-family:NotoSansCJKkr-Medium,Noto Sans CJK KR;font-weight:500;fill:#222"><tspan x="0" y="0">바로주유</tspan></text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>Form Guide</title>
+	<link rel="stylesheet" href="/lib/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/css/ep-style.css">
+
+	<!-- 가이드용 -->
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/base.css">
+	<link rel="stylesheet" type="text/css" href="/coding_list/css/pretty.css">
+	<link type="text/css" rel="stylesheet" href="/resource/css/common.css" />
+	<!--//  가이드용 -->
+
+	<script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+	<script scr="/js/ui.js"></script>
+	<style>
+		.tag:not(body){
+			align-items : baseline;
+			background : none;
+			display : inline;
+			padding : 0;
+			height : auto;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap" class="coding_guide">
+	<h1 class="h1_guide">Form Guide</h1>
+	<h2 class="h2_guide">01-1. Input Box</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<!-- buefy form -->
+		<section>
+			<div class="field">
+				<label class="label necessary">제목</label>
+				<div class="control">
+					<input type="text" class="input">
+				</div>
+			</div>
+			<div class="field">
+				<label class="label necessary">제목</label>
+				<div class="control is-error">
+					<input type="email" maxlength="30" class="input">
+				</div>
+				<p class="help is-danger">제목을 입력해 주십시오</p>
+			</div>
+			<div class="field">
+				<label class="label necessary">이메일</label>
+				<div class="control">
+					<input type="text" class="input">
+				</div>
+			</div>
+			<div class="field">
+				<label class="label necessary">이메일</label>
+				<div class="control has-icons-right">
+					<input type="text" autocomplete="on" maxlength="30" class="input is-danger">
+					<span class="icon is-right has-text-danger">
+						<i class="mdi mdi-check mdi-24px"></i>
+					</span>
+					<!-- <small class="help counter is-invisible"> 10 / 30 </small> -->
+				</div>
+				<p class="help is-danger">이메일 형식에 맞게 입력하여 주십시오.</p>
+			</div>
+			<div class="field">
+				<label class="label necessary">Password</label>
+				<div class="control has-icons-right is-clearfix">
+					<input type="password" autocomplete="on" class="input">
+					<span class="icon is-right has-text-primary is-clickable">
+						<i class="mdi mdi-eye mdi-24px"></i>
+					</span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="level">
+					<div class="level-left">
+						<label class="label necessary">내용</label>
+					</div>
+					<div class="level-right">
+						<small class="help counter is-invisible">(<em class="is-primary-color">34</em>/2000 Byte) </small>
+					</div>
+				</div>
+				<div class="control is-clearfix">
+					<textarea maxlength="200" class="textarea"></textarea>
+				</div>
+			</div>
+		</section>
+		<!-- // buefy form -->
+	</div>
+	<h2 class="h2_guide">01-1. Input Box</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is value">
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" value="This text is value" placeholder="This text is value">
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<input type="text" class="input is-medium" placeholder="This text is value">
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">01-2. Input Box / Disabled, Readonly</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is disabled" value="This text is disabled" disabled>
+			</div>
+		</div>
+		<div class="field">
+			<div class="control">
+				<input type="text" class="input is-medium" placeholder="This text is readonly" value="This text is readonly" readonly>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * readonly일때 배경과 텍스트 색상이 일반과 동일할경우 class="is-readonly"
+ */
+<input type="text" class="input is-medium" placeholder="This text is disabled" value="This text is disabled" disabled>
+<input type="text" class="input is-medium" placeholder="This text is readonly" value="This text is readonly" readonly>
+<input type="text" class="input is-medium input is-medium is-readonly" placeholder="This text is readonly" value="This text is readonly" readonly>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">01-3. Input search</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<div class="control is-search">
+					<input type="text" class="input is-medium" placeholder="도로명/지번 입력">
+					<button class="btn-search">Search</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+            <div class="columns">
+                <div class="column">
+                    <div class="control is-search">
+                        <input type="text" class="input is-medium" placeholder="도로명/지번 입력">
+                        <button class="btn-search">Search</button>
+                    </div>
+                </div>
+            </div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+    <h2 class="h2_guide">01-4. Textarea type2</h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <div class="field type-2">
+            <p class="label">리뷰<span class="necessary">(필수)</span></p>
+            <div class="control is-clearfix">
+                <textarea maxlength="200" class="textarea" placeholder="리뷰를 써 주세요(10자 이상)&#13;&#10;업주님과 다른 사용자들이 상처 받지 않도록&#13;&#10;좋은 표현을 사용해 주세요."></textarea>
+                <div class="counter-area">
+                    <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <div class="field type-2">
+                <p class="label">리뷰<span class="necessary">(필수)</span></p>
+                <div class="control is-clearfix">
+                    <textarea maxlength="200" class="textarea" placeholder="리뷰를 써 주세요(10자 이상)&#13;&#10;업주님과 다른 사용자들이 상처 받지 않도록&#13;&#10;좋은 표현을 사용해 주세요."></textarea>
+                    <div class="counter-area">
+                        <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                    </div>
+                </div>
+            </div>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+    <h2 class="h2_guide">01-4-2. Textarea type2 error </h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <div class="field type-2">
+            <p class="label">리뷰<span class="necessary">(필수)</span></p>
+            <div class="control is-clearfix is-error">
+                <textarea maxlength="200" class="textarea" placeholder="리뷰를 써 주세요(10자 이상)&#13;&#10;업주님과 다른 사용자들이 상처 받지 않도록&#13;&#10;좋은 표현을 사용해 주세요."></textarea>
+                <div class="counter-area">
+                    <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                </div>
+            </div>
+            <p class="help">리뷰를 입력해주십시오.</p>
+        </div>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <div class="field type-2">
+                <p class="label">리뷰<span class="necessary">(필수)</span></p>
+                <div class="control is-clearfix is-error">
+                    <textarea maxlength="200" class="textarea" placeholder="리뷰를 써 주세요(10자 이상)&#13;&#10;업주님과 다른 사용자들이 상처 받지 않도록&#13;&#10;좋은 표현을 사용해 주세요."></textarea>
+                    <div class="counter-area">
+                        <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                    </div>
+                </div>
+                <p class="help">리뷰를 입력해주십시오.</p>
+            </div>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+    <h2 class="h2_guide">01-4-3. Textarea type2 disabled </h2>
+    <!-- View -->
+    <div class="guide_wrap">
+        <div class="field type-2">
+            <p class="label">리뷰<span class="necessary">(필수)</span></p>
+            <div class="control is-clearfix is-disabled">
+                <textarea maxlength="200" class="textarea" placeholder="내용" disabled></textarea>
+                <div class="counter-area">
+                    <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // View -->
+
+    <!-- code -->
+    <div class="d_desc code">
+        <xmp class="prettyprint linenums javascript">
+            <div class="field type-2">
+                <p class="label">리뷰<span class="necessary">(필수)</span></p>
+                <div class="control is-clearfix is-disabled">
+                    <textarea maxlength="200" class="textarea" disabled></textarea>
+                    <div class="counter-area">
+                        <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                    </div>
+                </div>
+            </div>
+        </xmp>
+    </div>
+    <!-- // code -->
+
+	<h2 class="h2_guide">02-1. Select Box</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="select is-medium">
+				<select>
+					<option>Select dropdown</option>
+					<option>With options</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="select is-medium">
+	<select>
+		<option>Select dropdown</option>
+		<option>With options</option>
+	</select>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">02-2. Select Box / Disabled</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="select is-medium is-disabled">
+				<select disabled>
+					<option>Select dropdown</option>
+					<option>With options</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="select is-medium is-disabled"> <!-- class="is-disabled" 추가 -->
+	<select disabled>
+		<option>Select dropdown</option>
+		<option>With options</option>
+	</select>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">03-1. Radio Button</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="radio">
+					<input type="radio" name="foo">
+					<i></i>
+					<strong>양력</strong>
+				</label>
+				<label class="radio">
+					<input type="radio" name="foo">
+					<i></i>
+					<strong>음력</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="radio">
+		<input type="radio" name="foo">
+		<i></i>
+		<strong>양력</strong>
+	</label>
+	<label class="radio">
+		<input type="radio" name="foo">
+		<i></i>
+		<strong>음력</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">03-2. Radio Button / Disabled, Readonly</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="radio" disabled>
+					<input type="radio" name="foo1" disabled>
+					<i></i>
+					<strong>양력</strong>
+				</label>
+				<label class="radio">
+					<input type="radio" name="foo1">
+					<i></i>
+					<strong>음력</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="radio" disabled>
+		<input type="radio" name="foo1" disabled>
+		<i></i>
+		<strong>양력</strong>
+	</label>
+	<label class="radio">
+		<input type="radio" name="foo1">
+		<i></i>
+		<strong>음력</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04-1. Checkbox</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>E-Mail 발송</strong>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>전화정보</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>E-Mail 발송</strong>
+	</label>
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>전화정보</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">04-1. Checkbox / Disabled</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="field">
+			<div class="control">
+				<label class="checkbox" disabled>
+					<input type="checkbox" disabled>
+					<i></i>
+					<strong>E-Mail 발송</strong>
+				</label>
+				<label class="checkbox">
+					<input type="checkbox">
+					<i></i>
+					<strong>전화정보</strong>
+				</label>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="control">
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>E-Mail 발송</strong>
+	</label>
+	<label class="checkbox">
+		<input type="checkbox">
+		<i></i>
+		<strong>전화정보</strong>
+	</label>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-1. 타이틀 + 입력폼 / 기본</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<label class="label">이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+<div class="columns">
+	<div class="column">
+		<label class="label">이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+
+	<h2 class="h2_guide">05-2. 타이틀 + 입력폼 / 필수입력</h2>
+	<!-- View -->
+	<div class="guide_wrap">
+		<div class="columns">
+			<div class="column">
+				<label class="label necessary"><span>필수입력</span>이름</label>
+				<div class="control">
+					<input type="text" class="input is-medium">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // View -->
+
+	<!-- code -->
+	<div class="d_desc code">
+		<xmp class="prettyprint linenums javascript">
+/*
+ * .label lass="necessary" 추가
+ *  <span>필수입력</span> 추가
+ */
+<div class="columns">
+	<div class="column">
+		<label class="label necessary"><span>필수입력</span>이름</label>
+		<div class="control">
+			<input type="text" class="input is-medium">
+		</div>
+	</div>
+</div>
+		</xmp>
+	</div>
+	<!-- // code -->
+</div>
+<script type="text/javascript" src="/coding_list/js/pretty.js"></script>
+
+</body>
+</html>

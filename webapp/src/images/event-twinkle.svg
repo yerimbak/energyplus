@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.492" height="25.577" viewBox="0 0 25.492 25.577">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="shape" transform="translate(1.5 1.5)">
+    <line id="선_9" data-name="선 9" class="cls-1" x1="2.624" transform="translate(0 11.329)"/>
+    <line id="선_10" data-name="선 10" class="cls-1" x1="2.624" transform="translate(19.869 11.329)"/>
+    <line id="선_11" data-name="선 11" class="cls-1" y2="2.624" transform="translate(11.246 19.954)"/>
+    <line id="선_12" data-name="선 12" class="cls-1" y2="2.623" transform="translate(11.246)"/>
+  </g>
+</svg>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">바로주유 등록</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <!--2020/12/29 수정 type-2 클래스 추가 (footer 하단 없을 경우) -->
+        <div id="contents" class="container type-2">
+          <div class="inner is-padding-top">
+            <!-- accordion -->
+            <div class="accordion-container baro">
+              <!-- 2021-03-31 D: 결제비밀번호 키패드 출력시 [has-keypad] add-->
+              <ul class="baro-list has-keypad">
+                <!-- step 01 활성화 : is-active 클래스 추가 / 완료 : is-completed 클래스 추가 -->
+                <li class="ac baro-step is-active">
+                  <div class="baro-item">
+                    <div class="ac-header baro-header">
+                      <div class="ac-trigger">
+                        <!-- title -->
+                        <div class="level">
+                          <div class="level-left">
+                            <h3 class="title">유종/주유금액</h3>
+                            <!-- 완료후 컨텐츠 -->
+                            <!-- <h3 class="title">휘발유, 5만원, 붕붕이</h3> -->
+                          </div>
+                          <div class="level-right">
+                            <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                            <div class="modify-area">
+                              <button class="btn-modify">수정</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ac-panel baro-panel">
+                      <!-- 2022.05.16 is-checked 추가시 기존 슬라이더 display:none  -->
+                      <div class="baro-content step01-baro-content is-checked">
+                        <dl>
+                          <!-- 유종 -->
+                          <dt>유종</dt>
+                          <dd>
+                            <ul class="oil-items">
+                              <li>
+                                <div class="field">
+                                  <label class="radio">
+                                    <input type="radio" name="oil" checked />
+                                    <strong>휘발유</strong>
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="field">
+                                  <label class="radio">
+                                    <input type="radio" name="oil" />
+                                    <strong>경유</strong>
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="field">
+                                  <label class="radio">
+                                    <input type="radio" name="oil" />
+                                    <strong>고급휘발유</strong>
+                                  </label>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="field">
+                                  <label class="radio">
+                                    <input type="radio" name="oil" />
+                                    <strong>LPG</strong>
+                                  </label>
+                                </div>
+                              </li>
+                            </ul>
+                          </dd>
+
+                          <!-- 주유금액 -->
+                          <dt>
+                            <span>주유금액</span>
+                            <div class="control">
+                              <label class="checkbox">
+                                <input type="checkbox" checked />
+                                <i></i>
+                                <strong>직접입력</strong>
+                              </label>
+                            </div>
+                          </dt>
+                          <dd>
+                            <!-- 2022.05.16 기존 slider-area -->
+                            <div class="slider-area">
+                              <vue-slider
+                                v-model="value"
+                                :interval="1"
+                                :marks="true"
+                                :tooltip="'always'"
+                                :data="data"
+                                :data-value="'id'"
+                                :data-label="'name'"
+                              ></vue-slider>
+                            </div>
+
+                            <!-- 2022.05.16 input-area 유형 추가 -->
+                            <div class="input-area">
+                              <div class="input-wrap">
+                                <input
+                                  type="text"
+                                  class="input"
+                                  value="5,000"
+                                />
+                              </div>
+                              <div class="add-price-wrap fourbtn">
+                                <button
+                                  type="button"
+                                  class="button is-outline-is-small"
+                                >
+                                  + 1천원
+                                </button>
+                                <button
+                                  type="button"
+                                  class="button is-outline-is-small"
+                                >
+                                  + 5천원
+                                </button>
+                                <button
+                                  type="button"
+                                  class="button is-outline-is-small"
+                                >
+                                  + 1만원
+                                </button>
+                                <button
+                                  type="button"
+                                  class="button is-outline-is-small"
+                                >
+                                가득
+                                </button>
+                              </div>
+                            </div>
+                          </dd>
+
+                          <!-- 별칭 -->
+                          <!-- 2020/12/29 수정 (닉네임 -> 별칭)-->
+                          <dt>별칭</dt>
+                          <dd>
+                            <div class="field">
+                              <div class="control">
+                                <input
+                                  type="text"
+                                  class="input"
+                                  maxlength="6"
+                                  value="붕붕이"
+                                />
+                                <!--2021-01-08 삭제 -->
+                                <!-- <button class="btn-refresh"><span class="blind">새로고침</span></button> -->
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <div>
+                          <!-- 2021-01-07 수정
+                          - 버튼 클릭시 해당 baro-step에 is-active 제거하고 다음 baro-step에 is-active 추가 
+                          - 해당 baro-step의 ac-panel의 max-height 값을 0으로 설정, 다음 baro-step의 ac-panel의 max-height 값을 설정해줌
+                          -->
+                          <button class="button is-outline is-fullwidth">
+                            다음단계
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- // step 01 -->
+
+                <!-- step 02 / 완료 : is-completed 클래스 추가 -->
+                <li class="ac baro-step">
+                  <div class="baro-item">
+                    <div class="ac-header baro-header">
+                      <div class="ac-trigger">
+                        <!-- title -->
+                        <div class="level">
+                          <div class="level-left">
+                            <h3 class="title">포인트/쿠폰</h3>
+                            <!-- 완료후 컨텐츠 -->
+                            <!-- <h3 class="title">
+                                <span class="mblock">포인트 자동사용,</span>
+                                <span class="mblock">쿠폰 자동사용</span>
+                                                    </h3> -->
+                          </div>
+                          <div class="level-right">
+                            <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                            <div class="modify-area">
+                              <button class="btn-modify">수정</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ac-panel baro-panel">
+                      <div class="ac-content baro-content">
+                        <dl>
+                          <dt class="level">
+                            <div class="level-left">포인트</div>
+                            <div class="level-right">
+                              <!-- GS 포인트 -->
+                              <div class="is-border-rounded gs-point-area">
+                                <span class="gs-point">13,123</span>
+                              </div>
+                            </div>
+                          </dt>
+                          <dd>
+                            <div class="radio-area">
+                              <div class="field">
+                                <div class="control">
+                                  <label class="radio">
+                                    <input type="radio" name="foo" checked />
+                                    <i></i>
+                                    <strong>자동 사용</strong>
+                                    <span class="is-gray-text"
+                                      >1,000P 씩 사용</span
+                                    >
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="foo" />
+                                    <i></i>
+                                    <strong>사용하지 않음</strong>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                          <dt>쿠폰</dt>
+                          <dd>
+                            <div class="radio-area">
+                              <div class="field">
+                                <div class="control control_flex">
+                                  <label class="radio">
+                                    <input type="radio" name="bar" checked />
+                                    <i></i>
+                                    <strong>기간임박순</strong>
+                                    <!-- <span class="is-gray-text">기간임박/최대할인 자동 적용</span> -->
+                                  </label>
+                                  <label class="radio">
+                                    <input type="radio" name="bar" />
+                                    <i></i>
+                                    <strong>금액순</strong>
+                                    <!-- <span class="is-gray-text">기간임박/최대할인 자동 적용</span> -->
+                                  </label>
+                                </div>
+                                <div class="control">
+                                  <label class="radio">
+                                    <input type="radio" name="bar" />
+                                    <i></i>
+                                    <strong>사용하지 않음</strong>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <div>
+                          <button class="button is-outline is-fullwidth">
+                            다음단계
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- // step 02 -->
+
+                <!-- step 03 -->
+                <li class="ac baro-step">
+                  <div class="baro-item">
+                    <div class="ac-header baro-header">
+                      <div class="ac-trigger">
+                        <!-- title -->
+                        <div class="level">
+                          <div class="level-left">
+                            <h3 class="title">
+                              <h4>
+                                <span class="gs-point"
+                                  ><span class="blind">GS&POINT</span></span
+                                >
+                                보너스 카드
+                              </h4>
+                            </h3>
+                            <!-- 완료후 타이틀 -->
+                            <!-- <h3 class="title">현장할인카드</h3> -->
+                          </div>
+                          <div class="level-right">
+                            <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                            <div class="modify-area">
+                              <button class="btn-modify">수정</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ac-panel baro-panel">
+                      <div class="ac-content baro-content">
+                        <ul>
+                          <li>
+                            <!-- 활성화 is-active 클래스 추가 -->
+                            <div class="box-credit-card is-active">
+                              <div>
+                                <h4 class="title is-5">바로할인카드</h4>
+                                <!-- 2021-03-19 보너스카드 마스킹 삭제 -->
+                                <small class="mblock"
+                                  >1234-1234-1234-1234</small
+                                >
+                              </div>
+                              <div class="credit-card-info">
+                                <div>
+                                  <span class="left-area">월잔여한도 </span>
+                                  <span>
+                                    <strong class="is-family-secondary"
+                                      >3,000</strong
+                                    >
+                                    /
+                                    <span class="is-family-secondary"
+                                      >10000</span
+                                    >원
+                                  </span>
+                                </div>
+                                <div class="is-gray-text">
+                                  <span class="left-area is-gray-text"
+                                    >유효기간</span
+                                  >
+                                  <span class="is-family-secondary"
+                                    >~ 2020-11-09</span
+                                  >
+                                </div>
+                                <!--2022-03-19 클래스 수정 / em 태그 삭제 -->
+                                <div class="is-medium-text">
+                                  1리터당 휘발유 20원, 경유 20원, LPG 10원 할인
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="box-credit-card">
+                              <div>
+                                <h4 class="title is-5">보너스카드</h4>
+                                <!-- 2021-03-16 보너스카드 마스킹 삭제 -->
+                                <small class="mblock"
+                                  >1234-1234-1234-1234</small
+                                >
+                              </div>
+                              <div class="inner-card-info">
+                                <div class="is-gray-text">
+                                  <span class="left-area">발급일 </span>
+                                  <span class="is-family-secondary"
+                                    >2020-11-09</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <div>
+                          <button class="button is-fullwidth is-outline">
+                            다음단계
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- // step 03 -->
+
+                <!-- step 04 -->
+                <li class="ac baro-step">
+                  <div class="baro-item">
+                    <div class="ac-header baro-header">
+                      <div class="ac-trigger">
+                        <!-- title -->
+                        <div class="level">
+                          <div class="level-left">
+                            <!-- 2021-03-19 타이틀 수정 -->
+                            <h3 class="title">결제카드</h3>
+                            <!-- 완료후 컨텐츠 -->
+                            <!-- <h3 class="title">롯데카드 1234</h3> -->
+                          </div>
+                          <div class="level-right">
+                            <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                            <div class="modify-area">
+                              <button class="btn-modify">수정</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ac-panel baro-panel">
+                      <div class="ac-content baro-content">
+                        <!--2022-11-23 추가-->
+                        <div class="discount-card discount-card-plus type02">
+                          <div class="discount-card-content">
+                            <p class="energyplus-logo">
+                              <strong
+                                >최대 15% 할인카드로<br /><span
+                                  class="text-indent"
+                                >
+                                  등록하기</span
+                                ></strong
+                              >
+                            </p>
+                            <a
+                              href="https://www.hyundaicard.com/cpc/ca/CPCCA2201_00.hc?cardwcd=GCE2&amp;agentCode=L270203400000&amp;eventCode=AWK10&amp;medium=G_M_WEB_O"
+                              class="btn-arrow-rig"
+                            >
+                              <span class="blind">바로가기</span>
+                            </a>
+                          </div>
+                          <div class="discount-card-content">
+                            <p class="discount-pgrph">
+                              실물카드 수령 전이라도 혜택가능!<br />
+                              에너지플러스 카드로
+                              <span>할인혜택 <br />받으세요.</span>
+                            </p>
+                          </div>
+                        </div>
+                        <!--2022-11-24 추가 등록된 카드 없을 시-->
+                        <div class="no-data-section" style="display:none">
+                          <div class="no-data">
+                              <p>카드를 등록해주세요.</p>
+                          </div>
+                        </div>
+                        <!-- 2020/12/21 수정 : 클래스 이름 변경 (list-credit-card) -->
+                        <ul class="list-credit-card">
+                          <li>
+                            <!-- 활성화 is-active 클래스 추가 -->
+                            <!-- 2020/12/21 수정 : 클래스 이름 변경 (box-credit-card) -->
+                            <div class="box-credit-card is-active">
+                              <div>
+                                <!-- 2021-03-19 카드번호 마스킹처리 -->
+                                <h4 class="title is-5">
+                                  롯데카드 <span>1234 **** **** 1234</span>
+                                </h4>
+                                <div class="sub-desc">
+                                  <span>사용기간</span>
+                                  <span class="is-family-secondary"
+                                    >~ 2020-11-09</span
+                                  >
+                                </div>
+                              </div>
+                              <!--2021-01-11 삭제 -->
+                              <!-- <button class="btn-trash" onclick="confirm('삭제하시겠습니까?')">
+                                                            <span class="blind">삭제</span>
+                                                        </button> -->
+                            </div>
+                          </li>
+                          <li>
+                            <!-- 활성화 is-active 클래스 추가 -->
+                            <!-- 2020/12/21 수정 : 클래스 이름 변경 (box-credit-card) -->
+                            <div class="box-credit-card">
+                              <div>
+                                <h4 class="title is-5">
+                                  롯데카드 <span>3232 **** **** 1323</span>
+                                </h4>
+                                <div class="sub-desc">
+                                  <span>사용기간</span>
+                                  <span class="is-family-secondary"
+                                    >~ 2020-11-09</span
+                                  >
+                                </div>
+                              </div>
+                              <!--2021-01-11 삭제 -->
+                              <!-- <button class="btn-trash">
+                                                            <span class="blind">삭제</span>
+                                                        </button> -->
+                            </div>
+                          </li>
+                          <li>
+                            <!-- 비활성화 is-disabled 클래스 추가 -->
+                            <!-- 2020/12/21 수정 : 클래스 이름 변경 (box-credit-card) -->
+                            <div class="box-credit-card is-disabled">
+                              <div>
+                                <h4 class="title is-5">
+                                  롯데카드 <span>2244 **** **** 5543</span>
+                                </h4>
+                                <!-- 2021-03-19 [is-red-text] add -->
+                                <div class="sub-desc is-red-text">
+                                  <span>사용기간 만료되었습니다.</span>
+                                  <!-- 2021-01-11 갱신 추가 -->
+                                  <a href="#" class="link-underline-txt size-s"
+                                    >갱신</a
+                                  >
+                                </div>
+                              </div>
+                              <!--2021-01-11 삭제 -->
+                              <!-- <button class="btn-trash">
+                                                            <span class="blind">삭제</span>
+                                                        </button> -->
+                            </div>
+                          </li>
+                          <li>
+                            <!-- 비활성화 is-disabled 클래스 추가 -->
+                            <!-- 2020/12/21 수정 : 클래스 이름 변경 (box-credit-card) -->
+                            <div class="box-credit-card is-disabled">
+                              <div>
+                                <h4 class="title is-5">
+                                  롯데카드 <span>1234</span>
+                                </h4>
+                                <!-- 2021-03-19 [is-red-text] add -->
+                                <div class="sub-desc is-red-text">
+                                  <span>사용기간 만료되었습니다.</span>
+                                  <!-- 2021-01-11 갱신 추가-->
+                                  <a href="#" class="link-underline-txt size-s"
+                                    >갱신</a
+                                  >
+                                </div>
+                              </div>
+                              <!--2021-01-11 삭제 -->
+                              <!-- <button class="btn-trash">
+                                                            <span class="blind">삭제</span>
+                                                        </button> -->
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- 결제카드 등록 -->
+                        <!-- disabled : is-disabled 클래스 추가 (최대 5개 초과 등록시 is-disabled 클래스 추가)-->
+                        <!-- 2021-07-27 문구 수정 -->
+                        <div class="add-card-box">
+                          <button class="icon-plus is-large">
+                            <span class="blind">추가</span>
+                          </button>
+                          <p>결제카드 추가 (최대 5개)</p>
+                          <ul class="dec">
+                            <li>
+                              <small class="italic-bold">
+                                전 카드사 모두 등록 가능, 할부 불가</small
+                              >
+                            </li>
+                            <li>
+                              <small>
+                                등록된 카드로 결제 시 리터당 2P 적립</small
+                              >
+                            </li>
+                            <li>
+                              <small> 화물복지카드 유가 보조금 혜택 불가</small>
+                            </li>
+                            <li>
+                              <small>
+                                카드등록 시 100원 결제 후 자동 취소</small
+                              >
+                            </li>
+                          </ul>
+                          <small
+                            ><br />* 카드청구할인은 카드별로 다를 수 있으니
+                            카드사에 문의하시기 바랍니다.</small
+                          >
+                        </div>
+                        <div>
+                          <button class="button is-fullwidth is-outline">
+                            다음단계
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- // step 04 -->
+
+                <!-- step 05 -->
+                <li class="ac baro-step">
+                  <div class="baro-item">
+                    <div class="ac-header baro-header">
+                      <div class="ac-trigger">
+                        <div class="level">
+                          <div class="level-left">
+                            <!-- 2021-04-14 수정 -->
+                            <h3 class="title">바로주유 비밀번호</h3>
+                            <!-- 완료후 컨텐츠 -->
+                            <!-- <h3 class="title">휘발유, 5만원, 붕붕이</h3> -->
+                          </div>
+                          <div class="level-right">
+                            <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                            <div class="modify-area">
+                              <button class="btn-modify">수정</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ac-panel baro-panel">
+                      <div class="ac-content baro-content">
+                        <div>
+                          <p>결제 승인에 사용되는 비밀번호입니다.</p>
+                          <div class="password-box">
+                            <!-- 결제 비밀번호 -->
+                            <div class="password-area">
+                              <div class="password">
+                                <div class="password-number">
+                                  <!-- key-code-input 입력되면 on 클래스 추가-->
+                                  <span class="key-code on">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                  <span class="key-code">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                  <span class="key-code">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                  <span class="key-code">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                  <span class="key-code">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                  <span class="key-code">
+                                    <input
+                                      type="tel"
+                                      class="key-code-input"
+                                      maxlength="1"
+                                    />
+                                  </span>
+                                </div>
+                              </div>
+                              <small class="is-align-center">
+                                6자리가 동일하거나 연속되는 번호는<br />
+                                등록할 수 없습니다.
+                              </small>
+                            </div>
+                          </div>
+                          <ul class="password-check-list">
+                            <li>
+                              <label class="checkbox">
+                                <input type="checkbox" />
+                                <i></i>
+                                <span>비밀번호 보기</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox">
+                                <!-- default – 선택 -->
+                                <input type="checkbox" checked="checked" />
+                                <i></i>
+                                <!-- 2021-04-14 수정 -->
+                                <span>바로주유 시 비밀번호 입력 생략</span>
+                              </label>
+                            </li>
+                          </ul>
+
+                          <!-- 2021-03-31 키패드 추가 -->
+                          <div class="keypad-area">
+                            <h2 class="blind">비밀번호 입력 키패드</h2>
+                            <table class="keypad" role="presentation">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">1</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">2</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">3</span>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">4</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">5</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">6</span>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">7</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">8</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">9</span>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td>
+                                    <button type="button" class="key">
+                                      <span class="key-label">0</span>
+                                    </button>
+                                  </td>
+                                  <td>
+                                    <button type="button" class="key key-del">
+                                      <span class="blind">지우기</span>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div>
+                            <button class="button is-fullwidth is-dark">
+                              등록완료
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- // step 05 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- // Contents -->
+      </div>
+    </div>
+
+    <!-- 2021-01-14 수정
+        * vue-slider-component : /lib/vue-slider 추가함
+        * 임시로 cdn으로 설정
+    -->
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/dist/vue-slider-component.umd.min.js"></script>
+    <!-- <link rel="stylesheet" href="/lib/vue-slider/default.css">
+    <script src="/lib/vue-slider/vue-slider-component.umd.min.js"></script> -->
+    <script>
+      new Vue({
+        el: "#container",
+        data() {
+          return {
+            value: 5,
+            data: [
+              {
+                id: 1,
+                name: "1만원",
+              },
+              {
+                id: 2,
+                name: "2만원",
+              },
+              {
+                id: 3,
+                name: "3만원",
+              },
+              {
+                id: 4,
+                name: "4만원",
+              },
+              {
+                id: 5,
+                name: "5만원",
+              },
+              {
+                id: 6,
+                name: "6만원",
+              },
+              {
+                id: 7,
+                name: "7만원",
+              },
+              {
+                id: 8,
+                name: "8만원",
+              },
+              {
+                id: 9,
+                name: "9만원",
+              },
+              {
+                id: "가득",
+                name: "가득",
+              },
+            ],
+          };
+        },
+        components: {
+          vueSlider: window["vue-slider-component"],
+        },
+      });
+
+      // accordion
+      new Accordion(".accordion-container", {
+        duration: 400,
+        openOnInit: [0],
+      });
+
+      // 다음단계버튼 클릭 이벤트
+      var btnStep = document.querySelectorAll(".button");
+      var baroStep = document.querySelectorAll(".baro-step");
+
+      for (var i = 0; i < btnStep.length; i++) {
+        btnStep[i].setAttribute("data-index", i);
+        baroStep[i].setAttribute("data-index", i);
+        btnStep[i].onclick = function () {
+          var index = parseInt(this.dataset.index);
+          if (index == btnStep.length - 1) {
+            location.reload();
+            return;
+          }
+
+          // check and transition collapse for 0.1 sec
+          completeCurrentStep(index);
+
+          // expand next step after 0.1 sec
+          setTimeout(function () {
+            activateNextStep(index + 1);
+          }, 100);
+        };
+      }
+
+      // current step complete
+      function completeCurrentStep(index) {
+        var objNextStep = baroStep[index];
+        objNextStep.classList.remove("is-active");
+        // ac-panel : height는 0 으로 설정 (slideUp)
+        objNextStep.querySelector(".ac-panel").style.height = 0;
+        objNextStep.classList.add("is-completed");
+      }
+
+      // show next step
+      function activateNextStep(index) {
+        var objNextStep = baroStep[index];
+        objNextStep.classList.add("is-active");
+        var objAcPanel = objNextStep.querySelector(".ac-panel");
+        objAcPanel.style.height = objAcPanel.scrollHeight + "px";
+      }
+
+      // 결제비밀번호 key-code 포커스시 on 클래스 추가
+      var keyCodes = document.querySelectorAll(".key-code-input");
+      keyCodes.forEach((keyCode) => {
+        keyCode.addEventListener("focus", (event) => {
+          keyCode.parentNode.classList.add("on");
+        });
+      });
+    </script>
+  </body>
+</html>

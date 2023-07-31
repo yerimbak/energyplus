@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<!-- 팝업 오픈시 body에 is-fixed 클래스 추가-->
+<body class="is-fixed">
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/main-header.html')
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents">
+                @@include('./include/main-content.html')
+			</div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+        @@include('./include/footer.html')
+        <!-- // Footer -->
+        
+        <!-- gnb -->
+        @@include('./include/gnb.html')
+        <!-- // gnb -->
+        
+        <!-- bottom sheet -->
+        @@include('./include/bottom-sheet-login-easy.html')
+    </div>
+</body>
+</html>

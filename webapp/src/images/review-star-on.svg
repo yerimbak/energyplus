@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="24" viewBox="0 0 136 24">
+  <defs>
+    <clipPath id="clip-on">
+      <rect width="136" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="on" clip-path="url(#clip-on)">
+    <g id="별점" transform="translate(-51 -2)">
+      <g id="Icon-star-full" transform="translate(51 2)">
+        <rect id="사각형_4824" data-name="사각형 4824" width="24" height="24" transform="translate(56 0)" fill="#fff" opacity="0"/>
+        <path id="Icon_metro-star-full" data-name="Icon metro-star-full" d="M24,8.4,15.708,7.242,12,0,8.292,7.242,0,8.4,6,14.04,4.584,22,12,18.242,19.416,22,18,14.04,24,8.4Z" transform="translate(56 1)" fill="#ffe35d"/>
+      </g>
+      <g id="Icon-star-empty" transform="translate(51 2)">
+        <rect id="사각형_4826" data-name="사각형 4826" width="24" height="24" transform="translate(112 0)" fill="#fff" opacity="0"/>
+        <path id="Icon_metro-star-full-2" data-name="Icon metro-star-full" d="M24,8.4,15.708,7.242,12,0,8.292,7.242,0,8.4,6,14.04,4.584,22,12,18.242,19.416,22,18,14.04,24,8.4Z" transform="translate(112 1)" fill="#ffe35d"/>
+      </g>
+      <g id="Icon-star-full-2" data-name="Icon-star-full" transform="translate(23 2)">
+        <rect id="사각형_4824-2" data-name="사각형 4824" width="24" height="24" transform="translate(56 0)" fill="#fff" opacity="0"/>
+        <path id="Icon_metro-star-full-3" data-name="Icon metro-star-full" d="M24,8.4,15.708,7.242,12,0,8.292,7.242,0,8.4,6,14.04,4.584,22,12,18.242,19.416,22,18,14.04,24,8.4Z" transform="translate(56 1)" fill="#ffe35d"/>
+      </g>
+      <g id="Icon-star-full-3" data-name="Icon-star-full" transform="translate(-5 2)">
+        <rect id="사각형_4824-3" data-name="사각형 4824" width="24" height="24" transform="translate(56 0)" fill="#fff" opacity="0"/>
+        <path id="Icon_metro-star-full-4" data-name="Icon metro-star-full" d="M24,8.4,15.708,7.242,12,0,8.292,7.242,0,8.4,6,14.04,4.584,22,12,18.242,19.416,22,18,14.04,24,8.4Z" transform="translate(56 1)" fill="#ffe35d"/>
+      </g>
+      <g id="Icon-star-full-4" data-name="Icon-star-full" transform="translate(79 2)">
+        <rect id="사각형_4824-4" data-name="사각형 4824" width="24" height="24" transform="translate(56 0)" fill="#fff" opacity="0"/>
+        <path id="Icon_metro-star-full-5" data-name="Icon metro-star-full" d="M24,8.4,15.708,7.242,12,0,8.292,7.242,0,8.4,6,14.04,4.584,22,12,18.242,19.416,22,18,14.04,24,8.4Z" transform="translate(56 1)" fill="#ffe35d"/>
+      </g>
+    </g>
+  </g>
+</svg>

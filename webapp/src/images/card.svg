@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="248" viewBox="0 0 328 248">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-5 {
+        fill: #222;
+      }
+
+      .cls-2 {
+        font-size: 17px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-family: NotoSansCJKkr-Regular, Noto Sans CJK KR;
+        font-weight: 400;
+      }
+
+      .cls-4 {
+        fill: #f5f5f5;
+      }
+
+      .cls-5 {
+        font-size: 15px;
+        font-family: NotoSansCJKkr-Medium, Noto Sans CJK KR;
+        font-weight: 500;
+      }
+
+      .cls-6 {
+        fill: #0f1f2e;
+      }
+
+      .cls-7 {
+        filter: url(#패스_8871);
+      }
+    </style>
+    <filter id="패스_8871" x="0" y="0" width="328" height="248" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#6e6e6e" flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="card" transform="translate(-23 -391)">
+    <g id="그룹_15099" data-name="그룹 15099" transform="translate(68 426)">
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, -45, -35)">
+        <path id="패스_8871-2" data-name="패스 8871" class="cls-1" d="M11.47,0H226.53C232.865,0,238,4.353,238,9.723V148.277c0,5.37-5.135,9.723-11.47,9.723H11.47C5.135,158,0,153.647,0,148.277V9.723C0,4.353,5.135,0,11.47,0Z" transform="translate(45 35)"/>
+      </g>
+      <g id="card_휘발유" transform="translate(50.615 24.046)">
+        <text id="더_빠르고_간편하게_주유하세요" data-name="더 빠르고 간편하게
+주유하세요" class="cls-2" transform="translate(65.969 19.954)"><tspan x="-66.419" y="0">더 빠르고 간편하게</tspan><tspan class="cls-3"><tspan x="-39.1" y="23">주유하세요</tspan></tspan></text>
+      </g>
+    </g>
+    <g id="btn" transform="translate(121 528)">
+      <path id="Rectangle_" data-name="Rectangle " class="cls-4" d="M18.217,0h96.565A18.11,18.11,0,0,1,133,18a18.129,18.129,0,0,1-18.217,18H18.217A18.11,18.11,0,0,1,0,18,18.11,18.11,0,0,1,18.217,0Z"/>
+      <text id="바로주유등록" class="cls-5" transform="translate(34 24.053)"><tspan x="0" y="0">바로주유등록</tspan></text>
+      <path id="plus" class="cls-6" d="M4,9V6H1A1,1,0,1,1,1,4H4V1A1,1,0,1,1,6,1V4H9A1,1,0,1,1,9,6H6V9A1,1,0,0,1,4,9Z" transform="translate(16 13.053)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/main-header.html')
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents">
+                @@include('./include/main-content.html')
+			</div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+        @@include('./include/footer.html')
+        <!-- // Footer -->
+        
+        <!-- bottom sheet -->
+        @@include('./include/bottom-sheet-easy-refuel-retry.html')
+	</div>
+	<script>
+		// modal dim 클릭시 close
+		const $body = document.querySelector('body'),
+		$modal = document.querySelector('.modal'),
+		$modalClose = document.querySelector('.modal-background'),
+		$bottomSheet = document.querySelector('.bottom-sheet');
+	
+		$modalClose.addEventListener('click', () => {
+			$body.classList.remove('is-fixed');
+			$modal.classList.remove('is-active');
+		})
+	</script>
+</body>
+</html>

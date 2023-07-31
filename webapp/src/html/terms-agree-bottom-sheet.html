@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">상품샵</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner is-padding-top">
+                    <!-- 상품 목룩 -->
+                    <ul class="box-product-list">
+                        <!-- S: 상품 type-1 -->
+                        <li class="item-box-product type-1">
+                           <div class="box-product-hd">
+                                <div class="align-left">
+                                    <div class="tit-product-group">
+                                        <small class="category">카테고리</small>
+                                        <h3 class="title is-4">상품명 텍스트 길어질 시 상품명 텍스트</h3>
+                                    </div>
+                                </div>
+                                <div class="align-right"><strong class="is-family-secondary">9,000</strong>원</div>
+                           </div>
+                           <div class="box-product-bt">
+                                <div class="box-product-info">
+                                    <a href="#" title="상품 상세">
+                                        <!-- 이미지 샘플 -->
+                                        <img src="./images/txt-benefit-sample.svg" class="benefit-img" alt="혜택"> 
+                                    </a>
+                                </div>
+                           </div>
+                        </li>
+                        <!-- E: 상품 type-1 -->
+
+                        <!-- S: 상품 type-2 -->
+                        <li class="item-box-product type-2">
+                            <div class="box-product-hd">
+                                 <div class="align-left">
+                                     <div class="tit-product-group">
+                                         <small class="category">카테고리</small>
+                                         <h3 class="title is-4">주유 카케어팩</h3>
+                                     </div>
+                                 </div>
+                                 <div class="align-right"><strong class="is-family-secondary">39,000</strong>원</div>
+                            </div>
+                            <div class="box-product-bt">
+                                <div class="box-product-info">
+                                    <a href="#" title="상품 상세">
+                                        <!-- 이미지 샘플 -->
+                                        <img src="./images/txt-benefit-sample.svg" class="benefit-img" alt="혜택"> 
+                                    </a>
+                                </div>
+                            </div>
+                         </li>
+                         <!-- E: 상품 type-2 -->
+
+                         <!-- S: 상품 type-3 -->
+                        <li class="item-box-product type-3">
+                            <div class="box-product-hd">
+                                 <div class="align-left">
+                                     <div class="tit-product-group">
+                                         <small class="category">카테고리</small>
+                                         <h3 class="title is-4">상품명 텍스트 길어질 시 상품명 텍스트</h3>
+                                     </div>
+                                 </div>
+                                 <div class="align-right"><strong class="is-family-secondary">9,000</strong>원</div>
+                            </div>
+                            <div class="box-product-bt">
+                                <div class="box-product-info">
+                                    <a href="#" title="상품 상세">
+                                        <!-- 이미지 샘플 -->
+                                        <img src="./images/txt-benefit-sample.svg" class="benefit-img" alt="혜택"> 
+                                    </a>
+                                </div>
+                            </div>
+                         </li>
+                         <!-- E: 상품 type-3 -->
+                    </ul>
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+
+        <!-- bottom sheet -->
+        <div class="modal is-active">
+            <div class="modal-background"></div>
+            <div class="bottom-sheet is-bottom-fixed">
+                <div class="bottom-sheet-header">
+                    <h2 class="title is-3 has-text-centered">제 3자 정보제공 동의</h2>
+                    <button class="btn-close"><span class="blind">닫기</span></button>
+                </div>
+                <div class="bottom-sheet-body">
+                    <div class="inner">
+                        <!-- 2021-03-29 문구 수정 -->
+                        <p>
+                            상품 구매 및 사용을 위한 정보 제공 동의 및 서비스<br>
+                            이용 약관 동의가 필요합니다.
+                        </p>
+                        <div class="is-padding-top-20">
+                            <ul class="list-checkbox">
+                                <li>
+                                    <!-- D: 전체동의 클릭하거나 체크박스 모두 선택됐을때 [is-active] add -->
+                                    <div class="is-box-rounded is-active">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked>
+                                            <i></i>
+                                            <span>전체동의</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <i></i>
+                                        <!-- 2021-05-10 문구 변경 -->
+                                        <span>(필수) 제 3자 정보 제공 동의 </span>
+                                    </label>
+                                    <!-- D: 클릭이벤트 : 전체레이어팝업 활성화 - div(class="is-full-screen")에 [is-active] add -->
+                                    <button class="arrow-right is-small" id="btn-terms-open"><span class="blind">약관보기</span></button>
+                                </li>
+                                <!-- 2021-05-10 삭제 -->
+                                <!-- <li>
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <i></i>
+                                        <span>(선택) 수집이용 동의 </span>
+                                    </label>
+                                    <button class="arrow-right is-small"><span class="blind">약관보기</span></button>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="is-button-fixed">
+                            <div class="inner">
+                                <div class="buttons">
+                                    <!-- 2021-03-29 취소 버튼 추가 -->
+                                    <button class="button is-half is-outline">취소</button>
+                                    <button class="button is-half is-dark">동의</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- full-screen modal -->
+        <!-- D: 활성화 [is-active] add -->
+        <div tabindex="-1" class="modal is-full-screen">
+            <div class="modal-background"></div>
+            <div class="animation-content">
+                <div class="modal-card" style="width: auto;">
+                    <header class="modal-card-head">
+                        <!-- <p class="modal-card-title">Title</p> -->
+                        <button class="btn-close"><span class="blind">닫기</span></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <!-- iframe -->
+                        <div class="iframe-container">
+                            <iframe></iframe>
+                        </div>
+                        <!-- // iframe -->
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- // full-screen modal -->
+	</div>
+    <script>
+        // 약관보기 버튼 클릭시 fullscreen modal open event
+        const termsOpen = document.querySelector('#btn-terms-open'),
+		fullScreen = document.querySelector('.is-full-screen'),
+        btnClose = fullScreen.querySelector('.btn-close'),
+		body = document.querySelector('body');
+
+		if (termsOpen !== null) {
+			termsOpen.addEventListener('click', event => {
+				fullScreen.classList.add('is-active');
+				body.classList.add('is-fixed');
+			});
+		}
+
+        if (btnClose !== null) {
+			btnClose.addEventListener('click', event => {
+				fullScreen.classList.remove('is-active');
+				body.classList.remove('is-fixed');
+			});
+		}
+    </script>
+</body>
+</html>

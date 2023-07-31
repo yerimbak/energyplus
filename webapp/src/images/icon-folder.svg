@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#0f1f2e;stroke-linecap:round}.cls-5{fill:#0f1f2e}.cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="icno-folder" transform="translate(-23 -550)">
+        <path id="Box" d="M0 0H32V32H0z" class="cls-1" transform="translate(23 550)"/>
+        <g id="Shape" transform="translate(-208 183)">
+            <g id="그룹_15064" transform="translate(.5 -.5)">
+                <path id="패스_9008" d="M4 0h16a4 4 0 0 1 4 4v4.5" class="cls-2" transform="translate(234 376)"/>
+                <path id="패스_9009" d="M11.5 20H4a4 4 0 0 1-4-4V1h4" class="cls-2" transform="translate(235 375)"/>
+            </g>
+            <g id="패스_9007" fill="#fff">
+                <path d="M12.69 4.5H.5V2C.5 1.173 1.173.5 2 .5h8c.596 0 .837.4 1.284 1.235.086.162.176.33.275.502L12.69 4.5z" class="cls-6" transform="translate(235 371)"/>
+                <path fill="#0f1f2e" d="M2 1c-.551 0-1 .449-1 1v2h10.881l-.762-1.527c-.1-.174-.19-.34-.276-.502C10.374 1.095 10.258 1 10 1H2m0-1h8c1.105 0 1.405.97 2 2l1.498 3H0V2C0 .895.895 0 2 0z" transform="translate(235 371)"/>
+            </g>
+            <g id="타원_1454" fill="#3ddb87" stroke="#0f1f2e" transform="translate(247 383)">
+                <circle cx="6" cy="6" r="6" class="cls-6"/>
+                <circle cx="6" cy="6" r="5.5" class="cls-1"/>
+            </g>
+            <rect id="사각형_4861" width="6" height="1" class="cls-5" rx=".5" transform="translate(250 388.5)"/>
+            <rect id="사각형_4862" width="6" height="1" class="cls-5" rx=".5" transform="rotate(90 -66.25 319.75)"/>
+        </g>
+    </g>
+</svg>

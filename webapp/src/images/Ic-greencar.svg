@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path data-name="사각형 4080" style="fill:none" d="M0 0h32v32H0z"/>
+    <g data-name="그룹 20192">
+        <g data-name="패스 19085" style="stroke-linejoin:round;stroke-linecap:round;fill:#fff">
+            <path d="M2705.862 403.48H2679.671l.727-.83 4.251-4.85.15-.17h16.043l.15.174 4.162 4.85.708.826z" style="stroke:none" transform="translate(-2676.627 -374.254)"/>
+            <path d="m2704.774 402.98-4.162-4.85h-15.587l-4.25 4.85h24m0 1h-24a1 1 0 0 1-.753-1.659l4.25-4.85a1 1 0 0 1 .753-.341h15.587a1 1 0 0 1 .759.349l4.162 4.85a1 1 0 0 1-.759 1.651z" style="fill:#0f1f2e;stroke:none" transform="translate(-2676.627 -374.254)"/>
+        </g>
+        <g data-name="그룹 20188">
+            <path data-name="패스 19083" d="M2847.34 403.277a1.26 1.26 0 0 0 2.174 0l5.93-9.894a8.707 8.707 0 0 0-1.694-11.472 8.376 8.376 0 0 0-7.147-1.717 8.5 8.5 0 0 0-6.375 6.374 8.756 8.756 0 0 0 1.2 6.807z" transform="translate(-2832.292 -377)" style="stroke:#0f1f2e;fill:#fff"/>
+            <g data-name="그룹 20191">
+                <g data-name="그룹 20189">
+                    <path data-name="패스 19087" d="M249.59 155.921a3.179 3.179 0 0 1 2.722 1.538l1.47-1.47a5.206 5.206 0 0 0-8.34-.055l1.465 1.465a3.177 3.177 0 0 1 2.683-1.478z" transform="translate(-233.371 -147.457)" style="fill:#00c88c"/>
+                </g>
+                <g data-name="그룹 20190">
+                    <path data-name="패스 19088" d="M250.007 172.936h-5.555a.061.061 0 0 0-.044.1l1.5 1.5a.124.124 0 0 0 .087.036h2.1a3.33 3.33 0 0 1-6.421-1.738l-1.409-1.409a5.123 5.123 0 1 0 9.747 1.508z" transform="translate(-228.775 -161.761)" style="fill:#143c56"/>
+                </g>
+            </g>
+        </g>
+        <g data-name="그룹 20200">
+            <path data-name="패스 19091" d="m2680.774 402.98 4.251-4.851h1.718l-4.075 4.851z" transform="translate(-2676.627 -374.254)" style="fill:#3ddb87"/>
+            <path data-name="패스 19092" d="M3.986-.045-.828 5.6" transform="translate(6.5 23.5)" style="stroke:#0f1f2e;stroke-linecap:round;fill:none"/>
+        </g>
+        <g data-name="그룹 20201">
+            <path data-name="패스 19091" d="m2686.743 402.98-4.093-4.851h-1.876l4.075 4.851z" transform="translate(-2658.595 -374.254)" style="fill:#3ddb87"/>
+            <path data-name="패스 19092" d="m-.757-.064 4.61 5.675" transform="translate(22.679 23.5)" style="stroke:#0f1f2e;stroke-linecap:round;fill:none"/>
+        </g>
+    </g>
+</svg>

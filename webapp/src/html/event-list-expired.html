@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+@@include('./include/skip_navi.html')
+<div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+            <a href="#" class="is-back">
+                <i class="icon-arrow-left"></i>
+                <span class="blind">이전</span>
+            </a>
+            <div class="has-text-centered">
+                <h2 class="title is-3">이벤트</h2>
+            </div>
+        </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+            <!-- top fixed section -->
+            <section class="top-fixed-section">
+                <div class="tab-area b-tabs">
+                    <!-- tabs -->
+                    <nav class="tabs">
+                        <ul>
+                            <!-- 탭 활성화 : is-active 클래스 추가 -->
+                            <li>
+                                <a href="#">
+                                    <span>진행중 이벤트</span>
+                                </a>
+                            </li>
+                            <li class="is-active">
+                                <a href="#">
+                                    <span>종료 이벤트</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <!-- 2021-04-27 [tab-section] add -->
+            <section class="contents-section tab-section">
+                <div class="inner">
+                    <ul class="event-list">
+                        <!-- 종료 이벤트 : is-expired 클래스 추가 -->
+                        <li class="item-event is-expired">
+                            <a href="#">
+                                <div class="box-event-img-area">
+                                    <p class="box-event-img">
+                                        <!-- 이미지 배너 영역 -->
+                                        <img src="/images/event-banner-invite.svg" alt="친구도 나도 함께 할인">
+                                    </p>
+                                    <!-- 종료 이벤트 추가 -->
+                                    <strong class="icon-expired">종료이벤트</strong>
+                                </div>
+                                <div class="txt-event-info">
+                                    <div class="box-txt-group">
+                                        <p class="title">친구도 나도 함께 할인</p>
+                                        <p class="is-family-secondary">~ 2020-11-09</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- 종료 이벤트 : is-expired 클래스 추가 -->
+                        <li class="item-event is-expired">
+                            <a href="#">
+                                <div class="box-event-img-area">
+                                    <p class="box-event-img">
+                                        <!-- 이미지 배너 영역 -->
+                                        <img src="/images/event-banner-plus.svg" alt="주유한만큼 혜택 PLUS">
+                                    </p>
+                                    <!-- 종료 이벤트 추가 -->
+                                    <strong class="icon-expired">종료이벤트</strong>
+                                </div>
+                                <div class="txt-event-info">
+                                    <div class="box-txt-group">
+                                        <p class="title">주유한만큼 혜택 PLUS</p>
+                                        <p class="is-family-secondary">~ 2020-11-09</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- 종료 이벤트 : is-expired 클래스 추가 -->
+                        <li class="item-event is-expired">
+                            <a href="#">
+                                <div class="box-event-img-area">
+                                    <p class="box-event-img">
+                                        <!-- 이미지 배너 영역 -->
+                                        <img src="/images/event-banner-stamp.svg" alt="스탬프찍고 할인받고">
+                                    </p>
+                                    <!-- 종료 이벤트 추가 -->
+                                    <strong class="icon-expired">종료이벤트</strong>
+                                </div>
+                                <div class="txt-event-info">
+                                    <div class="box-txt-group">
+                                        <p class="title">스탬프찍고 할인받고</p>
+                                        <p class="is-family-secondary">~ 2020-11-09</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- // Contents -->
+    </div>
+
+    <!-- Footer -->
+    @@include('./include/footer.html')
+    <!-- // Footer -->
+</div>
+</body>
+</html>

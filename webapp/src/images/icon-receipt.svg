@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#0f1f2e;stroke:#0f1f2e}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="Icon_receipt" transform="translate(-218 -556)">
+        <g id="Box" transform="translate(217.994 556)">
+            <path id="사각형_4080" d="M0 0H20V20H0z" class="cls-1" transform="translate(.006)"/>
+        </g>
+        <g id="Shape" transform="translate(219.473 560.607)">
+            <g id="사각형_4052" class="cls-2" transform="translate(.527 -2.607)">
+                <rect width="16" height="1" class="cls-4" rx=".5"/>
+                <rect width="15" x=".5" y=".5" class="cls-1"/>
+            </g>
+            <path id="패스_9075" fill="#fff" stroke="#0f1f2e" d="M-.5.5h12l.032 14.5-2.322-2.069L7.366 15l-1.845-2.069L3.677 15l-1.844-2.069L-.468 15z" transform="translate(3.022 -2.606)"/>
+            <g id="그룹_15294" transform="translate(0 -.5)">
+                <g id="사각형_5050" class="cls-2" transform="translate(4.527 .394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+                <g id="사각형_5051" class="cls-2" transform="translate(4.527 3.394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+                <g id="사각형_5053" class="cls-2" transform="translate(4.527 6.394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+                <g id="사각형_5055" class="cls-2" transform="translate(11.527 .394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+                <g id="사각형_5056" class="cls-2" transform="translate(11.527 3.394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+                <g id="사각형_5057" class="cls-2" transform="translate(11.527 6.394)">
+                    <rect width="1" height="2" class="cls-4" rx=".5"/>
+                    <rect height="1" x=".5" y=".5" class="cls-1"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

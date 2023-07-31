@@ -1,0 +1,37 @@
+<div class="modal is-active">
+    <div class="modal-background"></div>
+
+    <!--  Bottom Sheet -->
+    <div class="bottom-sheet is-large is-bottom-fixed mkopen-popup">
+        <div class="bottom-sheet-header">
+            <h2 class="title is-3">GS칼텍스 매경오픈 입장권</h2>
+            <button class="btn-close"><span class="blind">닫기</span></button>
+        </div>
+        <div class="bottom-sheet-body mkopen-body">
+            <div class="inner">
+                <div class="mkopen-popup-wrap">
+                    <img src="./images/mkopen-enter-popup.png" alt="mkopen-enter-popup" class="pop-wrap">
+                    <p class="date"></p>
+                    <a href="http://maekyungopen.mk.co.kr/info/info01.html" class="mkopen-detail-btn"
+                        target="_blank"><img src="./images/mkopen-detail-btn.png" alt="detail btn" /></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- 현재 날짜 script-->
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+<script>
+    $(function date() {
+        let today = new Date();
+        let year = today.getFullYear(); // 년도
+        let month = today.getMonth() + 1;  // 월
+        month = month >= 10 ? month : '0' + month; 
+        let date = today.getDate();  // 날짜
+        date = date >= 10 ? date : '0' + date;         
+
+        $('.date').text(`${year}년 ${month}월 ${date}일`)
+    });
+</script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">Push 알림설정 확인</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <!-- inner -->
+                <div class="inner is-padding-top">
+                    <!-- 2021-02-23 구조 변경 및 클래스 추가 -->
+                    <div class="is-fullheight">
+                        <div class="step-area">
+                            <div class="steps">
+                                <ul class="step-items">
+                                    <li class="step-item is-checked">
+                                        <div class="step-marker">
+                                            <i class="icon">
+                                                <span class="blind">정상</span>
+                                            </i>
+                                        </div>
+                                        <div class="step-detail">
+                                            <span class="step-title">기기 설정 확인</span>
+                                        </div>
+                                        <div>
+                                            알림이 허용되어 있지 않습니다.<br>
+                                            설정에서 알림을 허용해 주세요.
+                                        </div>
+                                    </li>
+                                    <li class="step-item is-checked">
+                                        <div class="step-marker">
+                                            <i class="icon">
+                                                <span class="blind">정상</span>
+                                            </i>
+                                        </div>
+                                        <div class="step-detail">
+                                            <!-- 2021-04-14 수정 -->
+                                            <span class="step-title">에너지플러스 설정 확인</span>
+                                        </div>
+                                    </li>
+                                    <li class="step-item is-loading">
+                                        <div class="step-marker">
+                                            <i class="icon-loading-dot">
+                                                <span class="blind">데이터 로딩</span>
+                                            </i>
+                                        </div>
+                                        <div class="step-detail">
+                                            <span class="step-title">Google Play 서비스 확인</span>
+                                        </div>
+                                    </li>
+                                    <li class="step-item is-retry">
+                                        <div class="step-marker">
+                                            <i class="icon">
+                                                <span class="blind">정상</span>
+                                            </i>
+                                        </div>
+                                        <div class="step-detail is-retry">
+                                            <span class="step-title">푸시 토큰 등록</span>
+                                        </div>
+                                    </li>
+                                    <li class="step-item is-retry">
+                                        <div class="step-marker">
+                                            <i class="icon">
+                                                <span class="blind">정상</span>
+                                            </i>
+                                        </div>
+                                        <div class="step-detail">
+                                            <span class="step-title">테스트 문구 발송</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- button -->
+                        <!-- 2021-02-23 구조 변경 및 클래스 수정 -->
+                        <div class="buttons is-bottom-type">
+                            <button class="button is-dark is-fullwidth">설정 확인 재시도</button>
+                        </div>
+                        <!-- // button -->
+                    </div>
+                </div>
+                <!-- // inner -->
+            </div>
+			<!-- // Contents -->
+		</div>
+
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+</body>
+</html>

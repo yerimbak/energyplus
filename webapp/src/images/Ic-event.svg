@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path data-name="사각형 4080" style="fill:none" d="M0 0h32v32H0z"/>
+    <g data-name="그룹 19466">
+        <g data-name="그룹 19465">
+            <g data-name="그룹 19464">
+                <path data-name="패스 13913" d="M28.6 98c.627-4.251 2.44-6.824 4.844-6.824a3.451 3.451 0 0 1 0 6.9" transform="translate(-12.18 -87.175)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#0f1f2e;fill:none"/>
+                <path data-name="패스 13914" d="M26.219 98c-.628-4.251-2.439-6.824-4.844-6.824a3.451 3.451 0 0 0 0 6.9" transform="translate(-9.637 -87.175)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#0f1f2e;fill:none"/>
+            </g>
+            <g data-name="사각형 6923" transform="translate(6 11.908)" style="stroke:#0f1f2e;fill:none">
+                <rect width="21" height="16" rx="2" style="stroke:none"/>
+                <rect x=".5" y=".5" width="20" height="15" rx="1.5" style="fill:none"/>
+            </g>
+            <g data-name="사각형 6924" transform="translate(5 9.908)" style="fill:#fff;stroke:#0f1f2e">
+                <rect width="23" height="7" rx="2" style="stroke:none"/>
+                <rect x=".5" y=".5" width="22" height="6" rx="1.5" style="fill:none"/>
+            </g>
+            <g data-name="사각형 6925" style="fill:#3cdc87;stroke:#0f1f2e">
+                <path style="stroke:none" d="M0 0h4v18H0z" transform="translate(14.5 9.908)"/>
+                <path style="fill:none" d="M.5.5h3v17h-3z" transform="translate(14.5 9.908)"/>
+            </g>
+        </g>
+    </g>
+</svg>

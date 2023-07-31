@@ -1,0 +1,174 @@
+<div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="bottom-sheet is-large is-bottom-fixed">
+    <div class="bottom-sheet-header">
+      <h2 class="title is-5 title-price">
+        휘발유<strong><em class="is-family-secondary">30,000</em>원</strong>
+      </h2>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+    </div>
+    <div class="bottom-sheet-body">
+      <!-- 2021-01-13 수정 -->
+      <div class="inner">
+        <div class="bonus-coupon-area type02">
+          <div class="is-align-right">
+            <span class="title is-3">주유번호</span>
+            <span class="title is-3 is-primary-text3">123 456</span>
+          </div>
+          <div class="barcode-area">
+            <div class="barcode"></div>
+            <!-- D: 바코드 들어가는 영역 -->
+            <p class="barcode-num">2917 - 1019 - 2993 - 3833</p>
+            <p class="timer">남은시간<span class="is-red-text">02:19</span></p>
+          </div>
+          <div class="section-point-area has-text-centered">
+            <!-- 2022-11-17 문구 추가 -->
+            <small>
+              <i class="icon-noti"></i>
+              설정한 금액보다 적게 주유된 경우, 쿠폰/포인트 <br />
+              사용이 불가하며, 결제 금액은 상이할 수 있습니다.
+            </small>
+            <small class="point-txt">
+              <i class="icon-noti"></i>
+              설정한 금액보다 적게 주유된 경우, 바로할인이 불가하거나<br />
+              일부만 할인될 수 있으며 할인 적용이 이루어지지 않은 경우,<br />
+              주유소 직원을 통해 취소 후 재결제를 요청하여 주시기 바랍니다.
+            </small>
+            <ul class="list-my-discount">
+              <li>
+                <span>쿠폰할인</span>
+                <span>
+                  <strong class="is-family-secondary">-2,000</strong>원
+                  <!-- 2021-04-19 결제수단 부족시 노출되는 문구 추가 -->
+                  <!-- <small class="mblock is-gray-text is-align-right">(잔여한도 부족)</small> -->
+                </span>
+              </li>
+              <li>
+                <span>GS&amp;포인트 사용</span>
+                <span>
+                  <strong class="is-family-secondary">-1,000</strong>원
+                  <!-- 2021-04-08 문구 추가 / 2021-04-19 클래스 수정(is-red-text -> is-gray-text) -->
+                  <!-- <small class="mblock is-gray-text is-align-right">(사용한도 부족)</small> -->
+                </span>
+              </li>
+              <li>
+                <span>바로할인카드</span>
+                <span>
+                  <strong class="is-family-secondary">1</strong>리터당
+                  <strong class="is-family-secondary">20</strong>원 할인
+                  <!-- <small class="mblock is-gray-text is-align-right">(잔여한도 2,100원)</small> -->
+
+                  <!-- 2021-04-08 문구 추가  / 2021-04-19 클래스 수정(is-red-text -> is-gray-text) -->
+                  <small class="mblock is-gray-text is-align-right"
+                    >(잔여한도 2,100원)</small
+                  >
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2021-01-13 사용안내 추가 -->
+        <div class="user-guide-area">
+          <div class="tab-area b-tabs">
+            <!-- tabs -->
+            <nav class="tabs">
+              <ul>
+                <!-- 탭 활성화 : is-active 클래스 추가 -->
+                <!--2021-02-25 [guide-tab-1] add -->
+                <li class="guide-tab-1 is-active">
+                  <a href="#">
+                    <span>셀프주유소 사용안내</span>
+                  </a>
+                </li>
+                <!--2021-02-25 [guide-tab-2] add -->
+                <li class="guide-tab-2">
+                  <a href="#">
+                    <span>일반주유소 사용안내</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="contents-section">
+            <!-- 셀프주유소 사용안내 컨텐츠 - 셀프주유소 사용안내 탭 클릭시 show -->
+            <div class="contents-self-area show">
+              <p class="has-text-centered">
+                <!-- 
+                                    2021-03-19 문구 수정 (주유번호 6자리) ]
+                                    2021-12-10 문구 수정
+                                -->
+                <strong class="is-bold-text"
+                  >주유기에 바코드를 스캔 후 주유해 주세요.</strong
+                ><br />
+                스캔이 어려울 경우, 주유번호 6자리를 입력해주세요.
+              </p>
+              <div class="user-guide-img-area">
+                <img
+                  src="./images/img-user-guide-self.png"
+                  alt="셀프주유소 사용안내 이미지"
+                />
+              </div>
+            </div>
+
+            <!-- 일반주유소 사용안내 컨텐츠 - 일반주유소 사용안내 탭 클릭시 show -->
+            <div class="contents-general-area hide">
+              <p class="has-text-centered">
+                <!-- 
+                                    2021-03-19 문구 수정 (주유번호 6자리) 
+                                    2021-12-10 문구 수정
+                                -->
+                <strong class="is-bold-text"
+                  >주유 후 주유원에게 바코드를 보여주세요.</strong
+                ><br />
+                바코드 사용이 어려울 경우,<br />
+                주유번호 6자리를 보여주세요.
+              </p>
+              <div class="user-guide-img-area">
+                <img
+                  src="./images/img-user-guide.png"
+                  alt="일반주유소 사용안내 이미지"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="is-button-fixed">
+        <div class="inner">
+          <!-- 2021-01-13 수정 -->
+          <button type="button" class="button is-outline is-fullwidth">
+            취소
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 친구초대 배너 -->
+    <div class="bottom-sheet-banner">
+      <span class="txt-banner-desc">친구초대하기</span>
+      <span class="ico-character"></span>
+    </div>
+  </div>
+</div>
+<script>
+  // 2021-02-25 추가
+  // 사용안내 탭 클릭시 팝업 상단으로 스크롤 이동
+  const tab1 = document.querySelector(".guide-tab-1");
+  const tab2 = document.querySelector(".guide-tab-2");
+  const scrollTop = document.querySelector(".b-tabs");
+  const scrollContents = document.querySelector(".contents-section");
+
+  tab1.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollTop.scrollIntoView({ behavior: "smooth" });
+    // scrollContents.style.minHeight = "350px"
+  });
+
+  tab2.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollTop.scrollIntoView({ behavior: "smooth" });
+    // scrollContents.style.minHeight = "350px";
+  });
+</script>

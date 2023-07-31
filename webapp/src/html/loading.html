@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">로딩</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner">
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+        
+        <!-- loading-->
+        <!-- 2021-03-24 수정-->
+        <div class="loading-overlay">
+            <div class="loading">
+                <lottie-player background="transparent" speed="1" style="width: 100px;" loop autoplay></lottie-player>
+            </div>
+        </div>
+        <!-- // loading-->
+
+        <!-- 새로 고침 -->
+        <!-- D: bottom에 위치할 경우 [is-bottom] 클래스 추가 -->
+        <div class="reload-overlay">
+            <div class="reloader">
+                <i class="icon-loading-dot">
+                    <span class="blind">새로고침</span>
+                </i>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        /* loading */
+        const player = document.querySelector("lottie-player");
+        player.load("/js/loading.json");
+    </script>
+</body>
+</html>

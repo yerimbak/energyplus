@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="279" height="126" viewBox="0 0 279 126">
+  <g id="img" transform="translate(-43 -233)">
+    <rect id="사각형_6838" data-name="사각형 6838" width="279" height="121" transform="translate(43 233)" fill="#fff"/>
+    <text id="주유혜택_" data-name="주유혜택 " transform="translate(52 247)" fill="#222" font-size="12" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">주유혜택 </tspan></text>
+    <circle id="Bullet" cx="1.5" cy="1.5" r="1.5" transform="translate(47 242)" fill="#222"/>
+    <text id="세차혜택_" data-name="세차혜택 " transform="translate(52 300)" fill="#222" font-size="12" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">세차혜택 </tspan></text>
+    <circle id="Bullet-2" data-name="Bullet" cx="1.5" cy="1.5" r="1.5" transform="translate(47 295)" fill="#222"/>
+    <text id="정비혜택" transform="translate(52 326)" fill="#222" font-size="12" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">정비혜택</tspan></text>
+    <circle id="Bullet-3" data-name="Bullet" cx="1.5" cy="1.5" r="1.5" transform="translate(47 319)" fill="#222"/>
+    <text id="_1리터당_100원" data-name="1리터당 100원" transform="translate(196 247)" fill="#222" font-size="12" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-77.1" y="0">1</tspan><tspan y="0" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">리터당</tspan><tspan y="0" xml:space="preserve"> 100</tspan><tspan y="0" font-family="MalgunGothicBold, Malgun Gothic" font-weight="400">원</tspan></text>
+    <text id="세차_할인권_1매" data-name="세차 할인권 1매" transform="translate(119 300)" fill="#222" font-size="12" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">세차 할인권 1매</tspan></text>
+    <text id="엔진오일_교환_할인_등_총_4만원_상당의정비혜택" data-name="엔진오일 교환 할인 등 
+총 4만원 상당의정비혜택" transform="translate(119 326)" fill="#222" font-size="12" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="0" y="0">엔진오일 교환 할인 등 </tspan><tspan x="0" y="14">총 4만원 상당의정비혜택</tspan></text>
+    <text id="_최대_100L_" data-name="(최대 100L)" transform="translate(253 247)" fill="#222" font-size="10" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="-49.48" y="0">(최대 100L)</tspan></text>
+    <text id="_고급휘발유_전용_일반휘발유_및_경유_LPG_및_EV차량_사용불가_" data-name="※ 고급휘발유 전용 (일반휘발유 및 경유, 
+      LPG 및 EV차량 사용불가)" transform="translate(119 262)" fill="#888" font-size="10" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500"><tspan x="0" y="0">※ 고급휘발유 전용 (일반휘발유 및 경유, </tspan><tspan x="0" y="11" xml:space="preserve">      LPG 및 EV차량 사용불가)</tspan></text>
+    <text id="유효기간_:_구매일로부터_1개월_31일_기준_" data-name="유효기간 : 구매일로부터 1개월 (31일 기준)" transform="translate(119 356)" fill="#888" font-size="10" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500"><tspan x="0" y="0">유효기간 : 구매일로부터 1개월 (31일 기준)</tspan></text>
+  </g>
+</svg>

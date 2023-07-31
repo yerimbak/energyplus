@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-icon-favorite-unfilled">
+      <rect width="20" height="20"/>
+    </clipPath>
+  </defs>
+  <g id="icon-favorite-unfilled" clip-path="url(#clip-icon-favorite-unfilled)">
+    <g id="icon-favorite-unfilled-2" data-name="icon-favorite-unfilled">
+      <rect id="사각형_723" data-name="사각형 723" width="20" height="20" fill="#fff" opacity="0"/>
+      <path id="Fill" d="M12.783,0A4.669,4.669,0,0,0,9.445,1.4l-.694.7-.694-.7a4.681,4.681,0,0,0-6.675,0,4.825,4.825,0,0,0,0,6.763l7.369,7.462L16.12,8.163a4.825,4.825,0,0,0,0-6.763A4.681,4.681,0,0,0,12.783,0Z" transform="translate(1.247 2.5)" fill="#f0f0f0"/>
+    </g>
+  </g>
+</svg>

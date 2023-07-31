@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <!--2021-01-29 띄어쓰기 수정 -->
+            <h2 class="title is-3">주유 내역</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+          <div class="is-padding-top">
+            <div class="box-lately-history">
+              <p class="tit-oiling-lately">최근 3개월 주유 내역</p>
+              <ul class="list-oiling-area">
+                <li class="item-oiling">
+                  <p class="txt-month">
+                    <span class="is-family-secondary">12</span>월
+                  </p>
+                  <p class="txt-price">
+                    <strong class="is-family-secondary">50,000</strong>원
+                  </p>
+                  <!-- 2021-01-29 삭제 -->
+                  <!-- <p class="txt-discount-price"><span class="is-primary-text2 is-family-secondary">-10,000</span>원 할인</p> -->
+                </li>
+                <li class="item-oiling">
+                  <p class="txt-month">
+                    <span class="is-family-secondary">11</span>월
+                  </p>
+                  <p class="txt-price">
+                    <strong class="is-family-secondary">550,000</strong>원
+                  </p>
+                  <!-- 2021-01-29 삭제 -->
+                  <!-- <p class="txt-discount-price"><span class="is-primary-text2 is-family-secondary">0</span>원 할인</p> -->
+                </li>
+                <li class="item-oiling">
+                  <p class="txt-month">
+                    <span class="is-family-secondary">10</span>월
+                  </p>
+                  <p class="txt-price">
+                    <strong class="is-family-secondary">50,000</strong>원
+                  </p>
+                  <!-- 2021-01-29 삭제 -->
+                  <p class="txt-discount-price">
+                    <span class="is-primary-text2 is-family-secondary"
+                      >-1,000</span
+                    >원 할인
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2021-01-29 추가 -->
+            <!-- S: 바로주유 내역 보기 -->
+            <div class="box-switch-area level">
+              <div class="level-left">
+                <!-- 2021-02-17 문구 수정 -->
+                <h4 class="title is-5">바로주유 내역만 보기</h4>
+              </div>
+              <div class="level-right">
+                <!-- switch toggle -->
+                <div class="switch-area">
+                  <div class="field">
+                    <label class="switch is-rounded">
+                      <input
+                        type="checkbox"
+                        true-value="Yes"
+                        false-value="No"
+                        value="true"
+                        checked
+                      />
+                      <span class="check"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- E: 바로주유 내역 보기 -->
+
+            <!-- S: 전체취소 is-cancel 클래스 추가 -->
+            <div class="box-oiling-group is-cancel">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <p class="tit-cancel-area">
+                <small class="sub-desc">3~5영업일 소요</small>
+                <span class="box-small-rounded is-red">전체취소</span>
+              </p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <!-- 2021-03-22 링크 추가 -->
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <!-- 2021-03-22 링크 추가 -->
+                    <a href="#" class="link-arrow-right">바로할인 보너스카드</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 600</span>원
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- E: 전체취소 -->
+
+            <!-- S: 부분취소 is-cancel 클래스 추가 -->
+            <div class="box-oiling-group is-cancel">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <p class="tit-cancel-area">
+                <span class="box-small-rounded is-orange">부분취소</span>
+              </p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- E: 부분취소 -->
+
+            <!--2021-02-17 추가 -->
+            <!-- S: 부분 취소_단건: 결제 / is-cancel 클래스 추가 -->
+            <div class="box-oiling-group is-cancel">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <p class="tit-cancel-area">
+                <small class="sub-desc">3~5영업일 소요</small>
+                <span class="box-small-rounded is-orange">부분취소</span>
+              </p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <!-- 2021-04-19 부분취소시 경유리터 미노출 -->
+                  <!-- <p class="align-right"><strong class="is-family-secondary">30.97L</strong></p> -->
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- E: 부분 취소_단건: 결제 -->
+
+            <!-- S: 부분 취소_복수 건: 결제/포인트/쿠폰/현장할인 is-cancel 클래스 추가 -->
+            <div class="box-oiling-group is-cancel">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <p class="tit-cancel-area">
+                <small class="sub-desc">3~5영업일 소요</small>
+                <span class="box-small-rounded is-orange">부분취소</span>
+              </p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <!-- 2021-04-19 부분취소시 경유리터 미노출 -->
+                  <!-- <p class="align-right"><strong class="is-family-secondary">30.97L</strong></p> -->
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- E: 부분 취소_복수 건: 결제/포인트/쿠폰/현장할인 -->
+
+            <!-- S: 주유내역 -->
+            <div class="box-oiling-group">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">바로할인 보너스카드</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 600</span>원
+                  </p>
+                </li>
+              </ul>
+              <div class="box-bottom-btn">
+                <button type="button" class="review">
+                  <i class="ico"></i>리뷰 작성
+                </button>
+                <button type="button" class="receipt">
+                  <i class="ico"></i>영수증
+                </button>
+              </div>
+            </div>
+            <div class="box-oiling-group">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">바로할인 보너스카드</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 600</span>원
+                  </p>
+                </li>
+              </ul>
+              <div class="box-bottom-btn">
+                <button type="button" class="review">
+                  <i class="ico"></i>리뷰 작성
+                </button>
+              </div>
+            </div>
+            <div class="box-oiling-group">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">바로할인 보너스카드</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 600</span>원
+                  </p>
+                </li>
+              </ul>
+              <div class="box-bottom-btn">
+                <button type="button" class="review">
+                  <i class="ico"></i>리뷰 작성
+                </button>
+                <button type="button" class="receipt">
+                  <i class="ico"></i>영수증
+                </button>
+              </div>
+            </div>
+            <div class="box-oiling-group">
+              <p class="tit-oiling is-family-secondary">2020-12-06</p>
+              <ul class="list-oiling-details">
+                <li>
+                  <p class="align-left">경유</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">30.97L</strong>
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">장연주유소</p>
+                  <p class="align-right">
+                    <strong class="is-family-secondary">33,302</strong>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">GS&amp;POINT</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">할인쿠폰</p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 1,000</span>원
+                  </p>
+                </li>
+                <li>
+                  <p class="align-left">
+                    <a href="#" class="link-arrow-right">바로할인 보너스카드</a>
+                  </p>
+                  <p class="align-right">
+                    <span class="is-family-secondary">(-) 600</span>원
+                  </p>
+                </li>
+              </ul>
+              <div class="box-bottom-btn">
+                <button type="button" class="review">
+                  <i class="ico"></i>리뷰 작성
+                </button>
+              </div>
+            </div>
+            <!-- E: 주유내역 -->
+          </div>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>

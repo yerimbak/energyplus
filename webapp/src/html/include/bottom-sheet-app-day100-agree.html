@@ -1,0 +1,106 @@
+<div class="modal is-active">
+    <div class="modal-background"></div>
+
+    <!--  Bottom Sheet -->
+    <div class="bottom-sheet is-bottom-fixed">
+        <div class="bottom-sheet-header">
+            <h2 class="title is-3">이벤트 참여를 위한 필수 동의</h2>
+            <button class="btn-close"><span class="blind">닫기</span></button>
+        </div>
+        <div class="bottom-sheet-body">
+            <div class="inner">
+                <div class="day100_pop_top">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <i></i>
+                        에너지 플러스 마케팅 목적 개인정보 수집<br class=""> 및 활용(선택)
+                    </label>
+                    <!-- D: 클릭이벤트 : 전체레이어팝업 활성화 - div(class="is-full-screen")에 [is-active] add -->
+                    <button class="arrow-right is-small" id="btn-privacy-terms-open"><span class="blind">약관보기</span></button>
+                </div>
+                    
+                <p class="is-padding-top-20">
+                    위와 같이 개인정보를 수집·이용하는데 동의를 거부할 권리가 있습니다.<br>그러나 동의를 거부할 경우 이번 이벤트에 참여하실 수 없습니다.
+                </p>
+            </div>
+
+            <div class="is-button-fixed">
+                <div class="inner">
+                    <div class="buttons is-centered">
+                        <button type="button" class="button is-half is-outline">취소</button>
+                        <button type="button" class="button is-half is-dark">동의</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- full-screen modal -->
+        <!-- D: 활성화 [is-active] add -->
+        <div tabindex="-1" class="modal is-full-screen terms-pop">
+            <div class="modal-background"></div>
+            <div class="animation-content">
+                <div class="modal-card" style="width: auto;">
+                    <header class="modal-card-head">
+                        <button class="btn-close"><span class="blind">닫기</span></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <strong class="tit">[에너지플러스 서비스 마케팅 목적 개인정보 수집 및 활용]</strong>
+                        <p class="txt">1. 개인정보의 수집/이용에 관한 사항</p>
+                        <table border="1" cellspacing="0" cellpadding="0" summary="에너지플러스 서비스 마케팅 목적 개인정보 수집 및 활용" class="agree-table">
+                            <colgroup>
+                            <col style="width:33%;">
+                            <col style="width:33%;">
+                            <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2" style="text-align:center;">수집/이용 목적</th>
+                                    <th scope="col" colspan="2" style="text-align:center;">수집/이용 항목</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col" style="text-align:center;">필수 항목</th>
+                                    <th scope="col" style="text-align:center;">선택 항목</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font"><span style="font: 15px/1.5 '돋움';padding:3px; font-weight: bold;">에너지플러스 서비스 마케팅<span style="font-size:11px; vertical-align:top;">1)</span>을 위한 상품, 서비스 이용실적 통계/분석 </span> <br><span style="font-size:11px; vertical-align:top;">1)</span> 기획/관리, 상품/서비스 개발, 경품/사은행사, 제휴 상품/서비스 안내 등 마케팅 활동</td>
+                                    <td class="font">고객번호, 주거래 주유소/충전소, 상품/서비스/채널이용내역(이용 일시/금액/매장정보), 포인트 정보(적립/사용/잔액), 쿠키, 로그분석 프로그램을 통해 생성된 정보(접속 시간/IP, 브라우저 정보, URL), 웹/앱 방문 정보(접근 메뉴 정보)</td>
+                                    <td class="font">PUSH토큰, 기기정보, 차량번호</td>
+                                </tr>
+                                <tr>
+                                    <td class="font">에너지플러스 서비스 고객별 맞춤형 상품/서비스 마케팅</td>
+                                    <td class="font">에너지플러스 서비스 마케팅을 위한 상품/서비스 이용실적 분석 결과, 고객번호, GS&amp;POINT아이디, 이름, 생년월일, 성별, 휴대전화번호, 이메일, 본인인증결과값(CI)</td>
+                                    <td class="font">주소(자택, 직장), 전화(자택, 직장), 기념일(배우자/자녀 생일)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="txt">2. 개인정보의 보유 및 이용 기간 – 정보주체의 동의 철회 또는 회원 탈퇴 시까지</p>
+                        <p class="txt">※ 상기 내용에 동의를 거부할 수 있으나, 동의 거부 시 에너지플러스 서비스의 다양한 고객맞춤 상품/서비스 혜택을 받으실 수 없습니다.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- // full-screen modal -->
+<script>
+    // 약관보기 버튼 클릭시 fullscreen modal open event
+    const termsOpen = document.querySelector('#btn-privacy-terms-open'),
+          fullScreen = document.querySelector('.is-full-screen'),
+          btnClose = fullScreen.querySelector('.btn-close'),
+          body = document.querySelector('body');
+
+    if (termsOpen !== null) {
+        termsOpen.addEventListener('click', event => {
+        fullScreen.classList.add('is-active');
+        body.classList.add('is-fixed');
+      });
+    }
+
+    if (btnClose !== null) {
+        btnClose.addEventListener('click', event => {
+        fullScreen.classList.remove('is-active');
+        body.classList.remove('is-fixed');
+      });
+    }
+</script>

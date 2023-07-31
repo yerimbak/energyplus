@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0f1f2e;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <g id="time" transform="translate(0 0.346)">
+    <g id="icon_time_time_16">
+      <rect id="사각형_714" data-name="사각형 714" class="cls-1" width="12" height="12" transform="translate(0 -0.346)"/>
+      <path id="Fill" class="cls-2" d="M5.164,10.327A5.164,5.164,0,0,1,1.512,1.512a5.164,5.164,0,0,1,7.3,7.3A5.13,5.13,0,0,1,5.164,10.327Zm0-9.59a4.426,4.426,0,0,0-3.13,7.556A4.426,4.426,0,0,0,8.293,2.034,4.4,4.4,0,0,0,5.164.738ZM6.857,7.377h0L4.8,5.315V1.844h.738V5.009L7.377,6.857l-.52.52Z" transform="translate(0.738 0.935)"/>
+    </g>
+  </g>
+</svg>

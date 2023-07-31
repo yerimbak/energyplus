@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+  <div id="container">
+    <!-- Contents -->
+    <div class="container type2 app-day100-event-wrap good-luck-event">
+      <section class="day100-section1">
+        <div class="inner day100-section-inner">
+          <div class="day100-imgbox">
+            <img src="../images/goodluck-event-main.png" alt="바로주유 기능 주유소 확대기념" />
+          </div>
+        </div>
+      </section>
+      <div class="goodluck-event-inner">
+        <!-- event 01 -->
+        <section class="goodluck-sec goodluck-event-01">
+          <div class="day100-imgbox">
+            <img src="../images/goodluck-event-01.png" alt="/">
+          </div>
+          <!-- 개발팀 <button>태그 지양 -->
+          <a href="javascript:;" class="input-button">쿠폰받기</a>
+        </section>
+        <!-- event 02 -->
+        <section class="goodluck-sec goodluck-event-02">
+          <div class="goodluck-event-inner">
+            <div class="day100-imgbox">
+              <img src="../images/goodluck-event-02.png" alt="/">
+              <a href="javascript:;" class="go-event-g-station" id="layer-on">이벤트 주유소 확인하기</a>
+            </div>
+
+            <div class="rullet-wrap">
+              <div class="event-count-bg">
+                <div class="event-count-num">
+                  <span class="event-count">1</span>
+                  <span class="event-count">2</span>
+                </div>
+              </div>
+              <!-- 룰렛 이벤트 -->
+              <div class="rullet">
+                <div class="rullet-img-wrap">
+                  <!-- 룰렛 이미지 -->
+                  <img src="../images/goodluck-roulette.png" alt="/" id-="spin-rullet-fn">
+                  <!-- 룰렛 스타트 버튼 -->
+                  <div id="rullet-start-btn">
+                    <span class="blind">룰렛 스타트 버튼</span>
+                  </div>
+                  <!-- 당첨내역 확인하기 버튼 -->
+                  <a href="javascript:;" class="input-button">당첨내역 확인하기</a>
+                </div>
+              </div>
+              <div class="rullet-price">
+                <img src="../images/goodluck-price.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- event 03 -->
+        <section class="goodluck-sec goodluck-event-03">
+          <div class="goodluck-event-inner">
+            <div class="day100-imgbox">
+              <img src="../images/goodluck-event_03_txt.png" alt="/">
+            </div>
+            <div class="goodluck-attention">
+              <img src="../images/goodluck-event03-attention.png" alt="">
+            </div>
+            <a href="javascript:;" class="input-button">에너지플러스 혜택 받기</a>
+          </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <div class="goodluck-sec good-luck-event-footer">
+        <div class="goodluck-attention">
+          <img src="../images/goodluck-all-attention.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- // Contents -->
+    <!-- section2 start -->
+  </div>
+  <!-- 모달창 -->
+  <div class="modal oil-search">
+    <div class="modal-background"></div>
+
+    <!--  Bottom Sheet -->
+    <div class="bottom-sheet is-bottom-fixed">
+
+      <div class="bottom-sheet-header">
+        <h2 class="title is-3 has-text-centered">바로주유 가능 주유소</h2>
+        <button id="layer-close" class="btn-close"><span class="blind">닫기</span></button>
+      </div>
+
+      <div class="bottom-sheet-body">
+        <div class="inner">
+          <div class="level">
+            <div class="select is-medium level-left">
+              <select name="sido"></select>
+            </div>
+            <div class="select is-medium level-right">
+              <select name="gu"></select>
+            </div>
+          </div>
+          <div class="item-list-box">
+            <table>
+              <caption>바로주유 가능 주유소 목록</caption>
+              <colgroup>
+                <col style="width:15%">
+                <col style="width:50%">
+                <col style="width:15%">
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th scope="col">주유소명</th>
+                  <th scope="col">주소</th>
+                  <th scope="col">주유구분</th>
+                </tr>
+              </thead>
+              <tbody id="item-list">
+                <tr>
+                  <td>영통주유소</td>
+                  <td>셀프</td>
+                  <td>경기도 수원시 영통구 청명로 107 (영통동)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- 2022 02.15 삭제 요청 -->
+          <!-- <p class="dis">*바로주유 준비중 일정은 변경될 수 있습니다.</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--모달창 끝  -->
+  <script>
+    // 바로주유 가능 주유소 json 데이터 불러오기
+    let data = null;
+    let sidoPushArray = new Array;
+    let sidoArray = new Array;
+
+    const sido = document.querySelector('[name="sido"]');
+    const gu = document.querySelector('[name="gu"]');
+
+    let sidoSelected = null;
+    let guSelected = null;
+
+    fetch('/js/code.json', {
+        method: 'GET'
+      })
+      .then(res => res.json())
+      .then(res => {
+        data = res;
+        data.forEach(item =>
+          sidoPushArray.push(item.sido_name)
+        );
+        sidoPushArray.forEach((item) => {
+          if (!sidoArray.includes(item)) {
+            sidoArray.push(item);
+          }
+        });
+
+        sidoArray.forEach((item, index) => {
+          sido.insertAdjacentHTML('beforeend', `<option value="${item}">${item}</option>`);
+        });
+
+        sidoSelected = sido.options[sido.selectedIndex].value;
+        guList(sidoSelected);
+        selectedItem(sidoSelected, guSelected)
+
+      })
+      .catch(error => console.error(error));
+
+    const guList = (selected) => {
+      let guArray = new Array;
+      let guPushNameArray = new Array;
+
+      while (gu.hasChildNodes()) {
+        gu.removeChild(gu.firstChild);
+      }
+
+      data.forEach((item, index) => {
+        if (selected == item.sido_name) {
+          guPushNameArray.push(item.sigungu_name);
+        }
+      });
+
+
+      guPushNameArray.forEach((item) => {
+        if (!guArray.includes(item)) {
+          guArray.push(item);
+        };
+      });
+
+      guArray.sort((a, b) => {
+        if (b.sigungu_name > a.sigungu_name) {
+          return -1
+        } else if (b.sigungu_name < a.sigungu_name) {
+          return 1
+        } else {
+          return 0
+        }
+      });
+
+      guArray.forEach((item, index) => {
+        gu.insertAdjacentHTML('beforeend', `<option value="${item}">${item}</option>`);
+      });
+
+      guSelected = gu.options[gu.selectedIndex].value;
+    };
+
+    const selectedItem = (sido, gu) => {
+      const itemList = document.querySelector('#item-list');
+      while (itemList.hasChildNodes()) {
+        itemList.removeChild(itemList.firstChild);
+      }
+      data.forEach((item, index) => {
+        if (sido == item.sido_name) {
+          if (gu == item.sigungu_name) {
+            let html = '';
+            html += '<tr>';
+            html += `	<td>${item.store_name}</td>`
+            html += ` 	<td>${item.address}</td>`
+            html += ` 	<td>${item.date}</td>`
+            html += '</tr>';
+            itemList.insertAdjacentHTML('beforeend', html);
+          }
+        }
+      });
+    };
+
+    sido.addEventListener('change', (e) => {
+      sidoSelected = sido.options[sido.selectedIndex].value;
+      guSelected = gu.options[gu.selectedIndex].value;
+
+      guList(sidoSelected);
+      selectedItem(sidoSelected, guSelected);
+    });
+
+    gu.addEventListener('change', (e) => {
+      sidoSelected = sido.options[sido.selectedIndex].value;
+      guSelected = gu.options[gu.selectedIndex].value;
+
+      selectedItem(sidoSelected, guSelected);
+    });
+
+    document.getElementById('layer-on').addEventListener('click', () => {
+      document.querySelector('.oil-search').classList.add('is-active');
+    });
+
+    document.getElementById('layer-close').addEventListener('click', () => {
+      document.querySelector('.oil-search').classList.remove('is-active');
+    });
+  </script>
+</body>
+
+
+</html>

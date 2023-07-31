@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">
+              <span class="is-family-whitney"
+                ><strong>GS</strong>&amp;POINT</span
+              >바로 할인 카드 등록
+            </h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+          <div class="inner is-padding-top box-point-enroll">
+            <div class="control">
+              <p class="txt-control-desc">보너스카드번호</p>
+              <input
+                type="text"
+                class="input"
+                placeholder="카드번호를 입력해주세요."
+              />
+              <div class="box-img-card card-01">
+                <img src="./images/img-point-card.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="control">
+              <p class="txt-control-desc">CVC번호</p>
+              <input
+                type="text"
+                class="input"
+                placeholder="카드뒷면 3자리를 입력해주세요."
+              />
+              <div class="box-img-card card-02">
+                <img src="./images/img-cvc-card.svg" alt="" />
+              </div>
+            </div>
+            <button type="button" class="button is-fullwidth">
+              보너스카드 등록
+            </button>
+          </div>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>

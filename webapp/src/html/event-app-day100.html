@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+  <div id="container">
+    <!-- Contents -->
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3 is-normal">앱 100일 기념 이벤트</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+    <div class="container type2 app-day100-event-wrap">
+      <section class="day100-section1">
+          <div class="inner day100-section-inner">
+            <div class="day100-imgbox"><img src="../images/event_day100_img01.png" alt="에너지 플러스 앱 100일 기념 이벤트"/></div>
+          </div>
+      </section>
+      <section class="day100-section2">
+        <div class="inner day100-section-inner">
+          <div class="day100-imgbox"><img src="../images/event_day100_img02.png" alt="100일 기념 경품이벤트"></div>
+          <div class="btn-wrap">
+            <button type="button" class="btn_application">응모하기</button>
+            <p class="btn-txt">*앱 PUSH 동의 및 응모한 고객만 참여 가능합니다. </p>
+          </div>
+        </div>
+      </section>
+      <section class="day100-section3">
+        <div class="inner day100-section-inner">
+          <div class="day100-imgbox">
+            <img src="../images/event_day100_img03.png" alt="이벤트 유의 사항">
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <div id="ep-card-edition-wrap" class="container type2">
+      <section class="ep-card-section1">
+        <div class="inner ep-card-section-inner">
+          <p class="ep-card-title"><img src="../images/ep_card_title.png" alt="마침내,15% 주유할인카드 시대"></p>
+          <p class="ep-card-imgbox">
+            <img src="../images/whole_card.png" alt="energyplus cards">
+          </p>
+          <div class="ep-edition">
+            <p class="ep-edition-imgbox">
+              <img src="../images/ep-sub-title.png" alt="에너지플러스 카드 Edition2">
+            </p>
+            <div class="promotion-wrapper">
+              <p class="promotion-imgbox">
+                <img src="../images/promotion-box.png" alt="주유 최대 할인 15%,월 최대 할인 4만원,연회비 지원 1만원">
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ep-card-seciton2">
+        <div class="ep-card-benefit-list benefit-list1">
+          <div class="benefit-titles">
+            <img src="../images/oil_subtitle.png" alt="주유할 때마다 15% 할인">
+          </div>
+          <div class="ep-benefit-content2 benefit-content-bg">
+            <div class="ep-benefit-img-box ep-benfit-text-img-box">
+              <img src="../images/content-bg.png" alt="에너지플러스 카드 바로주유 카드 결제" class="max-img-width">
+              <ul class="card-benefit-list">
+                <li>
+                  <p class="ep-oil-text">휘발유</p>
+                  <p class="ep-oil-price price-line">1,650원/ℓ</p>
+                </li>
+                <li class="ep-sale-text">
+                  15% 할인<img src="../images/15per.png" alt="15% 할인" class="percentage">
+                </li>
+                <li>
+                  <p class="ep-oil-text">휘발유</p>
+                  <p class="ep-oil-price">1,402원/ℓ</p>
+                </li>
+              </ul>
+            </div>
+            <div class="inner ep-oil-price-text-box">
+              <p>*한국석유공사 공시 2021년 12월 14일 전국평균 휘발유 가격 기준</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ep-card-benefit-list benefit-list2">
+          <div class="benefit-titles">
+            <img src="../images/oil_subtitle2.png" alt="넉넉한 할인한도 매월 4만원!">
+          </div>
+          <div class="ep-benefit-img-box">
+            <img src="../images/section2-img.png" alt="매월 267,000원 주유시 4만원 할인 최종결제가 227,000원" class="max-img-width">
+          </div>
+        </div>
+
+        <div class="ep-card-benefit-list benefit-list3 h476 W335">
+          <div class="benefit-titles">
+            <img src="../images/oil_subtitle3.png" alt="GS칼텍스 모든 에너지할인 LPG 까지!">
+          </div>
+          <div class="ep-benefit-content W335">
+            <img src="../images/lpg_aswell.png" alt="휘발유 경유 고급회발유 LPG EV 수소">
+            <ul class="ep-benefit-txt">
+              <li>카드 신청 전 에너지플러스 앱 바로주유 사용 가능한 주유소와 에너지 종류를 확인하세요.</li>
+              <li>에너지플러스 앱을 통하지 않고 일반 결제 시 10% 청구 할인됩니다.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ep-card-benefit-list benefit-list4">
+          <div class="benefit-titles">
+            <img src="../images/oil_subtitle4.png" alt="정비하고,주차하고,세차하고 5% 또 할인!">
+          </div>
+          <div class="ep-benefit-content">
+            <img src="../images/sec4_img.png" alt="정비 주차 세차 5%할인">
+          </div>
+        </div>
+      </section>
+      <section class="ep-card-section3">
+        <div class="inner">
+          <p class="ep-edition-imgbox section3-subtitle">
+            <img src="../images/last_section_subtitle.png" alt="지금 바로 연회비 돌려받고 실적조건 없이 주유 할인 경험해보세요!">
+          </p>
+          <ul class="ep-card-exper">
+            <li><img src="../images/1-cashback.png" alt="연회비 캐시백 01.01~01.31 , 1만원 이상 이용하면 연회비 돌려받고 주유할인 연회비1만원"></li>
+            <li><img src="../images/cashback_02.png"
+                alt="잠깐! 카드활용 TIP , 발급 월포함 2개월 실적 조건없이 주유 최대 4만원 할인 전월 실적 30만원 , *해당 내용은 카드 기본 혜택이며, 자세한 내용 및 이용조건은 카드신청 전 현대카드 홈페이지 및 상품설명서,약관참고">
+            </li>
+          </ul>
+        </div>
+      </section>
+       <section class="recieve-top">
+        <div class="recieve-top-imgbox">
+          <img src="../images/01-02-content.png" alt="01-02월 명세서 에너지플러스카드가 돌려드려요">
+        </div>
+      </section> 
+       
+       <section class="ep-card-more-details">
+        <div class="accordion-container2">
+          <div class="ac ep-card-tab-menu3">
+            <div class="ac-header">
+              <div class="ep-card-tab-white-title ep-card-tab-title ac-trigger">
+                <p>유의사항</p>
+              </div>
+            </div>
+            <div class="ac-panel">
+                <section class="ep-card-detail1">
+                  <div class="ep-card-warpper inner">
+                    <div class="ep-card-detail-list">
+                      <p class="ep-card-detail-title">1. 에너지플러스카드가 돌려드려요</p>
+                      <ul class="ep-card-detail-text">
+                        <li>- 내용 : 이용기간 내 1만원 이상 이용시 연회비 1만원<br>캐시백 제공</li>
+                        <li>- 대상 : 에너지플러스카드 Edition2 보유 회원</li>
+                        <li>- 기간 : 2022.01.01 ~ 01.31 (카드신청일자 기준)<br> 2021.01.01 ~ 02.15 (카드 이용 기준)</li>
+                        <li>- 제공시점 : 22년 2월 말 본인출금 계좌로 1만원 캐시백</li>
+                        <li>- 본 혜택은 본인회원에 한해 1회 제공됩니다</li>
+                      </ul>
+                    </div>
+                    <div class="ep-card-detail-list">
+                      <p class="ep-card-detail-title">2. 에너지플러스카드가 할인했어요</p>
+                      <ul class="ep-card-detail-text">
+                        <li>- 내용 : 최초 신규 발급 시 발급월 기준 다음 달 이용 건까지는
+                          전월 이용금액 30만원 미만일 경우에도 <img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text">
+                          이용금액 월 최대 2만원 할인
+                        </li>
+                        <li>- 대상 : 모든 에너지플러스카드 Edition 2 최초 발급 회원</li>
+                      </ul>
+                      <p class="ep-card-add-text">- 본 혜택은 카드 기본 혜택이며, 자세한 내용 및 이용조건은 카드신청 전 현대카드 홈페이지 및 상품설명서,약관 참고</p>
+                    </div>
+                  </div>
+                </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ep-card-video">
+        <div class="ep-card-subtitle">
+          <img src="../images/find-ep-card-sutitle.png" alt="에너지플러스카드 알아보기">
+        </div>
+        <div class="ep-card-video-section">
+          <img src="../images/ep-card-video.png" alt="에너지플러스 비디오">
+        </div>
+      </section>
+      <section class="ep-card-more-details">
+        <div class="ep-card-more-details-wrapper">
+          <div class="ep-card-subtitle">
+            <img src="../images/ep-card-more-details-subtitle.png" alt="한눈에 보는 카드 혜택">
+          </div>
+          <div class="ep-card-find-out-card">
+            <img src="../images/whole_card2.png" alt="에너지플러스 카드">
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="ac ep-card-tab-menu1">
+            <div class="ac-header">
+              <div class="ep-card-tab-title ac-trigger board-title-area">
+                <p>1.주유 최대 15% 할인</p>
+              </div>
+            </div>
+            <div class="ac-panel">
+              <div class="ep-card-more-details-text-wrapper">
+                <p class="ep-card-tab-menu-1-heading">
+                  전월 이용금액에 따라 <img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text-big"> 이용금액 <br>최대 15% 청구 할인
+                </p>
+                <ul class="ep-card-tab-menu-2-list">
+                  <li><img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text">에서 에너지플러스 앱으로 결제 시 15% 청구 할인</li>
+                  <li><img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text">에서 일반 결제 시 10% 청구 할인</li>
+                  <li>*<img src="../images/gs-text-gray.png" alt="GS칼텍스" class="gs-text"> 이용금액 : <img
+                      src="../images/gs-text-gray.png" alt="GS칼텍스" class="gs-text">가 운영하는 주유소/충전소
+                    에서 이용한 고급유/휘발유/경유 주유금액, 전기차/수소차/
+                    LPG 충전금액</li>
+                </ul>
+              </div>
+              <div class="ep-card-more-details-text-wrapper">
+                <p class="ep-card-tab-menu-1-heading">유의사항</p>
+                <ul class="ep-card-tab-menu-1-list">
+                  <li>전월 이용금액 30만원 미만 시 혜택 제외</li>
+                  <li><img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text">가 운영하는 주유소/충전소 이용금액에<br>한해 할인 혜택 제공
+                  </li>
+                  <li>할인한도 초과 이용금액에 대해서는 할인 혜택 미제공</li>
+                  <li>무이자할부 및 당사에서 제공하는 다른 할인서비스 이용 시 할인 혜택 제외</li>
+                  <li>국제브랜드 수수료 및 해외서비스 수수료는 전월 이용금액에 포함되지 않음</li>
+                  <li>해외 가맹점 이용 시 별도의 수수료가 부과되니, 국제브랜드 수수료 관련 자세한 내용은 본 가이드북 ‘카드 이용 유의사항’ 참고</li>
+                </ul>
+              </div>
+              <div class="ep-card-more-details-text-wrapper">
+                <p class="ep-card-tab-menu-1-heading">서비스제공기준</p>
+                <ul class="ep-card-tab-menu-1-list">
+                  <li>전월 이용금액 산정 기준</li>
+                  <li>전월 이용금액은 전월 1일~말일까지 에너지플러스카드 Edition 2 (본인+하이패스카드)의 일시불 및 할부 이용금액임</li>
+                  <li>전월 이용금액 합산 제외 기준</li>
+                </ul>
+                <ul class="ep-card-tab-menu-details">
+                  <li>-<img src="../images/gs-text-gray.png" alt="GS칼텍스" class="gs-text-gray"> 이용금액</li>
+                  <li>-장기카드대출(카드론), 단기카드대출(현금서비스), 연회비,제수수료, 이자 이용금액</li>
+                  <li>-공과금 납부액(국세, 관세, 지방세, 지방세외수입, 상하수도요금, 벌과금, 과태료, 인지세, 송달료, 민원 발급 수수료 등 국가 또는 공공단체가 부과하는 부담금)
+                  </li>
+                  <li>-전기요금, 도시가스요금, 아파트관리비, 자동납부서비스 이용수수료</li>
+                  <li>-초·중·고교 학교납입금, 대학·대학원 등록금 납부 결제건</li>
+                  <li>-상품권 등 현금성 유가증권 구매 및 선불카드 충전금액</li>
+                  <li>-건강보험, 국민연금, 고용보험, 산재보험 및 장애인 고용부담금</li>
+                  <li>-고속도로 통행요금, 고속버스 이용금액(차내 단말기 및 고속버스 앱 결제 포함)</li>
+                  <li>-당사의 모든 할인서비스 및 무이자할부 이용금액</li>
+                  <li>-에너지플러스카드 Edition 2 이용금액만 인정되며, 그 외 다른 현대카드 이용금액 합산 불가</li>
+                </ul>
+                <ul class="ep-card-tab-menu-1-list ep-card-tab-menu-1-list2">
+                  <li>할인한도 : 전월 이용금액 30만원 이상 시 월 2만원,<br>
+                    전월 이용금액 70만원 이상 시 월 4만원<br>
+                    (월 할인한도 산정 기간 : 매월 1일~말일 )</li>
+                  <li>할인 시기 : 매월 이용대금 결제 시 청구할인</li>
+                </ul>
+                <p class="ep-card-tab-menu-p">*자세한 내용 및 이용조건은 카드 신청 전 현대카드 홈페이지 및 상품설명서,약관 참고</p>
+              </div>
+            </div>
+          </div>
+          <div class="ac ep-card-tab-menu1">
+            <div class="ac-header">
+              <div class="ep-card-tab-title ac-trigger board-title-area">
+                <p>2.모빌리티(주차.세차.정비) 5% 할인</p>
+              </div>
+            </div>
+            <div class="ac-panel">
+              <div class="ep-card-more-details-text-wrapper">
+                <p class="ep-card-tab-menu-1-heading">전월 이용금액에 따라 모빌리티 업종(주차.세차.정비) 5% 할인 </p>
+                <p class="ep-card-tab-menu-1-heading ep-card-tab-menu-1-sub-heading">유의사항</p>
+                <ul class="ep-card-tab-menu-1-list">
+                  <li>전월 이용금액 30만원 미만 시 혜택 제외</li>
+                  <li>할인한도 초과 이용금액에 대해서는 할인 혜택 미제공</li>
+                  <li>무이자할부 및 당사에서 제공하는 다른 할인서비스 이용 시 할인 혜택 제외</li>
+                  <li>국제브랜드 수수료 및 해외서비스 수수료는 전월 이용금액에 포함되지 않음</li>
+                  <li>해외 가맹점 이용 시 별도의 수수료가 부과되니, 국제브랜드 수수료 관련 자세한 내용은 본 가이드북 ‘카드 이용 유의사항’ 참고</li>
+                </ul>
+              </div>
+              <div class="ep-card-more-details-text-wrapper">
+                <p class="ep-card-tab-menu-1-heading">서비스제공기준</p>
+                <ul class="ep-card-tab-menu-1-list">
+                  <li>전월 이용금액 산정 기준</li>
+                  <li>전월 이용금액은 전월 1일~말일까지 에너지플러스카드 Edition 2 (본인+하이패스카드)의 일시불 및 할부 이용금액임</li>
+                  <li>전월 이용금액 합산 제외 기준</li>
+                </ul>
+                <ul class="ep-card-tab-menu-details">
+                  <li>-<img src="../images/gs-text.png" alt="GS칼텍스" class="gs-text"> 이용금액</li>
+                  <li>-장기카드대출(카드론), 단기카드대출(현금서비스), 연회비,제수수료, 이자 이용금액</li>
+                  <li>-공과금 납부액(국세, 관세, 지방세, 지방세외수입, 상하수도요금, 벌과금, 과태료, 인지세, 송달료, 민원 발급 수수료 등 국가 또는 공공단체가 부과하는 부담금)
+                  </li>
+                  <li>-전기요금, 도시가스요금, 아파트관리비, 자동납부서비스 이용수수료</li>
+                  <li>-초·중·고교 학교납입금, 대학·대학원 등록금 납부 결제건</li>
+                  <li>-상품권 등 현금성 유가증권 구매 및 선불카드 충전금액</li>
+                  <li>-건강보험, 국민연금, 고용보험, 산재보험 및 장애인 고용부담금</li>
+                  <li>-고속도로 통행요금, 고속버스 이용금액(차내 단말기 및 고속버스 앱 결제 포함)</li>
+                  <li>-당사의 모든 할인서비스 및 무이자할부 이용금액</li>
+                  <li>-에너지플러스카드 Edition 2 이용금액만 인정되며, 그 외 다른 현대카드 이용금액 합산 불가</li>
+                </ul>
+                <ul class="ep-card-tab-menu-1-list ep-card-tab-menu-1-list2">
+                  <li>할인한도 : 전월 이용금액 30만원 이상 시 월 5천원,<br>
+                    전월 이용금액 70만원 이상 시 월 1만원<br>
+                    (월 할인한도 산정 기간 : 매월 1일~말일 )</li>
+                  <li>할인 시기 : 매월 이용대금 결제 시 청구할인</li>
+                </ul>
+                <p class="ep-card-tab-menu-p">*자세한 내용 및 이용조건은 카드 신청 전 현대카드 홈페이지 및 상품설명서,약관 참고</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ep-card-notice">
+        <div class="ep-card-notice-inner">
+          <div class="ep-card-notice-part1">
+            <strong class="ep-card-notice-part1-strong">꼭! 알아두세요</strong>
+            <div class="ep-card-notice-text">
+              <p>연회비 : 국내전용/국내외겸용(VISA) 1만원</p>
+              <p>카드 이용대금 연체 시 약정금리 + 연체가산금리 3%의 연체 이자율이 적용됩니다.</p>
+              <p>(회원별, 이용 상품별 차등적용/법정 최고금리 20% 이내)</p>
+              <p>단, 연체 발생 시점에 약정금리가 없는 경우<br>아래와 같이 적용</p>
+            </div>
+            <ul class="ep-card-footer-list">
+              <li>일시불 : 거래 발생시점 기준 최소 기간(2개월)의 유이자할부 약정금리 + 연체가산금리 3%</li>
+              <li>무이자할부 : 거래 발생시점 기준 동일한 할부 계약기간의 유이자할부 약정금리 + 연체가산금리 3%</li>
+              <li>그 외의 경우 약정금리는 상법상 상사법정이율과 상호금융 가계자금대출금리* 중 높은 금리 적용</li>
+            </ul>
+            <p>*한국은행에서 매월 발표하는 가장 최근의 비은행금융기관 가중평균대출금리(신규 대출 기준)</p>
+            <ul class="ep-card-footer-list ep-card-footer-bold-list">
+              <li>상환 능력에 비해 신용카드 이용금액이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다. </li>
+              <li>개인신용평점 하락 시 금융거래와 관련된 불이익이 발생할 수 있습니다. </li>
+              <li>일정 기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</li>
+            </ul>
+            <ul class="ep-card-footer-list">
+              <li>신용카드 발급이 부적정(신용평점 등)한 경우 카드 발급이 제한될 수 있습니다. </li>
+              <li>카드 이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.</li>
+              <li>금융소비자는 금융소비자보호법 제19조 제1항에 따라 해당 상품 또는 서비스에 대하여 설명을 받을 권리가 있으며, 그 설명을 듣고 내용을 충분히 이해한 후 거래하시기 바랍니다.
+              </li>
+            </ul>
+            <div class="ep-card-footer-text">
+              <p class="ep-card-loan-bold-text">자세한 내용은 카드 신청 전 현대카드 홈페이지 및 상품설명서, 약관을 참고하시기 바랍니다.</p>
+              <p class="ep-card-loan-text">여신금융협회 심의필 제 2021 - C1h - 08018호<br>
+                ( 2021.08.26 ~ 2022.08.25 )</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="ep-card-go-to-link">
+        <a href="#">에너지플러스카드 혜택받기 <span>&#62;</span></a>
+      </div>
+    </div> -->
+    <!-- // Contents -->
+    <!-- section2 start -->
+  </div>
+</body>
+
+
+</html>

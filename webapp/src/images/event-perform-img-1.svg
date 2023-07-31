@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="328" height="246" viewBox="0 0 328 246">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-25, .cls-26, .cls-27, .cls-30 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #f4f4f4;
+      }
+
+      .cls-13, .cls-14, .cls-15, .cls-18, .cls-19, .cls-20, .cls-23, .cls-5, .cls-7, .cls-9 {
+        fill: #222;
+      }
+
+      .cls-5 {
+        font-size: 28px;
+        font-family: BlackHanSans-Regular, Black Han Sans;
+      }
+
+      .cls-6 {
+        fill: #96feba;
+      }
+
+      .cls-7, .cls-9 {
+        font-size: 20px;
+      }
+
+      .cls-10, .cls-7 {
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+      }
+
+      .cls-10, .cls-14, .cls-18, .cls-26, .cls-30, .cls-7 {
+        font-weight: 700;
+      }
+
+      .cls-13, .cls-15, .cls-19, .cls-20, .cls-23, .cls-25, .cls-27, .cls-28, .cls-8, .cls-9 {
+        font-family: NotoSansCJKkr-Medium, Noto Sans CJK KR;
+        font-weight: 500;
+      }
+
+      .cls-11 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-12 {
+        fill: #d1d1d1;
+        opacity: 0.38;
+      }
+
+      .cls-13 {
+        font-size: 15px;
+      }
+
+      .cls-14 {
+        font-size: 25px;
+      }
+
+      .cls-14, .cls-18, .cls-26, .cls-30 {
+        font-family: Montserrat-Bold, Montserrat;
+      }
+
+      .cls-15 {
+        font-size: 14px;
+      }
+
+      .cls-16 {
+        fill: none;
+        stroke: #3cdb88;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-17 {
+        fill: #3cdb88;
+      }
+
+      .cls-18, .cls-26 {
+        font-size: 19px;
+      }
+
+      .cls-19, .cls-27 {
+        font-size: 11px;
+      }
+
+      .cls-20, .cls-21, .cls-28 {
+        font-size: 8px;
+      }
+
+      .cls-21 {
+        fill: #8e8e8e;
+        font-family: NotoSansCJKkr-Regular, Noto Sans CJK KR;
+      }
+
+      .cls-22 {
+        fill: #f5f5f5;
+      }
+
+      .cls-23 {
+        font-size: 10px;
+      }
+
+      .cls-24 {
+        fill: #0f1f2e;
+      }
+
+      .cls-25 {
+        font-size: 9px;
+      }
+
+      .cls-28 {
+        fill: #707e8b;
+      }
+
+      .cls-29 {
+        fill: #3ddb87;
+      }
+
+      .cls-30 {
+        font-size: 16px;
+      }
+
+      .cls-31 {
+        filter: url(#사각형_6521);
+      }
+
+      .cls-32 {
+        filter: url(#사각형_6520);
+      }
+
+      .cls-33 {
+        filter: url(#사각형_6517);
+      }
+
+      .cls-34 {
+        filter: url(#빼기_176);
+      }
+
+      .cls-35 {
+        filter: url(#빼기_175);
+      }
+
+      .cls-36 {
+        filter: url(#사각형_6511);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_6524" data-name="사각형 6524" class="cls-1" width="328" height="246" rx="17" transform="translate(23 1064)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_6513" data-name="사각형 6513" class="cls-2" width="301" height="246" transform="translate(482 1222)"/>
+    </clipPath>
+    <filter id="사각형_6511" x="-20" y="348" width="380" height="613" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="빼기_175" x="46" y="451" width="244.001" height="158" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="빼기_176" x="46" y="527" width="244.001" height="158" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_6517" x="-23" y="-58" width="380" height="613" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="30" result="blur-4"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_6520" x="43" y="30" width="211" height="247" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-5"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_6521" x="174" y="30" width="211" height="247" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-6"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_1" data-name="1" class="cls-3" transform="translate(-23 -1064)">
+    <g id="참여방법" transform="translate(0 32)">
+      <rect id="bg" class="cls-4" width="375" height="985" transform="translate(0 761)"/>
+      <text id="참여방법-2" data-name="참여방법" class="cls-5" transform="translate(141 922)"><tspan x="0" y="0">참여방법</tspan></text>
+      <rect id="txtbg_1" class="cls-6" width="119" height="11" transform="translate(79 1409)"/>
+      <rect id="txtbg_1-2" data-name="txtbg_1" class="cls-6" width="94" height="11" transform="translate(104 1003)"/>
+      <text id="_바로주유로_주유하기" data-name=" 바로주유로 주유하기" class="cls-7" transform="translate(100 1010)"><tspan x="0" y="0" xml:space="preserve"> 바로주유로</tspan><tspan class="cls-8" y="0" xml:space="preserve"> 주유하기</tspan></text>
+      <text id="_5만원_이상_바로주유_할_때마다_할인_쿠폰_받고_혜택_챙기기" data-name="5만원 이상 바로주유 할 때마다 
+할인 쿠폰 받고 혜택 챙기기" class="cls-9" transform="translate(188 1388)"><tspan x="-127.35" y="0">5만원 이상 바로주유 할 때마다 </tspan><tspan class="cls-10"><tspan x="-110.24" y="28">할인 쿠폰 받고</tspan><tspan class="cls-8" y="28" xml:space="preserve"> 혜택 챙기기</tspan></tspan></text>
+      <g id="_2" data-name="2" transform="translate(3 -20)">
+        <rect id="사각형_6510" data-name="사각형 6510" class="cls-1" width="328" height="246" rx="17" transform="translate(20 1458)"/>
+        <g id="마스크_그룹_350" data-name="마스크 그룹 350" class="cls-11" transform="translate(-443 236)">
+          <g id="그룹_18981" data-name="그룹 18981" transform="translate(532.425 1243.695)">
+            <g class="cls-36" transform="matrix(1, 0, 0, 1, -69.42, -427.69)">
+              <rect id="사각형_6511-2" data-name="사각형 6511" class="cls-1" width="200" height="433" rx="45" transform="translate(70 428)"/>
+            </g>
+            <circle id="타원_2181" data-name="타원 2181" class="cls-12" cx="2" cy="2" r="2" transform="translate(90.575 9.305)"/>
+            <rect id="사각형_6512" data-name="사각형 6512" class="cls-12" width="14" height="4" rx="2" transform="translate(96.575 9.305)"/>
+          </g>
+        </g>
+        <text id="쿠폰함" class="cls-13" transform="translate(188 1520)"><tspan x="-20.7" y="0">쿠폰함</tspan></text>
+        <g id="그룹_18983" data-name="그룹 18983" transform="translate(111 1538)">
+          <g id="그룹_18982" data-name="그룹 18982" transform="translate(0 0)">
+            <g class="cls-35" transform="matrix(1, 0, 0, 1, -91, -486)">
+              <path id="빼기_175-2" data-name="빼기 175" class="cls-1" d="M143,68H11A11,11,0,0,1,0,57V47.384a12.173,12.173,0,0,0,1.437.085,11.922,11.922,0,0,0,8.486-3.515,12,12,0,0,0,0-16.971,11.922,11.922,0,0,0-8.486-3.515A12.179,12.179,0,0,0,0,23.555V11A11,11,0,0,1,11,0H143a11,11,0,0,1,11,11v12.47a12,12,0,0,0,0,24V57a11,11,0,0,1-11,11Z" transform="translate(91 486)"/>
+            </g>
+            <text id="_44" data-name="$44" class="cls-14" transform="translate(38 43)"><tspan x="0" y="0">1,000</tspan></text>
+            <text id="Popular" class="cls-15" transform="translate(107 40)"><tspan x="0" y="0">원</tspan></text>
+          </g>
+        </g>
+        <g id="그룹_18985" data-name="그룹 18985" transform="translate(14 -1)">
+          <g id="그룹_18984" data-name="그룹 18984" transform="translate(-4602.188 -10402.11)">
+            <line id="선_342" data-name="선 342" class="cls-16" x1="2.757" transform="translate(4867.188 12019.882)"/>
+            <line id="선_343" data-name="선 343" class="cls-16" x1="2.757" transform="translate(4888.067 12019.882)"/>
+            <line id="선_344" data-name="선 344" class="cls-16" y2="2.757" transform="translate(4879.006 12028.944)"/>
+            <line id="선_345" data-name="선 345" class="cls-16" y2="2.757" transform="translate(4879.006 12007.977)"/>
+          </g>
+          <path id="패스_13458" data-name="패스 13458" class="cls-17" d="M1737.544,846.661h-4.267a6.875,6.875,0,0,1-6.875-6.875v-4.268c-.661-.752-1.5-.293-1.5.361v3.907a6.875,6.875,0,0,1-6.875,6.875h-4.267c-.752.661-.294,1.5.36,1.5h3.907a6.875,6.875,0,0,1,6.875,6.875V859.3c.66.752,1.5.294,1.5-.36v-3.907a6.875,6.875,0,0,1,6.875-6.875h3.907c.654,0,1.112-.837.36-1.5" transform="translate(-1653.752 699.176)"/>
+        </g>
+        <g id="그룹_18987" data-name="그룹 18987" transform="translate(111 1614)">
+          <g id="그룹_18986" data-name="그룹 18986" transform="translate(0 0)">
+            <g class="cls-34" transform="matrix(1, 0, 0, 1, -91, -562)">
+              <path id="빼기_176-2" data-name="빼기 176" class="cls-1" d="M143,68H11A11,11,0,0,1,0,57V47.384a12.173,12.173,0,0,0,1.437.085,11.922,11.922,0,0,0,8.486-3.515,12,12,0,0,0,0-16.971,11.922,11.922,0,0,0-8.486-3.515A12.179,12.179,0,0,0,0,23.555V11A11,11,0,0,1,11,0H143a11,11,0,0,1,11,11v12.47a12,12,0,0,0,0,24V57a11,11,0,0,1-11,11Z" transform="translate(91 562)"/>
+            </g>
+            <text id="_44-2" data-name="$44" class="cls-14" transform="translate(38 43)"><tspan x="0" y="0">1,000</tspan></text>
+            <text id="Popular-2" data-name="Popular" class="cls-15" transform="translate(107 40)"><tspan x="0" y="0">원</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="_1-2" data-name="1" transform="translate(0 64)">
+        <rect id="사각형_6516" data-name="사각형 6516" class="cls-1" width="328" height="246" rx="17" transform="translate(23 968)"/>
+        <g id="마스크_그룹_351" data-name="마스크 그룹 351" class="cls-11" transform="translate(-443 -254)">
+          <g id="그룹_18988" data-name="그룹 18988" transform="translate(532.425 1243.695)">
+            <g class="cls-33" transform="matrix(1, 0, 0, 1, -66.42, -21.69)">
+              <rect id="사각형_6517-2" data-name="사각형 6517" class="cls-1" width="200" height="433" rx="45" transform="translate(67 22)"/>
+            </g>
+            <circle id="타원_2186" data-name="타원 2186" class="cls-12" cx="2" cy="2" r="2" transform="translate(90.575 9.305)"/>
+            <rect id="사각형_6518" data-name="사각형 6518" class="cls-12" width="14" height="4" rx="2" transform="translate(96.575 9.305)"/>
+          </g>
+        </g>
+        <g id="그룹_18989" data-name="그룹 18989" transform="translate(-4254.142 -5684.331)">
+          <g id="card_휘발유" transform="translate(4365.142 6717.039)">
+            <g class="cls-32" transform="matrix(1, 0, 0, 1, -88, -64.71)">
+              <rect id="사각형_6520-2" data-name="사각형 6520" class="cls-1" width="121" height="157" rx="16" transform="translate(88 65)"/>
+            </g>
+            <g id="text" transform="translate(14.393 19.533)">
+              <text id="_44-3" data-name="$44" class="cls-18" transform="translate(-0.393 37.76)"><tspan x="0" y="0">30,000</tspan></text>
+              <text id="Popular-3" data-name="Popular" class="cls-19" transform="translate(-0.393 12.76)"><tspan x="0" y="0">내차 씽씽</tspan></text>
+              <text id="휘발유" class="cls-20" transform="translate(-0.393 53.76)"><tspan x="0" y="0">휘발유</tspan></text>
+              <text id="롯데카드_1234" data-name="롯데카드 1234" class="cls-21" transform="translate(-0.393 69.76)"><tspan x="0" y="0">롯데카드 1234</tspan></text>
+            </g>
+            <g id="btn" transform="translate(12.315 107.92)">
+              <path id="Rectangle_" data-name="Rectangle " class="cls-22" d="M12.978,0h41.1c7.167,0,12.978,6.211,12.978,13.873a14.3,14.3,0,0,1-5.192,11.1,12.246,12.246,0,0,1-7.785,2.773h-41.1C5.81,27.745,0,21.534,0,13.873S5.81,0,12.978,0Z"/>
+              <text id="바로주유" class="cls-23" transform="translate(14.685 17.373)"><tspan x="0" y="0">바로주유</tspan></text>
+            </g>
+            <g id="btn_price" transform="translate(87.385 45.234)">
+              <path id="다각형_79" data-name="다각형 79" class="cls-24" d="M3.757.826a1,1,0,0,1,1.487,0L7.5,3.331A1,1,0,0,1,6.755,5H2.245A1,1,0,0,1,1.5,3.331Z" transform="translate(-0.385 0.058)"/>
+              <path id="다각형_80" data-name="다각형 80" class="cls-24" d="M3.757.826a1,1,0,0,1,1.487,0L7.5,3.331A1,1,0,0,1,6.755,5H2.245A1,1,0,0,1,1.5,3.331Z" transform="translate(8.615 12.058) rotate(180)"/>
+            </g>
+          </g>
+          <g id="card_고급휘발유" transform="translate(4495.705 6717.039)">
+            <g class="cls-31" transform="matrix(1, 0, 0, 1, -218.56, -64.71)">
+              <rect id="사각형_6521-2" data-name="사각형 6521" class="cls-24" width="121" height="157" rx="16" transform="translate(219 65)"/>
+            </g>
+            <g id="text-2" data-name="text" transform="translate(14.394 19.533)">
+              <text id="고급휘발유" class="cls-25" transform="translate(0.043 56.76)"><tspan x="0" y="0">고급휘발유</tspan></text>
+              <text id="_44-4" data-name="$44" class="cls-26" transform="translate(0.043 37.76)"><tspan x="0" y="0">50,000</tspan></text>
+              <text id="Popular-4" data-name="Popular" class="cls-27" transform="translate(0.043 12.76)"><tspan x="0" y="0">여보차</tspan></text>
+              <text id="신한카드_2232" data-name="신한카드 2232" class="cls-28" transform="translate(0.043 70.76)"><tspan x="0" y="0">신한카드 2232</tspan></text>
+            </g>
+            <g id="btn-2" data-name="btn" transform="translate(15.549 109.737)">
+              <path id="Rectangle_2" data-name="Rectangle " class="cls-22" d="M11.744,0H48.933c6.486,0,11.744,5.621,11.744,12.554a12.94,12.94,0,0,1-4.7,10.045,11.082,11.082,0,0,1-7.045,2.509H11.744C5.258,25.108,0,19.487,0,12.554S5.258,0,11.744,0Z" transform="translate(0 0)"/>
+              <text id="바로주유-2" data-name="바로주유" class="cls-23" transform="translate(9.888 16.556)"><tspan x="0" y="0">바로주유</tspan></text>
+            </g>
+          </g>
+        </g>
+        <g id="noun_touch_927386" transform="translate(161 1139.436)">
+          <circle id="타원_2187" data-name="타원 2187" class="cls-29" cx="10" cy="10" r="10" transform="translate(24 5.564)"/>
+          <path id="패스_13459" data-name="패스 13459" d="M33.709,957.362a11.051,11.051,0,0,0-11.032,11.032,12.038,12.038,0,0,0,2.069,6.838,1.228,1.228,0,1,0,1.992-1.436,10.091,10.091,0,0,1-1.609-5.4,8.581,8.581,0,1,1,17.161,0,10.09,10.09,0,0,1-1.609,5.4,1.228,1.228,0,1,0,1.992,1.437,12.038,12.038,0,0,0,2.069-6.838A11.051,11.051,0,0,0,33.709,957.362Zm0,8.581a4.92,4.92,0,0,0-4.9,4.9V987.72c-.759-1.641-2.121-3.414-3.831-3.85-2.325-.631-5.174,1.229-5.823,3.39a6.793,6.793,0,0,0,.536,4.252c3.184,7.657,7.1,15.008,11.875,20.59a1.243,1.243,0,0,0,.919.421H49.032a1.217,1.217,0,0,0,.728-.249,15.4,15.4,0,0,0,4.367-6.186,35.214,35.214,0,0,0,2.547-8.734,20.61,20.61,0,0,0-.192-8.313,5.91,5.91,0,0,0-4.865-4.712,8.164,8.164,0,0,0-1.762.172,4.1,4.1,0,0,0-1.3-1.781,4.37,4.37,0,0,0-2.6-.843,3.51,3.51,0,0,0-1.973.689,4.051,4.051,0,0,0-.881-1.073,4.454,4.454,0,0,0-2.643-.843,4.807,4.807,0,0,0-1.839.421V970.846A4.832,4.832,0,0,0,33.709,965.943Zm0,2.452a2.42,2.42,0,0,1,2.452,2.452v12.871a1.228,1.228,0,0,0,2.337.536,2.632,2.632,0,0,1,1.954-1.149,2.36,2.36,0,0,1,1.207.383,1.5,1.5,0,0,1,.632,1.456,1.226,1.226,0,0,0,2.318.555c.5-1,.765-1.158,1.379-1.168a2.516,2.516,0,0,1,1.149.383,1.5,1.5,0,0,1,.67,1.456,1.239,1.239,0,0,0,.728,1.13,1.27,1.27,0,0,0,1.341-.23,3.086,3.086,0,0,1,1.513-.287c1.461.186,2.22,1.1,2.739,2.931a18.2,18.2,0,0,1,.115,7.259,33.059,33.059,0,0,1-2.356,8.121,14.432,14.432,0,0,1-3.352,4.98H33.077c-4.3-5.076-8.411-12.87-11.09-19.441a4.694,4.694,0,0,1-.479-2.72,2.687,2.687,0,0,1,2.815-1.685c1.3.491,1.626,1.36,2.183,2.356l2.432,4.884a1.226,1.226,0,0,0,2.318-.556V970.846A2.42,2.42,0,0,1,33.709,968.394Z" transform="translate(0 -952.362)"/>
+          <path id="패스_13460" data-name="패스 13460" class="cls-1" d="M32.839,964.475a2.42,2.42,0,0,1,2.452,2.452V979.8a1.228,1.228,0,0,0,2.337.536,2.632,2.632,0,0,1,1.954-1.149,2.36,2.36,0,0,1,1.207.383,1.5,1.5,0,0,1,.632,1.456,1.226,1.226,0,0,0,2.318.555c.5-1,.765-1.158,1.379-1.168a2.516,2.516,0,0,1,1.149.383,1.5,1.5,0,0,1,.67,1.456,1.239,1.239,0,0,0,.728,1.13,1.27,1.27,0,0,0,1.341-.23,3.086,3.086,0,0,1,1.513-.287c1.461.186,2.22,1.1,2.739,2.931a18.2,18.2,0,0,1,.115,7.259,33.059,33.059,0,0,1-2.356,8.121,14.432,14.432,0,0,1-3.352,4.98H32.207c-4.3-5.076-8.411-12.87-11.09-19.441a4.694,4.694,0,0,1-.479-2.72,2.687,2.687,0,0,1,2.815-1.685c1.3.491,1.626,1.36,2.183,2.356l2.432,4.884a1.226,1.226,0,0,0,2.318-.556V966.927a2.42,2.42,0,0,1,2.452-2.452Z" transform="translate(0.87 -948.443)"/>
+        </g>
+      </g>
+      <g id="_01" data-name="01">
+        <rect id="사각형_6522" data-name="사각형 6522" class="cls-24" width="44" height="25" rx="12.5" transform="translate(166 954)"/>
+        <text id="_01-2" data-name="01" class="cls-30" transform="translate(179 972)"><tspan x="0" y="0">01</tspan></text>
+      </g>
+      <g id="_02" data-name="02" transform="translate(0 54)">
+        <rect id="사각형_6523" data-name="사각형 6523" class="cls-24" width="44" height="25" rx="12.5" transform="translate(166 1278)"/>
+        <text id="_02-2" data-name="02" class="cls-30" transform="translate(178 1296)"><tspan x="0" y="0">02</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

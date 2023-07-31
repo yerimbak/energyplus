@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container month-event-wrap-pc">
+      <!-- top -->
+      <section class="month-section">
+        <div class="inner">
+          <div class="month-imgbox">
+            <img class="month-event-pc" src="./images/month-event-pc.png" alt="이미지"/>
+            <a href="#" class="e01" target="_blank"></a>
+            <a href="#" class="e02" target="_blank"></a>
+            <a href="https://www.gscev.com/kr/community/event/1?idx=151" class="e03" target="_blank"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.gscaltex.energyplusev" class="gg-btn" target="_blank"></a>
+            <a href="https://apps.apple.com/kr/app/energy-plus-ev/id1580519190" class="ap-btn" target="_blank"></a>
+            <a href="#" class="share" onclick="share()"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // Contents -->
+  </div>
+  <!-- 이벤트 공유하기 버튼 클릭 시 URL 복사 -->
+  <script>
+    function share() {
+        var url = '';
+        var textarea = document.createElement('textarea');
+        document.body.appendChild(textarea);
+        url = 'https://app.zeplin.io/project/60a5eaca23428a2a674b88bf/screen/6411799da425620fd1660cfd';
+        textarea.value = url;
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('링크가 복사되었습니다.');
+    }
+</script>
+</body>
+
+</html>

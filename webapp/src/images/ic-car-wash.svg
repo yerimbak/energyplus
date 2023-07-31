@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Ic_car_wash" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2,.cls-4{stroke:#0f1f2e}.cls-3{fill:#0f1f2e}.cls-4{fill:#3cdc87}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Box">
+        <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-1"/>
+    </g>
+    <g id="Shape">
+        <g id="사각형_4047" class="cls-2">
+            <path d="M0 0h6v1a3 3 0 0 1-3 3 3 3 0 0 1-3-3V0z" class="cls-5" transform="translate(7 26)"/>
+            <path d="M.667.5h4.666A.167.167 0 0 1 5.5.667V1A2.5 2.5 0 0 1 3 3.5 2.5 2.5 0 0 1 .5 1V.667A.167.167 0 0 1 .667.5z" class="cls-1" transform="translate(7 26)"/>
+        </g>
+        <g id="사각형_4048" class="cls-2">
+            <path d="M0 0h6v1a3 3 0 0 1-3 3 3 3 0 0 1-3-3V0z" class="cls-5" transform="translate(19 26)"/>
+            <path d="M.667.5h4.666A.167.167 0 0 1 5.5.667V1A2.5 2.5 0 0 1 3 3.5 2.5 2.5 0 0 1 .5 1V.667A.167.167 0 0 1 .667.5z" class="cls-1" transform="translate(19 26)"/>
+        </g>
+        <g id="사각형_4044" class="cls-2">
+            <path d="M6 0h6a6 6 0 0 1 6 6v2H0V6a6 6 0 0 1 6-6z" class="cls-5" transform="translate(7 12)"/>
+            <path d="M6 .5h6A5.5 5.5 0 0 1 17.5 6v1a.5.5 0 0 1-.5.5H1A.5.5 0 0 1 .5 7V6A5.5 5.5 0 0 1 6 .5z" class="cls-1" transform="translate(7 12)"/>
+        </g>
+        <g id="사각형_4050" class="cls-2" transform="translate(4 19)">
+            <rect width="24" height="8" class="cls-5" rx="4"/>
+            <rect width="23" height="7" x=".5" y=".5" class="cls-1" rx="3.5"/>
+        </g>
+        <rect id="사각형_4052" width="12" height="1" class="cls-3" rx=".5" transform="translate(10 2)"/>
+        <rect id="사각형_4053" width="1" height="2" class="cls-3" rx=".5" transform="translate(11.804 6.818)"/>
+        <rect id="사각형_4054" width="1" height="2" class="cls-3" rx=".5" transform="translate(15.5 5.455)"/>
+        <rect id="사각형_4055" width="1" height="2" class="cls-3" rx=".5" transform="translate(19.196 6.818)"/>
+        <g id="타원_1168" class="cls-4" transform="translate(9 21)">
+            <circle cx="2" cy="2" r="2" class="cls-5"/>
+            <circle cx="2" cy="2" r="1.5" class="cls-1"/>
+        </g>
+        <g id="타원_1169" class="cls-4" transform="translate(19 21)">
+            <circle cx="2" cy="2" r="2" class="cls-5"/>
+            <circle cx="2" cy="2" r="1.5" class="cls-1"/>
+        </g>
+    </g>
+</svg>

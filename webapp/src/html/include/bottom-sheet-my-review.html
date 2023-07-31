@@ -1,0 +1,97 @@
+<div class="modal is-active">
+    <div class="modal-background"></div>
+
+    <!--  Bottom Sheet -->
+    <div class="bottom-sheet is-large is-bottom-fixed">
+        
+        <div class="bottom-sheet-header">
+            <h2 class="title is-3 has-text-centered">리뷰 작성</h2>
+            <button class="btn-close"><span class="blind">닫기</span></button>
+        </div>
+
+        <div class="bottom-sheet-body">
+            <div class="inner">
+                <p class="title is-5 is-align-center">가든파이브 셀프주유소</p>
+                <div class="box-rating-area">
+                    <p class="label">별점(선택)</p>
+                    <div class="box-star-rating">
+                        <div class="rating">
+                            <p class="title is-5">주유</p>
+                            <div class="rate">
+                                <div class="rate-item"> <!-- D: 선택시 class [set-on] add -->
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <p class="rate-text">좋음<em>4</em>점</p>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <p class="title is-5">세차</p>
+                            <div class="rate">
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <div class="rate-item">
+                                    <span class="icon"><i class="mdi"></i></span>
+                                </div>
+                                <p class="rate-text">매우좋음<em>5</em>점</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field type-2">
+                    <p class="label">리뷰<span class="necessary">(필수)</span></p>
+                    <div class="control is-clearfix is-error"> <!-- 2021-01-14 D: 오류시 is-error 클래스 추가 -->
+                        <textarea maxlength="200" class="textarea" placeholder="리뷰를 써 주세요(10자 이상)&#13;&#10;업주님과 다른 사용자들이 상처 받지 않도록&#13;&#10;좋은 표현을 사용해 주세요."></textarea>
+                        <div class="counter-area">
+                            <small class="counter"><em class="is-primary-color">0</em>/2,000 Byte</small>
+                        </div>
+                    </div>
+                    <p class="help">리뷰를 입력해주십시오.</p> <!-- 2021-01-14 D: 에러시에만 출력 -->
+                </div>
+
+                <div class="box-bottom-noti">
+                    <p class="title is-5 title-noti">리뷰 작성 유의사항</p>
+                    <p class="txt-noti-desc">이용 약관을 위반한 리뷰의 경우, 통보 없이 리뷰를 삭제하거나 회원의 리뷰 작성 권한을 중지 또는 해지할 수 있습니다.</p>
+                    <ul class="list-noti-area">
+                        <li class="item-txt-noti">- 이용 서비스와 무관한 내용이나, 동일 문자의 반복 등 부적절한 내용을 포함한 경우</li>
+                        <li class="item-txt-noti">- 욕설, 비방, 명예훼손을 포함한 내용이 있는 경우</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="is-button-fixed">
+                <div class="inner">
+                    <button class="button is-half is-outline">취소</button>
+                    <button class="button is-half is-dark">등록</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-sheet-banner">
+            <span class="txt-banner-desc">친구초대하기</span>
+            <span class="ico-character"></span>
+        </div>
+    </div>
+</div>

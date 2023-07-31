@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">바로주유 예약</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+            <!-- Contents -->
+			<div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+
+                     <!-- accordion -->
+                     <div class="accordion-container baro">
+                        <ul class="baro-list">
+                            <!-- step 01 활성화 : is-active 클래스 추가 / 완료 : is-completed 클래스 추가 -->
+                            <li class="ac baro-step is-active">
+                                <div class="baro-item">
+                                    <div class="ac-header baro-header">
+                                        <div class="ac-trigger">
+                                            <!-- title -->
+                                            <div class="level">
+                                                <div class="level-left">
+                                                    <h3 class="title">예약 주유소 선택</h3>
+                                                    <!-- 완료후 컨텐츠 -->
+                                                    <!-- <h3 class="title">개나리주유소,<br> 고급휘발유(2,023원/ℓ)</h3> -->
+                                                </div>
+                                                <div class="level-right">
+                                                    <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                                                    <div class="modify-area">
+                                                        <button class="btn-modify">수정</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ac-panel baro-panel">
+                                        <p><strong>찜한 단골 주유소</strong> 중 예약 가능한 주유소 목록이 표시됩니다.</p>
+                                        <a href="#" class="link-underline-txt size-s"><strong>예약 가능한 단골주유소 확인 방법</strong></a>
+                                        <div class="baro-content">
+                                            <ul class="list-rez-station">
+                                                <li>
+                                                    <!-- D: 활성화 [is=active] add -->
+                                                    <div class="group-box-rez is-active">
+                                                        <div class="box-rez-hd">
+                                                            <small class="cur-price">2,185</small>
+                                                            <p class="price"><em class="is-family-secondary">2,023</em>원</p>
+                                                            <p class="box-rez-info">
+                                                                <span class="name">개나리주유소</span>
+                                                                <time>06:00~23:00</time>
+                                                            </p>
+                                                        </div>
+                                                        <div class="box-rez-bt">
+                                                            <div class="hash-tag-area">
+                                                                <span class="hash-tag">셀프</span>
+                                                                <span class="hash-tag">편의점</span>
+                                                                <span class="hash-tag">EV충전소</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="group-box-rez">
+                                                        <div class="box-rez-hd">
+                                                            <small class="cur-price">2,185</small>
+                                                            <p class="price"><em class="is-family-secondary">2,023</em>원</p>
+                                                            <p class="box-rez-info">
+                                                                <span class="name">대성석유(주)동호주 대성석유(주)동호주</span>
+                                                                <time>06:00~23:00</time>
+                                                            </p>
+                                                        </div>
+                                                        <div class="box-rez-bt">
+                                                            <div class="hash-tag-area">
+                                                                <span class="hash-tag">셀프</span>
+                                                                <span class="hash-tag">세차</span>
+                                                                <span class="hash-tag">경정비</span>
+                                                                <span class="hash-tag">편의점</span>
+                                                                <span class="hash-tag">EV충전소</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="group-box-rez">
+                                                        <div class="box-rez-hd">
+                                                            <small class="cur-price">2,185</small>
+                                                            <p class="price"><em class="is-family-secondary">2,023</em>원</p>
+                                                            <p class="box-rez-info">
+                                                                <span class="name">개나리주유소</span>
+                                                                <time>06:00~23:00</time>
+                                                            </p>
+                                                        </div>
+                                                        <div class="box-rez-bt">
+                                                            <div class="hash-tag-area">
+                                                                <span class="hash-tag">셀프</span>
+                                                                <span class="hash-tag">세차</span>
+                                                                <span class="hash-tag">경정비</span>
+                                                                <span class="hash-tag">편의점</span>
+                                                                <span class="hash-tag">EV충전소</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="group-box-rez">
+                                                        <div class="box-rez-hd">
+                                                            <small class="cur-price">2,185</small>
+                                                            <p class="price"><em class="is-family-secondary">2,023</em>원</p>
+                                                            <p class="box-rez-info">
+                                                                <span class="name">대성석유(주)동호주 대성석유(주)동호주</span>
+                                                                <time>06:00~23:00</time>
+                                                            </p>
+                                                        </div>
+                                                        <div class="box-rez-bt">
+                                                            <div class="hash-tag-area">
+                                                                <span class="hash-tag">셀프</span>
+                                                                <span class="hash-tag">세차</span>
+                                                                <span class="hash-tag">경정비</span>
+                                                                <span class="hash-tag">편의점</span>
+                                                                <span class="hash-tag">EV충전소</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="has-text-centered">
+                                                <button class="button is-text more">더보기</button>
+                                            </div>
+                                            <div class="buttons">
+                                                <p class="tooltip-dark">예약특가 적용중!</p>
+                                                <button class="button is-outline is-fullwidth">다음단계</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- // step 01 -->
+
+                            <!-- step 02 / 완료 : is-completed 클래스 추가 -->
+                            <li class="ac baro-step">
+                                <div class="baro-item">
+                                    <div class="ac-header baro-header">
+                                        <div class="ac-trigger">
+                                            <!-- title -->
+                                            <div class="level">
+                                                <div class="level-left">
+                                                    <h3 class="title">예약 주유금액/리터</h3>
+                                                </div>
+                                                <div class="level-right">
+                                                    <!-- 수정버튼 / 완료(is-completed) 상태에서만 보임 -->
+                                                    <div class="modify-area">
+                                                        <button class="btn-modify">수정</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ac-panel baro-panel">
+                                        <div class="ac-content baro-content">
+                                            <p>
+                                                <strong class="txt-bold">슬라이더를 움직여</strong> 주유하실 리터를 설정하면
+                                                금액이 자동 설정됩니다.
+                                            </p>
+                                            <div class="txt-noti">
+                                                설정한 금액/리터에 따라 쿠폰 적용이 <br>
+                                                불가 할 수 있습니다.
+                                            </div>
+                                            <div class="level">
+                                                <p class="align-left">예상 주유 금액</p>
+                                                <p class="align-right price"><em class="is-family-secondary">50,575</em>원</p>
+                                            </div>
+                                            <dl>
+                                                <dd>
+                                                    <!--
+                                                        * https://nightcatsama.github.io/vue-slider-component/
+                                                        * disabled일 경우 is-disabled 클래스 추가
+                                                    -->
+                                                    <div class="slider-area reservation">
+                                                        <vue-slider v-model="value" :marks="marks" :tooltip="'always'" :min="10" :max="100" :interval="5"></vue-slider>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <div>
+                                                <button class="button is-outline is-fullwidth">다음단계</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- // step 02 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+        <!-- @@include('./include/gnb.html') -->
+    </div>
+    
+    <!-- 2021-01-14 수정
+        * vue-slider-component : /lib/vue-slider 추가함
+        * 임시로 cdn으로 설정
+    -->
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/dist/vue-slider-component.umd.min.js"></script>
+    <script>
+       new Vue( {
+        el: '#container',
+        data: function () {
+            return {
+                value: 10,
+                marks: [10, 30, 50, 70, 90, 100]
+                }
+            },
+            components: {
+                'vueSlider': window[ 'vue-slider-component' ],
+            }
+        })
+
+        // accordion
+        new Accordion('.accordion-container', {
+            duration: 400,
+            openOnInit : [0] 
+        });
+
+        // 다음단계버튼 클릭 이벤트
+        var btnStep = document.querySelectorAll('.button');
+        var baroStep = document.querySelectorAll('.baro-step');
+
+        for(var i = 0; i < btnStep.length; i++){
+            btnStep[i].setAttribute('data-index',i)
+            baroStep[i].setAttribute('data-index',i)
+            btnStep[i].onclick = function() {
+                var index = parseInt(this.dataset.index);
+                if (index==btnStep.length-1) {
+                    location.reload();
+                    return;
+                } 
+
+                // check and transition collapse for 0.1 sec
+                completeCurrentStep(index); 
+
+                // expand next step after 0.1 sec
+                setTimeout(function() {
+                    activateNextStep(index+1);
+                }, 100);
+            }
+        }
+
+        // current step complete
+        function completeCurrentStep(index) {
+            var objNextStep = baroStep[index];
+            objNextStep.classList.remove('is-active');
+            // ac-panel : height는 0 으로 설정 (slideUp)
+            objNextStep.querySelector('.ac-panel').style.height = 0;
+            objNextStep.classList.add('is-completed');
+        }
+
+        // show next step
+        function activateNextStep(index) {
+            var objNextStep = baroStep[index];
+            objNextStep.classList.add('is-active');
+            var objAcPanel = objNextStep.querySelector('.ac-panel');
+            objAcPanel.style.height =  objAcPanel.scrollHeight + 'px';  
+        }
+
+        // 결제비밀번호 key-code 포커스시 on 클래스 추가
+        var keyCodes = document.querySelectorAll('.key-code-input');
+        keyCodes.forEach( keyCode => {
+            keyCode.addEventListener('focus', event => {
+                keyCode.parentNode.classList.add('on');
+            });
+        });
+    </script>
+</body>
+</html>

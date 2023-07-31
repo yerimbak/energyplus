@@ -1,0 +1,853 @@
+/* modal */
+.modal
+    display : flex
+    visibility : hidden
+    transition : .3s cubic-bezier(0.0, 0.0, 0.2, 1)
+    .modal-background
+        display : none
+    .modal-card
+      height : 100vh
+      .modal-card-head,
+      .modal-card-foot
+          border : 0
+          background :
+            color : $ep-white
+          justify-content : center
+      .modal-card-head
+        height : 68px
+        .modal-card-title
+          text-align : center
+          margin-bottom : 0
+        .btn-close
+          margin-left : auto
+      .modal-card-body
+        position : relative
+        display : flex 
+        flex-direction : column 
+        flex-grow : 1
+        width : 100%
+        max-width : $max-width
+        margin : 0 auto
+        height : 100%
+        .modal-body-inner
+          width : 100%
+          max-width : $max-width
+          margin : 0 auto
+          .title
+            &.is-regular
+              max-width : 340px
+              letter-spacing : -.5px
+              word-break : keep-all
+              +mobile-medium
+                font-size : 22px
+        .iframe-container
+          width : calc(100% + 40px)
+          margin-left : -20px
+          height : 100%
+          iframe
+            width : 100%
+            height : 100%
+            flex-grow : 1
+        .is-button-fixed
+          .tooltip-area
+            .tooltip
+              white-space : nowrap
+              // overflow : hidden
+              // text-overflow : ellipsis
+            & + .inner
+              padding-top : 12px
+    .bottom-sheet
+        display : block
+        position : absolute
+        left : 0
+        bottom : 0
+        width : 100%
+        height : 420px
+        background-color : $ep-white
+        border-radius : 12px 12px 0 0
+        z-index : 500
+        transform : translateY(100%)
+        transition : .3s
+        &-header
+          display : flex
+          width : 100%
+          height : 65px
+          justify-content : center
+          align-items : center
+          border-bottom : 1px solid $ep-border-gray
+          .title 
+            padding-right : 20px
+            overflow : hidden
+            text-overflow : ellipsis
+            white-space : nowrap
+            max-width : calc(100% - 60px)
+            margin-bottom : 0
+          .btn-close
+            position : absolute
+            top : 20px
+            right : 24px
+          .title-price
+            display : flex 
+            align-items : center
+            font-size : 17px
+            strong
+              display : flex 
+              align-items : center
+              font-size : $size-normal
+              .is-family-secondary
+                font-size : $size-large
+            .is-large
+              font :
+                size : 1.5rem
+                weight : $weight-normal
+              .is-family-secondary
+                font-weight : $weight-bold
+        &-body
+            width : 100%
+            height : calc(100% - 65px)
+            max-width : $max-width
+            margin : 0 auto
+            padding :
+              top : 32px
+            overflow : hidden
+            overflow-y : auto
+            >.inner
+              position : relative
+              display : flex  
+              flex-direction : column
+              width : 100%
+              height : 100%
+              overflow-x : hidden
+              overflow-y : auto
+              word-break : keep-all
+              .is-align-center
+                p
+                  strong
+                    font-weight : bold
+              .inner-cont
+                  p
+                    word-break : keep-all
+              &.receipt-inner
+                display : block
+                .board-grid
+                  margin-top : 32px
+              .item-centered
+                position : absolute
+              .inner-cont
+                .bullet-list
+                  margin :
+                    top : 19px
+                    bottom : 16px
+                  > li
+                    margin-bottom : 4px
+              // &.has-text-centered
+              //   .no-data-section
+              //     margin-top : -16px
+            .title
+              line-height : 1.47
+              margin-bottom : 12px
+              +mobile-medium
+                font-size : 18px
+              &.is-2
+                margin-bottom : 7px
+              +mobile-small-w
+                letter-spacing : -1px
+            .notice-content
+              padding-right : 15px
+              // word-break : keep-all
+            .inner-cont
+              dt
+                word-break : keep-all
+                margin-bottom : 20px
+                letter-spacing : -.3px
+                .title 
+                  margin-bottom : 0
+              dd
+                word-break : break-all
+                > p
+                  margin-bottom : 24px
+            .user-guide-area
+              .contents-section
+                & + .scroll-top
+                  min-height : 320px
+            .section-password
+              .password-area
+                height : calc(100% - 267px)
+              .keypad-area
+                max-height : 267px
+            .bonus-coupon-area
+              .title
+                &:first-child
+                    font :
+                      family : $family-primary
+                      size : 1.25rem 
+                      weight : $weight-normal
+                    margin-right : 8px
+                    letter-spacing : -1px
+              &.type02
+                .is-align-right
+                  .title
+                    font-size : 14px
+                  .is-primary-text3
+                    font-size : 16px
+            .board-grid,
+            .board-body
+              height : auto
+        &.is-bottom-fixed.is-full
+          height : 100%
+          border-radius : 0
+          .bottom-sheet-body
+            padding-bottom : 0
+            padding-top : 0
+            #container
+              .iframe-container
+                padding-top : 0
+        &.is-big-large
+          height : 764px
+        &.is-large
+          height : 631px
+          // height : 78.3%
+          +mobile-small-h
+            height : calc(100vh - 68px)
+        &.is-medium
+          height : 420px
+        &.is-small
+          height : 318px
+        &.is-small-popup
+          height : 339px
+        &.is-coupon
+          height : 363px
+        &.is-bottom-fixed
+          .bottom-sheet-body
+            padding : 
+              bottom : 103px
+          .credit-card-bottom
+            padding : 32px 22px 40px 23px
+            .credit-card-inner
+              border-radius : 16px
+              background-color : #18355e
+              padding : 24px 27px 26px 25px
+              .popup-txt
+                font-size : 15px
+                color : #fff
+                font-weight : 400
+                strong
+                  font-size : 18px
+                  font-weight : 500
+                  color : #fff
+                .cc-txt
+                  font-weight : 500
+                .cc-num1
+                  font-size : 17px
+                  font-weight : 500
+                small
+                  font-size : 12px
+                  font-weight : 300
+                  .cc-num2
+                    font-size : 14px
+              .is-button-fixed
+                .inner
+                  padding : 0px 48px 66px
+                  .popup-cancle-btn
+                    cursor : pointer
+                    width : 100%
+                    height : 36px
+                    border-radius : 8px
+                    border : none
+                    margin-right : 6px
+                  .popup-discount-btn
+                    cursor : pointer
+                    width : 100%
+                    height : 36px
+                    border-radius : 8px
+                    background-color : #3ddb87
+                    border : none
+                    margin-left : 6px
+            button
+              font-size : 15px
+              font-weight : 500
+              color : #222
+        &.is-close
+          transform : translateY(100%)
+        .bottom-sheet-banner
+          display : none
+    .credit-card-bg
+      background-color : #18355e
+    &.is-active
+      visibility : visible
+      .modal-background,
+      .bottom-sheet-banner,
+      .group-particle,
+      .event-stamp-img,
+      .event-confetti-bg,
+      .event-confetti-particle
+        display : block
+      .modal-card
+        animation : modal-animation .5s
+      .bottom-sheet
+        transform : translateY(0)
+        animation : bottom-open-animation .5s
+        animation-timing-function : cubic-bezier(.61,.12,.29,1)
+      .event-banner
+        animation : banner-open-animation .5s
+        animation-duration : 1s
+    &.is-open
+      .bottom-sheet
+        animation : bottom-open-animation .3s
+        animation-timing-function : cubic-bezier(.61,.12,.29,1)
+      .bottom-sheet
+        animation : bottom-close-animation .3s
+        animation-timing-function : cubic-bezier(.61,.12,.29,1)
+.is-full-window
+  display : none
+  position : fixed
+  width : 100%
+  height : 100%
+  background : $ep-white
+  z-index : 999
+  .layer-popup-hd
+    display : flex 
+    align-items : center
+    width : 100%
+    height : 68px
+    background : $ep-white
+    .btn-close
+      float : right
+  .layer-popup-body
+    position : relative
+    width : 100%
+    height : 100%
+    display : flex 
+    flex-direction : column 
+    flex-grow : 1
+    iframe
+      width : 100%
+      height : 100%
+      display : flex 
+      flex-grow : 1
+  &.is-active
+    display : block
+      
+@keyframes modal-animation
+	0%
+		opacity : 0
+		transform : translateY(100px)
+	100%
+		opacity : 1
+
+@keyframes bottom-open-animation
+	0%
+		transform : translateY(100%)
+	100%
+    transform : translateY(0)
+
+@keyframes bottom-close-animation
+	0%
+		transform : translateY(0)
+	100%
+    transform : translateY(100%)
+
+@keyframes banner-open-animation
+	0%
+		opacity : 0
+		transform : translateX(100%)
+	50%
+		opacity : 0
+		transform : translateX(100%)
+	100%
+		opacity : 1
+		transform : translateX(0)
+
+/* tabs */
+.b-tabs
+  .tabs
+    overflow-x : hidden
+
+/* Range */
+.b-slider
+  width : 100%
+  margin : 0 auto
+  padding : 
+    top : 60px
+    left : 33px
+    right : 33px
+    bottom : 40px
+  .b-slider-track
+    height : 3px
+    .b-slider-thumb-wrapper
+      .b-slider-thumb
+        width : 32px
+        height : 32px
+        border-radius : 50%
+        border : 0
+        background :
+          color : transparent
+          image : url(#{$image-path}slider-thumb.svg)
+          repeat : no-repeat
+          position : center
+          size : 32px 32px
+    .b-slider-tick-label
+        margin-top : 15px
+        color : $ep-text-color
+        font :
+          family : $family-secondary
+          weight : $weight-medium
+        white-space : nowrap
+  &.is-disabled
+    .b-slider-thumb-wrapper
+      .b-slider-thumb
+        background :
+          image : url(#{$image-path}slider-thumb-disabled.png)
+      .b-tooltip.is-primary .tooltip-content
+        display : block !important
+        background :
+          color : $ep-diabled-border
+        &:before
+          border-top-color : $ep-diabled-border
+          
+/* vue-slider */
+.slider-area 
+  padding :
+    top : 45px
+    left : 12px
+    right : 12px
+    bottom : 25px
+  &.reservation
+    padding :
+      left : 24px
+      right : 24px
+    .vue-slider-dot-tooltip-inner
+      min-width : 83px
+      +mobile-medium
+        min-width : 63px
+.vue-slider
+  position : relative
+  .vue-slider-process
+    background-color : $ep-primary
+  .vue-slider-rail
+    height : 3px !important
+    border-radius : 100px
+    background : $slider-track-background
+  .vue-slider-mark-step
+    background-color : transparent
+  .vue-slider-dot-handle
+    width : 32px !important
+    height : 32px !important
+    border : 0
+    background :
+      color : transparent
+      image : url(#{$image-path}slider-thumb.svg)
+      repeat : no-repeat
+      position : center
+      size : 32px 32px
+    box-shadow : none
+    margin : -8px
+  .vue-slider-mark-label
+    font :
+      // size : $size-normal
+      family : $family-secondary
+      weight : $weight-medium
+      size : 15px
+    line-height : 1.2
+    color : $ep-black
+  .vue-slider-dot-tooltip-inner
+    font :
+      family : $family-secondary
+      size : $size-large
+      weight : $weight-medium
+    line-height : 1.28
+    letter-spacing : -1px
+    padding :
+      top : 6px
+      bottom : 5px
+      left : 12px
+      right : 12px
+    border : 
+      radius : 100px
+      color : $ep-primary
+    background-color : $ep-primary
+    box-sizing : border-box
+    +mobile-medium
+      font-size : 16px
+  &.vue-slider-ltr
+    .vue-slider-mark-label
+      margin-top : 15px
+      &.full
+        left : 100%
+        margin-left : 5px
+        line-height : 1.27
+        letter-spacing : -.5px
+  .vue-slider-dot-tooltip-inner-top
+    &::after
+      margin-top : -1px
+.is-disabled
+  .vue-slider-dot-handle
+    background :
+      image : url(#{$image-path}slider-thumb-disabled.svg)
+  .vue-slider-dot-tooltip-inner
+    border-color : $ep-diabled-border
+    background-color : $ep-diabled-border
+
+/* switch */
+.switch
+    display : flex
+    margin :
+        right : 0
+    input[type=checkbox]
+        & + .check
+            box-shadow : none !important
+            width : 51px
+            height : 31px
+            background : rgba(120, 120, 128, 0.16)
+            &::before
+                width : 1.6875rem
+                height : 1.6875rem
+                background : $ep-white
+        &:checked + .check
+            background : $ep-primary
+            &::before
+                transform : translate3d(70%,0,0)
+    &:hover
+        input[type=checkbox] 
+            & + .check
+                background : rgba(120, 120, 128, 0.16)
+            &:checked + .check
+                background : $ep-primary
+// step
+.steps
+  .step-items
+    &.baro
+      > li
+        &.is-active
+          &:before
+            width : 24px
+            height : 24px
+            line-height : 22px
+            color : $ep-white
+            font-weight : $weight-medium
+            background : $ep-navy
+    .step-item
+      display : flex
+      width : 100%
+      margin-bottom : 24px
+      .step-marker
+        display : flex 
+        align-items : center
+        width : 24px
+        height : 24px
+      .step-detail
+        margin-left : 8px
+        font-weight : $weight-medium
+        .desc
+          font-weight : $weight-normal
+          margin : 8px 0 12px
+      &.is-loading
+        .step-marker
+          width : 28px
+          height : 28px
+        .step-detail
+          margin-left : 12px
+      &.is-checked
+        .step-marker
+          border-radius : 50%
+          background :
+            color : transparent
+            image : url(#{$image-path}icon-step-checked.svg)
+            repeat : no-repeat
+            position : center
+      &.is-retry
+        .step-marker
+          border-radius : 50%
+          background :
+            color : transparent
+            image : url(#{$image-path}icon-step-retry.svg)
+            repeat : no-repeat
+            position : center
+      &.is-active
+        max-height : 627px
+.dropdown-menu
+    margin-top : -7px
+    padding-top : 0
+.dropdown-content
+    max-height : 150px
+    padding : 0 0 13px 0
+    box-shadow : none
+    border-radius : 0 0 4px 4px
+    border : 1px solid $ep-primary
+        top : 0
+.dropdown-item
+    color : $ep-text-color
+.autocomplete
+    .dropdown-menu
+        display : block
+
+// tooltip
+.b-tooltip
+  .tooltip-content
+    font-size : $size-large
+    border-radius : 24px
+    box-shadow : none
+    border : 0
+    padding : 5px 11px
+    &::after
+        content : '만원'
+  &.is-primary 
+    .tooltip-content
+      display : block !important
+      color : $ep-white
+      
+// skeleton
+.b-skeleton
+  // position : absolute
+  // top : 0
+  // left : 0
+  .b-skeleton-item 
+    width : 100% 
+    height : 100%
+    // background : linear-gradient(90deg, #dbdbdb 25%, rgba(245, 245, 245, 0.3) 50%, #dbdbdb 75%)
+    &.is-small
+      height : 22px 
+    &.is-medium
+      height : 29px
+    &.is-rounded-type2
+      border-radius : 100px
+
+// loading
+.loading-overlay
+    position : fixed
+    display : flex 
+    align-items : center 
+    justify-content : center
+    top : 0
+    left : 0
+    bottom : 0
+    right : 0
+    background : rgba(0,0,0,.3)
+    z-index : 9999
+.loading
+  position : fixed
+  top : 50%
+  left : 50%
+  width : 100px
+  transform : translate(-50%,-50%)
+  z-index : 9999
+  
+// loading-dot-animation
+.icon-loading-dot
+  position : relative
+  left : -9999px
+  margin-left : 9px
+  width : 5px
+  height : 5px
+  border-radius : 5px
+  background-color : $ep-primary
+  color : $ep-primary
+  box-shadow : 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  animation : dotAnimation 1.5s infinite linear
+
+@keyframes dotAnimation
+  0% 
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  16.667% 
+    box-shadow: 9990px -9px 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  33.333%
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  50%
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px -9px 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  66.667% 
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+  83.333% 
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px -9px 0 0 $ep-primary
+  100% 
+    box-shadow: 9990px 0 0 0 $ep-primary, 9999px 0 0 0 $ep-primary, 10009px 0 0 0 $ep-primary
+
+// 2022.02.21 현대자동차 계정연동 
+
+// 2022.04.19 하트 즐겨찾기버튼 공통스타일로 분리
+.like-btn
+  &.btn-toggle
+    position : relative
+    // display : inline-block
+    background : transparent
+    color : transparent
+    text-indent : -9999px
+    transition : all ease 1s
+    &::after
+      content : ''
+      display : block
+      width : 20px
+      height : 20px
+      background :
+        image : url(#{$image-path}icon-favorite-unfilled.svg)
+      // position : absolute
+      // right : -15px 
+      // top : 0  
+    &.is-active
+      -webkit-animation : wishHeart 1.1s
+      -webkit-animation-iteration-count : 1
+      -webkit-animation-fill-mode : both
+      animation : wishHeart 1.1s
+      animation-iteration-count : 1
+      animation-fill-mode : both
+      &::after
+        background :
+          image : url(#{$image-path}icon-favorite-filled.svg)
+
+
+
+.after-connected-account
+  li
+    &:not(:last-child)
+      margin-bottom : 8px
+  .button
+    &:not(.is-small)
+      &:not(.is-medium)
+        &:not(.is-text)
+          height : 32px 
+          line-height : 32px 
+          font-size : 12px
+          font-weight : normal
+.connected-account
+  li
+    display : flex
+    justify-content : space-between
+    align-items : center
+    border : 1px solid #e5e5e5
+    border-radius : 8px
+    padding : 22px 24px
+    margin-bottom : 17px
+    &:last-child
+      margin-bottom : 0
+    .connect-name
+      font-weight : bold
+    .box-btn-area
+      display : flex  
+.connect-text-area
+  margin-bottom : 25px
+.connect-box
+  border : 1px solid #e5e5e5
+  border-radius : 8px
+  padding : 22px
+  // box-shadow : 0 4px 12px 0 rgba(0,0,0,0.1)
+.connect-box-top
+    border-bottom : 1px solid #e5e5e5 
+    padding-bottom : 22px 
+    display : flex
+    align-items : center
+.car-brand
+  font-size : 15px
+  font-weight : bold
+  padding-left : 55px
+  position : relative
+  &::before
+    display : block
+    content : ''
+    width : 40px
+    height : 20px
+    background :
+      repeat : no-repeat
+      position : center
+      size : 100%
+    position : absolute
+    left : 0
+    top : 0 
+
+// 2022.04.12 커넥티드카 브랜드 이미지타입 추가 
+.car-brand.kia-logo
+  &::before
+    background : 
+      image : url(#{$image-path}icon_kia_logo.png)
+.car-brand.hyundai-logo
+  &::before
+    background : 
+      image : url(#{$image-path}icon_hyundai_logo.png)    
+.car-brand.genesis-logo
+  &::before
+    background : 
+      image : url(#{$image-path}icon_genesis_logo.png)
+
+.connect-box-bottom
+  padding-top : 25px
+  .connect-info
+    color : #222    
+    font-family : 'Montserrat'
+    padding-left : 25px
+    position : relative
+    font-size : 12px
+    &:not(:last-child)
+      margin-bottom : 10px
+    &::before
+      display : inline-block
+      content : ''
+      width : 20px
+      height : 20px
+      background-size : 100% 
+      position : absolute
+      left : 0
+      top : -2px
+    &.connect-car
+      &::before        
+        background : 
+          image : url(#{$image-path}my-car-icon.png)
+    &.connect-email
+      &::before
+        background : 
+          image : url(#{$image-path}my-icon.png)      
+
+.connect-box
+  .buttons
+    margin-top : 20px
+    .button
+      &.is-outline
+        width : 100%
+
+.inner
+  &.is-padding-top
+    .connect-box
+      &:not(:last-child)
+        margin-bottom : 20px
+        
+
+// bottom-sheet 낮은높이ver
+.is-lower-height
+  height : 250px !important
+  .checked-connect
+    font-weight : 500
+
+
+// 2022-07-08 5000원 바로주유 쿠폰 팝업창 추가
+.baro-coupon-receive
+    text-align : center
+    align-items : center
+    justify-content : center
+.baro-coupon img
+    width : 190px
+    height : 94px
+.baro-coupon-img-area
+  margin-top : 10px
+.baro-coupon-img-area span.inside-text img
+    width : 53px
+    height : 14px
+    margin : 0 4px
+    position : relative
+    top : 1px
+
+.baro-coupon-img-area span.add-bold
+    font-weight : bold
+    color : #222
+
+@media (max-width: 292px) 
+  .modal
+    .bottom-sheet.is-bottom-fixed 
+      .credit-card-bottom 
+        .credit-card-inner
+          .popup-txt
+            font-size : 14px
+            strong
+              font-size : 17px
+            .cc-num1
+              font-size : 16px
+            small
+              font-size : 12px
+              .cc-num2
+                font-size : 13px

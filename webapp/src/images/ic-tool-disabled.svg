@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Ic_Tool_Disabled" transform="translate(-151 -553)">
+    <g id="Box" transform="translate(151 553)">
+      <rect id="사각형_4080" data-name="사각형 4080" width="32" height="32" fill="none"/>
+    </g>
+    <g id="Shape" transform="translate(162.938 581.36)">
+      <path id="패스_6095" data-name="패스 6095" d="M10.478-8.78A3.979,3.979,0,0,1,15.34-5.887a4.105,4.105,0,0,1-.13,2.455h0l-2.06-1.7L11.3-3.254l1.684,2.085h0A3.967,3.967,0,0,1,7.831-3.5,4.1,4.1,0,0,1,7.7-5.966h0L3.431-10.287,1.622-12.12l-3.9-3.952h0a3.98,3.98,0,0,1-4.861-2.893,4.1,4.1,0,0,1,.135-2.465h0l2.059,1.707,1.858-1.886-1.687-2.086h0A3.966,3.966,0,0,1,.368-21.358,4.1,4.1,0,0,1,.5-18.894h0Z" transform="translate(0.005 0)" fill="none" stroke="#aeaeae" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_6096" data-name="패스 6096" d="M4.716-13.038l4.409-4.468a1.155,1.155,0,0,1,.849-.34l.7.012a1.149,1.149,0,0,0,.843-.336l1.323-1.322.8-2.536L11.915-23.76l-2.536.8L8.057-21.635a1.154,1.154,0,0,0-.335.843l.011.7a1.151,1.151,0,0,1-.336.843l-4.2,4.178" transform="translate(1.689 0.002)" fill="none" stroke="#aeaeae" stroke-miterlimit="10" stroke-width="1"/>
+      <path id="패스_6096-2" data-name="패스 6096" d="M1.609-13.644l-4.015,3.99a1.2,1.2,0,0,0-1.7-.031L-7.063-6.7A1.2,1.2,0,0,0-7.029-5L-5.3-3.268a1.2,1.2,0,0,0,1.7.031L-.641-6.225a1.2,1.2,0,0,0-.031-1.7L3.5-12.137" transform="translate(0 2.02)" fill="none" stroke="#aeaeae" stroke-miterlimit="10" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

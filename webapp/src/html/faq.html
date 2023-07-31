@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">FAQ</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <!-- top fixed section -->
+                <!--2021-01-07 faq 클래스 제거 -->
+                <section class="top-fixed-section">
+                    <!-- 검색 -->
+                    <div class="search-area">
+                        <div class="inner">
+                            <div class="field">
+                                <div class="control">
+                                    <!-- 2021-04-14 placeholder 수정 -->
+                                    <input type="search" class="input search" placeholder="궁금한 점을 검색해 보세요.(제목, 내용)">
+                                    <button class="btn-del" id="btn-del-id"><span class="blind">지우기</span></button>
+                                    <!-- <button class="btn-search"><span class="blind">검색</span></button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contents section -->
+                <section class="contents-section">
+                     <!-- FAQ 리스트 -->
+                    <div class="board-grid">
+                        
+                        <!--2021-01-07 : top-section영역에서 contents-section영역으로 이동 -->
+                        <!-- tag -->
+                        <div class="tag-area">
+                            <ul class="tag-list">
+                                <li>
+                                    <!-- 선택됐을때 is-selected 클래스 추가-->
+                                    <a href="#" class="tag-item is-selected">전체</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">바로주유</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">쿠폰</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">상품</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">GS&amp;POINT</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">주유내역</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">주유소&amp;충전소</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">회원관련</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">기타</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="inner">
+                            <h3 class="title is-3">자주 찾는 도움말</h3>
+                        </div>
+
+                        <!-- 2020/12/14 클래스 수정 - accordion-container 추가-->
+                        <div class="board-body accordion-container">
+                            <ul class="board-list faq">
+                                @@for (var i = 0; i < 10; i++) {
+                                <!-- 2020/12/14 클래스 수정 - ac 추가 -->
+                                <li class="ac board-item">
+                                    <!-- 2020/12/14 클래스 수정 - ac-header 추가 -->
+                                    <div class="ac-header">
+                                        <!-- 2020/12/14 클래스 수정 - ac-trigger 추가 -->
+                                        <div class="ac-trigger board-title-area">
+                                            <!-- 문의 -->
+                                            <div class="board-title">
+                                                <p class="title is-5">[셀프] 궁금증이 해결되지 않으셨나요?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 내용 -->
+                                    <!-- 2020/12/14 클래스 수정 - ac-panel 추가-->
+                                    <div class="ac-panel">
+                                        <div class="board-content-area">
+                                            <div class="board-content-inner">
+                                                <div class="board-content">
+                                                    안녕하십니까? GS에너지입니다.<br><br>
+
+                                                    GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에
+                                                    선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.<br><br>
+
+                                                    앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                }
+                            </ul>
+
+                            <div class="ac-panel energycard-none">
+                                <div class="board-content-area">
+                                    <div class="board-content-inner energycard-inner">
+                                        <div class="board-content">
+                                            -연회비 : 에너지플러스카드Edition2 국내전용/국내외겸용(VISA) 1만원<br>
+                                            <strong>&nbsp;-카드 이용대금 연체 시 약정금리+연체가산금리 3%의 연체이자율이 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)</strong><br>
+                                            <strong>-단, 연체 발생시점에 약정금리가 없는 경우 아래와 같이 적용</strong><br>
+                                            <strong>-일시불: 거래 발생시점 기준 최소 기간(2개월)의 유이자할부 약정금리+연체가산금리 3% -무이자할부: 거래 발생시점 기준 동일한 할부 계약 기간의 유이자할부 약정금리+연체가산금리 3%</strong><br>
+                                            <strong>&nbsp;-상환 능력에 비해 신용카드 이용금액이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다. </strong><br>
+                                            <strong>-개인신용평점 하락 시 금융거래와 관련된 불이익이 발생할 수 있습니다.</strong><br>
+                                            <strong>&nbsp;-일정 기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.</strong><br>
+                                            &nbsp;-신용카드 발급이 부적정한 경우(연체금 보유, 개인신용평점 낮음 등)카드 발급이 제한될 수 있습니다.<br>
+                                            -카드 이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.<br>
+                                            &nbsp;-금융소비자는 금융소비자보호법 제19조 제1항에 따라 해당 상품 또는 서비스에 대하여 설명을 받을 권리가 있습니다.<br>
+                                            -자세한 내용 및 이용 조건은 카드 신청 전 현대카드 홈페이지 및 상품설명서, 약관 참고 <br>
+                                            -여신심의필 및 광고 유효기간 제 2023-C1h-01588 호 ( 2023-02-17 ~ 2024-02-16 )<br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 더보기 버튼 - 리스트가 10개 이상일 경우 출력 -->
+                            <div class="has-text-centered">
+                                <button class="button is-text more">더보기</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // FAQ 리스트 -->
+                </section>
+            </div>
+			<!-- // Contents -->
+		</div>
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+    <script>
+        // accordion
+        new Accordion('.accordion-container');
+    </script>
+</body>
+</html>

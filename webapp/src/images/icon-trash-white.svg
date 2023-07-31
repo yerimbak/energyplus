@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Trash_icon" transform="translate(-392.095 -1040)">
+    <rect id="사각형_5208" data-name="사각형 5208" class="cls-1" width="1" height="6" rx="0.5" transform="translate(396.095 1047)"/>
+    <rect id="사각형_5209" data-name="사각형 5209" class="cls-1" width="1" height="6" rx="0.5" transform="translate(398.595 1047)"/>
+    <rect id="사각형_5210" data-name="사각형 5210" class="cls-1" width="1" height="6" rx="0.5" transform="translate(401.095 1047)"/>
+    <g id="사각형_5211" data-name="사각형 5211" class="cls-2" transform="translate(393.095 1043)">
+      <path class="cls-3" d="M0,0H12a0,0,0,0,1,0,0V11a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V0A0,0,0,0,1,0,0Z"/>
+      <path class="cls-4" d="M1,.5H11a.5.5,0,0,1,.5.5V11A1.5,1.5,0,0,1,10,12.5H2A1.5,1.5,0,0,1,.5,11V1A.5.5,0,0,1,1,.5Z"/>
+    </g>
+    <rect id="사각형_5212" data-name="사각형 5212" class="cls-1" width="14" height="1" rx="0.5" transform="translate(392.095 1043)"/>
+    <g id="사각형_5213" data-name="사각형 5213" class="cls-2" transform="translate(396.095 1040)">
+      <path class="cls-3" d="M1,0H5A1,1,0,0,1,6,1V4A0,0,0,0,1,6,4H0A0,0,0,0,1,0,4V1A1,1,0,0,1,1,0Z"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="5" height="3" rx="0.5"/>
+    </g>
+  </g>
+</svg>

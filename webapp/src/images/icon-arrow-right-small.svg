@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #0f1f2e;
+      }
+    </style>
+  </defs>
+  <g id="Ic_Arrow_Right_8" transform="translate(-173 -39)">
+    <rect id="Box" class="cls-1" width="8" height="8" transform="translate(181 47) rotate(180)"/>
+    <path id="arrow" class="cls-2" d="M5.256,6.011a.751.751,0,0,1-.6-.3L1.634,2.7A.75.75,0,0,1,2.7,1.634l2.56,2.56,2.561-2.56A.75.75,0,0,1,8.878,2.7L5.859,5.713a.751.751,0,0,1-.6.3Z" transform="translate(173.001 48.262) rotate(-90)"/>
+  </g>
+</svg>

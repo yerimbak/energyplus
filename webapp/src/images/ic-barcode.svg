@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #0f1f2e;
+      }
+
+      .cls-3 {
+        fill: #0f1f2e;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-23 -1002)">
+    <g id="그룹_14052" data-name="그룹 14052" transform="translate(-50 600)">
+      <g id="Box" transform="translate(73 402)">
+        <rect id="사각형_4080" data-name="사각형 4080" class="cls-1" width="32" height="32"/>
+      </g>
+      <g id="그룹_14053" data-name="그룹 14053" transform="translate(505.5 332) rotate(90)">
+        <g id="사각형_4155" data-name="사각형 4155" class="cls-2" transform="translate(96 406.5) rotate(90)">
+          <rect class="cls-4" width="20" height="20" rx="4"/>
+          <rect class="cls-1" x="0.5" y="0.5" width="19" height="19" rx="3.5"/>
+        </g>
+      </g>
+    </g>
+    <rect id="사각형_6465" data-name="사각형 6465" class="cls-3" width="2" height="6" transform="translate(33 1015)"/>
+    <rect id="사각형_6466" data-name="사각형 6466" class="cls-3" width="1" height="6" transform="translate(36 1015)"/>
+    <rect id="사각형_6472" data-name="사각형 6472" class="cls-3" width="1" height="6" transform="translate(39 1015)"/>
+    <rect id="사각형_6467" data-name="사각형 6467" class="cls-3" width="2" height="6" transform="translate(43 1015)"/>
+    <rect id="사각형_6468" data-name="사각형 6468" class="cls-3" width="1" height="6" transform="translate(41 1015)"/>
+  </g>
+</svg>

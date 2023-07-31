@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #3ddb87;
+      }
+    </style>
+  </defs>
+  <g id="icon-card" transform="translate(-171 -120.418)">
+    <rect id="Box" class="cls-1" width="16" height="16" transform="translate(171 120.418)"/>
+    <g id="Shape" transform="translate(173.493 124.317)">
+      <path id="빼기_91" data-name="빼기 91" class="cls-2" d="M9.43,8.2H2a2,2,0,0,1-2-2V2.734H11.43V6.2A2,2,0,0,1,9.43,8.2Zm2-6.151H0V2A2,2,0,0,1,2,0H9.43a2,2,0,0,1,2,2v.05Z" transform="translate(0.001 0)"/>
+    </g>
+  </g>
+</svg>

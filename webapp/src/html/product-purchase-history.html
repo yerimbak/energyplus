@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">상품구매내역</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner is-padding-top">
+                    <!-- S: 구매내역 -->
+                    <div class="box-oiling-group">
+                        <p class="tit-oiling is-family-secondary">2020-12-06<time>12:22</time>
+                            <!-- 2021-04-16 추가 -->
+                            <span class="status">이용중</span>
+                        </p>
+                        <dl class="purchase-details">
+                            <dt>
+                                <a href="#" class="align-left">
+                                    <em>베이직 카케어팩</em>
+                                </a>
+                                <p class="align-right"><strong class="is-family-secondary">33,302</strong>원</p>
+                            </dt>
+                            <!-- 이미지 영역 -->
+                            <dd class="benefit-area">
+                                <a href="#" class="benefit-img" >
+                                    <!-- 이미지 샘플 -->
+                                    <img src="./images/txt-benefit-sample.svg" alt="혜택">
+                                </a>
+                            </dd>
+                            <!-- // 이미지 영역 -->
+                        </dl>
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                    </div>
+                    <!-- E: 구매내역 -->
+
+                    <!-- S: 구매내역 -->
+                    <!-- D: 환불내역 [is-refund] add -->
+                    <div class="box-oiling-group is-refund">
+                        <p class="tit-oiling is-family-secondary">2020-12-06<time>12:22</time>
+                            <!-- 환불내역일 경우 show -->
+                            <!-- 2021-04-16 클래스 수정 -->
+                            <span class="status cancel">환불/해지</span>
+                        </p>
+                        <dl class="purchase-details">
+                            <dt>
+                                <p class="align-left">
+                                    <em>상품명 텍스트 길어질 시 상품명 텍스트 길어질 시</em>
+                                </p>
+                                <p class="align-right"><strong class="is-family-secondary">33,302</strong>원</p>
+                            </dt>
+                            <!-- 이미지 영역 -->
+                            <dd class="benefit-area">
+                                <!-- D: 해지한 구매내역 출력(선택 시 상세 페이지 미제공) -->
+                                <p class="benefit-img" >
+                                    <!-- 이미지 샘플 -->
+                                    <img src="./images/txt-benefit-sample.svg" alt="혜택">
+                                </p>
+                            </dd>
+                            <!-- // 이미지 영역 -->
+                        </dl>
+                        <!-- 2021-04-16 삭제  -->
+                        <!-- <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div> -->
+                    </div>
+                    <!-- E: 구매내역 -->
+
+                    
+                    <!-- S: 구매내역 -->
+                    <!-- D: 기간만료 [is-expired] add -->
+                    <div class="box-oiling-group is-expired">
+                        <p class="tit-oiling is-family-secondary">2020-12-06<time>12:22</time>
+                            <!-- 기간만료일 경우 show -->
+                            <span class="status expired">기간만료</span>
+                        </p>
+                        <dl class="purchase-details">
+                            <dt>
+                                <p class="align-left">
+                                    <em>상품명 텍스트 길어질 시 상품명 텍스트 길어질 시</em>
+                                </p>
+                                <p class="align-right"><strong class="is-family-secondary">33,302</strong>원</p>
+                            </dt>
+                            <!-- 이미지 영역 -->
+                            <dd class="benefit-area">
+                                <!-- D: 해지한 구매내역 출력(선택 시 상세 페이지 미제공) -->
+                                <p class="benefit-img" >
+                                    <!-- 이미지 샘플 -->
+                                    <img src="./images/txt-benefit-sample.svg" alt="혜택">
+                                </p>
+                            </dd>
+                            <!-- // 이미지 영역 -->
+                        </dl>
+                        <!-- 2021-04-16 삭제 -->
+                        <!-- <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div> -->
+                    </div>
+                    <!-- E: 구매내역 -->
+
+                    <!-- S: 구매내역 -->
+                    <div class="box-oiling-group">
+                        <p class="tit-oiling is-family-secondary">2020-12-06<time>12:22</time>
+                            <!-- 2021-04-16 추가 -->
+                            <span class="status">이용중</span>
+                        </p>
+                        <dl class="purchase-details">
+                            <dt>
+                                <p class="align-left">
+                                    <em>상품명 텍스트 길어질 시 상품명 텍스트 길어질 시</em>
+                                </p>
+                                <p class="align-right"><strong class="is-family-secondary">33,302</strong>원</p>
+                            </dt>
+                            <!-- 이미지 영역 -->
+                            <dd class="benefit-area">
+                                <!-- <img src="/images/no-img.svg" class="no-img"> -->
+                                <a href="#" class="benefit-img" >
+                                    <!-- 이미지 샘플 -->
+                                    <img src="./images/txt-benefit-sample.svg" alt="혜택">
+                                </a>
+                            </dd>
+                            <!-- // 이미지 영역 -->
+                        </dl>
+                        <div class="box-bottom-btn">
+                            <button type="button" class="detail"><i class="ico"></i>상세보기</button>
+                        </div>
+                    </div>
+                    <!-- E: 구매내역 -->
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+	</div>
+</body>
+</html>

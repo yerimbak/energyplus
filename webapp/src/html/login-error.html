@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">로그인</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+
+			<!-- Contents -->
+            <!-- 2021-02-10 type-2 클래스 추가 -->
+			<div id="contents" class="container type-2">
+                <div class="inner">
+                    <!-- Form -->
+                    <div class="form-grid login">
+                        <!-- 키보드 -->
+                        <div class="keyboard-area hide">
+                            <div class="keyboard"><span class="blind">키보드</span></div>
+                        </div>
+                        <div class="level">
+                            <a href="#" class="level-left view-keyboard">
+                                <span>한글 자판보기</span>
+                                <i class="icon-arrow-down size-smaller"></i>
+                            </a>
+                        </div>
+                        <div class="field">
+                            <div class="control is-error"> <!-- 오류시 is-error 클래스 추가-->
+                                <input type="email" class="input" id="id" placeholder="GS&POINT 아이디 (4~20자, 영문/숫자)" maxlength="20">
+                                <button class="btn-del" id="btn-del-id"><span class="blind">지우기</span></button>
+                                <p class="help">아이디를 입력해주세요</p> <!-- 에러시에만 출력됨 -->
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control is-error"> <!-- 오류시 is-error 클래스 추가-->
+                                <input type="password" class="input" id="password" placeholder="비밀번호 (10~16자, 영문/숫자/특수문자)" maxlength="16" autocomplete="off">
+                                <button class="btn-del" id="btn-del-password"><span class="blind">지우기</span></button>
+                                <p class="help">비밀번호를 입력해주세요</p> <!-- 에러시에만 출력됨 -->
+                            </div>
+                        </div>
+                        <div class="level util">
+                            <div class="level-left">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <i></i>
+                                    <span>자동 로그인</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- captcha -->
+                        <!-- <div class="captcha-wrap">
+                            <div class="field">
+                                <div class="control">
+                                    <div class="captcha-img">
+                                        <img src="/resources/images/captcha-img@3x.png" alt="캡차 이미지">
+                                    </div>
+                                    <button class="btn-refresh"><span class="blind">새로고침</span></button>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" class="input" placeholder="" autocomplete="off">
+                                    <p class="help">보안문자를 입력해 주세요</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- // captcha -->
+                    </div>
+                    <!-- // Form -->
+
+                    <!-- Button -->
+                    <!-- 2021-03-16 수정 -->
+                    <div class="buttons is-centered">
+                        <button type="button" class="button is-half is-outline">회원가입</button>
+                        <button type="button" class="button is-half is-dark" disabled>로그인</button>
+                        <button type="button" class="button is-fullwidth is-dark">로그인 없이 둘러보기</button>
+                        <div class="util">
+                            <a href="#">아이디 찾기</a>
+                            <a href="#" class="before-vertical-bar">비밀번호 찾기</a>
+                        </div>
+                    </div>
+                    <!-- // Button -->
+
+                    <!-- social login -->
+                    <div class="sns-grid">
+                        <ul class="columns">
+                            <li class="column">
+                                <a href="#" class="sns-item kakao">
+                                    <span class="blind">카카오톡</span>
+                                    <span class="recently">최근사용</span>
+                                </a>
+                            </li>
+                            <li class="column">
+                                <a href="#" class="sns-item naver"><span class="blind">네이버</span></a>
+                            </li>
+                            <li class="column">
+                                <a href="#" class="sns-item google"><span class="blind">구글</span></a>
+                            </li>
+                            <li class="column">
+                                <a href="#" class="sns-item apple"><span class="blind">애플</span></a>
+                            </li>
+                        </ul>
+                        <div class="has-text-centered">
+                            <small class="is-gray-text">* 소셜 로그인은 회원가입 후, 설정 후 이용가능</small>
+                        </div>
+                    </div>
+                    <!-- social login -->
+                </div>
+                
+            </div>
+			<!-- // Contents -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body class="is-fixed">
+	@@include('./include/skip_navi.html')
+	<div id="container">
+		<!-- Contents -->
+        <div class="event-wrap">
+            <!-- section -->
+            <section class="section-event type-1">
+                <!-- event top 이미지 영역-->
+                <div class="event-top-area">
+                    <div class="event-inner">
+                        <div class="event-perform-area">
+                            <div class="txt-title-group">
+                                <p>주유한만큼 </p>
+                                <p class="is-large">혜택<em class="is-family-secondary">plus</em></p>
+                            </div>
+                            <dl class="event-my-status-area">
+                                <dt>내 바로주유 실적</dt>
+                                <dd><em class="is-family-secondary">250,000</em>원</dd>
+                            </dl>
+                            <div class="event-perform-step-area">
+                                <ul class="event-perform-step">
+                                    <!-- 주유 실적 달성 후 - 쿠폰 받은 후 : is-completed 클래스 추가 -->
+                                    <li class="item-event-step step-1 is-completed">
+                                        <span class="blind">1000원</span>
+                                    </li>
+                                    <!-- 주유 실적 달성 후 - 쿠폰 받기 전 클릭 활성화 : is-active 클래스 추가 -->
+                                    <li class="item-event-step step-2 is-active">
+                                        <a href="#" ><span class="blind">1000원</span></a>
+                                    </li>
+                                    <li class="item-event-step step-3">
+                                       <span class="blind">1000원</span>
+                                    </li>
+                                    <li class="item-event-step step-4">
+                                        <span class="blind">1000원</span>
+                                    </li>
+                                    <li class="item-event-step step-5">
+                                        <span class="blind">1000원</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="event-title">
+                                <strong class="is-family-secondary">5</strong>만원 이상 바로주유 할 때마다<br>
+                                주유할인 쿠폰을 드립니다.
+                            </p>
+                            <div class="event-perform-date">
+                                <p class="is-family-secondary">2021.09.13 ~ 12.31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-event type-2">
+                
+                <!-- 참여방법 -->
+                <div class="event-guide-area type-3">
+                    <h2 class="title is-1">참여방법</h2>
+                    <ul class="list-event-guide">
+                        <li>
+                            <dl class="how-to">
+                                <dt><mark class="txt-highlight">바로주유로</mark> 주유하기</dt>
+                                <dd><img src="./images/event-perform-img-1.svg" alt="바로주유로 주유하기"></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class="how-to">
+                                <dt>
+                                    5만원 이상 바로주유 할 때마다<br> 
+                                    <mark class="txt-highlight">할인 쿠폰 받고</mark> 혜택 챙기기
+                                </dt>
+                                <dd>
+                                    <img src="./images/event-perform-img-2.svg" alt="5만원 이상 바로주유 할 때마다 할인 쿠폰 받고 혜택 챙기기">
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+		<!-- // Contents -->
+    </div>
+    <!-- Bottom Sheet -->
+    @@include('./include/bottom-sheet-preformance-complete.html')
+</body>
+</html>

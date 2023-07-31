@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #0f1f2e;
+      }
+
+      .cls-4 {
+        fill: #3ddb87;
+        stroke: #0f1f2e;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #0f1f2e;
+      }
+    </style>
+  </defs>
+  <g id="_3" data-name="3" transform="translate(-193 -1030)">
+    <g id="Box" transform="translate(193 1030)">
+      <rect id="사각형_4080" data-name="사각형 4080" class="cls-1" width="32" height="32"/>
+    </g>
+    <g id="그룹_14053" data-name="그룹 14053" transform="translate(120 629.5)">
+      <g id="빼기_68" data-name="빼기 68" class="cls-2" transform="translate(8529 -2266.5)">
+        <path class="cls-5" d="M-8449,2675h18a2,2,0,0,1,2,2v12a2,2,0,0,1-2,2h-18a2,2,0,0,1-2-2v-12A2,2,0,0,1-8449,2675Z"/>
+        <path class="cls-6" d="M -8449 2676 C -8449.5517578125 2676 -8450 2676.448486328125 -8450 2677 L -8450 2689 C -8450 2689.551513671875 -8449.5517578125 2690 -8449 2690 L -8431 2690 C -8430.4482421875 2690 -8430 2689.551513671875 -8430 2689 L -8430 2677 C -8430 2676.448486328125 -8430.4482421875 2676 -8431 2676 L -8449 2676 M -8449 2675 L -8431 2675 C -8429.8955078125 2675 -8429 2675.8955078125 -8429 2677 L -8429 2689 C -8429 2690.1044921875 -8429.8955078125 2691 -8431 2691 L -8449 2691 C -8450.1044921875 2691 -8451 2690.1044921875 -8451 2689 L -8451 2677 C -8451 2675.8955078125 -8450.1044921875 2675 -8449 2675 Z"/>
+      </g>
+      <rect id="사각형_4156" data-name="사각형 4156" class="cls-3" width="20" height="1" transform="translate(79 412)"/>
+      <g id="타원_1320" data-name="타원 1320" class="cls-4" transform="translate(80 418)">
+        <circle class="cls-5" cx="2" cy="2" r="2"/>
+        <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+      </g>
+      <g id="타원_1321" data-name="타원 1321" class="cls-4" transform="translate(83 418)">
+        <circle class="cls-5" cx="2" cy="2" r="2"/>
+        <circle class="cls-1" cx="2" cy="2" r="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

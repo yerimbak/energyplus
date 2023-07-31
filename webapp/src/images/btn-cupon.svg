@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="btn-cupon" transform="translate(-69 -293)">
+        <g id="Box" transform="translate(73 293)">
+            <rect id="사각형_4080" width="40" height="40" fill="#3ddb87" rx="8" transform="translate(-4)"/>
+            <g id="noun_Barcode_2247079" transform="translate(-3 -8)">
+                <g id="_38-Barcode" transform="translate(11 22)">
+                    <path id="사각형_5133" d="M0 0H1V12H0z" class="cls-2" transform="translate(15)"/>
+                    <path id="사각형_5134" d="M0 0H3V12H0z" class="cls-2" transform="translate(11.002)"/>
+                    <path id="사각형_5135" d="M0 0H3V12H0z" class="cls-2" transform="translate(1.998)"/>
+                    <path id="사각형_5136" d="M0 0H1V12H0z" class="cls-2"/>
+                    <rect id="사각형_5137" height="12" class="cls-2" transform="translate(15.007)"/>
+                    <path id="사각형_5138" d="M0 0H1V12H0z" class="cls-2" transform="translate(9.001)"/>
+                    <rect id="사각형_5139" height="12" class="cls-2" transform="translate(5.999)"/>
+                    <rect id="사각형_5140" height="12" class="cls-2" transform="translate(.993)"/>
+                    <path id="사각형_5141" d="M0 0H1V12H0z" class="cls-2" transform="translate(7)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

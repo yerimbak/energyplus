@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="208" height="244" viewBox="0 0 208 244">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #222;
+      }
+
+      .cls-2 {
+        font-size: 20px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 12px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: NotoSansCJKkr-Medium, Noto Sans CJK KR;
+        font-weight: 500;
+      }
+
+      .cls-4 {
+        font-size: 9px;
+      }
+
+      .cls-5 {
+        fill: #8e8e8e;
+        font-size: 8px;
+        font-family: NotoSansCJKkr-Regular, Noto Sans CJK KR;
+      }
+
+      .cls-6 {
+        fill: #f5f5f5;
+      }
+
+      .cls-7 {
+        filter: url(#사각형_3981);
+      }
+    </style>
+    <filter id="사각형_3981" x="0" y="0" width="208" height="244" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(45 35)">
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, -45, -35)">
+      <rect id="사각형_3981-2" data-name="사각형 3981" class="cls-1" width="118" height="154" rx="16" transform="translate(45 35)"/>
+    </g>
+    <g id="text" transform="translate(14.276 18.736)">
+      <text id="_44" data-name="$44" class="cls-2" transform="translate(-0.613 37.105)"><tspan x="0" y="0">50,000</tspan></text>
+      <text id="Popular" class="cls-3" transform="translate(-0.613 11.104)"><tspan x="0" y="0">내차 씽씽</tspan></text>
+      <text id="휘발유" class="cls-4" transform="translate(-0.613 58.104)"><tspan x="0" y="0">휘발유</tspan></text>
+      <text id="롯데카드_1234" data-name="롯데카드 1234" class="cls-5" transform="translate(-0.613 72.105)"><tspan x="0" y="0">롯데카드 1234</tspan></text>
+    </g>
+    <g id="btn" transform="translate(13.663 112.894)">
+      <path id="Rectangle_" data-name="Rectangle " class="cls-6" d="M10.586,0H44.108c5.846,0,10.586,5.066,10.586,11.316a11.665,11.665,0,0,1-4.235,9.055,9.989,9.989,0,0,1-6.351,2.262H10.586C4.74,22.632,0,17.566,0,11.316S4.74,0,10.586,0Z" transform="translate(0 0)"/>
+      <text id="바로주유" class="cls-4" transform="translate(10.847 14.775)"><tspan x="0" y="0">바로주유</tspan></text>
+    </g>
+  </g>
+</svg>

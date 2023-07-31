@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">FAQ</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                
+                <!-- top fixed section -->
+                <!-- 2021-01-07 faq 클래스 제거 -->
+                <section class="top-fixed-section">
+                    <!-- 검색 -->
+                    <div class="search-area">
+                        <div class="inner">
+                            <div class="field">
+                                <div class="control">
+                                    <input type="search" class="input search" placeholder="궁금한 점을 검색해 보세요.(제목, 내용)">
+                                    <!-- <button class="btn-del" id="btn-del-id"><span class="blind">지우기</span></button> -->
+                                    <button class="btn-search"><span class="blind">검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- contents section -->
+                <section class="contents-section">
+                     <!-- FAQ 리스트 -->
+                    <div class="board-grid">
+
+                        <!-- 2021-01-07 : top-section영역에서 contents-section영역으로 이동 -->
+                        <!-- tag -->
+                        <div class="tag-area">
+                            <ul class="tag-list">
+                                <li>
+                                    <!-- 선택됐을때 is-selected 클래스 추가-->
+                                    <a href="#" class="tag-item is-selected">전체</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">바로주유</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">쿠폰</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">상품</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">GS&amp;POINT</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">주유내역</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">이벤트</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">주유소&amp;충전소</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">회원관련</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tag-item">기타</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="inner">
+                            <strong class="is-blue-text">3</strong>건의 검색텍스트 관련 질문이 있습니다.
+                        </div>
+
+                        <!-- 2020/12/14 클래스 수정 - accordion-container 추가-->
+                        <div class="board-body accordion-container">
+                            <ul class="board-list faq">
+                                @@for (var i = 0; i < 1; i++) {
+                                <!-- 2020/12/14 클래스 수정 - ac 추가 -->
+                                <li class="ac board-item">
+                                    <!-- 2020/12/14 클래스 수정 - ac-header 추가 -->
+                                    <div class="ac-header">
+                                        <!-- 2020/12/14 클래스 수정 - ac-trigger 추가 -->
+                                        <div class="ac-trigger board-title-area">
+                                            <div class="board-title">
+                                                <p class="title is-5">
+                                                    [편의점] <strong class="is-blue-text">검색텍스트</strong>를 검색하셨나요?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- 내용 -->
+                                        <!-- 2020/12/14 클래스 수정 - ac-panel 추가-->
+                                        <div class="ac-panel board-content-area">
+                                            <div class="board-content-inner">
+                                                <div class="board-content">
+                                                    안녕하십니까? GS에너지입니다.<br><br>
+
+                                                    GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에
+                                                    선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.<br><br>
+
+                                                    앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+
+                                <li class="ac board-item">
+                                    <div class="ac-header">
+                                        <div class="ac-trigger board-title-area">  
+                                            <div class="board-title">
+                                                <p class="title is-5">
+                                                    [결제] <strong class="is-blue-text">검색</strong>이 해결되지 않으셨나요?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- 내용 -->
+                                     <div class="ac-panel board-content-area">
+                                        <div class="board-content-inner">
+                                            <div class="board-content">
+                                                안녕하십니까? GS에너지입니다.<br><br>
+
+                                                GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에
+                                                선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.<br><br>
+
+                                                앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="ac board-item">
+                                    <div class="ac-header">
+                                        <div class="ac-trigger board-title-area">  
+                                            <div class="board-title">
+                                                <p class="title is-5">
+                                                    [가입] <strong class="is-blue-text">검색</strong>이 해결되지 않으셨나요?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- 내용 -->
+                                     <div class="ac-panel board-content-area">
+                                        <div class="board-content-inner">
+                                            <div class="board-content">
+                                                안녕하십니까? GS에너지입니다.<br><br>
+
+                                                GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에
+                                                선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.<br><br>
+
+                                                앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- // FAQ 리스트 -->
+
+                </section>
+            </div>
+			<!-- // Contents -->
+		</div>
+
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+    <script>
+        // accordion
+        new Accordion('.accordion-container');
+    </script>
+</body>
+</html>

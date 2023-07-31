@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body class="is-fixed">
+  @@include('./include/skip_navi.html')
+  <div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3">초대코드 등록</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+      <!-- Contents -->
+      <div id="contents" class="container type-2">
+        <div class="inner is-padding-top">
+          <div>
+            <p class="title is-2 is-normal">친구가 <strong>쿠폰</strong>을 보냈습니다.</p>
+            <div class="is-black-text">
+              친구한테 받은 초대코드를 입력하고,<br>
+              받고 싶은 쿠폰을 골라보세요.
+            </div>
+          </div>
+          <div class="invite-coupon-area">
+            <div class="field">
+              <!-- 오류시 is-error 클래스 추가 -->
+              <div class="control">
+                <input type="text" class="input" maxlength="5" placeholder="초대코드 5자리 입력해주세요(영문/숫자)">
+                <p class="help">초대코드를 다시 확인해주세요.(5자, 영문/숫자)</p>
+              </div>
+            </div>
+            <ul class="list-coupon-area">
+
+              <!-- 주유 할인 : type-1 클래스 추가 -->
+              <li class="item-coupon type-1">
+                <div class="coupon-left-area">
+                  <div class="title-coupon">주유 할인</div>
+                  <div class="txt-coupon-group">
+                    <p class="txt-price"><strong class="is-family-secondary">1,000</strong>원</p>
+                    <small class="txt-desc">3만원 이상 주유 시 사용 가능</small>
+                  </div>
+                </div>
+                <div class="coupon-right-area">
+                  <div class="coupon-check">
+                    <!-- radio -->
+                    <div class="field">
+                      <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="foo" checked="checked">
+                          <i></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 세차 할인 : type-2 클래스 추가 -->
+              <li class="item-coupon type-2">
+                <div class="coupon-left-area">
+                  <div class="title-coupon">세차 할인</div>
+                  <div class="txt-coupon-group">
+                    <p class="txt-price"><strong class="is-family-secondary">3,000</strong>원</p>
+                    <small class="txt-desc">지정된 GS칼텍스/주유소 사용 가능</small>
+                  </div>
+                </div>
+                <div class="coupon-right-area">
+                  <div class="coupon-check">
+                    <!-- radio -->
+                    <div class="field">
+                      <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="foo">
+                          <i></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- 정비 할인 : type-3 클래스 추가 -->
+              <li class="item-coupon type-3">
+                <div class="coupon-left-area">
+                  <div class="title-coupon">정비 할인</div>
+                  <div class="txt-coupon-group">
+                    <p class="txt-price">
+                      <strong class="txt-kor">와이퍼교환</strong>
+                      <strong class="is-family-secondary">30%</strong>
+                    </p>
+                    <small class="txt-desc">Auto Oasis 전 매장</small>
+                  </div>
+                </div>
+                <div class="coupon-right-area">
+                  <div class="coupon-check">
+                    <!-- radio -->
+                    <div class="field">
+                      <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="foo">
+                          <i></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="buttons">
+              <button class="button is-fullwidth is-dark">쿠폰받기</button>
+              <div class="tooltip-area">
+                <div class="tooltip">
+                  쿠폰 받기 전! 이용 안내를 확인해주세요. <i class="icon-emoji"></i><br>
+                  쿠폰 발급 후 변경이 불가합니다.
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box-bottom-noti">
+            <p class="title is-5 title-noti">이용안내</p>
+            <p class="txt-noti-desc">쿠폰이용안내 확인바랍니다.</p>
+            <ul class="list-noti-area">
+              <li class="item-txt-noti">- 이용 서비스와 무관한 내용이나, 동일 문자의 반복 등 부적절한 내용을 포함한 경우</li>
+              <li class="item-txt-noti">- 욕설, 비방, 명예훼손을 포함한 내용이 있는 경우</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- // Contents -->
+    </div>
+  </div>
+  <!-- Bottom Sheet -->
+  @@include('./include/bottom-sheet-invite-complete.html')
+</body>
+
+</html>

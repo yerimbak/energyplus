@@ -1,0 +1,47 @@
+// Mixins
+=font-set($font-size, $spacing, $line-height)
+	font : 
+		size : $font-size
+	letter-spacing : $spacing
+	line-height : $line-height
+
+@mixin font-size($sizeValue: 16 )
+	font-size: $sizeValue + px //fallback for old browsers
+	font-size: (0.0625 * $sizeValue) + rem
+
+@mixin line-height($heightValue: 20 )
+	line-height: $heightValue + px //fallback for old browsers
+	line-height: (0.0625 * $heightValue) + rem
+
+@mixin rhythm($sizeValue: 12, $heightValue: 20)
+	@include font-size($sizeValue)
+	@include line-height($heightValue)
+	
+@mixin flex-center
+	display : flex
+	align-items : center 
+	justify-content : center
+
+@mixin vertical-center
+	top : 50%
+	transform : translateY(-50%)
+
+=mobile-small-h
+  @media screen and (max-height : 715px)
+    @content
+
+=mobile-small-w
+  @media screen and (max-width : 320px)
+    @content
+
+=mobile-medium
+  @media screen and (max-width : 360px)
+    @content
+
+=desktop
+  @media screen and (min-width : 1200px)
+    @content
+
+// =mobile-extra-small
+//   @media screen and (max-height : 560px)
+//     @content

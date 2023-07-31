@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">바로주유 예약</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+            <!-- Contents -->
+			<div id="contents" class="container type-2">
+                <div class="inner is-padding-top">
+                    <div class="is-fullheight">
+                        <div class="title-area">
+                            <h3 class="title is-2">
+                                설정한 바로주유 패턴/금액으로 <br>
+                                <strong>예약</strong>하시겠습니까?
+                            </h3>
+                        </div>
+                        <div class="card-area">
+                            <!-- card -->
+                            <!-- 2023-01-16 수정 및 추가-->
+                            <span class="tooltip-dark reservation-tooltip-dark">예약특가 적용중!</span>
+                            <div class="card reservation">
+                                <!-- <span class="tooltip-dark">예약특가 적용중!</span> -->
+                                <div class="card-content">
+                                    <div class="reservation-period">
+                                        <p class="price-area">
+                                            <strong class="price is-family-secondary">202,300</strong>원
+                                            <span class="liter">(100L)</span>
+                                        </p>
+                                        <p class="sub-desc">
+                                            <small class="is-family-secondary">~2021-03-19 </small>까지
+                                            <strong class="is-bold-text">7일간</strong>
+                                        </p>
+                                    </div>
+                                    <div class="reservation-info">
+                                        <p>개나리주유소</p>
+                                        <p class="is-medium-text"><span class="is-bold-text">고급휘발유</span> (<strong class="is-family-secondary is-bold-text">2,023</strong>원/L)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>포인트 자동사용, 쿠폰 자동사용</li>
+                                <li>롯데카드 1234 **** **** 1234</li>
+                                <li class="no-bullet">
+                                    <small class="is-gray-text">유효기간 <em class="is-family-secondary">~ 2020-11-09</em></small>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- button -->
+                        <div class="is-bottom-type">
+                            <div class="box-bottom-noti type-2">
+                                <p class="title title-noti is-small">
+                                    고객님께서 사전 설정하신 유종, 포인트, 쿠폰 사용 조건으로
+                                    예약됩니다. 메인화면 예약카드 하단의  ‘예약취소’버튼을
+                                    누르시면 바로 취소됩니다.
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <button class="button is-half is-outline">취소</button>
+                                <button class="button is-half is-dark">예약완료</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+    </div>
+</body>
+</html>

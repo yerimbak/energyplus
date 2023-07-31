@@ -1,0 +1,100 @@
+<div class="modal">
+    <div class="modal-background"></div>
+
+    <!--  Bottom Sheet -->
+    <div class="bottom-sheet is-large is-bottom-fixed">
+        
+        <div class="bottom-sheet-header">
+            <h2 class="title is-3 has-text-centered">문의 수정</h2>
+            <button class="btn-close"><span class="blind">닫기</span></button>
+        </div>
+
+        <div class="bottom-sheet-body">
+            <div class="inner">
+                <!-- form -->
+                <div class="form-grid">
+
+                    <!-- 문의유형 -->
+                    <div class="field">
+                        <label class="label">문의유형<span class="necessary">(필수)</span></label>
+                        <div class="control">
+                            <div class="select is-fullwidth ">
+                                <select>
+                                    <option>결제</option>
+                                    <option>결제</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 이메일 -->
+                    <div class="field">
+                        <!-- 2020/12/14 수정 -->
+                        <label class="label">이메일<span class="necessary">(필수)</span></label>
+                        <div class="control">
+                            <div class="control is-clearfix">
+                                <input type="text" autocomplete="off" placeholder="텍스트 입력" class="input input-email">
+                            </div>
+                            <div class="dropdown-menu is-opened-bottom">
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item"><span> tes<span class="is-blue-text">@naver.com</span></span></a>
+                                    <a class="dropdown-item"><span> tes<span class="is-blue-text">@gmail.com</span> </span></a>
+                                    <a class="dropdown-item"><span> tes<span class="is-blue-text">@hanmail.net</span></span></a>
+                                    <a class="dropdown-item"><span> tes<span class="is-blue-text">@nate.com</span></span></a>
+                                    <a class="dropdown-item"><span> tes<span class="is-blue-text">@daum.net</span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 제목 -->
+                    <div class="field">
+                        <!-- 2020/12/14 수정 -->
+                        <label class="label">제목<span class="necessary">(필수)</span></label>
+                        <div class="control is-clearfix">
+                            <input type="text" class="input" placeholder="제목 입력">
+                            <!-- 오류시 출력 -->
+                            <p class="help">제목을 입력해 주십시오</p> 
+                        </div>
+                    </div>
+
+                    <!-- 내용 -->
+                    <div class="field">
+                        <div class="level">
+                            <div class="level-left">
+                                <!-- 2020/12/14 수정 -->
+                                <label class="label">내용<span class="necessary">(필수)</span></label>
+                            </div>
+                            <div class="level-right">
+                                <small class="counter">(<em class="is-primary-color">0</em>/2000 Byte) </small>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <textarea maxlength="200" class="textarea" placeholder="내용을 입력하여 주십시오."></textarea>
+                            <!-- 오류시 출력 -->
+                            <p class="help">내용을 입력해 주십시오</p>
+                        </div>
+                    </div>
+
+                    <!-- 파일첨부 -->
+                    <div class="field">
+                        <label class="label">파일첨부</label>
+                        <div class="file">
+                            <label class="file-label">
+                                <input class="file-input" type="file" name="file">
+                                <span class="file-name">3MB미만 이미지(gif,jpg,bmp,png)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="is-button-fixed">
+                <div class="inner">
+                    <button class="button is-half is-outline">취소</button>
+                    <button class="button is-half is-dark">수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

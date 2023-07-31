@@ -1,0 +1,425 @@
+// button.sass
+// =button-large
+// 	font : 
+// 		size : size(18, em)
+// 	height : 60px
+// =button-medium
+// 	font : 
+// 		size : size(15, em)
+.buttons
+	width : 100%
+	justify-content : space-between
+	margin : 
+		top : 0
+		bottom : 0
+	.button
+		margin-bottom : 0
+		&:last-child
+			margin-bottom : 0
+	&:last-child
+			margin-bottom : 0
+	&.is-centered
+		&:not(.has-addons)
+			.button:not(.is-fullwidth)
+				margin :
+					left : 6px
+					right : 6px
+	&.is-fixed-bottom
+		position : absolute
+		width : 100%
+		bottom : 124px
+		padding : 0 24px 0 23px
+.button
+	// border-width : 1px
+	outline : 0
+	font :
+		size : $size-normal
+		weight : $weight-medium
+	letter-spacing : -0.025px
+	padding : 0 16px
+	border-radius : $button-radius
+	transition : background .2s
+	margin-bottom : 0
+	&:not(.is-small):not(.is-medium):not(.is-text)
+		height : 48px
+		line-height : 48px
+	&::last-child
+		margin-bottom : 0
+	&.is-large
+		height : 48px
+		line-height : 48px
+	&.is-small
+		height : 32px
+		line-height : 30px
+		font-weight : $weight-normal !important
+		+ .is-small
+			margin-left : 9px
+	&.is-medium
+		// padding : 7px 16px 
+		height : 36px
+		line-height : 36px
+		// font-size : $size-normal
+	&.is-half
+		width : calc(50% - 6px)
+		margin-right : 0 !important
+		& + .is-half
+			margin-left : 6px
+			& + .is-fullwidth
+				margin-top : 12px
+	&.is-full
+		width : calc(100% - 6px)
+	&.is-gray
+		border-color : $ep-white-smoke
+		background :
+			color : $ep-white-smoke
+		color : $ep-navy
+	&.is-green
+		background :
+			color : $ep-green !important
+
+	&.is-black
+		background :
+			color : $ep-navy !important
+		color : $ep-white !important
+	&.is-dark
+		// background :
+		// 	color : $ep-navy
+		// color : $ep-white
+		&:hover ,&.is-hover
+			background :
+				color : $ep-navy
+		&.is-active
+			color : $ep-text-color
+			background : $ep-white
+			border-color : $ep-navy
+		&:disabled
+			color : $input-disabled-color
+			background : $input-disabled-background-color
+	&.is-outline
+		background :
+			color : $ep-white
+		border : 1px solid $ep-navy
+		color : $ep-navy
+		font-weight : $weight-medium
+		// &:disabled
+		// 	color : $ep-dark-gray 
+		// 	background : $input-disabled-background-color
+		// 	border-color : $input-disabled-background-color
+	&.is-fullwidth
+		color : $ep-white
+		background : 
+			color : $ep-navy
+		&.is-outline
+			background :
+				color : $ep-white
+			color : $ep-navy
+			&:disabled
+				color : $ep-dark-gray
+				background : $input-disabled-background-color
+		& + .is-fullwidth
+			margin-top : 12px
+	&.is-text
+		padding : 0
+		border : none
+		font-weight : $weight-medium
+		&:hover
+			background : none
+			color : $ep-navy
+		&.more
+			position : relative
+			margin : 6px auto 0
+			padding :
+				top : 8px
+				right : 32px
+				bottom : 8px
+				left : 8px
+			background :
+				color : transparent
+				image : url(#{$image-path}icon-arrow-down.svg)
+				repeat : no-repeat
+				position : right 8px center
+				size : 16px
+	&:hover,
+	&.focus
+		&:not(.is-outline)
+		// border : none
+		// box-shadow : none
+		// outline : none
+	&:focus:not(:active),
+	&.is-focused:not(:active)
+		box-shadow : none !important
+	&:disabled
+		color : $ep-dark-gray 
+		background : $input-disabled-background-color
+		border-color : $input-disabled-background-color
+.btn-refresh
+	position : relative
+	background-color : transparent
+	padding : 0
+	&::before
+		content : ''
+		width : 24px
+		height : 24px
+		border : 0
+		outline : 0
+		cursor : pointer
+		background : 
+			color : transparent 
+			repeat : no-repeat
+			image : url(#{$image-path}icon-refresh.svg)
+			position : center
+			size : contain
+	// & + .button
+	// 	margin-left : 10px
+	
+.title
+	// @each $size in $sizes
+	// 	$i: index($sizes, $size)
+	// 	&.is-#{$i}
+	// 		@if $i == 2
+	// 			letter-spacing : -1.2px
+	// 			line-height : 45px
+	// 		@if $i == 3
+	// 			letter-spacing : -.8px
+	// 			line-height : 29px
+	// 			color : $font-color-1
+	// 		@if $i == 4
+	// 			letter-spacing : -.32px
+	// 			line-height : 24px
+	// 			color : $font-color-1
+
+// box.sass
+.box
+	// box-shadow : $box-shadow
+	&.is-bg-gray
+		background :
+			color : $ep-white-smoke
+	&.is-outline
+		border : 1px solid $ep-border-gray
+		box-shadow : none
+	&.is-noshadow
+		box-shadow : none
+// control.sass
+.field
+	&.type-2
+		.help
+			transition : .3s
+		.control
+			&.is-error
+				border-color : $ep-red
+				&+.help
+					position : static
+					opacity : 1
+					color : $ep-red
+			&.is-disabled
+				background-color : $ep-white-smoke-0
+				border-color : $ep-whisper
+				.textarea
+					cursor : not-allowed
+					background-color : transparent
+				.counter
+					.is-primary-color
+						color : $ep-dark-gray
+.control
+	align-items : center
+	&.is-error
+		position : relative
+		input
+			border-color : $ep-red
+			// padding-right : 45px
+		.textarea
+			border-color : $ep-red
+		&::after
+			content : '!'
+			position : absolute
+			top : 17px
+			right : 17px
+			width : 14px
+			height : 14px
+			color : $ep-white
+			font-size : $size-small
+			text-align : center
+			line-height : 1.2
+			border-radius : 50%
+			background : $ep-red
+			z-index : 10
+		.help
+			opacity : 1
+			color : $ep-red
+	&.has-icons-right
+		.is-danger + .icon
+			@include vertical-center
+			width : 16px
+			height : 16px
+			border-radius : 50%
+			background :
+				color : $ep-red
+			&.is-right
+				right : 17px
+			&::after
+				content : '!'
+				color : $ep-white
+				font-size : $size-small
+				line-height : 1
+				position : absolute
+				left : 50%
+				transform : translateX(-50%)
+	&.has-error-icon
+		&::after
+			content : '!'
+			position : absolute
+			right : 17px
+			width : 14px
+			height : 14px
+			color : $ep-white
+			font-size : $size-small
+			text-align : center
+			line-height : 1.2
+			border-radius : 50%
+			background : $ep-red
+			z-index : 10
+			@include vertical-center
+		.input 
+			padding-right : 40px
+.field
+	&:not(:last-child)
+		margin-bottom : 32px
+	// .label
+	// 	&:not(:last-child)
+	// 		margin-bottom : 8px
+	> .level
+		margin-bottom : 8px
+		.label
+			margin-bottom : 0
+	.counter
+		color : $ep-dark-gray
+	.help
+		opacity : 0
+		position : absolute
+		transition : .3s
+		&.is-danger
+			opacity : 1
+			color : $ep-red
+	.control
+		.btn-del
+			display : none
+			position : absolute
+			top : 4px
+			right : 4px
+			width : 40px
+			height : 40px
+			border : 0
+			outline : 0
+			cursor : pointer
+			background : transparent url(#{$image-path}icon-del.svg) no-repeat center / contain
+			&.show
+				display : block
+		&.is-error
+			.btn-del
+				display : none
+		.btn-search
+			position : absolute
+			width : 40px
+			height : 40px
+			border : 0
+			outline : 0
+			right : 4px
+			cursor : pointer
+			background : 
+				color : transparent 
+				repeat : no-repeat
+				image : url(#{$image-path}icon-search.svg)
+				position : center
+				size : contain 
+			@include vertical-center
+		.btn-refresh
+			position : absolute
+			right : 16px
+			@include vertical-center
+		.search 
+			padding :
+				top : 12px
+				bottom : 12px
+			border-radius : 24px
+			& +.btn-del
+				display : block
+				// right : 28px
+			
+// tabs.sass
+.tabs
+	&.is-fixed
+		position : fixed
+		top : 68px
+		left : 0
+		width : 100%
+		z-index : 90
+		background : $ep-white
+	li
+		width : 50%
+		a
+			color : $ep-gray
+			min-height : 48px
+			font :
+				size : $size-normal
+				weight : $weight-medium
+			line-height : $line-height-default
+			border :
+				bottom-width : 2px
+				color : $ep-border-gray
+			&:hover
+				color : $ep-gray
+				border :
+					bottom-color : $ep-border-gray
+		&.is-active
+			a
+				color : $primary
+				border :
+					bottom-color : $primary
+		&.is-toggle
+			li
+				&.is-active
+					a 
+						background-color : $primary
+						border-color : $primary
+						color : $ep-white
+.tab-area
+	&.is-fixed
+		// padding :
+		// 	top : 68px
+		.tabs
+			position : fixed
+			top : 68px
+			left : 0
+			width : 100%
+			z-index : 90
+			background : $ep-white
+	.tab-content
+		overflow : hidden
+		padding : 20px 0 0
+// container.sass
+$desktop : 1024px
+$gap : 30px
+
+.ia-box
+	margin : 30px 0
+	line-height : 0.875rem
+.is-vertical-bar
+	position : relative
+	&::after
+		content : ''
+		position : absolute
+		display : inline-flex
+		width : 1px
+		height : 12px
+		margin : 0 8px
+		background : $ep-whisper
+		top : 50%
+		transform : translateY(-50%)
+.is-bottom
+	position : absolute
+	bottom : 30px
+	left : 30px
+	// font-weight : $weight-bold
+.columns
+	display : flex
+

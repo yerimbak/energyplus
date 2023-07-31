@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-3{stroke:#0f1f2e;fill:#0f1f2e}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="Icon_fix" transform="translate(-218 -556)">
+        <g id="Box" transform="translate(217.994 556)">
+            <path id="사각형_4080" d="M0 0H20V20H0z" class="cls-1" transform="translate(.006)"/>
+        </g>
+        <g id="Shape" transform="translate(219.473 560.607)">
+            <g id="사각형_5497" fill="#fff" stroke="#0f1f2e" transform="translate(1.527 .394)">
+                <rect width="14" height="11" class="cls-4" rx="2"/>
+                <rect width="13" height="10" x=".5" y=".5" class="cls-1" rx="1.5"/>
+            </g>
+            <g id="사각형_4052" class="cls-3" transform="rotate(45 -.044 4.178)">
+                <rect width="9" height="1" class="cls-4" rx=".5"/>
+                <rect width="8" x=".5" y=".5" class="cls-1"/>
+            </g>
+            <g id="사각형_5498" class="cls-3" transform="rotate(135 7.1 4.09)">
+                <rect width="9" height="1" class="cls-4" rx=".5"/>
+                <rect width="8" x=".5" y=".5" class="cls-1"/>
+            </g>
+        </g>
+    </g>
+</svg>

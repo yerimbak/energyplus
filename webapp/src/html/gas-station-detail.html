@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="container">
+      <!-- Contents -->
+      <div class="box-gas-detail">
+        <!-- 2021-02-18 수정-->
+        <div class="category-area">
+          <span class="txt-category baro">
+            <span class="blind">바로주유</span>
+          </span>
+          <span class="txt-category reservation">예약가능</span>
+        </div>
+        <div class="box-gas-info">
+          <p class="title is-3">GS칼텍스 소모에너지엔 테크놀러지</p>
+          <ul class="bullet-list">
+            <li>
+              운영시간 : <span class="is-family-secondary">06:00~23:00</span>
+            </li>
+            <li>
+              주소 : 경기 용인시 수지구 수지로 164 GS칼텍스
+              수지제이주유소<button type="button" class="btn-copy">복사</button>
+            </li>
+            <li>
+              연락처 :
+              <a href="tel:02-3343-2323" class="link-tel">02-3343-2323</a>
+            </li>
+          </ul>
+          <p class="title is-3">
+            가격정보 <span class="txt-tit-desc">오늘(2020/11/23) 기준</span>
+            <!--2021-02-18 문구 추가 -->
+            <small class="mblock is-gray-text"
+              >가격 정보는 실제와 상이할 수 있습니다.</small
+            >
+          </p>
+          <ul class="bullet-list type-2">
+            <li>휘발유<span class="is-family-secondary">1,255</span>원</li>
+            <li>경유<span class="is-family-secondary">1,155</span>원</li>
+            <li>고급휘발유<span class="is-family-secondary">1,487</span>원</li>
+            <li>등유<span class="is-family-secondary">1,200</span>원</li>
+          </ul>
+        </div>
+        <div class="box-gas-info box-facility">
+          <p class="title is-3">시설정보</p>
+          <ul class="list-facility-info list-facility-info2">
+            <li class="ico01">셀프</li>
+            <li class="ico02">세차</li>
+            <li class="ico03">경정비</li>
+            <li class="ico04">편의점</li>
+            <li class="ico05">EV충전소</li>
+            <!-- 2022.03.03 이벤트 탭 추가 -->
+            <li class="ico06">이벤트</li>
+            <!-- 2022.03.15 그린카 탭 추가 -->
+            <li class="ico07">그린카</li>
+          </ul>
+        </div>
+
+        <!-- 2021-02-18 세차 추가 -->
+        <div class="box-gas-info car-wash">
+          <p class="title is-3">세차</p>
+          <ul class="bullet-list">
+            <li>
+              운영시간 :
+              <span class="is-family-secondary">06:00~23:00</span>
+              <small class="mblock is-gray-text"
+                >기상 악화, 운영 사유에 따라 운영 시간이 변경될 수
+                있습니다.</small
+              >
+            </li>
+            <li>
+              가격 : 5만원 이상 주유시 4,000원/ 미주유시 6,000원 SV 6,000원/RV
+              7,000원
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2021-04-02 서비스정보 추가 -->
+        <div class="box-gas-info box-facility">
+          <p class="title is-3">서비스정보</p>
+          <ul class="list-facility-info service">
+            <li class="ico01 baro-img-text">
+              <span class="blind">바로주유</span>
+            </li>
+            <li class="ico02">바로주유 예약가능</li>
+            <li class="ico03">
+              간편결제
+              <!-- 2021-04-21 간편결제 수단문구 추가 -->
+              <small class="mblock is-gray-text"
+                >네이버페이, 카카오페이, 토스페이…</small
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- 2022.10.17 이벤트정보 추가 -->
+        <div class="box-gas-info box-facility event-box-info-wrap">
+          <p class="title is-3">이벤트정보</p>
+          <div class="gas-event-info-box">
+            <div class="juyu-advantage-title">
+              <p>주유를 이롭게 하러</p>
+              <p>
+                <span><img src="images/title_e+.png" alt="" /></span>가
+                찾아갑니다.
+              </p>
+            </div>
+            <span
+              >800여곳의 주유소에서 진행되는<br />에너지플러스 행사를
+              확인해보세요.</span
+            >
+            <span>2022-10-01 ~ 2022-11-15</span>
+          </div>
+        </div>
+
+        <div class="box-gas-info gas-station-review">
+          <p class="title is-3">
+            이용후기
+            <span class="is-family-secondary is-primary-text2">45</span>건
+          </p>
+          <div class="box-score-area">
+            <div class="item-score-area">
+              <span class="txt-score-subject">주유소</span>
+              <div class="star-score">
+                <span class="st-off">
+                  <span class="st-on" style="width: 82%"></span>
+                </span>
+                <span class="txt-score-num"
+                  ><em>4.0</em><span class="total-score">5</span></span
+                >
+              </div>
+            </div>
+            <div class="item-score-area">
+              <span class="txt-score-subject">세차장</span>
+              <div class="star-score">
+                <span class="st-off">
+                  <span class="st-on" style="width: 72%"></span>
+                </span>
+                <span class="txt-score-num"
+                  ><em>3.8</em><span class="total-score">5</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="control">
+            <div class="select is-fullwidth">
+              <select>
+                <option>최신순</option>
+                <option>평점순</option>
+              </select>
+            </div>
+          </div>
+          <ul class="box-score-result">
+            <li>
+              <div class="score-id">qwert***</div>
+              <div class="score-reple">
+                가격이 저렴하고 차에 궁금한게 있었는데 친철하게 알려주셨어요.
+                다시 방문할 예정이에요~
+              </div>
+              <div class="box-score-bottom">
+                <div class="star-score">
+                  <span class="st-off">
+                    <span class="st-on" style="width: 92%"></span>
+                  </span>
+                  <span class="txt-score-num"><em>4.7</em>(세차장)</span>
+                </div>
+                <p class="txt-date">2020-10-30</p>
+              </div>
+            </li>
+            <li>
+              <div class="score-id">qwert***</div>
+              <div class="score-reple">
+                가격이 저렴하고 차에 궁금한게 있었는데 친철하게 알려주셨어요.
+                다시 방문할 예정이에요~ 가격이 저렴하고 차에 궁금한게 있었는데
+                친철하게 알려주셨어요. 다시 방문할 예정이에요~
+              </div>
+              <div class="box-score-bottom">
+                <div class="star-score">
+                  <span class="st-off">
+                    <span class="st-on" style="width: 100%"></span>
+                  </span>
+                  <span class="txt-score-num"><em>5.0</em>(주유소)</span>
+                </div>
+                <p class="txt-date">2020-10-30</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- // Contents -->
+      <div class="is-button-fixed box-gas-buttons">
+        <div class="inner">
+          <button class="button is-dark">
+            길안내 <span class="is-family-secondary">(620m)</span>
+          </button>
+          <button class="button btn-toggle"><i class="ico"></i>찜하기</button>
+          <!-- class [btn-toggle] 변경 2020-12-31 -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

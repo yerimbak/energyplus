@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container mkopen-event-wrap">
+      <!-- Main -->
+      <section class="mkopen-section">
+        <div class="inner mkopen-inner">
+          <div class="mkopen-imgbox">
+            <img src="./images/mkopen-event-main.png" alt="이벤트 이미지" />
+            <a class="mkopen-enter-btn"><img src="./images/mkopen-enter-btn.png" alt="detail btn" /></a>
+            <a href="http://maekyungopen.mk.co.kr/event/event02.html" class="mkopen-gal"target="_blank"><img src="./images/mkopen-gal.png" alt="detail btn" /></a>
+            <a href="http://maekyungopen.mk.co.kr/summary/summary01.html" class="mkopen-info" target="_blank"><img src="./images/mkopen-info.png" alt="detail btn" /></a>
+            <a href="http://maekyungopen.mk.co.kr/summary/summary03.html" class="mkopen-match" target="_blank"><img src="./images/mkopen-match.png" alt="detail btn" /></a>
+            <a href="http://maekyungopen.mk.co.kr/info/info03.html" class="mkopen-road" target="_blank"><img src="./images/mkopen-road.png" alt="detail btn" /></a>
+            <a href="http://maekyungopen.mk.co.kr/info/info01.html" class="mkopen-detail-btn" target="_blank"><img src="./images/mkopen-detail-btn.png" alt="detail btn" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <!-- bottom 팝업 -->
+  @@include('./include/bottom-sheet-event-mkopen-popup.html')
+
+  <!--입장권 발급 받기 버튼 터치 시 팝업 노출-->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+      $(function () {
+        $('.mkopen-enter-btn').on('click', function () {
+          $('.modal').addClass('is-active');
+        });
+      });
+    </script>
+</body>
+
+</html>

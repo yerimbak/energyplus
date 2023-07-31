@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body class="is-fixed">
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/main-header.html')
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents">
+                @@include('./include/main-reservation-content.html')
+			</div>
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+        @@include('./include/footer.html')
+        <!-- // Footer -->
+        
+    <!-- bottom sheet -->
+    @@include('./include/bottom-sheet-reservation-available.html')
+	</div>
+
+	<script>
+		// 바로주유 카드 Swiper   
+		var swiper = new Swiper('.main-card-slider > .swiper-container', {
+            slidesPerView: 'auto',
+            centeredSlides: false,
+            spaceBetween: 16,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+			clickable: true,
+            },
+        });
+
+        // 슬라이드 배너 Swiper
+        var bannerSwiper = new Swiper('.main-banner-slider > .swiper-container', {
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+        });
+	</script>
+
+</body>
+</html>

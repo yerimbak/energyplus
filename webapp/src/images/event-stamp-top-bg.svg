@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388.094" height="281.531" viewBox="0 0 388.094 281.531">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.044;
+      }
+
+      .cls-2 {
+        fill: #0f1f2e;
+      }
+    </style>
+  </defs>
+  <g id="bg" class="cls-1" transform="translate(12.896 16.473)">
+    <path id="패스_9233" data-name="패스 9233" class="cls-2" d="M6581.5,12203.876l-60.459,77.427c0-.925,34.075-32,59.4-53.272,9.989-8.393,21.973-19.326,21.973-19.326l-12.211-4.828Z" transform="translate(-8848.791 -10422.346) rotate(-13)"/>
+    <path id="패스_9234" data-name="패스 9234" class="cls-2" d="M6364.18,12203.876c1.55,5.21,13.845,55.626,13.845,55.626v-55.626Z" transform="translate(-6184 -12212)"/>
+    <path id="패스_9235" data-name="패스 9235" class="cls-2" d="M6244.628,12203.876s62.293,85.242,58.263,81.512-73.954-81.512-73.954-81.512Z" transform="translate(-6215 -12212)"/>
+    <path id="패스_9238" data-name="패스 9238" class="cls-2" d="M6613.761,12455.674l-75.192-71.617,75.192,90.24Z" transform="translate(-6239 -12223)"/>
+    <path id="패스_9242" data-name="패스 9242" class="cls-2" d="M6224,12285.507l29.749,24.774L6224,12296.6Z" transform="translate(-6224 -12189)"/>
+    <path id="패스_9243" data-name="패스 9243" class="cls-2" d="M6224,12323.615h96.063l-98.193,16.092Z" transform="matrix(0.891, -0.454, 0.454, 0.891, -11151.427, -7905.031)"/>
+    <path id="패스_9244" data-name="패스 9244" class="cls-2" d="M6590.2,12329.352l-56.939,38.708,56.939-21.943Z" transform="translate(-6215 -12269)"/>
+  </g>
+</svg>

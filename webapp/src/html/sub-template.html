@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/sub-header.html')
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+
+                <!-- 리스트 -->
+                <div class="board-grid">
+                    <div class="board-body">
+                        <ul>
+                            @@for (var i = 0; i < 10; i++) {
+                            <li class="board-item">
+                                <dl>
+                                    <dt class="board-item-title">
+                                        <a href="#">
+                                            <div class="title-info">
+                                                <time class="is-family-secondary">2020.10.30 15:20</time>
+                                                <i class="icon-new"><span class="blind">New</span></i>
+                                            </div>
+                                            <div class="title">안녕하세요 에너지플러스입니다.안녕하세요 에너지플러스입니다.</div>
+                                            <i class="icon-arrow-down"><span class="blind">펼쳐보기</span></i>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <div class="board-item-content">
+                                            <article>
+                                                <p>안녕하십니까? GS에너지입니다.</p>
+                                                <p>GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에 선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.</p>
+                                                <p>앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.</p>
+                                                <p>앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.</p>
+                                            </article>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </li>
+                            }
+                        </ul>
+                        <!-- 더보기 -->
+                        <div class="buttons is-centered">
+                            <button class="button is-noborder">더보기<i class="icon-arrow-down size-small"></i></button>
+                        </div>
+                        <!-- // 더보기 -->
+                    </div>
+                </div>
+                <!-- // 리스트 -->
+			</div>
+			<!-- // Contents -->
+
+		</div>
+
+		<!-- Footer -->
+        @@include('./include/footer.html')
+		<!-- // Footer -->
+	</div>
+    <script>
+        $('.board-item-title').click(function () {
+            $(this).addClass('read');
+            $(this).toggleClass('is-active');
+            $(".board-item-title").not($(this)).removeClass('is-active');
+            $(this).find('.icon-new').remove();
+
+            let $this = $(this);
+                $headerHeight = $('header').height();
+                $tabHeight = $('.tabs').height();
+                $fixedHeight = $headerHeight + $tabHeight
+            $('html,body').animate({
+                scrollTop: $this.offset().top - $fixedHeight
+            }, 500);
+        });
+	</script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">바로주유 관리</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+          <!-- top fixed section -->
+          <section class="top-fixed-section">
+            <div class="tab-area b-tabs">
+              <!-- tabs -->
+              <nav class="tabs">
+                <ul>
+                  <!-- 탭 활성화 : is-active 클래스 추가 -->
+                  <li>
+                    <a href="#">
+                      <span>바로주유</span>
+                    </a>
+                  </li>
+                  <li class="is-active">
+                    <a href="#">
+                      <span>바로주유예약</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <!-- 2021-04-27 [tab-section] add -->
+          <section class="contents-section tab-section">
+            <div class="inner">
+              <div class="box-rez-list">
+                <p>최근 3개월 예약 내역</p>
+                <div class="card-area">
+                  <!-- card -->
+                  <div class="card gasoline">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status"
+                            ><em class="is-family-secondary"
+                              >~2021-03-19</em
+                            ></span
+                          >
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>휘발유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li class="baro-txt">바로할인카드</li>
+                        <li class="baro-txt-ex">바로할인카드 유효기간이 만료되었습니다.</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">
+                          예약취소
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card premium">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status"
+                            ><em class="is-family-secondary"
+                              >~2021-03-19</em
+                            ></span
+                          >
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>고급휘발유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list is-disabled">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li class="baro-txt">바로할인카드</li>
+                        <li class="baro-txt-ex">바로할인카드 유효기간이 만료되었습니다.</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">
+                          예약취소
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card diesel">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status"
+                            ><em class="is-family-secondary"
+                              >~2021-03-19</em
+                            ></span
+                          >
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>경유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li class="baro-txt">바로할인카드</li>
+                        <li class="baro-txt-ex">바로할인카드 유효기간이 만료되었습니다.</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">
+                          예약취소
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2022-12-02 클래스명lpg -> butan으로 변경 -->
+                  <div class="card butan">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status"
+                            ><em class="is-family-secondary"
+                              >~2021-03-19</em
+                            ></span
+                          >
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>LPG</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li class="baro-txt">바로할인카드</li>
+                        <li class="baro-txt-ex">바로할인카드 유효기간이 만료되었습니다.</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">
+                          예약취소
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // card -->
+
+                  <!-- card : 예약취소 [is-expired] add -->
+                  <div class="card premium is-expired">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status status-cancel">예약취소</span>
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>고급휘발유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>바로할인카드</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // card -->
+
+                  <!-- card : 사용완료 [is-expired] add -->
+                  <div class="card premium is-expired">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <span class="rez-status status-used">사용완료</span>
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>고급휘발유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>바로할인카드</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <!-- 2020/12/21 - 클래스 변경 (is-small -> is-medium)  -->
+                        <button class="button is-medium is-gray">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // card -->
+
+                  <!-- card : 기간만료 [is-expired] add -->
+                  <div class="card premium is-expired">
+                    <div class="card-content">
+                      <div class="level rez-status-area">
+                        <p class="align-left">
+                          <small class="tit-station">개나리주유소</small>
+                        </p>
+                        <p class="align-right">
+                          <!-- 2021-04-15 기간만료 클래스 수정 [status-expired] -->
+                          <span class="rez-status status-expired"
+                            >기간만료</span
+                          >
+                        </p>
+                      </div>
+                      <dl class="rez-price-info">
+                        <dt>고급휘발유</dt>
+                        <!-- 2021-04-15 수정 -->
+                        <dd>30,000 <span class="is-normal">(48L)</span></dd>
+                        <dt>예약가</dt>
+                        <dd>2,023/L</dd>
+                      </dl>
+                      <ul class="bullet-list">
+                        <li>포인트 자동사용, 쿠폰 자동사용</li>
+                        <li>바로할인카드</li>
+                        <li>
+                          롯데카드 1234 **** **** 1234
+                          <!--2021-01-11 변경-->
+                          <small class="sub-desc"
+                            >사용기간 2018-12-01 ~ 2020-11-30</small
+                          >
+                        </li>
+                      </ul>
+                      <div class="buttons">
+                        <button class="button is-medium is-gray">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // card -->
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>

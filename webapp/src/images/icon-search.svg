@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="icon-search" transform="translate(-122 -737)">
+        <g id="search_icon" transform="translate(108.018 752.993)">
+            <g id="Path_1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.125 10.125a7 7 0 1 1-7-7 7 7 0 0 1 7 7z" class="cls-5" transform="translate(23.625 -7.75)"/>
+                <path fill="#0f1f2e" d="M10.125 5.125c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5m0-2c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7 3.134-7 7-7z" transform="translate(23.625 -7.75)"/>
+            </g>
+            <rect id="사각형_4747" width="2" height="8" fill="#0f1f2e" rx="1" transform="rotate(-45 26.35 -41.017)"/>
+        </g>
+    </g>
+</svg>

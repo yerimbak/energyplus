@@ -1,0 +1,71 @@
+$font-name : 'NotoSansCJKkr'
+$font-name-secondary : 'Montserrat'
+$font-name-third : 'BlackHanSans'
+$font-name-fourth : 'NanumSquare'
+$font-path : '/fonts/'
+
+$fonts : ('Light' : 200 ,'DemiLight' : 300, 'Regular' : 400, 'Medium' : 500, 'Bold' : 700, 'Black' : 900)
+
+/** =================== NotoSansCJKkr =================== **/
+@each $fonts, $size in $fonts
+	@font-face
+		font : 
+			family : #{$font-name}
+			weight : $size
+			style : normal
+		src : url('#{$font-path}#{$font-name}-#{$fonts}.woff2') format('woff2'), url('#{$font-path}#{$font-name}-#{$fonts}.otf') format('otf')
+
+/** =================== Montserrat =================== **/
+@each $fonts, $size in $fonts
+	@font-face
+		font : 
+			family : #{$font-name-secondary}
+			weight : $size
+			style : normal
+		src : url('#{$font-path}#{$font-name-secondary}-#{$fonts}.woff2') format('woff2'), url('#{$font-path}#{$font-name-secondary}-#{$fonts}.woff') format('woff'), url('/fonts/#{$font-name-secondary}-#{$fonts}.otf') format('opentype')
+
+
+
+@each $fonts, $size in $fonts
+	@font-face
+		font : 
+			family : #{$font-name-fourth}
+			weight : $size
+			style : normal
+		src : url('#{$font-path}#{$font-name-fourth}-#{$fonts}.woff2') format('woff2'), url('#{$font-path}#{$font-name-fourth}-#{$fonts}.woff') format('woff'), url('/fonts/#{$font-name-fourth}-#{$fonts}.otf') format('opentype')
+
+
+/** =================== Black Han Sans =================== **/
+@font-face 
+	font : 
+		family : #{$font-name-third}
+		weight : 400
+		style : normal
+	src : url('#{$font-path}#{$font-name-third}-Regular.woff') format('woff'), url('#{$font-path}#{$font-name-third}-Regular.otf') format('otf')
+
+
+
+@font-face 
+    font-family : 'GmarketSansMedium'
+    src : url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff')
+    font-weight : normal
+    font-style : normal
+
+
+@font-face 
+     font-family : 'S-CoreDream-4Regular'
+     src : url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff')
+     font-weight : normal
+     font-style : normal
+@font-face 
+	 font-family : 'S-CoreDream-5Medium'
+	 src : url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff')
+	 font-weight : normal
+	 font-style : normal
+
+@font-face 
+     font-family : 'S-CoreDream-6Bold'
+     src : url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff')
+     font-weight : normal
+     font-style : normal
+

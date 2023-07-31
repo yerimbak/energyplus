@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="104" viewBox="0 0 156 104">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_6031" data-name="사각형 6031" class="cls-1" width="156" height="104" transform="translate(219 484)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.022" y1="0.466" x2="0.5" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3cdc87" stop-opacity="0.941"/>
+      <stop offset="0.823" stop-color="#3cdc87" stop-opacity="0.282"/>
+      <stop offset="1" stop-color="#3ddb87" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="bg" class="cls-2" transform="translate(-219 -484)">
+    <rect id="사각형_6034" data-name="사각형 6034" class="cls-3" width="273.596" height="83.944" rx="41.972" transform="translate(242.962 496.523)"/>
+  </g>
+</svg>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">쿠폰함</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <!-- Contents -->
+        <div id="contents" class="container">
+          <!-- top fixed section -->
+          <section class="top-fixed-section">
+            <div class="tab-area b-tabs">
+              <!-- tabs -->
+              <nav class="tabs">
+                <ul>
+                  <!-- 탭 활성화 : is-active 클래스 추가 -->
+                  <li>
+                    <a href="#">
+                      <span>사용가능 0</span>
+                    </a>
+                  </li>
+                  <li class="is-active">
+                    <a href="#">
+                      <span>사용/기한만료 2</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="inner">
+              <!-- 2022/07/13  구조 수정 -->
+              <div class="control type-flex">
+                <div class="select period">
+                  <select>
+                    <option>기간임박순</option>
+                    <option>가격순</option>
+                    <option>최신순</option>
+                  </select>
+                </div>
+                <div class="select all-coupon">
+                  <select>
+                    <option>모두</option>
+                    <option>충전 쿠폰만</option>
+                    <option>세차 쿠폰만</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="contents-section coupon-section">
+            <!-- 쿠폰함 리스트 있을 경우 : class [type-2] delete -->
+            <ul class="box-coupon-list end">
+              <!-- 사용/기한 만료인경우 : class [end] add -->
+              <!-- 2021-03-29 잔액차감형 추가 -->
+              <li class="item-box-coupon type1">
+                <div class="box-coupon-hd">
+                  <p class="type-balance">잔액차감형</p>
+                  <div class="txt-coupon-info">
+                    <span class="ico">주유 이미지</span>
+                    <div class="box-txt-group">
+                      <p class="coupon-category">
+                        프리미엄 카케어 상품 상품명명 최대 노출
+                      </p>
+                      <p class="title">
+                        주유
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">300,000</strong>원
+                          <small class="is-family-secondary">/100,000원</small>
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">~ 2020-11-09</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">신규가입 축하 쿠폰</p>
+                    <p class="txt-coupon">10만원 이상 주유시 사용가능</p>
+                    <span class="coupon-baro-available">바로주유 적용가능</span>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <!-- 2021-03-29 횟수차감형 추가 -->
+              <li class="item-box-coupon type1">
+                <div class="box-coupon-hd">
+                  <p class="type-multi">횟수차감형</p>
+                  <div class="txt-coupon-info">
+                    <span class="ico">주유 이미지</span>
+                    <div class="box-txt-group">
+                      <p class="title">
+                        주유
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">300,000</strong>원
+                          <small class="is-family-secondary">(3/10개)</small>
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">~ 2020-11-09</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">신규가입 축하 쿠폰</p>
+                    <p class="txt-coupon">10만원 이상 주유시 사용가능</p>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <!-- 2021-03-29 바로주유 적용 가능 추가 -->
+              <li class="item-box-coupon type1">
+                <div class="box-coupon-hd">
+                  <div class="txt-coupon-info">
+                    <span class="ico">주유 이미지</span>
+                    <div class="box-txt-group">
+                      <!-- 2021-03-18 상품명 위치 수정 -->
+                      <p class="coupon-category">
+                        프리미엄 카케어 상품 상품명명 최대 노출
+                      </p>
+                      <p class="title">
+                        주유
+                        <!-- 2021-02-09 <span class="sm-block"> 추가  -->
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">300,000</strong>원
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">
+                        ~ 2020-11-09<strong>D-0</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">웰컴쿠폰</p>
+                    <p class="txt-coupon">3만원 이상 주유시 사용</p>
+                    <span class="coupon-baro-available">바로주유 적용가능</span>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+
+              <li class="item-box-coupon type1">
+                <div class="box-coupon-hd">
+                  <div class="txt-coupon-info">
+                    <span class="ico">주유 이미지</span>
+                    <div class="box-txt-group">
+                      <!-- 2021-03-18 상품명 위치 수정 -->
+                      <p class="coupon-category">
+                        프리미엄 카케어 상품 상품명명 최대 노출
+                      </p>
+                      <p class="title">
+                        주유
+                        <!-- 2021-02-09 추가  -->
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">300,000</strong>원
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">
+                        ~ 2020-11-09<strong>D-0</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div class="coupon-category">카케어팩</div> -->
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">웰컴쿠폰</p>
+                    <p class="txt-coupon">3만원 이상 주유시 사용</p>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="item-box-coupon type2">
+                <div class="box-coupon-hd">
+                  <div class="txt-coupon-info">
+                    <span class="ico">세차 이미지</span>
+                    <div class="box-txt-group">
+                      <!-- 2021-03-18 상품명 위치 수정 -->
+                      <!-- <p class="coupon-category">카케어팩</p> -->
+                      <p class="title">세차무료</p>
+                      <p class="is-family-secondary">
+                        ~ 2020-11-09<strong>D-5</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">주유 감사 쿠폰</p>
+                    <p class="txt-coupon">직영 주유소만 사용가능</p>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="item-box-coupon type3">
+                <div class="box-coupon-hd">
+                  <div class="txt-coupon-info">
+                    <span class="ico">경정비 이미지</span>
+                    <div class="box-txt-group">
+                      <p class="title">
+                        경정비
+                        <!-- 2021-02-09 추가  -->
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">3,000</strong>원
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">
+                        ~ 2020-11-09<strong>D-6</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">웰컴쿠폰</p>
+                    <p class="txt-coupon">3만원 이상 주유시 사용</p>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="item-box-coupon type4">
+                <div class="box-coupon-hd">
+                  <div class="txt-coupon-info">
+                    <span class="ico">EV 이미지</span>
+                    <div class="box-txt-group">
+                      <p class="title">
+                        EV
+                        <!-- 2021-02-09 추가  -->
+                        <span class="sm-block">
+                          <strong class="is-family-secondary">3,000</strong>원
+                        </span>
+                      </p>
+                      <p class="is-family-secondary">
+                        ~ 2020-11-09<strong>D-7</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-coupon-bt">
+                  <div class="txt-coupon-desc">
+                    <p class="title-coupon">웰컴쿠폰</p>
+                    <p class="txt-coupon">3만원 이상 주유시 사용</p>
+                  </div>
+                  <div class="box-btn-area">
+                    <button
+                      type="button"
+                      class="button is-fullwidth is-small"
+                      disabled="disabled"
+                    >
+                      쿠폰사용
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>

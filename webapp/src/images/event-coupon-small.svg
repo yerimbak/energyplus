@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="227" height="127" viewBox="0 0 227 127">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #0f1f2e;
+        font-size: 15px;
+        font-family: NotoSansCJKkr-Bold, Noto Sans CJK KR;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #3cdc87;
+      }
+
+      .cls-4 {
+        filter: url(#빼기_103);
+      }
+    </style>
+    <filter id="빼기_103" x="0" y="0" width="227" height="127" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#909090" flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="쿠폰" transform="translate(-70 -473.001)">
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 70, 473)">
+      <path id="빼기_103-2" data-name="빼기 103" class="cls-1" d="M182,62H160.861a6.5,6.5,0,0,0-6.014-5.255V52.061a2.632,2.632,0,0,0,0-5.082V42.223a2.63,2.63,0,0,0,0-5.081V31.729a2.631,2.631,0,0,0,0-5.081V21.891a2.631,2.631,0,0,0,0-5.081V11.4a2.631,2.631,0,0,0,0-5.081V1.609A6.451,6.451,0,0,0,159-.5a6.581,6.581,0,0,0,1.691-4.415c0-.027,0-.055,0-.082H182a8.009,8.009,0,0,1,8,8V54A8.009,8.009,0,0,1,182,62Zm-33.872,0H31a8.009,8.009,0,0,1-8-8V3a8.009,8.009,0,0,1,8-8H147.706c0,.027,0,.055,0,.082A6.581,6.581,0,0,0,149.4-.5a6.452,6.452,0,0,0,4.152,2.112V6.315a2.631,2.631,0,0,0,0,5.081v5.413a2.631,2.631,0,0,0,0,5.081v4.757a2.631,2.631,0,0,0,0,5.081v5.413a2.631,2.631,0,0,0,0,5.081v4.756a2.632,2.632,0,0,0,0,5.082V56.8A6.524,6.524,0,0,0,148.128,62Z" transform="translate(7 35)"/>
+    </g>
+    <text id="쿠폰-2" data-name="쿠폰" class="cls-2" transform="translate(172.544 542.501)"><tspan x="0" y="0">쿠폰</tspan></text>
+    <g id="BI" transform="translate(71.199 455.436)">
+      <rect id="Box" class="cls-1" width="36.979" height="36.979" transform="translate(58.387 64)"/>
+      <g id="Shape" transform="translate(58.387 72.32)">
+        <path id="패스_309" data-name="패스 309" class="cls-3" d="M296.4,830.128h-5.543v5.523a.385.385,0,0,1-.77,0v-5.523h-5.543a.384.384,0,1,1,0-.767h5.543v-5.523a.385.385,0,0,1,.77,0v5.523H296.4a.384.384,0,1,1,0,.767m-5.928-10.212a9.829,9.829,0,1,0,9.864,9.828,9.846,9.846,0,0,0-9.864-9.828" transform="translate(-263.357 -819.916)"/>
+        <path id="패스_310" data-name="패스 310" d="M223.869,827.649a6.321,6.321,0,0,1,11.906,0,.244.244,0,0,1-.231.326H224.1a.245.245,0,0,1-.231-.326m10.264,6.949a.163.163,0,0,0-.246-.041,6.324,6.324,0,0,1-10.018-2.718.245.245,0,0,1,.231-.326h12.532a10.351,10.351,0,0,1,1.391-7.215,9.831,9.831,0,1,0-2.305,13.324.163.163,0,0,0,.043-.212Z" transform="translate(-219.958 -819.915)"/>
+      </g>
+    </g>
+  </g>
+</svg>

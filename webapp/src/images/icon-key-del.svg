@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <style>
+            .cls-3{fill:#0f1f2e}
+        </style>
+    </defs>
+    <g id="icon-del" transform="translate(-123 -737)">
+        <g id="search_icon" transform="translate(108.018 752.993)">
+            <rect id="사각형_4747" width="2" height="10" class="cls-3" rx="1" transform="rotate(-45 18.792 -31.688)"/>
+            <rect id="사각형_4748" width="2" height="10" class="cls-3" rx="1" transform="rotate(45 21.19 40.695)"/>
+            <rect id="사각형_5182" width="2" height="12" class="cls-3" rx="1" transform="rotate(-90 17.482 -12.475)"/>
+        </g>
+    </g>
+</svg>

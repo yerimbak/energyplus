@@ -1,0 +1,3903 @@
+// 2022.02.21 현대자동차 커넥티드 연동
+  
+  .event-wrap
+    position : relative
+    min-width : $min-width
+    // height : 100%
+    .buttons
+        max-width : $max-width
+        margin : 0 auto
+.section-event
+    position : relative
+    // max-width : $max-width
+    // margin : 0 auto
+    &.type-2
+        // max-width : 100%
+        padding : 0 24px
+        background : $ep-white-smoke
+    &.type-1
+        background : $ep-white-smoke
+        padding-bottom : 17px
+    &.section-detail
+        margin-top : 36px
+        .event-guide-area
+            padding-bottom : 24px
+    // & +.section-event
+    //     margin-top : 36px
+    //     .event-guide-area
+    //         padding-bottom : 0
+/* event invite */
+.event-top-area
+    padding-bottom : 24px
+    // background : $ep-white-smoke 
+    .buttons
+        &.type-2
+            margin :
+                top : -30px
+                bottom : 24px
+    .event-inner
+        margin : 0 auto
+        .buttons
+            & + .inline-item
+                margin-top : 24px
+.event-top-image
+    position : relative
+    display : flex
+    flex-direction : column
+    justify-content : center
+    align-items : center
+    text-align : center
+    margin : 0 auto
+    padding :
+        top : 61px
+    &.type-1
+        margin : 0 -24px
+        background : 
+            color : transparent
+            image : url(#{$image-path}ep-gooey.svg)
+            repeat : no-repeat
+            position : center 112px
+            size : 423px 381px
+    &.type-2
+        max-width : 247px
+        padding-top : 33px
+        > img
+            max-width : inherit
+        +mobile-small-w 
+            max-width : 220px
+    .event-invite-top-1,
+    .event-invite-top-2
+        position : relative
+        max-width : 329px
+        font-size : 0
+        > img
+            max-width : inherit
+        .end-date
+            float : right
+            display : block 
+            min-width : 111px
+            height : 26px
+            margin : 1px 22px 5px 0
+            padding : 5px 12px 3px 20px
+            color : $ep-white
+            font : 
+                family : $family-secondary
+                size : 14px
+                weight : $weight-bold
+            line-height : 1.29
+            background : 
+                image : url(#{$image-path}daybg.svg)
+                repeat : no-repeat
+                size : cover
+                position : 0 0
+    .event-invite-top-code
+        position : relative
+        width : 100%
+        height : 326px
+        background : 
+            color : transparent
+            image : url(#{$image-path}event-invite-top-code.svg)
+            repeat : no-repeat
+            position : center 0 
+            size : 418px 326px
+        // > img
+        //     position : absolute
+        //     top : 0
+        //     left : 0
+        .invite-code-area
+            position : absolute
+            display : flex
+            width : 100%
+            max-width : 300px
+            font-weight : $weight-medium
+            flex-direction : column
+            align-items : center 
+            justify-content : center
+            left : 50%
+            top : 47%
+            transform : translate(-50%, 0)
+            // +mobile-small-w
+            //     top : 150px 
+            .invite-code
+                font :
+                    family : $family-secondary
+                    weight : $weight-bold
+                    size : 2rem
+                margin : 6px 0 4px
+                +mobile-small-w
+                    margin : 3px 0 2px
+.my-invite-area
+    padding : 24px 23px 0
+    text-align : center
+    .title
+        font :
+            family : $family-third
+        margin-bottom : 4px
+    .txt-invite-desc
+        font :
+            size : 1rem
+            weight : $weight-bold
+        line-height : 1.5
+        > em
+            color : $ep-primary
+            line-height : 30px
+            font-size : 1.125rem
+    .list-invite-area
+        margin-top : 11px
+        > li
+            margin-bottom : 8px
+    .item-invitation
+        display : flex
+        position : relative
+        max-width : 328px
+        height : 64px
+        margin : 0 auto 16px
+        z-index : 1
+        +mobile-small-w
+            height : 54px
+        &::after
+            content : ''
+            position : absolute
+            top : 0
+            left : 0
+            display : block 
+            width : 100%
+            height : 100%
+            z-index : -1
+            background : 
+                color : transparent
+                repeat : no-repeat
+                size : contain
+        .level-left
+            display : inline-flex
+            flex-direction : column
+            width : calc(100% - 70px)
+            height : 100%
+            padding : 11px 0
+            justify-content : center
+            align-items : center
+            font :
+                // family : $family-third
+                size : 1.5rem
+            +mobile-small-w
+                width : calc(100% - 60px)
+            .is-family-third
+                line-height : 1.21
+        .level-right
+            display : inline-flex
+            width : 70px
+            height : 100%
+            justify-content : center
+            align-items : center
+            +mobile-small-w
+                width : 60px
+        &.is-completed
+            .level-left
+                color : $ep-diabled-text
+            &:after
+                background : 
+                    image : url(#{$image-path}coupon-used.svg)
+        &.is-active
+            .level-left
+                color : $ep-primary
+                .friend
+                    color : $ep-text-color
+            &::after
+                background : 
+                    image : url(#{$image-path}coupon-active.svg)
+                // filter : drop-shadow(0 10px 30px rgba(0, 0, 0, 0.16))
+        &.is-empty
+            height : 57px
+            &:after
+                background : 
+                    image : url(#{$image-path}coupon-empty.png)
+    .coupon-down
+        display : block 
+        width : 32px
+        height : 32px
+        background : 
+            color : transparent
+            image : url(#{$image-path}icon-coupon-down.svg)
+            repeat : no-repeat
+    .item-coupon
+        width : 100%
+        max-width : 328px
+        height : 64px
+        display : flex 
+        align-items : center 
+        justify-content : center
+        margin : 0 auto
+        background : 
+            color : transparent
+            repeat : no-repeat
+            position : center top 
+            size : 100% auto
+.event-guide-area
+    padding : 24px
+    // padding : 24px 24px 12px
+    &.type-1
+        padding : 
+            top : 60px
+            bottom : 0
+        border-top : 2px dashed #838383
+        &::after
+            content : ''
+            position : absolute
+            top : -1px
+            right : 0
+            display : block 
+            width : 69px
+            height : 50px 
+            background : 
+                image : url(#{$image-path}event-bg2-right.png)
+                repeat : no-repeat
+                position : right top
+                size : 69px auto
+        .list-event-guide
+            > li
+                border-radius : 0
+                background-color : transparent
+                &::before
+                    background-color : #e3e3e3
+    &.type-2,
+    &.type-3
+        .list-event-guide
+            > li
+                text-align : center
+                &:before
+                    min-width : 34px
+                    left : 50%
+                    transform : translateX(-50%)
+    &.type-3
+        padding : 36px 0 32px
+        .list-event-guide
+            > li
+                padding-top : 25px
+                &:before
+                    padding : 0 14px
+                    color : $ep-white
+                    background : $ep-navy
+                    margin-bottom : 0
+        text-align : center
+    .title
+        font :
+            family : $family-third
+        text-align : center
+        margin-bottom : 20px
+    .list-event-guide
+        > li
+            position : relative
+            counter-increment : step
+            padding : 33px 0 0
+            border-radius : 16px
+            background-color : #f4f4f4
+            &:not(:last-child)
+                margin-bottom : 22px
+            &::before
+                counter-increment : li
+                content : counter(step, decimal-leading-zero)
+                display : inline-block
+                height : 25px
+                line-height : 25px
+                margin : 0 auto 8px
+                position : absolute
+                top : 0
+                left : 0
+                padding : 0 7px
+                border-radius : 20px
+                text-align : center
+                font : 
+                    family : $family-secondary
+                    size : 1rem
+                    weight : $weight-bold
+                background : $ep-white
+            &.list-event-con-1
+                margin-top : 40px
+                padding-bottom : 40px
+                border-bottom : 2px dashed rgba(112, 112, 112, .3)
+                background :
+                    image : url(#{$image-path}event-con-img1.png)
+                    size : 102px 180px
+                    position : right bottom
+                .sub-desc
+                    display : block
+                    width : 58%
+                    max-width : 187px
+                    margin-top : 8px
+                    line-height : 1.33
+                    word-break : keep-all
+            &.list-event-con-2
+                margin-top : 30px
+                min-height : 154px
+                background :
+                    image : url(#{$image-path}event-con-img2.png)
+                    size : 102px 124px
+                    position : right -4px
+        dl
+            dd
+                &.type-2
+                    font-size : 0
+                    margin-bottom : -33px
+                small
+                    display : block
+                    margin-top : 7px
+                    line-height : 1.5
+                .txt-desc 
+                    margin-top : -15px
+    [class*='list-event-con']
+        margin : 20px 0
+        border-radius : 16px
+        padding : 27px 15px 33px 24px
+        // min-height : 154px
+        background : 
+            color :  #f4f4f4
+            repeat : no-repeat
+            position : right 15px bottom
+        &:last-child
+            margin-bottom : 0
+    .layer-coin-img
+        position : absolute
+        top : 26px
+        left : 0
+        display : block
+        width : 100%
+        height : 160px
+        background :
+            image : url(#{$image-path}event-coin-1.png), url(#{$image-path}event-coin-2.png), url(#{$image-path}event-coin-3.png)
+            position : 30px 40px, 20px bottom -2px, center -10px right -5px
+    
+    &.type-2
+        .list-event-guide
+            > li
+                padding : 69px 0 32px
+                &::before
+                    margin-top : 32px
+                .event-title
+                    margin-bottom : 37px
+            // &.type-3
+            //     > li
+            //         text-align : center
+            //         &::before
+            //             margin : 0 auto
+            //             padding : 3px 17px
+            //             color : $ep-white
+            //             background : $ep-navy
+.how-to
+    dt 
+        font : 
+            size : $size-large
+            weight : $weight-medium
+        line-height : 1.45
+        margin : 8px auto 16px
+        > strong
+            font-weight : $weight-bold
+    mark
+        position : relative
+        background-color : transparent
+        z-index : 1
+        &::after
+            content : ''
+            display : block 
+            width : 100%
+            height : 11px
+            background : $ep-highlight
+            position : absolute
+            left : 0
+            bottom : 2px
+            z-index : -1
+    .txt-highlight
+        font-weight : $weight-bold
+.event-title
+    font :
+        family : $family-third
+        size : 1.375rem
+    line-height : 1.09
+    text-align : center
+    > strong
+        font : 
+            size : $size-x-large
+            weight : $weight-bold
+.main-desc
+    font :
+        size : 1.125rem
+        weight : $weight-bold
+    line-height : 1.44
+    letter-spacing : -0.36px
+.list-benefit-area
+    display : flex 
+    justify-content : space-between
+    max-width : $max-width
+    margin : 0 auto
+    padding : 
+        top : 17px
+        bottom : 24px
+    > li
+        display : inline-flex
+        width : 50%
+        justify-content : center
+        &:first-child
+            border-right : 1px dashed rgba(93,93,93,.22)
+        dl
+            margin : 0 16px 7px
+            dt
+                position : relative
+                display : inline-block
+                margin-bottom : 7px
+                z-index : 1
+                &::after
+                    content : ''
+                    display : block 
+                    position : absolute
+                    left : 0
+                    bottom : 4px
+                    width : 100%
+                    height : 6px
+                    background : rgba(60,220,135,.6)
+                    z-index : -1
+.guide-img-area
+    margin : 16px auto
+    > img
+        text-align : center
+    &.type-2
+        margin :
+            bottom : 40px
+.invite-coupon-area
+    width : 100%
+    padding : 24px 0 11px
+    margin : 0 auto
+    > .field
+        margin-bottom : 16px
+        .is-error
+            .help
+                position : relative
+    .input
+        border-radius : 11px
+        border : solid 2px $ep-primary
+.list-coupon-area
+    // max-width : 327px
+    margin : 0 -12px 16px
+    padding : 12px
+    overflow-x : hidden
+    & + .buttons
+        // padding : 0 12px
+        .tooltip-area
+            padding : 0
+            .tooltip
+                .icon-emoji
+                    position : static
+.item-coupon
+    position : relative
+    display : flex 
+    align-items : center 
+    width : 100%
+    height : 80px
+    // padding : 16px 0 16px 22px
+    margin-bottom : 12px
+    border-radius : 8px
+    z-index : 1
+    -webkit-animation : slideLeft .75s cubic-bezier(0.0, 0.0, 0.2, 1)
+    -webkit-animation-iteration-count : 1
+    -webkit-animation-fill-mode : both
+    animation : slideLeft .75s cubic-bezier(0.0, 0.0, 0.2, 1)
+    animation-iteration-count : 1
+    animation-fill-mode : both
+    // +mobile-small-w
+    //     height : 64px
+    &:nth-child(2)
+        -webkit-animation-delay : .2s
+        animation-delay : .2s
+    &:nth-child(3)
+        -webkit-animation-delay : .4s
+        animation-delay : .4s
+    &:nth-child(4)
+        -webkit-animation-delay : .6s
+        animation-delay : .6s
+    &:nth-child(5)
+        -webkit-animation-delay : .8s
+        animation-delay : .8s
+    // border : 1px solid #e5e5e5
+    // box-shadow : 0 4px 12px 0 rgba(0, 0, 0, 0.16)
+    // background : 
+    //     color : transparent
+    //     image : url(#{$image-path}coupon-list-bg.svg)
+    //     repeat : no-repeat
+    //     position : right top
+    //     size : 100% 140px
+    // .coupon-bg
+    //     position : absolute
+    //     top : 0
+    //     left : 0
+    //     height : 80px
+    //     width : 38px
+    //     filter : drop-shadow(0 4px 12px rgba(0, 0, 0, 0.16))
+    //     .coupon-bg-img
+    //         width : 100%
+    //         height : 100%
+    //         object-fit : cover
+    &.type-2
+        .coupon-left-area
+            .title-coupon
+                color : $ep-event-color-2
+        .coupon-right-area
+            .coupon-check
+                .radio
+                    input
+                        &:checked + i
+                            background : 
+                                image : url(#{$image-path}btn-checked-type-2.svg)
+    &.type-3
+        .coupon-left-area
+            .title-coupon
+                color : $ep-event-color-3
+        .coupon-right-area
+            .coupon-check
+                .radio
+                    input
+                        &:checked + i
+                            background : 
+                                image : url(#{$image-path}btn-checked-type-3.svg)
+    // &::after
+    //     content : ''
+    //     position : absolute
+    //     top : -19px
+    //     left : -24px
+    //     display : block 
+    //     width : calc(100% + 48px)
+    //     height : 0
+    //     padding-bottom : 140px
+    //     background : 
+    //         color : transparent
+    //         image : url(#{$image-path}coupon-list-bg.svg)
+    //         repeat : no-repeat
+    //         position : left top
+    //         size : contain
+    //     z-index : -1
+    //     +mobile-small-w
+    //         width : calc(100% + 40px)
+    // &::after
+    //     content : ''
+    //     position : absolute
+    //     top : 0
+    //     right : 60px
+    //     display : block 
+    //     width : 24px
+    //     height : 96px
+    //     background : 
+    //         color : transparent
+    //         image : url(#{$image-path}coupon-bg-3.svg)
+    //         repeat : no-repeat
+    //         position : right -88px top -20px
+    //         // size : cover
+    //     z-index : 10
+    //     +mobile-small-w
+    //         width : calc(100% + 40px)
+    .coupon-bg
+        position : absolute
+        top : 0
+        right : 52px
+        width : 38px
+        height : 90px
+        overflow-x : hidden
+        filter : drop-shadow(20px 4px 12px rgba(0, 0, 0, 0.16))
+        // filter : drop-shadow(0 4px 12px rgba(0, 0, 0, .16))
+        // overflow : hidden
+        img
+            width : 38px
+            height : 80px
+    .coupon-left-area
+        display : flex 
+        width : calc(100% - 84px)
+        height : 80px
+        padding : 0 22px
+        align-items : center
+        color : $ep-black
+        padding-right : 12px
+        background : $ep-white
+        border-radius : 8px 0 0 8px
+        // border : 1px solid $ep-border-gray
+        border-right : 0
+        box-shadow : 0 0px 19px 0 rgba(0, 0, 0, 0.12)
+        // +mobile-small-w
+        //     width : 100%
+        .title-coupon
+            width : 30px
+            height : 100%
+            display : flex 
+            align-items : center
+            margin-right : 16px
+            color : $ep-primary
+            font :
+                size : 1rem
+                weight : $weight-bold
+            line-height : 1.25
+            +mobile-small-w
+                margin-right : 10px
+        .txt-coupon-group
+            width : calc(100% - 48px)
+        .txt-price
+            font-size : 1rem
+            height : 28px
+            line-height : 28px
+            width : 100%
+            white-space : nowrap
+            overflow : hidden
+            text-overflow : ellipsis
+            .txt-kor
+                font-size : 20px
+            > strong
+                font :
+                    size : 23px
+                    weight : $weight-bold
+                line-height : 1.3
+                margin-right : 2px
+        .txt-desc
+            display : block
+            min-height : 18px
+            color : $ep-black
+            line-height : 1.83
+            white-space : nowrap
+            overflow : hidden
+            text-overflow : ellipsis
+    .coupon-right-area
+        display : flex 
+        align-items : center 
+        justify-content : center
+        width : 88px
+        height : 80px
+        margin : 0 0 0 auto
+        background : $ep-white
+        border-radius : 0 8px 8px 0
+        // border : 1px solid $ep-border-gray
+        // border-left : 0
+        // box-shadow : 0 4px 16px 0 rgba(0, 0, 0, 0.16)
+        &:after
+            content : ''
+            display : block
+            width : 100px 
+            height : 100px 
+            overflow : hidden 
+            position : absolute 
+            top : -6px
+            right : -16px
+            background : 
+                color : #fff
+                image : url(#{$image-path}coupon-bg-3.svg)
+                repeat : no-repeat
+                position : right -14px top -24px
+                // size : cover
+        .coupon-check
+            width : 74px
+            height : 80px
+            cursor : pointer
+            margin-left : 14px
+            z-index : 10
+            -webkit-tap-highlight-color : rgba(0,0,0,0)
+            .field,
+            .control,
+            .radio
+                width : 100%
+                height : 100%
+            .radio
+                margin-bottom : 0
+                i
+                    position : absolute
+                    display : block 
+                    width : 32px
+                    height : 32px
+                    border : 0
+                    border-radius : 0
+                    // margin-left : 3px
+                    top : 50%
+                    left : 50%
+                    transform : translate(-50%, -50%)
+                    background : 
+                        color : $ep-white
+                        image : url(#{$image-path}btn-check-disabled.svg)
+                        repeat : no-repeat
+                        size : 29px 20px
+                        position : center
+                    &::before
+                        content : none
+                input
+                    &:checked + i
+                        background : 
+                            image : url(#{$image-path}btn-checked-type-1.svg)
+.tooltip-area
+    min-width : $min-width
+    max-width : $max-width
+    width : 100%
+    margin : 20px auto 12px
+    padding : 0 24px
+    .tooltip
+        // max-width : 326px
+        width : 100%
+        font-size : 12px
+        text-align : center
+        position : relative
+        background : $ep-white
+        border-radius : 100px
+        border : solid 1px $ep-primary
+        padding : 6px 32px 7px 16px
+        margin : 0 auto
+        letter-spacing : -.36px
+        box-shadow : 0 10px 30px rgba(0,0,0,.16)
+        // -webkit-animation : bounceUp .5s
+        // -webkit-animation-iteration-count : 2
+        // -webkit-animation-fill-mode : both
+        // animation : bounceUp .5s
+        // animation-iteration-count : 2
+        // animation-fill-mode : both
+        +mobile-small-w
+            padding : 
+                left : 15px
+                right : 23px
+            font-size : $size-small
+        .gs-point
+            width : 58px
+            height : 12px
+            vertical-align : middle
+        .icon-emoji
+            position : absolute
+            top : 6px
+            right : 20px
+            display : inline-block
+            width : 23px
+            height : 23px
+            vertical-align : middle
+            margin-left : 5px
+            background : 
+                image : url(#{$image-path}icon-emoji.png)
+                repeat : no-repeat
+                size : contain
+            &.smiley
+                height : 29px
+                background : 
+                    image : url(#{$image-path}emoji-smiley.png)
+            &.present
+                height : 29px
+                background : 
+                    image : url(#{$image-path}emoji-present.png)
+            &.party
+                height : 29px
+                background : 
+                    image : url(#{$image-path}emoji-party.png)
+            &.confetti
+                position : static
+                height : 28px
+                background : 
+                    image : url(#{$image-path}emoji-confetti.png)
+            &.type-2
+                position : static
+        &::before
+            content : ''
+            position : absolute
+            top : -4px
+            left : 50%
+            margin-left : -5px
+            display : block 
+            width : 8px
+            height : 8px
+            background : $ep-white
+            border : 
+                top : 1px solid $ep-primary
+                right : 1px solid $ep-primary
+                left : 1px solid transparent
+                bottom : 1px solid transparent
+            transform : rotate(-59deg) skew(-23deg)
+        &.arrow-bottom
+            padding : 5px 10px
+            &:before
+                top : auto
+                left : 86px
+                bottom : -4px
+                border : 
+                    top-color : transparent
+                    right-color : transparent
+                    left-color : $ep-primary
+                    bottom-color : $ep-primary
+        // &::after
+        //     content : ''
+        //     display : block 
+        //     width : 8px
+        //     height : 8px
+        //     background : $ep-white
+        //     position : absolute
+        //     top : -5px
+        //     left : 50%
+        //     margin-left : -4px
+        //     transform : rotate(45deg)
+    .type-2
+        text-align : center
+        color : $ep-event-color-2 
+        border-color : $ep-event-color-2
+        font : 
+            family : $family-third
+        &::before
+            top : auto
+            bottom : -7px
+            border-color : $ep-event-color-2
+        &::after
+            top : auto 
+            bottom : -2px
+
+/* tooltip animation */
+@-webkit-keyframes tooltipAni
+    0%
+        transform : translateY(50%)
+        opacity : 0
+    100%
+        transform : translateY(0)
+        opacity : 1
+
+@keyframes tooltipAni
+    0%
+        transform : translateY(50%)
+        opacity : 0
+    100%
+        transform : translateY(0)
+        opacity : 1
+
+@-webkit-keyframes bounceUp
+    0% 
+        -webkit-transform: translateY(10px)
+        transform: translateY(10px)
+    100% 
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@keyframes bounceUp 
+    0% 
+        -webkit-transform: translateY(10px)
+        transform: translateY(10px)
+    100% 
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@-webkit-keyframes slideLeft
+    0% 
+        -webkit-transform: translateX(50%)
+        transform: translateX(50%)
+        opacity : 0
+    100% 
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+        opacity : 1
+@keyframes slideLeft 
+    0% 
+        -webkit-transform: translateX(50%)
+        transform: translateX(50%)
+        opacity : 0
+    100% 
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+        opacity : 
+        
+/* event stamp */
+.event-stamp-area
+    position : relative
+    margin : 0 -24px
+    // padding-bottom : 46px
+    z-index : 1
+    &::after
+        content : ''
+        position : absolute
+        top : 0
+        left : 0
+        display : block 
+        width : 100%
+        height : 100%
+        background : 
+            color : transparent
+            image : url(#{$image-path}event-stamp-list-bg.svg)
+            repeat : no-repeat
+            size : 418px 785px
+            position : center 0
+        z-index : -1
+        +mobile-small-w
+            background-size : 376px 726px
+    .event-top-area
+        margin : 0 auto
+        max-width : 328px
+        padding :
+            top : 61px
+            left : 24px
+            right : 24px
+            // bottom : 46px
+        &::after
+            content : ''
+            position : absolute
+            top : -18px
+            left : -24px
+            right : -24px
+            display : block 
+            width : calc(100% + 24px)
+            height : 273px
+            z-index : -1
+            background : 
+                color : transparent
+                image : url(#{$image-path}event-stamp-top-bg.svg)
+                repeat : no-repeat
+                size : 100%
+                position : 0 0
+    .event-date-area
+        display : flex 
+        width : 100%
+        // justify-content : space-between
+        font : 
+            family : $family-third
+            size : $size-small
+        line-height : 0.92
+        letter-spacing : 0.06px
+        color : $ep-black
+        > span
+            &:last-child
+                padding-left : 4px
+    .event-stamp-list-area
+        position : relative
+        padding : 
+            top : 15px
+            bottom : 46px
+    .event-stamp-list
+        position : relative
+        display : flex 
+        flex-wrap : wrap
+        justify-content : center
+        padding : 18px 12px 24px
+        margin : 0 auto
+        max-width : 328px
+        +mobile-small-w 
+            max-width : 320px
+            padding : 9px 6px 20px
+        // &::after
+        //     content : ''
+        //     position : absolute
+        //     top : 0 
+        //     left : 0
+        //     display : block 
+        //     width : 100%
+        //     height : 100%
+        //     background : 
+        //         color : transparent
+        //         image : url(#{$image-path}event-stamp-list-bg.svg)
+        //         repeat : no-repeat
+        //         size : 100% 100%
+        //         position : 0 0
+        > li
+            display : inline-flex
+            width : 30%
+            // height : 141px
+            margin :
+                right : 8px
+                bottom : 60px
+            justify-content : center
+            text-align : center
+            &:nth-child(3),
+            &:nth-child(5)
+                margin-right : 0
+            &:nth-child(4),
+            &:nth-child(5)
+                margin-bottom : 0
+            &:nth-child(4)
+                margin-right : 16px
+            .stamp-title
+                text-align : center
+                white-space : nowrap
+                color : $ep-sub-text-color
+                font :
+                    size : $size-small
+                    weight : $weight-bold
+    .event-stamp-desc
+        margin : 0 auto 
+        padding : 18px 0
+        max-width : 328px
+        font-weight : $weight-medium
+        text-align : center
+        line-height : 1.33
+        letter-spacing : -0.45px
+        +mobile-small-w 
+            padding : 15px 0
+        .gs-point
+            vertical-align : middle
+            &::before
+                width : 84px
+                height : 17px
+        .is-family-secondary
+            font : 
+                size : 18px
+                weight : 900
+            color : $ep-primary3
+            line-height : 1.22
+    .tooltip-stamp
+        position : absolute
+        top : 150px
+        left : 0
+        width : 100%
+        height : 64px
+        margin : 0 auto
+        -webkit-animation : bounceUp .5s
+        -webkit-animation-iteration-count : 2
+        -webkit-animation-fill-mode : both
+        animation : bounceUp .5s
+        animation-iteration-count : 2
+        animation-fill-mode : both
+        +mobile-small-w 
+            top : 130px
+        &::after
+            content : ''
+            position : absolute
+            top : 0
+            left : 0
+            display : block 
+            width : 100%
+            height : 100%
+            background : 
+                image : url(#{$image-path}event-stamp-tooltip-img.png)
+                repeat : no-repeat
+                position : center center
+                size : 268px 83px
+.item-stamp
+    width : 100%
+    text-align : center
+    .stamp
+        display : block
+        width : 92px
+        height : 92px
+        margin : 0 auto
+        background : 
+            color : transparent
+            image : url(#{$image-path}event-stamp-bg.svg)
+            repeat : no-repeat
+            position : center 
+            size : 100%
+        +mobile-small-w 
+            width : 80px
+            height : 80px
+        &.is-stamped
+            &.type-1
+                background : 
+                    image : url(#{$image-path}event-stamp-type-1.svg)
+            &.type-2
+                background : 
+                    image : url(#{$image-path}event-stamp-type-2.svg)
+            &.type-3
+                background : 
+                    image : url(#{$image-path}event-stamp-type-3.svg)
+            &.type-4
+                background : 
+                    image : url(#{$image-path}event-stamp-type-4.svg)
+            &.type-5
+                background : 
+                    image : url(#{$image-path}event-stamp-type-5.svg)
+/* 스탬프 획득 */
+.event-stamp-title-area
+    text-align : center
+    .title
+        color : $ep-dark-navy
+        line-height : 1.33 !important
+    & + .no-data-section
+        height : auto 
+        .no-data
+            min-height : 200px
+        // margin-top : 40px !important
+.event-coupon-area
+    // position : absolute
+    // top : 0
+    // left : 0
+    position : relative
+    display : flex 
+    flex-direction : column
+    align-items : center 
+    justify-content : center 
+    width : 100%
+    height : 100%
+    // > img
+    //     margin-top : -20px
+    &.type-2
+        position : relative
+        height : auto
+        .event-confetti-particle
+            // top : 70%
+.bt-coupon-desc
+    position : absolute
+    bottom : 25px
+    left : 0
+    width : 100%
+    padding : 0 24px
+    text-align : center
+    // color : $ep-gray
+.event-stamp-get-area
+    position : relative
+    width : 100%
+    max-width : 153px
+    // height : 107px
+    margin : 25px auto 18px
+.event-stamp-img
+    display : none
+    position : absolute
+    top : -18px
+    right : -30px
+    width : 91px
+    height : 102px
+    -webkit-animation : bounceUp .5s
+    -webkit-animation-iteration-count : 2
+    -webkit-animation-fill-mode : both
+    animation : bounceUp .5s
+    animation-iteration-count : 2
+    animation-fill-mode : both
+    background : 
+        image : url(#{$image-path}event-stamp-img.svg)
+        repeat : no-repeat
+        position : center center
+        size : 100% 100%
+
+
+/* Event List */
+.event-list
+    width : 100%
+    max-width : 366px
+    margin : 8px auto
+    .item-event
+        position : relative
+        width : 100%
+        margin-bottom : 32px
+        > a
+            display : block
+            width : 100%
+        &:last-child
+            margin-bottom : 12px
+        &.is-expired
+            .box-event-img-area
+                .box-event-img
+                    &:before
+                        content : ''
+                        position : absolute
+                        top : 0 
+                        left : 0
+                        display : block 
+                        width : 100%
+                        height : 100%
+                        min-height : 160px
+                        border-radius : inherit
+                        overflow : hidden
+                        background : rgba(0,0,0,.4)
+        .icon-expired
+            position : absolute
+            top : 12px
+            right : 9px
+            display : block
+            padding : 4px 12px
+            font-weight : $weight-bold
+            background-color : rgba(255,255,255,.6)
+            border-radius : 15px
+    .box-event-img-area
+        min-width : 300px
+        // min-height : 160px
+        border-radius : $border-radius
+        background-color : $ep-board-bg
+        overflow : hidden
+        .box-event-img
+            position : relative 
+            width : 100%
+            height : 100%
+            min-height : 140px
+            text-align : center
+            font-size : 0
+            > img
+                width : 100%
+        .txt-event-info
+            padding-top : 12px
+        .event-status
+            display : inline-flex
+            height : 20px
+            align-items : center
+            margin :
+                left : auto
+                top : 5px
+            padding : 2px 7px
+            border-radius : 10px
+            color : $ep-white
+            background-color : $ep-primary
+
+/* Event Confettis */
+.event-confetti-area
+    position : absolute
+    top : 65px
+    left : 0
+    display : flex 
+    align-items : center 
+    justify-content : center
+    width : 100%
+    height : 100%
+    overflow : hidden
+    &.type-2
+        height : auto
+.event-confetti-bg
+    display : none
+    width : 100%
+    height : 100%
+    background : 
+        color : transparent
+        image : url(#{$image-path}event-confetti.svg)
+        repeat : no-repeat
+        position : center 15px
+    -webkit-animation : confettiAni 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) both
+    animation : confettiAni 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) both
+    -webkit-animation-iteration-count : 1
+    animation-iteration-count : 1
+    -webkit-animation-delay : .2s
+    animation-delay : .2s
+.event-confetti-particle
+    display : none
+    position : absolute
+    top : 50%
+    left : 50%
+    width : 100%
+    height : 150px
+    max-width : 270px
+    margin : 0 auto
+    transform : translate(-50%, -50%)
+.group-particle
+    display : none
+    position : absolute
+    -webkit-animation : confettiAni2 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) both
+    animation : confettiAni2 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) both
+    -webkit-animation-iteration-count : 1
+    animation-iteration-count : 1
+    .particle
+        display : block
+        width : 12px
+        height : 13px
+        border-radius : 100px
+    &.type-1
+        top : 18px
+        left : 5px
+        .particle
+            &:nth-child(1)
+                transform : skew(8deg, 9deg)
+                background-color : $ep-event-color-2
+            &:nth-child(2)
+                margin-left : 30px
+                background-color : $ep-primary
+                transform : scale(0.7) skew(-15deg, -15deg)
+            &:nth-child(3)
+                margin-left : 10px
+                background-color : $ep-event-color-3
+                transform : scale(0.4) skew(15deg, 15deg)
+    &.type-2
+        top : 7px
+        right : 20px
+        -webkit-animation-delay : .1s
+        animation-delay : .1s
+        .particle
+            &:nth-child(1)
+                transform : scale(0.8) skew(-15deg, -15deg)
+                background-color : $ep-event-color-2
+            &:nth-child(2)
+                margin-left : 20px
+                background-color : $ep-event-color-3
+                transform : scale(0.7) skew(-15deg, -15deg)
+            &:nth-child(3)
+                margin : 
+                    left : -10px
+                    top : -10px
+                background-color : $ep-primary
+                transform : scale(0.4) skew(15deg, 15deg)
+    &.type-3
+        bottom : 20px
+        left : 20px
+        -webkit-animation-delay : .2s
+        animation-delay : .2s
+        .particle
+            &:nth-child(1)
+                transform : scale(0.8) skew(-15deg, -15deg)
+                background-color : $ep-event-color-3
+                opacity : 0.7
+            &:nth-child(2)
+                margin :
+                    top : -20px
+                    left : 20px
+                background-color : $ep-event-color-2
+                transform : scale(0.5) skew(3deg, 3deg)
+    &.type-4
+        bottom : 8px
+        right : 25px
+        -webkit-animation-delay : .3s
+        animation-delay : .3s
+        .particle
+            &:nth-child(1)
+                background-color : $ep-event-color-2
+                transform : scale(0.5) skew(3deg, 3deg)
+            &:nth-child(2)
+                margin :
+                    top : 2px
+                    left : -10px
+                transform : scale(0.7) skew(15deg, 7deg)
+                background-color : $ep-primary
+
+@keyframes confettiAni
+    0%
+        opacity : 0
+        -webkit-transform : scale(0.1)
+        transform : scale(0.1)
+    75%
+        -webkit-transform : translateY(0) scale(1)
+        transform : translateY(0) scale(1)
+        opacity : 1
+    100%
+        -webkit-transform : scale(1.5)
+        transform : scale(1.5)
+        opacity : 0
+
+@keyframes confettiAni2
+    0%
+        top : 50%
+        left : 50%
+        left : 50%
+        bottom : 50%
+        opacity : 0
+        -webkit-transform : scale(0.1)
+        transform : scale(0.1)
+    75%
+        -webkit-transform : translateY(0) scale(1)
+        transform : translateY(0) scale(1)
+        opacity : 1
+    100%
+        -webkit-transform : scale(1.75)
+        transform : scale(1.75)
+        opacity : 0
+
+// @keyframes particleAni
+//     0%
+//        width : 100%
+//     100%
+//         width : 0
+
+/* 주유실적이벤트 */ 
+.event-perform-area
+    position : relative
+    width : 100%
+    min-height : 719px
+    padding : 72px 20px 36px
+    text-align : center
+    margin : 0 auto
+    border-radius : 0 0 20px 20px
+    background : $ep-primary
+    +mobile-small-w
+        padding : 
+            left : 20px
+            right : 20px
+    .txt-title-group
+        position : relative
+        max-width : 320px
+        margin : 0 auto
+        font :
+            family : $family-third
+            size : 39px
+        color : $ep-white
+        line-height : 1
+        letter-spacing : -0.78px
+        text-transform : uppercase
+        .is-large
+            font-size : 57px
+        .is-family-secondary
+            font :
+                size : 58px
+                weight : 800
+            color : $ep-primary
+            -webkit-text-fill-color : $ep-primary
+            -webkit-text-stroke-width : 2px
+            -webkit-text-stroke-color : $ep-white
+            margin-left : 10px
+            // text-shadow : -1px 0 $ep-white, 0 2px $ep-white, 2px 0 white, 0 -1px $ep-white
+        &::before
+            content : ''
+            position : absolute
+            top : -13px
+            right : 30px
+            display : block 
+            width : 26px
+            height : 26px
+            background : 
+                image : url(#{$image-path}event-twinkle.svg)
+                repeat : no-repeat
+            +mobile-small-w
+                right : 24px
+.event-perform-date
+    font : 
+        size : $size-large
+        weight : $weight-bold
+    color : $ep-white
+    text-align : center
+    margin : 24px 0 0
+.event-my-status-area
+    position : relative
+    display : flex 
+    align-items : center
+    justify-content : center
+    width : 216px
+    height : 46px
+    padding : 11px 12px 13px
+    margin : 7px auto 25px
+    color : $ep-white
+    text-align : center
+    white-space : nowrap
+    background : 
+        image : url(#{$image-path}event-my-status-bg.svg)
+        repeat : no-repeat
+    &::after
+        content : ''
+        position : absolute
+        top : 7px
+        left : -30px
+        display : block 
+        width : 21px
+        height : 21px
+        background : 
+            image : url(#{$image-path}event-twinkle-2.svg)
+            repeat : no-repeat
+    > p
+        > a
+            color : inherit
+    dt
+        font :
+            size : 14px
+            weight : $weight-bold
+        margin-right : 11px
+    dd
+        em
+            font :
+                size : 1rem
+                weight : $weight-bold
+.event-perform-step-area
+    position : relative
+    max-width : 336px
+    height : 332px
+    margin : 0 auto 30px
+    padding : 12px 0
+    background : 
+        image : url(#{$image-path}stamp-white-bg2.png),url(#{$image-path}gs-tower-bg2.svg)
+        repeat : no-repeat
+        position : 0 73px, 20px 0  
+    // &::before
+    //     content : ''
+    //     display : block
+    //     width : 336px 
+    //     height : 100px
+    //     background : 
+    //       image : url(#{$image-path}event-gstower-bg.svg)
+    //       repeat : no-repeat
+    // &::before
+    //   content : ''
+    //   display : block
+    //   width : 287px 
+    //   height : 165px
+    //   background : 
+    //     image : url(#{$image-path}coupon-road.png)
+    //     repeat : no-repeat
+    //   position : absolute
+    .event-perform-step
+        position : relative
+        width : 100%
+        height : 100%
+        display : flex
+        flex-wrap : wrap
+        justify-content : center
+        align-items : center
+        padding-top : 70px
+        padding-bottom : 45px
+        &::before
+            content : ''
+            position : absolute
+            left : -23px
+            bottom : -17px
+            display : block 
+            width : 83px
+            height : 67px
+            z-index : 10
+            margin : 
+                top : 10px
+                left : 10px
+            background : 
+                image : url(#{$image-path}event-lubricator-bg.svg)
+                repeat : no-repeat
+            -webkit-animation : fadeUp2 1.1s
+            -webkit-animation-iteration-count : 1
+            -webkit-animation-fill-mode : both
+            animation : fadeUp2 1.1s
+            animation-iteration-count : 1
+            animation-fill-mode : both
+        &::after
+            content : ''
+            position : absolute
+            right : 3px
+            bottom : -30px
+            display : block 
+            width : 81px
+            height : 87px
+            margin-top : -20px
+            z-index : 10
+            background : 
+                image : url(#{$image-path}event-station-bg.svg)
+                repeat : no-repeat
+            -webkit-animation : fadeUp2 1.1s
+            -webkit-animation-iteration-count : 1
+            -webkit-animation-fill-mode : both
+            -webkit-animation-delay : .5s
+            animation : fadeUp2 1.1s
+            animation-iteration-count : 1
+            animation-fill-mode : both
+            animation-delay : .5s
+            @-webkit-keyframes fadeUp2
+                0%
+                    opacity : 0
+                    transform :  translateY(10px)
+                100%
+                    opacity : 1
+                    transform :  translateY(0)
+
+            @keyframes fadeUp2
+                0%
+                    opacity : 0
+                    transform :  translateY(10px)
+                100%
+                    opacity : 1
+                    transform :  translateY(0)
+        .benefit-coupon
+          position : absolute
+          width : 44px
+          height : 60px
+          background :
+            repeat : no-repeat
+            position : center
+          &.col1
+            left : 10%
+            top : 30%
+          &.col2
+            left : 27%
+            top : 30%
+          &.col3
+            left : 44%
+            top : 30%
+          &.col4
+            left : 60%
+            top : 30%
+          &.col5
+            left : 76%
+            top : 30%
+          &.col6
+            left : 10%
+            top : 61%
+          &.col7   
+            left : 27%
+            top : 61%
+          &.col8
+            left : 44%
+            top : 61%
+          &.col9
+            left : 60%
+            top : 61%
+          &.col10
+            top : 61% !important
+            left : 76%       
+          &:nth-child(5n)
+            margin-right : 0
+          &.is-coupon-before
+            background :
+              image : url(#{$image-path}coupon-before.png)
+          &.is-coupon-available
+            background :
+              image : url(#{$image-path}coupon-available.png)
+            height : 76px
+            width : 48px
+            margin-right : 11px
+            &:nth-child(5n)
+              margin-right : 0  
+          &.is-coupon-complete
+            background :
+              image : url(#{$image-path}coupon-complete.png)            
+          &.is-coupon-complete-pink
+            background :
+              image : url(#{$image-path}coupon-pink-sheet.png)  
+              size : cover 
+            width : 51px
+            height : 73px 
+          &.is-coupon-complete-yellow
+            background :
+              image : url(#{$image-path}coupon-yellow.png)    
+              size : cover
+            width : 46px    
+        .item-event-step
+            position : absolute
+            width : 75px
+            height : 44px
+            background : 
+                repeat : no-repeat
+                position : 0 0
+                size : 100%
+            &.step-1
+                top : 38px 
+                left : 57px
+                background : 
+                    image : url(#{$image-path}event-perform-step-1.svg)
+                &.is-active
+                    margin : 
+                        top : -10px
+                        left : -9px
+                    background : 
+                        image : url(#{$image-path}event-perform-step-1-active.svg)
+                &.is-completed
+                    background : 
+                        image : url(#{$image-path}event-perform-step-1-get.svg)
+            &.step-2
+                top : 37px 
+                right : 31px
+                background : 
+                    image : url(#{$image-path}event-perform-step-2.svg)
+                &.is-active
+                    margin : 
+                        top : -10px
+                        right : -15px
+                    background : 
+                        image : url(#{$image-path}event-perform-step-2-active.svg)
+                &.is-completed
+                    background : 
+                        image : url(#{$image-path}event-perform-step-2-get.svg)
+            &.step-3
+                top : 137px 
+                right : 97px
+                background : 
+                    image : url(#{$image-path}event-perform-step-3.svg)
+                &.is-active
+                    margin : 
+                        top : -10px
+                        right : -14px
+                    background : 
+                        image : url(#{$image-path}event-perform-step-3-active.svg)
+                &.is-completed
+                    background : 
+                        image : url(#{$image-path}event-perform-step-3-get.svg)
+            &.step-4
+                top : 137px 
+                left : 8px
+                background : 
+                    image : url(#{$image-path}event-perform-step-4.svg)
+                &.is-active
+                    margin : 
+                        top : -10px
+                        left : -9px
+                    background : 
+                        image : url(#{$image-path}event-perform-step-4-active.svg)
+                &.is-completed
+                    background : 
+                        image : url(#{$image-path}event-perform-step-4-get.svg)
+            &.step-5
+                bottom : 5px 
+                left : 131px
+                background : 
+                    image : url(#{$image-path}event-perform-step-5.svg)
+                &.is-active
+                    margin : 
+                        bottom : -10px
+                        left : -9px
+                    background : 
+                        image : url(#{$image-path}event-perform-step-5-active.svg)
+                &.is-completed
+                    background : 
+                        image : url(#{$image-path}event-perform-step-5-get.svg)
+            &.is-active
+                width : 98px
+                height : 65px
+            > a
+                display : block 
+                width : 100%
+                height : 100%
+.baro-card-button
+    position : relative
+    width : 238px
+    height : 158px
+    box-shadow : $card-shadow
+    text-align : center 
+    padding : 24px 20px 20px
+    border-radius : $card-radius
+    margin : 48px auto 8px
+    font : 
+        size : 17px
+    strong
+        font-weight : $weight-bold
+    .is-regist
+        position : absolute
+        left : 50%
+        bottom : 20px
+        display : flex 
+        align-items : center
+        justify-content : center
+        width : 133px
+        height : 36px
+        font :
+            size : 15px
+            weight : $weight-medium
+        color : $ep-text-color
+        border-radius : $box-radius
+        background : $ep-white-smoke
+        transform : translateX(-50%)
+        &::before
+            content : ''
+            width : 10px
+            height : 10px
+            margin-right : 4px
+            background :
+                image : url(#{$image-path}plus.png)
+                repeat : no-repeat
+                size : 100%
+                position : center
+    .twinkle-b
+        top : 10px
+        right : -41px
+    .twinkle-a
+        top : auto 
+        right : auto
+        bottom : 20px
+        left : -39px
+
+// kmstart 
+.is-bold-no-before  
+  font-family : 'S-CoreDream-6Bold'
+  color : #222 !important
+.is-bold
+  font-family : 'S-CoreDream-6Bold'
+  position : relative
+  color : #222 !important
+  &::before
+    display : block
+    content : ''
+    width : 5px
+    height : 5px
+    background-color : #707070
+    border-radius : 100%
+    position : absolute
+    top : 10px
+    left : -11px
+.is-basic
+    &::before
+        display : block
+        content : ''
+        width : 5px
+        height : 5px
+        background-color : #707070
+        border-radius : 100%
+        position : absolute
+        top : 10px
+        left : -11px
+#ep-card-edition-wrap
+  width : 100%
+
+.ep-card-section1
+    // 2022-11-28 수정
+    background-color : #3cdc87
+    padding-top : 70px  
+//   background :
+//     image : url(#{$image-path}top-green-deco.png)
+//     repeat : no-repeat
+//     position : center 64px
+//     size : 100% 300px
+  .ep-card-title
+    max-width : 200px
+    margin : auto
+    padding-top : 80px
+.ep-card-section-inner
+  width : 100%
+  display : flex
+  justify-content : center
+  background :
+    // image : url(#{$image-path}edition-main.png)
+    repeat : no-repeat
+    size : cover
+.ep-card-imgbox
+  max-width : 322px
+  margin : auto
+  padding :
+    top : 45px
+    bottom : 40px
+
+.ep-edition-imgbox
+  max-width : 300px
+  margin : auto  
+
+.promotion-wrapper
+  max-width : 310px
+  margin : auto
+  .promotion-imgbox
+    width : 100%
+    padding :
+      top : 35px
+      bottom : 77px 
+.ep-card-benefit-list
+  width : 100%
+  display : flex
+  flex-direction : column
+  align-items : center
+  border-bottom : 1px dashed #ccc
+.ep-card-benefit-list
+    &:last-of-type
+        border-bottom : none  
+.benefit-list1
+  padding-bottom : 40px
+
+.benefit-list2 
+  // height : 440px
+
+.benefit-list3
+  height : 395px
+  &.h476
+      height : 476px
+  .W335
+      max-width : 335PX 
+      padding : 0 16px
+
+
+
+.benefit-list4     
+  height : 465px
+.benefit-titles
+  max-width : 265px
+  padding :
+    top : 44px
+    bottom : 30px
+  
+.benefit-content-bg
+  max-width : 960px
+  width : 100%
+
+.ep-benefit-img-box
+  width : 100%
+  padding-bottom : 35px
+
+.max-img-width
+  width : 100%
+
+.ep-benfit-text-img-box
+  position : relative
+
+.card-benefit-list
+  display : flex
+  justify-content : space-between
+  position : absolute
+  width : 100%
+  top : 0px
+  height : 55%
+
+.ep-oil-text
+    color : #fff
+    font :
+      size : 1.2em  
+      family : 
+.ep-oil-price
+  color : #fff
+  font-size : 18px
+.price-line
+  position : relative
+
+.percentage
+  padding-top : 10px
+
+.price-line::before
+  display : block
+  content : ''
+  height : 1px
+  width : 50px
+  background-color : #fff
+  position : absolute
+  top : 12px
+.ep-sale-text
+  font-size : 0
+  line-height : 0
+  max-width : 80px // 2022-11-28 수정
+  
+.card-benefit-list
+  li
+    font-family : $font-name-secondary
+    display : flex
+    flex-direction : column
+    align-items : center
+    justify-content : center
+    width : 27%
+  
+.ep-oil-text
+  font-size : 14px
+.ep-oil-price-text-box
+    &.ex // 2022-11-28 추가
+        display : flex
+        justify-content : center
+    p
+        font-size : 11px     
+        background-color : #e8e8e8
+        color : #666
+        padding : 2% 0
+        border-radius : 30px
+        max-width : 960px
+        text-align : center
+        margin : 0 auto
+    
+
+.ep-benefit-content
+  max-width : 310px 
+  &.type02
+      max-width : 335px
+.ep-benefit-txt
+    margin-top : 25px
+    color : #0f1f2e
+    font-size : 12px
+    margin : 25px -20px 0
+    font-family : 'NanumSquare'
+    letter-spacing : -0.25px 
+    li
+        position : relative
+        padding-left : 10px
+        &:before 
+            content : "*"
+            display : inline-block
+            position : absolute
+            left : 0
+            top : 0
+
+.ep-benefit-content2
+  // max-width : 375px
+  // margin : 0 auto
+
+
+
+
+
+
+
+
+
+
+.ep-card-section3
+  width : 100%
+  background :
+    image : url(#{$image-path}green-bg.png)
+    repeat : no-repeat
+    size : cover
+.bg-edit
+        background-color: #3ddb87
+.ep-card-exper
+  li
+    max-width : 310px
+    margin : auto  
+    padding-bottom : 44px
+    // &:first-child
+    //   border-bottom : 1px dashed #b1f1cf
+    &:last-child
+      padding-top : 40px
+
+.energyplus-edition2
+    .ep-card-tab-menu-2-list,
+    .ep-card-tab-menu-1-list
+        li
+            &.list-bold-on
+                font-weight: 700
+                &:before
+                    background-color:#222
+
+        
+.section3-subtitle
+  padding :
+    top : 50px
+    bottom : 30px
+
+
+
+
+  // 다음페이지시작
+
+.recieve-top
+  width : 100% 
+  background : 
+    image : url(#{$image-path}edition-bg.png) // 2022-11-28 수정
+    size : cover
+    repeat : no-repeat
+    position : center
+  padding-bottom : 20px
+.recieve-top-imgbox
+  max-width : 310px
+  margin : auto
+  padding-top : 50px
+
+.tab-menu-title
+  width : 100%
+  padding : 0 24px
+  height : 50px
+  display : flex
+  align-items : center
+  p
+    font-family : GmarketSansMedium
+    font-size : 16px
+    color : #333  
+    font-weight : bold
+    width : 100%
+
+.arrow-slide-btn
+      width : 20px
+      height : 12px
+      background : 
+        color : transparent
+        image : url(#{$image-path}arrow_top.png)
+        repeat : no-repeat
+        size : 20px
+        position : right center
+      border : none
+      font-size : 0
+      line-height : 0
+      cursor : pointer
+.accordion-container2
+    .ac 
+        margin: 0
+        border : none 
+        border-bottom : 1px solid #eee 
+        &.is-active
+            .ac-trigger
+                &:after 
+                    content : none !important
+        .ac-trigger
+            &:after 
+                content : none
+        .ep-card-tab-title
+            p
+                &::after
+                    content : ""
+                    display : block
+                    width : 20px
+                    height : 20px
+                    position : absolute
+                    top : 15px
+                    right : 25px
+                    transform .5s
+                    background-image : url(/images/icon-arrow-down.svg)
+    .ep-card-detail1 
+         border : none 
+.ep-card-detail-title
+  font :
+    family : $font-name
+    size : 16px
+    weight : bold
+  color : #24ce7b  
+  padding-bottom : 11px
+
+.ep-card-detail-text
+  font-size : 13px
+  padding-left : 30px
+
+.ep-card-add-text
+  font-size : 13px
+  padding-left : 15px
+  margin-top : 7px
+
+.ep-card-detail-text
+  li
+    margin-bottom : 7px
+    padding-left : 23px
+    text-indent : -39px
+    &:last-child
+      margin-bottom : 0
+
+.no-text-indent
+  padding-left : 0 !important
+  text-indent : 0 !important
+
+.ep-card-detail1
+  border-bottom : 1px solid #f0f0f0
+
+.ep-card-detail-list
+  &:nth-of-type(2)
+    padding :
+      top : 15px
+      bottom : 45px
+
+
+.ep-card-subtitle
+  max-width : 295px
+  margin : 0 auto
+  padding :
+    top : 70px
+    bottom : 35px
+.ep-card-video
+  padding-bottom : 70px
+
+.ep-card-video-section
+  max-width : 315px
+  margin : 0 auto  
+
+.ep-card-find-out-card
+  max-width : 315px
+  margin : 0 auto    
+
+.ep-card-more-details-wrapper
+  width : 100%
+  background : #fff // 2022-11-28 추가
+    // image : url(#{$image-path}gray-bg.png)
+  padding-bottom : 37px
+
+.ep-card-tab-title>p
+  font :
+    family : GmarketSansMedium
+    size : 15px
+  line-height : 50px
+
+.ep-card-tab-title>p::after
+    content : ''
+    display : block
+    width : 20px
+    height : 20px
+    position : absolute
+    top : 15px
+    right : 25px
+    transition: transform .5s
+    transform: rotate(0deg)
+    background :
+      image : url(#{$image-path}icon-arrow-down.svg)  
+.is-active .ep-card-tab-title>p::after
+    transform: rotate(180deg)
+
+.ep-card-tab-title
+  width : 100%  
+  height : 50px
+  background-color : #3ddb87 !important
+  padding : 0 24px !important
+
+.ep-card-more-details-text-wrapper
+  padding :
+    top : 25px
+    left : 25px
+    right : 25px
+
+.ep-card-tab-menu-1-heading
+  font :
+    size : 15px
+    weight : bold  
+  margin-bottom : 5px  
+
+.ep-card-tab-menu-1-list
+  li
+    padding-left : 8px  
+    margin-top : 8px
+    font-size : 13px
+    position : relative
+    &::before
+      display : block
+      content : ''
+      background-color : #ccc
+      width : 4px
+      height : 4px
+      border-radius : 50%
+      position : absolute
+      left : 0
+      top : 8px
+  &.bold
+    li
+      font-weight : 700
+      &::before
+        background-color : #222    
+.text-wrapper1
+   
+.ep-card-tab-menu-details
+  font-size : 13px
+  li
+    margin-bottom : 8px   
+    padding-left : 10px 
+    color : #666
+
+.ep-card-tab-white-title
+  background-color : #fff !important
+  border-bottom : 1px solid #ccc
+  p:after
+      display: none
+
+.ep-card-tab-menu-1-list2
+  li
+    &:first-child
+      padding-left : 62px
+      text-indent : -57px 
+
+.ep-card-tab-menu-2-list
+  li:not(:last-child)
+    font-size : 13px
+    margin-bottom : 8px
+    color : #333
+    padding-left : 5px
+    position : relative
+
+.ep-card-tab-menu-2-list
+  li:last-child
+    font-size : 13px
+    margin-bottom : 8px
+    color : #666
+
+.ep-card-tab-menu-2-list
+  li:not(:last-child)::before
+    display : block
+    content : ''
+    background-color : #eee
+    width : 4px
+    height : 4px
+    border-radius : 50%
+    position : absolute
+    left : 0
+    top : 8px
+
+.ep-card-warpper
+  padding-top : 25px  
+
+.ep-card-tab-menu-p
+  font-size : 13px
+  color : #666  
+  margin-top : 15px
+  padding-bottom : 50px
+
+.ep-card-tab-menu-1-sub-heading
+  padding-top : 20px
+
+.ep-card-notice
+  background-color : #f8f8f8  
+  padding :
+    top : 62px
+    bottom : 70px
+
+.ep-card-notice-inner
+  width : 100%
+  padding : 0 25px
+
+.ep-card-notice-text
+  padding-bottom : 8px
+  p:first-child
+    margin-bottom : 8px
+.ep-card-notice-part1
+  font-family : 'S-CoreDream-4Regular'
+  font-size : 15px
+
+.ep-card-notice-part1-strong
+  font-family : 'S-CoreDream-6Bold'
+  display : block
+  margin-bottom : 20px
+  font-size : 16px
+
+.ep-card-notice-part1-strong::before
+  display : inline-block
+  content : '!'
+  background-color : #444
+  width : 20px
+  height : 20px
+  border-radius : 50%
+  color : #fff
+  text-align : center
+  margin-right : 5px
+
+
+.ep-card-footer-list
+  li
+    margin-bottom : 7px
+    position : relative
+    padding-left : 4px
+    color : #222
+    &:last-child
+      margin-bottom : 0     
+
+// .ep-card-footer-list
+//   li::before
+//     display : block
+//     content : ''
+//     width : 3px
+//     height : 3px
+//     background-color : #707070
+//     border-radius : 1px
+//     position : absolute    
+//     left : 0   
+//     top : 7px
+//     &.is-bold
+//       &::before
+//         display : none  
+
+.ep-card-footer-bold-list
+  padding :
+    top : 10px
+    bottom : 10px
+  li
+    font :
+      family : 'S-CoreDream-6Bold'
+      size : 15px
+.ep-card-footer-text
+  padding-top : 13px
+  // color : #454545
+
+.ep-card-loan-bold-text
+  font-size : 15px
+  padding-bottom : 5px
+  strong // 2022-11-28 추가
+    font-weight : bold
+    padding-top : 5px
+    display : block
+
+.ep-card-loan-text
+  font-size : 15px
+  // color : #444
+  padding :
+    top :  5px
+
+.ep-card-loan-text-small
+    font-size : 15px
+
+.ep-card-go-to-link
+  position : fixed
+  bottom : 12px
+  left : 0
+  width : 100%
+
+
+.ep-card-go-to-link > a
+  display : block
+  max-width : 335px
+  height : 50px
+  color : #fff
+  font :
+    family : 'GmarketSansMedium'
+    size : 20px
+  background-color : #0f1f2e
+  text-align : center
+  line-height : 50px
+  border-radius : 30px
+  margin : 0 auto
+  span
+    font-size : 15px
+    display : inline-block
+    vertical-align : middle
+  
+
+.gs-text
+  width : 45px  
+
+.gs-text-gray  
+  width : 45px
+
+.gs-text-big
+  width : 55px
+
+.gs-text-gray-big
+  width : 55px
+
+
+  
+  
+
+
+/*이마트주유소_이벤트*/
+.event-gas-station
+    margin : 0 auto
+    max-width : 750px
+    img
+        vertical-align : top
+    .sect
+        .event-inner 
+            margin : 0 auto
+        &.area01
+        &.area02 
+            background : #008a8b
+            padding-bottom : 60px
+            text-align : center
+            heigth : 
+            .evt-input
+                width : 78.666%
+                height : 50px 
+                border : 3px solid #30303a
+                border-radius : 7px
+                display : block 
+                font-size : 15px
+                text-align : center
+                color : #666
+                letter-spacing : -.6px
+                margin : 0 auto
+                &:focus
+                    outline : 0   
+            .btn_coupon 
+                width : 78.666%
+                height : 50px 
+                background : #30303a
+                color : #fff
+                border-radius : 7.5px 
+                margin-top : 20px
+                box-shadow : 5px 9.8px 0 0 rgba(0, 0, 0, 0.16)
+                border : 0
+                outline : 0
+                margin : 20px  auto 0
+                
+
+        &.area04
+            background : #f2f2f2
+            padding : 33.5px 0 40px
+        .txt-img 
+            vertical-align : -2px
+            img 
+                width : 55px
+        .title-noti 
+            font-family : 'S-CoreDream-5Medium'
+            color : #474c56
+            font-size : 13px
+            .ico-warning
+                background : url(#{$image-path}gasEvent_icon_warning-.png) 
+                width : 15px
+                height : 15px
+                display : inline-block
+                background-size : 15px 15px
+                vertical-align : middle
+                margin-right : 2.5px
+        .ep-card-footer-list
+
+            &.type2
+                font-size : 12px
+                line-height : 17.5px
+                li
+                    font-family : 'S-CoreDream-4Regular'
+                    margin-bottom : 12px
+                    padding-left : 8px
+                    color : #48484a
+                    letter-spacing : -0.84px
+                    &:before
+                        background : #48484a
+
+
+/*카카오 이모티콘_이벤트*/
+.kko-em-wrap
+    background-color : #ffde33
+    padding : 0 5.33vw 8vw
+    min-height : 812px 
+    text-align : center
+    .event-inner
+        display : inline-block
+.section-event-mid 
+    position : relative 
+    .pic 
+        position : relative
+        z-index : 2
+
+        
+        
+    .data-box-wrap
+            
+            position : absolute
+            left : 0.4%
+            right : 0.4%
+            z-index : 1
+            background-size : contain
+            background-repeat : no-repeat 
+        
+    .data-box
+        background : #fff
+        text-align : center
+        box-shadow : 0px 10px 25px 0 rgba(0, 0, 0, 0.1)
+        border-radius : 8px
+        height : 130px
+        margin : -8% 5.8667% 0
+        width : 88.9667% 
+        padding : 6.6667% 6.933% 8% 7%
+        max-width : 331px
+        .grey-txt 
+            font-size : 14px
+            margin-top : 2.6667%
+            color : #666
+            font-weight : 300
+        .user-coupon-txt
+            color : #222
+            font-weight : 300
+        .user-coupon-num
+            font-family :  $family-secondary
+            margin-top  : 5.3333%
+        .coupon-data
+            font-weight : 700
+            font-size : 22px
+        .coupon-end
+            font-size : 32px
+            font-weight : 700
+            font-family : NotoSansCJKKR
+
+        
+.btn-down-em 
+    width : 45.333%
+    min-width : 170px
+    margin : 0 auto
+    background : #2c2828
+    border-radius : 26px
+    color : #fff
+    font-size : 17px
+    font-weight : 700
+    padding : 11px 0 12px
+    justify-content : center 
+
+.section-event-mid2
+    margin : 130px 5.8667% 0
+    text-align : center
+.btn-reg-coupon
+    width : 66.6667%
+    min-width : 250px
+    padding : 12px 0 13px
+    margin : 0 auto
+    background : #2c2828
+    border-radius : 26px
+    color : #fff
+    font-size : 18px
+    font-weight : 700
+    justify-content : center 
+    margin-top : 6.9333%
+.kko-event-date
+    font-size : 16px
+    line-height : 1.5
+.event-kakaoem-txt
+    text-align : center
+    font-size : 15px
+.green-txt 
+    color : #34c678
+
+//허브 동절기 이벤트
+.ep-hub-wrap
+    .ep-hub-section1 
+        background : #fcfcfc
+        padding-bottom : 30px
+        .ep-hub-input
+            .input
+                border : 2px solid #3ddb87
+                border-radius : 11px
+                padding : 18px 24px 
+                font-size : 15px 
+                font-weight : 500
+                height : 58px
+                width : calc(100% - 48px)
+                margin : 0 auto 20px
+                display : block
+        .ep-hub-imgbox
+            text-align : center
+            .img 
+                width  : 100%
+        .hub-btn-wrap
+            margin : 0 auto
+            padding : 0 24px
+            .bt-txt
+                font-size : 12px
+    .box-bottom-type
+        margin : auto 0 0
+.modal
+    .is-xsmall
+        height : 246px
+.hub-pop-wrap            
+    .bottom-sheet-body
+        padding :  56px 0 !important
+        text-align : center
+        &.type02
+            padding : 40px 0 !important
+            
+        &.type03
+            padding : 68px 0 !important
+    .event-hub-txt
+        strong
+            font-weight : 700 
+
+
+.app-day100-event-wrap
+    .day100-section-inner 
+        padding : 0
+    .day100-imgbox
+        img 
+            vertical-align : top
+            width : 100%
+        &.kakaobank-26week
+        margin-bottom : 0
+    // .day100-section1
+    //     padding-top : 70px
+    .day100-section2 
+        background-color : #e4eee7 
+    .btn-wrap
+        text-align : center
+        padding-bottom : 6.66%
+        .btn_application
+            color : #3ddb87
+            line-height : 1
+            padding : 3.20% 0  
+            max-width : 372px
+            width : 49.60% 
+            font-size : 24px
+            font-family : "S-CoreDream-6Bold"
+            background-color : #fff
+            box-shadow : 0 12px 15px 0 rgba(0,0,0, 0.07)  
+            border-radius : 42.34px
+            outline : 0
+            border : 0 
+            &:after 
+                content : ""
+                display : inline-block
+                height : 20px
+                width : 20px
+                background :  url(#{$image-path}event_day100_img04.png) no-repeat
+                background-size : 20px auto
+                margin-left : 2.6667%
+
+        .btn-txt
+            color : #0f1f2e
+            font-size :  10px
+            font-family : "S-CoreDream-6Bold"
+            padding-top : 2.6667%
+.day100_pop_top
+    display : inline-flex
+.terms-pop
+    p 
+        font : 12px/1.5 "돋움", Dotum, Verdana, AppleGothic, Sans-serif 
+        color : #7d7d7d 
+        letter-spacing : -1px 
+    .txt 
+        margin : 5px 0
+    .tit,.txt
+        text-align : left
+        font-weight : bold  
+    .modal-card-title
+        text-align : center
+        font-size : 13px
+        padding-right : 8.3%
+    .agree-table
+        border-top : 2px solid #666
+        margin : 10px 0
+        color : #7d7d7d
+        th
+            background-color : #fafafa
+            font-size : 15px
+            padding : 5px
+        td
+            padding : 5px
+            border-color : 1px solid #d9d9d9
+
+.agree-table
+        border-top : 2px solid #666
+        margin : 10px 0
+        border-left : 1px solid #d9d9d9
+        th
+            background-color : #fafafa
+            font-size : 15px
+            padding : 5px
+            border-right : 1px solid #d9d9d9
+            border-bottom : 1px solid #d9d9d9
+        td
+            padding : 5px
+            border-right : 1px solid #d9d9d9
+            border-bottom : 1px solid #d9d9d9          
+.argee-chk-list
+    li
+        margin-bottom : 15px
+    .bts
+        text-align : right 
+        button
+            margin-top : 5px
+// 2022.03.07 복세편주 이벤트
+
+  // 2022.03.07 개발 기존 button 태그 사용 지양
+.input-button
+  width : 80%
+  min-width 248px
+  height : 48px
+  border : none
+  font-size : 15px
+  text-align : center
+  background-color : #0f1f2e
+  color : #fff
+  border-radius : 48px
+  margin : 0 auto
+  display : block
+  position : absolute
+  left : 50%
+  transform : translateX(-50%)
+  line-height : 48px
+ 
+.goodluck-event-inner
+  padding : 24px 0
+  .goodluck-sec
+    width : 90%
+    margin : 0 auto
+.goodluck-event-01
+  position : relative
+  .input-button
+    top : 77%
+
+
+
+.goodluck-event-02
+  >.goodluck-event-inner
+    background-color : #caefdb
+    border-radius : 16px
+    padding : 32px 25px 
+    margin : 16px 0
+    .day100-imgbox
+      position : relative
+
+  .go-event-g-station
+    display : block
+    background-color : #fff
+    border : 1px solid #222
+    border-radius : 30px
+    width : 60% 
+    padding : 5px 0
+    position : absolute
+    left : 50%
+    top : 56%
+    transform : translateX(-50%)
+    text-align : center
+    font-weight : bold
+    
+.day100-imgbox
+  margin-bottom : 25px
+.event-count-bg
+  max-width : 280px
+  min-width : 80%
+  height : 118px
+  background :
+    image : url(#{$image-path}goodluck-data-white-bg.png) 
+    repeat : no-repeat
+    size : 100% 100%
+  margin : 25px auto
+  position : relative
+  .event-count-num
+    .event-count
+      position : absolute
+      top : 50%
+      font-family : Montserrat
+      font-size : 24px
+      font-weight : bold
+      &:first-child
+        left : 25%
+      &:nth-child(2)
+        right : 25%
+          
+// 룰렛 
+.rullet-wrap
+  .rullet
+    .rullet-img-wrap
+      text-align : center
+      position : relative
+      &::before
+        display : block
+        content : ''
+        width : 10%
+        height : 72px
+        background :
+          image : url(#{$image-path}goodluck-roulette-pin.png) 
+          repeat : no-repeat
+          size : 100%
+        position : absolute  
+        left : 50%
+        top : -5%
+        transform : translateX(-50%)
+        z-index : 1
+      &::after
+        display : block
+        content : ''
+        background :
+          image : url(#{$image-path}goodluck-plag-bg.png) 
+          repeat : no-repeat
+          size : 100%  
+        width : 100%
+        height : 100%
+        position : absolute
+        top : -3%
+        left : 0
+      #rullet-start-btn
+        position : absolute
+        left : 50%
+        transform : translateX(-50%)
+        top : 35%
+        width : 24%
+        height : 25%
+        background :
+          image : url(#{$image-path}goodluck-start-btn.png) 
+          repeat : no-repeat
+          size : contain
+          position-x : center
+
+  .rullet-price
+    padding-top : 65px
+    text-align : center
+.attention-title
+  font-size : 14px
+  padding-left : 22px
+  position : relative
+  font-weight : 500
+  margin :
+    top : 24px
+    bottom : 12px
+  &::before
+    content : "!"
+    background-color :#ccc
+    color : #fff
+    width : 16px
+    height : 16px
+    border-radius : 100%
+    position : absolute
+    display : flex
+    justify-content : center
+    align-items : center
+    font-size : 12px
+    left : 0
+    top : 2px
+
+.goodluck-attention
+  padding : 0 22px
+
+.goodluck-event-03
+  >.goodluck-event-inner
+    background-color : #fff6e3
+    border-radius : 16px
+    padding-bottom : 115px
+    .input-button
+      margin-top : 27px
+
+
+.event-txt
+  li
+    color : #888
+    font-size : 12px
+    padding-left : 20px
+    text-indent : -2px
+    &:not(:last-child)
+      margin-bottom : 10px    
+    &::before
+      display : inline-block
+      content : '-'  
+.about-loan-txt
+  margin-top : 10px
+
+  p
+    color : #888
+    font-size : 12px
+    padding-left : 25px
+    text-indent : -2px
+    position : relative
+    margin-bottom : 5px
+    &::before
+      content : ''
+      width : 3px
+      height : 3px
+      background-color : #888
+      position : absolute
+      left : 10px
+      top : 8px
+
+.good-luck-event-footer
+  padding-bottom : 25px
+
+.good-luck-event-graybox
+  background-color : #f5f5f5
+  padding : 16px 28px
+  font-size : 12px
+  color : #888
+  line-height : 1.55
+
+
+// 복세편주 pop-up
+.goodluck-coupon-text
+  text-align : center
+  span
+    font-weight : bold
+.short-modal
+  height : 270px !important
+  .bottom-sheet-body
+    padding-top : 25px !important
+
+@media (max-width:418px)
+   
+	.kko-em-wrap
+		.data-box-wrap
+			left : 0.2%
+			right : 0.2%
+    
+
+@media (max-width:400px)
+    
+	.kko-em-wrap
+		.data-box
+			padding : 6.6667% 0 8% 0
+
+@media (max-width:376px)
+  .goodluck-event-02
+    .go-event-g-station
+      font-size : 12px
+
+
+@media (max-width:281px)
+  .goodluck-event-02
+    .go-event-g-station
+      font-size : 10px
+      &::after
+        width : 5px
+        height : 5px
+        top : 5px
+  .event-perform-step-area
+    background-size : 100%
+    .event-perform-step
+      padding-top : 56px
+      padding-bottom : 96px
+      &::after
+        bottom : 20px
+      &::before
+        bottom : 20px
+      .benefit-coupon
+        background-size : 70%
+        width : 37px
+        margin-right : 5px
+        &.is-coupon-complete-pink
+          background-size : 80%
+        &.is-coupon-complete-yellow
+          background-size : 80%
+
+//카카오뱅크 현장할인카드 등록
+.kakaobank-26week
+    padding-top : 68px
+    .kakako-26week-1
+        z-index : 2
+        position : relative
+    .kakako-26week-2
+        position : relative
+        top : -45px
+        margin-bottom : -130px
+        z-index : 1 
+    .kakaobank-26week-section2
+        background-color : #f7f7f7
+        .day100-imgbox
+            position : relative
+            justify-content : center
+            align-items : center
+            text-align : center
+            .baro-enroll
+                position : absolute
+                bottom : 13.8667vw
+                img
+                    width : calc(100% - 50px)
+            &.kakao-step3
+                position : relative
+                display : flex
+                text-align : center
+            &.kakao-first
+            .kakao-step1
+                padding : 40px 25px 30px 25px
+                .kakao-txt1
+                    font-size : 20px
+                    font-weight : 500
+                    color : #001423
+                    margin-bottom : 15px
+                    span
+                        font-weight : 900
+                .kakao-txt2
+                    margin-top : 17px
+                    font-family : NotoSansCJKkr
+                    font-size : 15px
+                    padding-bottom : 24px
+                    ul
+                        text-align : left
+                        li
+                            position : relative
+                            padding-left : 10px
+                            margin-bottom : 5px
+                            &::before
+                                content : ''
+                                width : 3px
+                                height : 3px
+                                background-color : #888
+                                position : absolute
+                                left : 0
+                                top : 8px
+                span
+                    position : relative
+                    &.title
+                        margin-bottom : 20px
+                        display : block
+                        img
+                          width : 45.333vw
+                          height : 22.9333vw
+                    &.cardphoto
+                        img
+                            width : 87.4667vw
+                            height : 40vw
+                .button-benefit
+                    span
+                        position : relative
+                        display : flex
+                        justify-content : center
+                        img
+                            &:first-child
+                                width : 100%
+                .kakao-txt3
+                        margin : 30px 16px
+                        position : relative
+                        word-break : keep-all
+
+    .tabs-container
+        display : flex
+        flex-direction : row
+        width : 100%
+        height : 100px
+        z-index : 10
+        top : 60px
+        background : #fff
+        align-items : center 
+        ul
+            z-index : 10 
+            width : 100%
+            height : 100%
+            box-sizing : border-box
+            display : flex
+            &.fixed
+                position : fixed
+                top : 68px
+                height : 100px
+                width : 100%
+                left : 0
+                margin : 0 auto
+                background-color : #fff
+            li
+                float : left
+                background : #e1e1e1
+                width : calc(100%/3)
+                height : 100%
+                text-align : center
+                box-sizing : border-box
+                justify-content : center
+                display : flex
+                transition : 0.3s
+                margin-right : 1px
+                position : relative
+                align-items : center
+                &:last-child
+                    margin-right : 0
+                &.on
+                    background : #3ddb87
+                    .kakao-step
+                        color : #0f1f2e
+                    a
+                        color : #fff
+                a
+                    font-family : NotoSansCJKkr
+                    font-size : 17px
+                    font-weight : bold
+                    font-stretch : normal
+                    font-style : normal
+                    line-height : 1.18
+                    letter-spacing : -0.43px
+                    text-align : center
+                    color : #aeaeae
+                    @media (max-width:281px)
+                        font-size : 16px
+                    .kakao-step
+                        font-family : Montserrat
+                        font-size : 14px
+                        font-weight : 800
+                        color : #aeaeae
+                        padding-bottom : 10px
+                        position : absolute
+                        top : 15px
+                        transform : translateX(-50%)
+                        left : 50%
+                    .kakao-step1-ex
+                        font-size : 12px
+                        @media (max-width:281px)
+                            font-size : 10px
+
+//kb손해보험_자동차보험 이벤트
+.kb-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .kb-inner
+        padding : 0px
+        .kb-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            .check-btn
+                position : absolute
+                top : 82%
+                left : 50%
+                width : 76.5%
+                height : 108px
+                transform : translateX(-50%)
+                img
+                    object-fit : contain 
+
+//보험 제휴사 이벤트
+.ins-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .img-dis
+        display : flex
+
+//보험 제휴사 이벤트
+.lc-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .lc-section
+        // &.mt
+        //     margin-top : -24%
+        // &.br
+        //     border-right : 2px solid #fff
+        .lc-inner
+            padding : 0px
+            .lc-imgbox
+                position : relative
+                img
+                    vertical-align : top
+                .lc-check-btn
+                    position : absolute
+                    top : 90%
+                    left : 50%
+                    width : 56%
+                    height : 100px
+                    transform : translateX(-50%)
+                .lc-invite-btn
+                    position : absolute
+                    top : 87%
+                    left : 50%
+                    width : 56%
+                    height : 100px
+                    transform : translateX(-50%)    
+                .lc-baro-btn
+                    position : absolute
+                    top : 84%
+                    left : 27%
+                    width : 36%
+                    height : 42px
+                    transform : translateX(-50%)
+//이달의 이벤트 (모바일)
+.month-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .month-section
+        background-color : #f0f0f0
+        &.mt
+            margin-top : -34px
+        &.big-mt
+            padding-bottom : 50px
+            margin-top : -46px
+        .inner
+            padding : 0px
+            &.pd
+                padding : 0px 24px
+            .month-imgbox
+                position : relative
+                display : flex
+                flex-direction : column 
+                align-items : center
+                .month-bgtop
+                    position : absolute
+                    bottom : -16px
+                    padding : 0 6.3%
+                    z-index : 20
+                [class*='e0']
+                    position : absolute
+                    width : 92.5%
+                    height : 22%
+                    left : 3.5%
+                .e01
+                    top : 10%
+                .e02
+                    top : 41%
+                .e03
+                    top : 72%
+                [class*='-btn']
+                    position : absolute
+                    width : 92.5%
+                    height : 12%
+                    left : 3.5%
+                .gg-btn
+                    top : 28%
+                .ap-btn
+                    top : 43%
+                .share
+                    position : absolute
+                    width : 92.5%
+                    height : 9%
+                    left : 3.5%
+                    top : 74%
+//이달의 이벤트 (PC)
+.month-event-wrap-pc
+    width : 100%
+    margin : 0 auto
+    max-width : none
+    .month-section
+        background-color : #f0f0f0
+        .inner
+            padding : 0px
+            .month-imgbox
+                [class*='e0']
+                    position : absolute
+                    width : 33.5%
+                    height : 8.5%
+                    left : 33%
+                .e01
+                    top : 31%
+                .e02
+                    top : 42%
+                .e03
+                    top : 53%
+                [class*='-btn']
+                    position : absolute
+                    width : 25.5%
+                    height : 4.5%
+                    left : 37.5%
+                .gg-btn
+                    top : 72.5%
+                .ap-btn
+                    top : 77.5%
+                .share
+                    position : absolute
+                    width : 27%
+                    height : 3%
+                    left : 36.5%
+                    top : 89%
+
+@media (max-width: 555px)
+    .month-event-wrap .month-section .inner .month-imgbox .month-bgtop
+        padding : 0 7%
+
+@media (max-width: 435px)
+    .month-event-wrap .month-section .inner .month-imgbox .month-bgtop
+        padding : 0 8%
+
+@media (max-width: 325px)
+    .month-event-wrap .month-section .inner .month-imgbox .month-bgtop
+        padding : 0 9% 3% 9%
+
+@media (max-width: 300px)
+    .ep-card-go-to-link > a
+        font-size : 17px
+        
+@media (max-width: 280px)
+    .month-event-wrap .month-section .inner .month-imgbox .month-bgtop
+        padding : 0 10.5% 4% 10.5%
+
+//카카오골프예약 이벤트
+.kg-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .kg-inner
+        padding : 0px
+        background-color : #e1fff1
+        .kg-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            .kg-roulette-bg
+                position : absolute
+                width : 100%
+                top : 26%
+                left : 0%
+                padding : 0 32px
+            .kg-coupon-btn
+                position : absolute
+                top : 81%
+                left : 50%
+                width : 69%
+                transform : translateX(-50%)
+            .kg-roulette-plate
+                position : absolute
+                width : 90%
+                top : 27%
+                left : 5%
+                padding : 0 32px
+            .kg-check-btn
+                position : absolute
+                width : 69%
+                top : 66%
+                left : 52%
+                transform : translateX(-52%)
+            .kg-roulette-pin
+                position : absolute
+                width : 10%
+                top : 24.6%
+                left : 49.8%
+                transform : translateX(-50%)
+                background :
+                    image : url(#{$image-path}kg-roulette-pin.png) 
+                    repeat : no-repeat
+                    size : cover
+                    position-x : center
+                z-index : 10
+            .kg-rullet-btn
+                cursor : pointer
+                position : absolute
+                left : 50%
+                transform : translateX(-50%)
+                top : 40.5%
+                width : 21.2%
+                height : 9.4%
+                background :
+                    image : url(../images/kg-roulette-start-btn.png) 
+                    repeat : no-repeat
+                    size : cover
+                    position-x : center
+                &.stop
+                    background :
+                        image : url(../images/kg-roulette-stop-btn.png) 
+                        repeat : no-repeat
+                        size : cover
+                        position-x : center
+            .kg-enter-btn
+                position : absolute
+                top : 88%
+                left : 50%
+                width : 69%
+                transform : translateX(-50%)
+            .kg-baro-btn
+                position : absolute
+                top : 65.1%
+                left : 27%
+                width : 36%
+                height : 42px
+                transform : translateX(-50%)
+@media (max-width: 580px)
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-rullet-btn
+        top : 40%
+
+@media (max-width: 470px)
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-rullet-btn
+        top : 39.5%
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-check-btn
+        top : 65%
+
+@media (max-width: 380px)
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-rullet-btn
+        top : 39.0%
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-check-btn
+        top : 64%
+
+@media (max-width: 340px)
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-rullet-btn
+        top : 38.0%
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-check-btn
+        top : 63%
+
+@media (max-width: 280px)
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-rullet-btn
+        top : 37.5%
+    .kg-event-wrap .kg-inner .kg-imgbox .kg-check-btn
+        top : 62%
+
+//카카오골프예약 팝업 (big)
+.kg-popup
+    .bottom-sheet-header
+        height : 130px
+        .title
+            font-size : 39px
+            padding-right : 0px
+        .btn-close
+            top : 41px
+            width : 48px
+            height : 48px
+    .bottom-sheet-body
+        &.bg-gray
+            background-color : #eeeeee
+            max-width : none
+        .is-button-fixed
+            bottom : 6%
+            .inner
+                .buttons
+                    .button
+                        font-size : 30px
+                        width : 95.7%
+                        height : 77px
+        .inner
+            padding : 0 32px
+            align-items : center
+            .kg-popup-wrap
+                position : relative
+                margin-bottom : 30px
+                &.ticket-wrap
+                    margin-bottom : 0px
+            .kg-popup-txt-wrap
+                p
+                    font-size : 24px
+                    &:nth-of-type(1)
+                        margin-bottom : 24px
+@media (max-height: 763px)
+    .modal .kg-popup.is-big-large
+        height : 100vh
+
+@media (max-width: 600px)
+    .kg-popup .bottom-sheet-header .title
+        font-size : 30px
+    .kg-popup .bottom-sheet-header .btn-close
+        top : 50px
+        width : 34px
+        height : 34px
+
+@media (max-width: 580px)
+    .kg-popup .bottom-sheet-body .inner .kg-popup-txt-wrap p
+        font-size : 20px
+
+@media (max-width: 440px)
+    .kg-popup .bottom-sheet-header .title
+        &.gsopen
+            font-size : 24px
+
+@media (max-width: 380px)
+    .kg-popup .bottom-sheet-header .title
+        font-size : 28px
+    .kg-popup .bottom-sheet-header .btn-close
+        top : 47px
+        width : 34px
+        height : 34px
+        right : 14px
+    .kg-popup .bottom-sheet-body .is-button-fixed .inner .buttons .button
+        height : 42px
+        font-size : 16px
+
+@media (max-width: 370px)
+    .kg-popup .bottom-sheet-header .title
+        &.gsopen
+            font-size : 20px
+    .kg-popup .bottom-sheet-header .btn-close
+        &.gsopen
+            top : 50px
+            width : 28px
+            height : 28px
+
+@media (max-width: 320px)
+    .kg-popup .bottom-sheet-header .title
+        &.gsopen
+            font-size : 16px
+
+@media (max-width: 280px)
+    .kg-popup .bottom-sheet-body .inner .kg-popup-txt-wrap p
+        font-size : 18px
+
+//카카오골프예약 팝업 (small)
+.kg-popup-small
+    .bottom-sheet-header
+        .title
+            padding-right : 0px
+    .bottom-sheet-body
+        .inner
+            align-items : center
+            justify-content : space-around
+            .kg-popup-txt-wrap
+                text-align : center
+
+//우리동네 GS이벤트
+.ght-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .ght-inner
+        padding : 0px
+        .ght-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            [class*='ght-point']
+                position : absolute
+                left : 50%
+                width : 91.5%
+                transform : translateX(-50%)
+                &.btn1
+                    top : 35%
+                &.btn2
+                    top : 64.9%
+
+//매경오픈 입장권 이벤트
+.mkopen-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .mkopen-inner
+        padding : 0px
+        .mkopen-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            .mkopen-enter-btn
+                position : absolute
+                left : 50%
+                bottom : 46%
+                width : 80%
+                transform : translateX(-50%)
+            .mkopen-gal
+                position : absolute
+                left : 27.5%
+                bottom : 19.5%
+                width : 43.4%
+                transform : translateX(-50%)
+            .mkopen-info
+                position : absolute
+                left : 72.5%
+                bottom : 19.5%
+                width : 43.4%
+                transform : translateX(-50%)
+            .mkopen-match
+                position : absolute
+                left : 27.5%
+                bottom : 14.3%
+                width : 43.4%
+                transform : translateX(-50%)
+            .mkopen-road
+                position : absolute
+                left : 72.5%
+                bottom : 14.3%
+                width : 43.4%
+                transform : translateX(-50%)
+            .mkopen-detail-btn
+                position : absolute
+                left : 22%
+                bottom : 3.5%
+                width : 27.6%
+                transform : translateX(-50%)
+//매경오픈 입장권 이벤트 팝업
+.mkopen-popup
+    .mkopen-body
+        background-color : #eeeeee
+        max-width : none 
+        padding-top : 0px
+        padding-bottom : 0px !important
+        .inner
+            padding : 32px 16px
+            .mkopen-popup-wrap
+                position : relative
+                display : flex
+                justify-content : center
+                .pop-wrap
+                    position : relative
+                .date
+                    position : absolute
+                    bottom : 61%
+                    left : 50%
+                    font-size : 36px
+                    font-weight : bold
+                .mkopen-detail-btn
+                    position : absolute
+                    width : 100%
+                    max-width : 500px
+                    bottom : 8.8%
+@media (max-width: 640px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 34px
+@media (max-width: 610px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 31px
+@media (max-width: 565px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 28px
+@media (max-width: 520px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 25px
+@media (max-width: 475px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 22px
+@media (max-width: 420px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 19px
+@media (max-width: 375px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 16px
+@media (max-width: 330px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .date
+        font-size : 13px
+
+@media (max-width: 710px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn
+        bottom : 9.8%
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 36%
+        position : relative
+        left : 1%
+@media (max-width: 680px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 34%
+        position : relative
+        left : 2%
+@media (max-width: 650px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 32%
+        position : relative
+        left : 6%
+@media (max-width: 610px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 30%
+        position : relative
+        left : 9%
+@media (max-width: 570px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 28%
+        position : relative
+        left : 12%
+@media (max-width: 530px)
+    .mkopen-popup .mkopen-body .inner .mkopen-popup-wrap .mkopen-detail-btn img
+        width : 26%
+        position : relative
+        left : 14%
+
+@media (max-width: 450px)
+    .mkopen-popup .mkopen-body .inner
+        justify-content : center
+
+//매경오픈 룰렛 이벤트
+.mk-roulette-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .mk-roulette-inner
+        padding : 0px
+        background-color : #e1fff1
+        .mk-roulette-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            .mk-roulette-bg
+                position : absolute
+                width : 100%
+                top : 22%
+                left : 0%
+                padding : 0 32px
+            .mk-roulette-coupon-btn
+                position : absolute
+                left : 50%
+                bottom : 8%
+                width : 69%
+                transform : translateX(-50%)
+            .mk-roulette-plate
+                position : absolute
+                width : 90%
+                top : 22%
+                left : 5%
+                padding : 0 32px
+            .mk-roulette-pin
+                position : absolute
+                width : 10%
+                top : 21%
+                left : 50.2%
+                transform : translateX(-50%)
+                background :
+                    image : url(#{$image-path}mk-roulette-pin.png) 
+                    repeat : no-repeat
+                    size : cover
+                    position-x : center
+                z-index : 10
+            .mk-roulette-btn
+                cursor : pointer
+                position : absolute
+                left : 50%
+                transform : translateX(-50%)
+                top : 31%
+                width : 21.1%
+                height : 6.15%
+                background :
+                    image : url(../images/mk-roulette-start.png) 
+                    repeat : no-repeat
+                    size : cover
+                    position-x : center
+                &.stop
+                    background :
+                        image : url(../images/mk-roulette-stop.png) 
+                        repeat : no-repeat
+                        size : cover
+                        position-x : center
+            .mk-roulette-body
+                position : absolute
+                top : 44%
+                left : 50%
+                width : 42.4%
+                transform : translateX(-50%)
+
+@media (max-width: 650px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 30.5%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 43.5%
+@media (max-width: 600px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 30.4%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 43.3%
+@media (max-width: 550px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 30.3%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 43%
+@media (max-width: 500px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 30.1%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 42.5%
+@media (max-width: 450px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 29.9%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 42%
+@media (max-width: 400px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 29.8%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 41.8%
+@media (max-width: 350px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 29.5%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 41.4%
+@media (max-width: 300px)
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-btn
+        top : 29%
+    .mk-roulette-event-wrap .mk-roulette-inner .mk-roulette-imgbox .mk-roulette-body
+        top : 40.4%
+
+//매경오픈 룰렛 이벤트 팝업
+.mk-roulette-popup
+    .bottom-sheet-header
+        .title
+            padding-right : 0px
+    .bottom-sheet-body
+        .inner
+            align-items : center
+            &.inner-popup8
+                justify-content : center
+            .mk-roulette-popup-wrap
+                width : 70%
+                &.w100
+                    width : auto
+            .mk-roulette-popup-txt-wrap
+                display : flex
+                flex-direction : column
+                align-items : center
+                .tit
+                    font-size : 38px
+                    font-weight : bold
+                    text-align : center
+                .txt
+                    font-size : 18px
+                    text-align : center
+                    padding : 20px 0
+                .ex-num
+                    font-size : 18px
+                    text-align : center
+                    padding : 7px 110px
+                    border-radius : 28px
+                    background-color : #3cdc87
+                    .num
+                        font-weight : bold
+@media (max-width: 390px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .txt
+        font-size : 16px
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        font-size : 16px
+        padding : 7px 100px
+@media (max-width: 370px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 88px
+@media (max-width: 325px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 86px
+@media (max-width: 315px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 80px
+@media (max-width: 305px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 76px
+@media (max-width: 295px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 72px
+@media (max-width: 285px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 66px
+@media (max-width: 275px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-txt-wrap .ex-num
+        padding : 7px 60px
+
+
+@media (max-width: 700px)
+    .mk-roulette-popup .mk-roulette-body .inner
+        justify-content : center
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-wrap
+        width : 80%
+@media (max-width: 600px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-wrap
+        width : 90%
+@media (max-width: 400px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-wrap
+        width : 95%
+@media (max-width: 300px)
+    .mk-roulette-popup .bottom-sheet-body .inner .mk-roulette-popup-wrap
+        width : 100%
+
+//신한SOL 이벤트
+.shsol-event-wrap
+    max-width : 750px
+    margin : 0 auto
+    .shsol-inner
+        padding : 0px
+        .shsol-imgbox
+            position : relative
+            img
+                vertical-align : top
+                width : 100%
+            .input-wrap
+                position : absolute
+                display : flex
+                width : 76.8%
+                top : 72%
+                left : 50%
+                transform : translateX(-50%)
+                .input
+                    width : 100%
+                    padding : 9.45% 0
+                    padding-left : 5%
+                    border : solid 1px #707070
+                    border-radius : 15px
+                    font-size : 32px
+                .del-btn
+                    position : absolute
+                    display : block
+                    width : 24px
+                    height : 24px
+                    border : none
+                    right : 6%
+                    top : 50%
+                    transform : translateY(-50%)
+                    background :
+                        image : url(../images/shsol-del-btn.png) 
+                        repeat : no-repeat
+                        size : 100%
+                        position-x : center
+                        color : #fff
+            .shsol-coupon-btn
+                position : absolute
+                top : 82%
+                left : 50%
+                width : 73.4%
+                transform : translateX(-50%)
+            .shsol-baro-btn
+                position : absolute
+                top : 37.5%
+                left : 26.5%
+                width : 36.1%
+                transform : translateX(-50%)
+@media (max-width: 650px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 26px
+@media (max-width: 550px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 22px
+@media (max-width: 450px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 18px
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .del-btn
+        width : 20px
+        height : 20px
+@media (max-width: 370px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 15px
+@media (max-width: 350px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 14px
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .del-btn
+        width : 14px
+        height : 14px
+@media (max-width: 280px)
+    .shsol-event-wrap .shsol-inner .shsol-imgbox .input-wrap .input
+        font-size : 12px

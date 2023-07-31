@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		<!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">소셜간편로그인</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner">
+                    <div class="is-padding-top">
+                        간편로그인 설정을 하시면 기존에 사용하시는 <br>
+                        계정으로 쉽고 편하게 로그인 하실 수 있습니다.
+                    </div>
+                    <div class="setting-area">
+                        <ul class="setting-list">
+                            <li>
+                                <div class="setting-item">
+                                    <span class="social-icon kakao">카카오</span>
+                                    <!-- 버튼 클릭시 is-active / 텍스트 (설정해제, 설정등록) 토글 -->
+                                    <button class="button is-small is-dark is-active">설정해제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="setting-item ">
+                                    <span class="social-icon naver">네이버</span>
+                                    <!-- 버튼 클릭시 is-active / 텍스트 (설정해제, 설정등록) 토글 -->
+                                    <button class="button is-small is-dark">설정등록</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="setting-item">
+                                    <span class="social-icon google">구글</span>
+                                    <!-- 버튼 클릭시 is-active / 텍스트 (설정해제, 설정등록) 토글 -->
+                                    <button class="button is-small is-dark">설정등록</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div href="#" class="setting-item">
+                                    <span class="social-icon apple">애플</span>
+                                    <!-- 버튼 클릭시 is-active / 텍스트 (설정해제, 설정등록) 토글 -->
+                                    <button class="button is-small is-dark">설정등록</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<!-- // Contents -->
+		</div>
+
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+    <script>
+        // 설정버튼 클릭시 is-active 클래스 토글
+        const settingButton = document.querySelectorAll('.setting-item .button');
+        settingButton.forEach( settingButton => { 
+            settingButton.addEventListener('click', event => {
+                settingButton.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body class="is-fixed">
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+		@@include('./include/main-header.html')
+
+		<div id="container">
+			<!-- Contents -->
+			<div id="contents">
+             </div>   
+			<!-- // Contents -->
+		</div>
+
+		<!-- Footer -->
+        <footer id="footer">
+            <nav class="bottom-navbar">
+                <ul>
+                    <li>
+                        <a href="main.html" class="menu-home">
+                            <i class="icon-home"></i>
+                            <span class="menu-text">홈</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-gas">
+                            <i class="icon-gas"></i>
+                            <span class="menu-text">주유소</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-ev">
+                            <i class="icon-ev"></i>
+                            <span class="menu-text">EV찾기</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-all">
+                            <i class="icon-menu"></i>
+                            <span class="menu-text">전체</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- // Footer -->
+        
+        <!-- gnb -->
+        @@include('./include/gnb.html')
+        <!-- // gnb -->
+    </div>
+    <!--2020-12-15 배너 추가 -->
+    <a href="#" class="bottom-sheet-banner type-2">
+        <span class="txt-banner-desc">친구초대하기</span>
+        <span class="ico-character"></span>
+    </a>
+</body>
+</html>

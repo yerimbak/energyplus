@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr" style="overflow: auto">
+  @@include('./include/head.html')
+
+  <body style="height: auto">
+    @@include('./include/skip_navi.html')
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+    <div id="container">
+      <!-- Contents -->
+
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3 is-normal">바로할인카드 안내</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+      <div class="container type2 app-day100-event-wrap kakaobank-26week">
+        <section class="day100-section1">
+          <div class="inner day100-section-inner">
+            <div class="day100-imgbox kakako-26week-1">
+              <img
+                src="../images/event-kakako-26week-1.png"
+                alt="에너지 플러스 앱 100일 기념 이벤트"
+              />
+            </div>
+            <div class="day100-imgbox kakako-26week-2">
+              <img
+                src="../images/event-kakako-26week-2.png"
+                alt="에너지 플러스 앱 100일 기념 이벤트"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- 상단 탭메뉴 -->
+        <div class="tabs-container">
+          <ul class="tabs-wrap">
+            <li class="on" data-num="#tab-1">
+              <a class="et-hero-tab" href="javascript:void(0);"
+                ><span class="kakao-step">STEP1</span><br /><span
+                  class="kakao-step1-ex"
+                  >카카오뱅크 26주적금</span
+                ><br />바로할인카드<br />혜택 받기</a
+              >
+            </li>
+            <li data-num="#tab-2">
+              <a class="et-hero-tab" href="javascript:void(0);"
+                ><span class="kakao-step">STEP2</span><br />바로우쥬<br />패턴
+                등록</a
+              >
+            </li>
+            <li data-num="#tab-3">
+              <a class="et-hero-tab" href="javascript:void(0);"
+                ><span class="kakao-step">STEP3</span
+                ><br />바로주유<br />사용</a
+              >
+            </li>
+          </ul>
+        </div>
+        <section class="kakaobank-26week-section2">
+          <div class="inner day100-section-inner kakao-26week-section">
+            <div class="day100-imgbox kakao-first" id="tab-1" data-num="0">
+              <div class="kakao-step1">
+                <span class="title">
+                  <img
+                    src="../images/event-kakako-26week-step1-title.png"
+                    alt="100일 기념 경품이벤트"
+                  />
+                </span>
+                <div class="kakao-txt1">
+                  1주차 혜택 : <span>5천원 할인</span>
+                </div>
+                <span class="cardphoto">
+                  <img
+                    src="../images/event-kakako-26week-step1-card.png"
+                    alt="100일 기념 경품이벤트"
+                  />
+                </span>
+                <div class="kakao-txt2">
+                  <ul>
+                    <li>카드번호 : <span>1224-1234-1234-1234</span></li>
+                    <li>CVC번호 : <span>123</span></li>
+                    <li>1리터당 휘발유 100원, 고급휘발유 100원, 경유 100원</li>
+                    <li>등록 및 사용 기간 : <span>~ 2022-11-08</span></li>
+                  </ul>
+                </div>
+                <a href="javascript:;" class="button-benefit">
+                  <span>
+                    <img
+                      src="images/event-kakako-step1-btn.png"
+                      alt="혜택받기" />
+                    <img
+                      style="display: none"
+                      src="images/event-kakako-step1-btn-off.png"
+                      alt="혜택받기"
+                  /></span>
+                </a>
+                <div class="kakao-txt3">
+                  <small class="point-txt">
+                    <i class="icon-noti"></i>
+                    설정한 금액보다 적게 주유된 경우, 바로할인이 불가하거나
+                    일부만 할인될 수 있으며 할인 적용이 이루어지지 않은 경우,
+                    주유소 직원을 통해 취소 후 재결제를 요청하여 주시기
+                    바랍니다.
+                  </small>
+                </div>
+              </div>
+            </div>
+            <div class="day100-imgbox" id="tab-2" data-num="1">
+              <img
+                src="../images/event-kakako-26week-step2.png"
+                alt="100일 기념 경품이벤트"
+              />
+            </div>
+            <div class="day100-imgbox kakao-step3" id="tab-3" data-num="2">
+              <img
+                src="../images/event-kakako-26week-step3.png"
+                alt="100일 기념 경품이벤트"
+              />
+              <a href="javascript:;" class="baro-enroll">
+                <span
+                  ><img
+                    src="images/event-kakako-step3-btn.png"
+                    alt="바로 주유 등록/사용하기"
+                /></span>
+              </a>
+            </div>
+            <div
+              class="day100-imgbox kakao-step4"
+              id="tab-4"
+              data-num="3"
+            ></div>
+          </div>
+        </section>
+        <section class="day100-section3">
+          <div class="inner day100-section-inner">
+            <div class="day100-imgbox">
+              <img
+                src="../images/event-kakako-26week-3.png"
+                alt="이벤트 유의 사항"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- 탭메뉴 영역-->
+    <script>
+      // 클릭 시 해당 영역으로 이동
+      $(".tabs-wrap > li").click(function () {
+        // $(this).addClass("on").siblings("li").removeClass("on");
+        const target = $(this).attr("data-num");
+        const scrollPosition = $(target).offset().top - 168 + "px";
+        console.log(scrollPosition);
+        $("html,body").stop().animate({ scrollTop: scrollPosition }, 400);
+      });
+
+      // 스크롤 시 탭메뉴 상단에 고정
+      window.addEventListener("scroll", function () {
+        var winT = window.pageYOffset;
+        var tabCont = document.querySelector(".tabs-container");
+        var tabWrap = document.querySelector(".tabs-wrap");
+        var tabContTop = tabCont.offsetTop;
+        var headerH = document.querySelector("header").clientHeight;
+        if (winT > tabContTop - headerH) {
+          tabWrap.classList.add("fixed");
+        } else {
+          tabWrap.classList.remove("fixed");
+        }
+        // alert(tabContTop);
+
+        // var sec =  document.querySelectorAll('.barojuyu2-event-inner > section')
+        // console.log(sec)
+      });
+
+      window.addEventListener("scroll", function () {
+        var $contents = document.querySelectorAll(
+          ".kakao-26week-section > div"
+        );
+        var headerH = 188;
+        var $menu = document.querySelectorAll(".tabs-wrap > li");
+        var $sct = this.pageYOffset;
+        for (var i = 0; i < $contents.length; i++) {
+          for (var a = 0; a < $menu.length; a++) {
+            if ($contents[i].getBoundingClientRect().top <= headerH) {
+              var idx = $contents[i].getAttribute("data-num");
+              $menu[a].classList.remove("on");
+            } else {
+              $menu[idx].classList.add("on");
+            }
+          }
+        } //for 반복문 $content
+      }); //window scroll 시 해당영역 탭메뉴 활성화
+    </script>
+  </body>
+</html>

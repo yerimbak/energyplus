@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#0f1f2e}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Ic_Store" transform="translate(-215 -553) translate(215 553)">
+        <g id="Box">
+            <path id="사각형_4080" d="M0 0H32V32H0z" class="cls-1"/>
+        </g>
+        <g id="Shape">
+            <rect id="사각형_4052" width="24" height="1" class="cls-2" rx=".5" transform="translate(4 27)"/>
+            <g id="사각형_4096" fill="none" stroke="#0f1f2e">
+                <path d="M0 0h17v6a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V0z" class="cls-5" transform="translate(7 10)"/>
+                <path d="M1 .5h15a.5.5 0 0 1 .5.5v5A7.5 7.5 0 0 1 9 13.5H8A7.5 7.5 0 0 1 .5 6V1A.5.5 0 0 1 1 .5z" class="cls-1" transform="translate(7 10)"/>
+            </g>
+            <g id="사각형_4099" fill="#3cdc87" stroke="#0f1f2e">
+                <path d="M0 0h1a3 3 0 0 1 3 3 3 3 0 0 1-3 3H0V0z" class="cls-5" transform="translate(23 12)"/>
+                <path d="M.667.5H1A2.5 2.5 0 0 1 3.5 3 2.5 2.5 0 0 1 1 5.5H.667A.167.167 0 0 1 .5 5.333V.667A.167.167 0 0 1 .667.5z" class="cls-1" transform="translate(23 12)"/>
+            </g>
+            <rect id="사각형_4054" width="1" height="3" class="cls-2" rx=".5" transform="translate(14.5 4)"/>
+            <rect id="사각형_4053" width="1" height="3" class="cls-2" rx=".5" transform="translate(10.5 5)"/>
+            <rect id="사각형_4055" width="1" height="3" class="cls-2" rx=".5" transform="translate(18.5 5)"/>
+        </g>
+    </g>
+</svg>

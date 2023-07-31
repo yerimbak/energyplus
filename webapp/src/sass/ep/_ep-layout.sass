@@ -1,0 +1,266 @@
+/* layout */
+html,
+body 
+	-webkit-text-size-adjust : none
+	text-size-adjust : none
+	overflow-anchor : none
+html
+	width : 100%
+	height : 100%
+	overflow : hidden
+body
+	width : 100%
+	height : 100%
+	overflow : hidden
+	-webkit-user-select : none
+	user-select : none
+	webkit-user-drag : none
+	background : $ep-white
+	// padding :
+	// 	top : env(safe-area-inset-top)
+	// 	bottom : env(safe-area-inset-bottom)
+	// 	left : env(safe-area-inset-left)
+	// 	right : env(safe-area-inset-right)
+	// -webkit-overflow-scrolling : touch
+	&.is-fixed
+		position : fixed
+		overflow : hidden
+#__layout, 
+#__nuxt
+	position : absolute
+	top : 0
+	left : 0
+	right : 0
+	bottom : 0
+	width : 100%
+	height : 100%
+	overflow-y : auto
+#wrap
+	// position : absolute
+	// top : 0
+	// left : 0
+	// right : 0
+	// bottom : 0
+	width : 100%
+	height : 100%
+	display : flex
+	flex-direction : column
+	flex-wrap : nowrap
+	justify-content : flex-start
+	align-items : stretch
+	align-content : stretch
+	background : $ep-white
+	overflow-y : auto
+	// -webkit-overflow-scrolling : touch
+#header
+	position : fixed
+	top : 0	
+	left : 0
+	right : 0
+	display : flex
+	align-items : center
+	width : 100%
+	height : 68px
+	min-width : $min-width
+	background : $ep-white
+	z-index : 100
+	padding : 
+		top : env(safe-area-inset-top)
+		right : env(safe-area-inset-right)
+		left : env(safe-area-inset-left)
+	h1
+		display : flex
+		width : 100%
+		height : 100%
+		align-items : center
+		> a 
+			height : inherit
+			display : flex
+			align-items : center
+		.bi
+			width : 48px //2021.10.26 할로윈로고 교체 , 기존로고 크기 48px(height동일)
+			height : 54px 
+			background :
+				color : transparent
+				//image : url(#{$image-path}bi-halloween.svg) //할로윈로고
+				image : url(#{$image-path}BI.svg) 
+				
+				repeat : no-repeat
+				position : center
+	.inner
+		display : flex
+		width : 100%
+		height : 100%
+		align-items : center 
+		justify-content : center
+		&.is-right
+			justify-content : flex-end
+	.is-back
+		position : absolute
+		left : 0
+		top : 0
+		height : 100%
+		padding : 22px 18px
+	.title
+		letter-spacing : $letter-spacing-default
+		text-transform : uppercase
+		&.is-normal 
+			text-transform : inherit
+	& + iframe
+		position : absolute
+		top : 0
+		left : 0
+		right : 0
+		bottom : 0
+		width : 100%
+		height : 100%
+		padding-top : 68px
+#container
+	clear : both
+	// position : absolute
+	display : flex 
+	flex-direction : column
+	flex-grow : 1
+	width : 100%
+	min-width : $min-width
+	height : 100%
+	background : $ep-white
+	overflow-y : auto
+	-webkit-overflow-scrolling : touch
+	// padding :
+	// 	top : env(safe-area-inset-top)
+	// 	bottom : env(safe-area-inset-bottom)
+	// 	left : env(safe-area-inset-left)
+	// 	right : env(safe-area-inset-right)
+	> .iframe-container
+		padding-top : 68px
+		&.has-footer
+			padding-bottom : 76px
+#contents
+	clear : both
+	display : inline-block
+	&.full-height
+		height : 100%
+	// display : flex
+	// flex-direction : column
+	// flex-grow : 1
+	// start // 2021-05-06 ios 일부기기 padding-bottom 미적용 문제 수정
+	// &.type-2
+	// 	display : inline-block 
+	// end // 2021-05-06 ios 일부기기 padding-bottom 미적용 문제 수정
+	width : 100%
+	// height : 100%
+	// overflow-x : hidden
+	// overflow-y : auto
+	padding :
+		top : 68px
+		// left : env(safe-area-inset-left)
+		// right : env(safe-area-inset-right)
+		bottom : 76px
+	&.button-fixed
+		padding :
+			bottom : 154px
+	> .inner,
+	> .is-padding-top
+		display : flex 
+		flex-direction : column
+		flex-grow : 1
+		width : 100%
+		padding-bottom : 12px
+		// overflow-x : hidden
+		// overflow-y : auto
+		&.is-padding-bt
+			padding-bottom : 40px
+		&.box-point-enroll
+			display : block
+		.box-bottom-noti
+			&.type-2
+				padding : 0
+	> .board-grid
+		padding-bottom : 12px
+.inner
+	width : 100%
+	padding : 0 24px
+	+mobile-medium
+		padding : 0 20px
+	+mobile-small-w
+		padding : 0 16px
+.container
+	// max-width : 100% !important
+#footer 
+	position : fixed
+	left : 0
+	right : 0
+	bottom : 0
+	width : 100%
+	z-index : 300
+	background : $ep-white
+	border-radius : 16px 16px 0 0
+	.bottom-navbar
+		display : block
+		width : 100%
+		height : 76px
+		padding :
+			top : 12px
+			bottom : 16px
+		// align-items : center
+		// justify-content : space-between
+		background : $ep-white
+		border-radius : 16px 16px 0 0
+		box-shadow : 0 -10px 30px 0 rgba(0, 0, 0, 0.06)
+		overflow : hidden
+		> ul
+			display : table
+			width : 100%
+			height : 100%
+			> li
+				display : table-cell
+				text-align : center
+				// flex : 1
+				// justify-content : center
+				// align-items : center 
+				> a[class*='menu-']
+					// position : relative
+					margin : 0 auto
+					display : flex
+					width : 48px
+					height : 48px
+					flex-direction : column
+					align-items : center
+					// justify-content : center
+					color : $ep-navy
+					.menu-text
+						font-size : $size-small
+						color : $ep-text-gray
+						margin-top : 1px
+					// &:hover, 
+					&.is-active
+						.menu-text
+							color : $ep-navy
+						.icon-home
+							background-image : url(#{$image-path}icon-home-active.svg)
+						.icon-gas
+							background-image : url(#{$image-path}icon-gas-active.svg)
+						.icon-ev
+							background-image : url(#{$image-path}icon-ev-active.svg)
+						.icon-menu
+							background-image : url(#{$image-path}icon-menu-active.svg)
+/* scroll bar */ 
+// ::-webkit-scrollbar	
+// 	width: 8px
+// ::-webkit-scrollbar-track 
+// 	-webkit-box-shadow: inset 0 0 6px rgba(166, 172, 178, .2)
+// 	-webkit-border-radius: 0
+// 	border-radius: 0
+// ::-webkit-scrollbar-thumb	
+// 	-webkit-border-radius: 6px
+// 	border-radius: 6px
+// 	background: rgba(166, 172, 178, .6)
+// 	-webkit-box-shadow: inset 0 0 6px rgba(166, 172, 178, .2)
+// ::-webkit-scrollbar-thumb:window-inactive
+// 	background: rgba(166, 172, 178, 1)
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	body,
+	#wrap
+		min-height : 100vh

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container shsol-event-wrap">
+      <!-- Main -->
+      <section class="shsol-section">
+        <div class="inner shsol-inner">
+          <div class="shsol-imgbox">
+            <img src="./images/shsol-intro.png" alt="이벤트 이미지" />
+          </div>
+        </div>
+      </section>
+      <section class="shsol-section">
+        <div class="inner shsol-inner">
+          <div class="shsol-imgbox">
+            <img src="./images/shsol-event1.png" alt="이벤트 이미지" />
+            <div class="input-wrap">
+              <input class="input" onchange="input()" type="text" placeholder="쿠폰코드를 입력해주세요." onfocus="this.placeholder = ''" onblur="this.placeholder = '쿠폰코드를 입력해주세요.'" />
+              <button class="del-btn" onclick="clearInput(this)"></button>
+            </div>
+            <a href="javascript:vold(0);" class="shsol-coupon-btn"><img src="./images/shsol-coupon-btn.png"
+                alt="버튼"></a>
+          </div>
+        </div>
+      </section>
+      <section class="shsol-section">
+        <div class="inner shsol-inner">
+          <div class="shsol-imgbox">
+            <img src="./images/shsol-noti.png" alt="이벤트 이미지" />
+            <a href="javascript:vold(0);" class="shsol-baro-btn"><img src="./images/shsol-baro-btn.png" alt="버튼"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- // Contents -->
+  </div>
+</body>
+
+<!-- input 'X'버튼 이벤트 -->
+<script>
+  function clearInput(obj) {
+    obj.parentNode.querySelector('.input').value = ""
+  }
+</script>
+
+</html>

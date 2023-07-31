@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+<body>
+	@@include('./include/skip_navi.html')
+	<div id="wrap" role="main">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">1:1문의</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+		<div id="container">
+
+			<!-- Contents -->
+			<div id="contents" class="container">
+                <div class="inner">
+
+                    <!-- CS area -->
+                    <div class="cs-area">
+                        <div class="title-area">
+                            <h3 class="title is-3">
+                                1:1문의를 남겨주시면<br>
+                                <strong>2일 내 답변</strong>드립니다.
+                            </h3>
+                            <p class="sub-desc">
+                                공휴일 제외/ 문의내용에 따라 
+                                답변이 지연될 수 있습니다.
+                            </p>
+                        </div>
+
+                        <!-- CS center -->
+                        <div class="cs-center level">
+                            <div class="level-left">
+                                <i class="icon-phone"></i>
+                            </div>
+                            <div class="level-right">
+                                <div>
+                                    <span class="title is-4">고객센터</span>
+                                    <span class="sub-desc">(유료)</span>
+                                    <a href="tel:1544-5151" class="tel">1544-5151</a>
+                                </div>
+                                <div class="sub-desc">
+                                    평일 <time class="is-family-secondary">09:00 - 18:00</time> 주말,공휴일 휴무
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab area -->
+                    <div class="tab-area b-tabs">
+
+                        <!-- tabs -->
+                        <nav class="tabs">
+                            <ul>
+                                <li class="is-active"> <!-- 활성화 탭에 is-active 클래스 추가 -->
+                                    <a href="#">
+                                        <span>문의 접수</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>문의 내역</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- tab-content -->
+                        <section class="tab-content">
+
+                            <!-- 문의 접수 -->
+                            <div class="tab-item">
+
+                                <!-- form -->
+                                <div class="form-grid">
+
+                                    <!-- 문의유형 -->
+                                    <div class="field">
+                                        <label class="label">문의유형<span class="necessary">(필수)</span></label>
+                                        <div class="control">
+                                            <div class="select is-fullwidth ">
+                                                <select>
+                                                    <option>결제</option>
+                                                    <option>결제</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <!-- 2020/12/14 수정 -->
+                                        <label class="label">이메일<span class="necessary">(필수)</span></label>
+                                        <div class="control is-error"> <!-- 에러 : is-error 클래스 추가 -->
+                                            <input type="email" autocomplete="on" class="input" placeholder="이메일 입력">
+                                            <p class="help">이메일 형식에 맞게 입력하여 주십시오</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <!-- 2020/12/14 수정 -->
+                                        <label class="label">제목<span class="necessary">(필수)</span></label>
+                                        <div class="control is-error"> <!-- 에러 : is-error 클래스 추가 -->
+                                            <input type="text" autocomplete="on" class="input" placeholder="제목 입력">
+                                            <p class="help">제목을 입력해 주십시오</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="level">
+                                            <div class="level-left">
+                                                <!-- 2020/12/14 수정 -->
+                                                <label class="label">내용<span class="necessary">(필수)</span></label>
+                                            </div>
+                                            <div class="level-right">
+                                                <small class="help counter">(<em class="is-primary-color">0</em>/2000 Byte) </small>
+                                            </div>
+                                        </div>
+                                        <div class="control is-error"> <!-- 에러 : is-error 클래스 추가 -->
+                                            <textarea maxlength="200" class="textarea" placeholder="내용을 입력하여 주십시오."></textarea>
+                                            <p class="help">내용을 입력해 주십시오</p>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label class="label">파일첨부</label>
+                                        <div class="file">
+                                            <label class="file-label">
+                                                <input class="file-input" type="file" name="resume">
+                                                <span class="file-name">파일첨부</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- // Form -->
+                                    <!-- Button -->
+                                    <div class="buttons is-centered">
+                                        <button type="button" class="button is-dark is-fullwidth" disabled>문의접수</button>
+                                    </div>
+                                    <!-- // Button -->
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+			</div>
+			<!-- // Contents -->
+		</div>
+
+        <!-- Footer -->
+		@@include('./include/footer.html')
+        <!-- // Footer -->
+    </div>
+</body>
+</html>

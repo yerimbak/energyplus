@@ -1,0 +1,41 @@
+<div class="modal is-active">
+  <div class="modal-background"></div>
+
+  <!--  Bottom Sheet -->
+  <div class="bottom-sheet is-bottom-fixed is-medium2">
+    <div class="bottom-sheet-header">
+      <h2 class="title is-3 has-text-centered">현장할인명</h2>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+    </div>
+
+    <div class="bottom-sheet-body">
+      <div class="inner bonus-coupon-area">
+        <!-- 2021-03-22 : 바코드 번호=현장할인 카드 번호이므로 둘 중에 하나 삭제 -->
+        <!-- <div class="is-align-center">
+                    <p class="title is-3 is-primary-text2">1234-1234-1234-1234</p>
+                </div> -->
+        <div class="barcode-area">
+          <div class="barcode"></div>
+          <!-- D: 바코드 들어가는 영역 -->
+          <p class="barcode-num">2917 - 1019 - 2993 - 3833</p>
+          <p class="timer">남은시간<span class="is-red-text">02:19</span></p>
+        </div>
+        <div class="barcode-noti">
+          <small class="point-txt">
+            <i class="icon-noti"></i>
+            설정한 금액보다 적게 주유된 경우, 바로할인이 불가하거나 일부만
+            할인될 수 있으며 잔여한도보다 적게 적용된 경우, 주유소 직원을 통해
+            취소 후 재결제를 요청하여 주시기 바랍니다.
+          </small>
+        </div>
+      </div>
+      <div class="is-button-fixed">
+        <div class="inner">
+          <button type="button" class="button is-outline is-fullwidth">
+            취소
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.js"></script>
+  <div id="container">
+    <!-- Contents -->
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3 is-normal">허브 동절기 특화 이벤트</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+    <div id="contents" class="container type-2">
+      <div class="ep-hub-wrap">
+        <section class="ep-hub-section1">
+          <div class="ep-hub-section-inner">
+            <p class="ep-hub-imgbox">
+              <img src="../images/ep_hub_img01.png"  class="img" alt="리플릿에 적힌 쿠폰코드 입력하고 5000원 주유쿠폰 받으세요">
+            </p>
+            <div class="ep-hub-input">
+              <input type="text" placeholder="쿠폰코드를 입력해주세요." class="input"/>
+            </div>
+            <div class="buttons type-2 hub-btn-wrap">
+              <a href="#" class="btn bt-txt">로그인 후 이용가능</a>
+              <buttons class="button is-half is-dark">등록</buttons>
+             </div>
+          </div>
+        </section>
+     
+  
+        <div class="box-bottom-noti box-bottom-type ep-hub-section2">
+            <p class="title is-5 title-noti">안내사항</p>
+            <!-- 2021-05-10 유의사항 문구변경 -->
+            <ul class="list-noti-area">
+                <li class="item-txt-noti">- 쿠폰코드는 이벤트 기간 내 1인 1매만 등록 가능합니다.</li>
+                <li class="item-txt-noti">- 쿠폰코드 등록은 2021년 12월 31일까지 가능합니다.</li>
+                <li class="item-txt-noti">- 쿠폰코드 등록 시 발급된 쿠폰은 등록일로부터 한 달 이내에 사용 가능합니다.</li>
+                <li class="item-txt-noti">- 주유 쿠폰은 에너지플러스 허브를 포함한 전국 GS칼텍스 주유소에서 사용 가능합니다.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- // Contents -->
+    <!-- section2 start -->
+  </div>
+  @@include('./include/bottom-sheet-hub-login.html')
+</body>
+
+
+</html>

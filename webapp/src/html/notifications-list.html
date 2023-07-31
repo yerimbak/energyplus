@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+  <div id="wrap" role="main">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="is-back">
+          <i class="icon-arrow-left"></i>
+          <span class="blind">이전</span>
+        </a>
+        <div class="has-text-centered">
+          <h2 class="title is-3">알림함</h2>
+        </div>
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <div id="container">
+      <!-- Contents -->
+      <div id="contents" class="container">
+        <!-- top fixed section -->
+        <section class="top-fixed-section">
+          <div class="inner">
+            <div class="is-border-bottom">
+              <div class="level">
+                <div class="level-left">
+                  <h4 class="title is-5">미확인 알림 보기</h4>
+                </div>
+                <div class="level-right">
+                  <!-- switch toggle -->
+                  <div class="switch-area">
+                    <div class="field">
+                      <label class="switch is-rounded">
+                        <input type="checkbox" true-value="Yes" false-value="No" value="false">
+                        <span class="check"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contents-section">
+          <!-- tab contents -->
+          <div class="board-grid">
+            <!-- 2020/12/14 클래스 수정 - accordion-container 추가-->
+            <div class="board-body accordion-container">
+              <ul class="board-list">
+                @@for (var i = 0; i < 10; i++) { <!-- 읽음 : read 클래스 추가-->
+                  <!-- 2020/12/14 클래스 수정 - ac 추가-->
+                  <li class="ac board-item">
+                    <!-- 2020/12/14 클래스 수정 - ac 추가-->
+                    <div class="ac-header">
+                      <!-- 2020/12/14 클래스 수정 - ac-trigger 추가-->
+                      <div class="ac-trigger board-title-area">
+                        <div class="board-title-info">
+                          <time class="is-family-secondary">2020.10.30 15:20</time>
+                          <span class="before-vertical-bar">이벤트</span>
+                          <i class="icon-new-dot"><span class="blind">New</span></i>
+                        </div>
+                        <div class="board-title">
+                          <p class="title is-5">안녕하세요. GS에너지플러스 입니다.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 내용 -->
+                    <!-- 2020/12/14 클래스 수정 - ac-panel 추가-->
+                    <div class="ac-panel board-content-area">
+                      <!-- 하단에 링크 있을 경우 - has-bottom-link 클래스 추가 -->
+                      <div class="board-content-inner has-bottom-link">
+                        <div class="board-content">
+                          안녕하십니까? GS에너지입니다.<br><br>
+
+                          GS에너지는 신재생에너지, 대체에너지 등 미래에너지에 대한 선도기술 개발 및 미래 환경변화에
+                          선제적으로 신속하게 대응할 수 있는 능력을 확보하여 미래 에너지시장을 선도해 나갈 계획입니다.<br><br>
+
+                          앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                          앞으로 GS에너지가 에너지시장에서 글로벌 리더로 성장할 수 있도록 많은 관심과 격려를 부탁드립니다.<br>
+                        </div>
+                        <a href="#" class="is-link is-bottom">공지사항 보러가기</a>
+                        <!-- 2022.04.07 button 추가 -->
+                        <button type="button" class="button is-fullwidth">로그인 length length length</button>
+                      </div>
+                    </div>
+                  </li>
+                  }
+              </ul>
+
+              <!-- 더보기 버튼 - 리스트가 10개 이상일 경우 출력 -->
+              <div class="has-text-centered">
+                <button class="button is-text more">더보기</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- // Contents -->
+    </div>
+
+    <!-- Footer -->
+    @@include('./include/footer.html')
+    <!-- // Footer -->
+  </div>
+  <script>
+    // accordion
+    new Accordion('.accordion-container');
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93.414" height="10.715" viewBox="0 0 93.414 10.715">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #e5e5e5;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="arrow" transform="translate(-107.451 -600.586)">
+    <path id="패스_12778" data-name="패스 12778" class="cls-1" d="M20.046,0h90" transform="translate(88.405 606)"/>
+    <line id="선_276" data-name="선 276" class="cls-1" x2="4" y2="4" transform="translate(195.451 602)"/>
+    <line id="선_277" data-name="선 277" class="cls-1" y1="3.888" x2="3.624" transform="translate(195.639 606)"/>
+  </g>
+</svg>

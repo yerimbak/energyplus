@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-3{fill:#0f1f2e}
+        </style>
+    </defs>
+    <g id="icon-copy" transform="translate(-188 -356)">
+        <rect id="사각형_5078" width="32" height="32" fill="#fff" rx="16" transform="translate(188 356)"/>
+        <path id="Box" fill="none" d="M0 0H20V20H0z" transform="translate(194 362)"/>
+        <g id="Shape" transform="rotate(-90 204.25 371.75)">
+            <rect id="사각형_4996" width="1" height="16" class="cls-3" rx=".5" transform="rotate(180 103 189.75)"/>
+            <rect id="사각형_4997" width="1" height="16" class="cls-3" rx=".5" transform="rotate(180 101.5 189.75)"/>
+            <rect id="사각형_4998" width="1" height="7" class="cls-3" rx=".5" transform="rotate(90 -79.5 291.5)"/>
+            <rect id="사각형_4999" width="1" height="7" class="cls-3" rx=".5" transform="rotate(90 -84 287)"/>
+            <rect id="사각형_5000" width="1" height="4" class="cls-3" rx=".5" transform="rotate(135 29.108 229.54)"/>
+            <rect id="사각형_5001" width="1" height="4" class="cls-3" rx=".5" transform="rotate(45 -342.22 440.566)"/>
+            <rect id="사각형_5002" width="1" height="4" class="cls-3" rx=".5" transform="rotate(-135 175.392 145.248)"/>
+            <rect id="사각형_5003" width="1" height="4" class="cls-3" rx=".5" transform="rotate(135 22.34 228.252)"/>
+        </g>
+    </g>
+</svg>
